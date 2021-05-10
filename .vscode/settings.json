@@ -1,0 +1,33 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.scss-output-directory": "D:\\Sam Workplace\\Student New Tool\\student_new_tool\\assets\\styles\\css",
+    "compile-hero.jade-output-toggle": false,
+    "compile-hero.less-output-toggle": false,
+    "compile-hero.pug-output-toggle": false,
+    "compile-hero.stylus-output-toggle": false,
+    "compile-hero.typescript-output-toggle": false,
+    "compile-hero.typescriptx-output-toggle": false,
+    "compile-hero.watch": "D:\\Sam Workplace\\Student New Tool\\student_new_tool\\assets\\styles\\scss",
+    "compile-hero.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ]
+    }
+}

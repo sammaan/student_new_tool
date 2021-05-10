@@ -1,0 +1,22 @@
+{
+  "name": "student_new_tool",
+  "version": "1.0.0",
+  "description": "TE New tool for students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammaan/student_new_tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammaan/student_new_tool/issues"
+  },
+  "homepage": "https://github.com/sammaan/student_new_tool#readme",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  }
+}
