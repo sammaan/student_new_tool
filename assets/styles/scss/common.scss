@@ -1,1 +1,123 @@
 /* Stylesheet for Common Elements */
+$th-text: #bab6c6;
+$td-text: #918e98;
+$background: #f5f9fc;
+$border: #f4f5f7;
+$book-color: #b143d6;
+$check-color: #47d4a4;
+$circle-color: #f11a1a;
+/****************************
+ Table Page Container
+ *****************************/
+ .container {
+     padding: 12px 15px;
+ }
+ /****************************
+ bold font weight
+ *****************************/
+ b {
+    font-weight: 600;
+    color: #9a98a7;
+ }
+ /****************************
+ 
+ Table responive css
+ *****************************/
+ .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    table {
+        text-align: left;
+        thead {
+            font-weight: 500;
+            font-size: 13px;
+            background-color: $background;
+            color: $th-text;
+            text-transform: uppercase;
+        }
+        tbody {
+            font-size: 13px;
+            color: $td-text;
+            .fas {
+                margin-right: 3px;
+            }
+        }
+    }
+ }
+  /****************************
+ Table th td css
+ *****************************/
+th {
+    justify-content: center;
+}
+td, th {
+   font-weight: 500;
+   border-bottom: 1px solid $border;
+   border-top: 1px solid $border;
+   padding:12px 25px;
+}
+  /****************************
+ font awsome color
+ *****************************/
+.fa-book {
+    &:before {
+     color: $book-color;
+    }
+}
+.fa-check {
+    &:before {
+    color: $check-color;
+    }
+}
+.fa-circle {
+    font-size: 8px;
+    &:before {
+        color: $circle-color;
+    }
+}
+ /****************************
+ assignment tr width
+ *****************************/
+.assignment {
+    tr > *:nth-child(1) {
+        width: 48%;
+    }
+    tr > *:nth-child(2) {
+        width: 20%;
+    }
+    tr > *:nth-child(3), tr > *:nth-child(4) {
+        width: 16%;
+    }
+}
+.results {
+    border:1px solid $border;
+}
+.support {
+    a {
+        text-decoration: none;
+    }
+    ul {
+        padding-inline-start: 0px;
+        li {
+            font-size: 11px;
+            display: inline;
+            padding: 8px 8px;
+            border-radius: 50%;
+            font-weight: 600;
+            width: 16px;
+            text-align: center;
+            &:last-child {
+                margin-left: -12px;
+            }
+        }
+    }
+    .user1 {
+        background-color: #df3ff8;
+        color: #000;
+    }
+    .user2 {
+        border:1px solid #fff;
+        background-color: #014d40;
+        color: #fff;
+    }
+}
