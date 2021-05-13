@@ -1,7 +1,6 @@
+/* Stylesheet for Common Elements */
+/* Stylesheet for Custom Elements */
 /* Main Stylesheet */
-@use "common";
-@use "custom";
-@use "responsive";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -113,6 +112,7 @@ section {
 body {
   line-height: 1.6;
   font-family: "Montserrat";
+  background: #f7f9fa;
 }
 
 ol,
@@ -153,12 +153,35 @@ table {
   margin-left: 110px;
   padding: 0 60px;
   box-sizing: border-box;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100vh;
+  overflow-y: auto;
 }
-
 .full-body-width .side-bar {
   position: absolute;
   top: 0;
   left: 0;
+  background: #f7f9fa;
+  height: 100vh;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.full-body-width .side-bar::-webkit-scrollbar {
+  width: 3px;
+}
+.full-body-width .side-bar::-webkit-scrollbar-track {
+  background: #f7f9fa;
+}
+.full-body-width .side-bar::-webkit-scrollbar-thumb {
+  background: #f7f9fa;
+}
+.full-body-width .side-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /****************************
@@ -169,23 +192,21 @@ table {
   background-color: #f7f9fa;
   width: 110px;
   box-sizing: border-box;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   transition-property: width;
 }
-
 .side-bar .logo a {
   margin-bottom: 25px;
   display: block;
   text-decoration: none;
   overflow: hidden;
 }
-
 .side-bar .logo a img {
   width: 80px;
   height: 80px;
   vertical-align: middle;
 }
-
 .side-bar .logo a .university-name {
   margin-left: 20px;
   font-size: 24px;
@@ -195,9 +216,9 @@ table {
   transition-property: width;
   overflow: hidden;
   display: none;
+  -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
-
 .side-bar .menu-bar li a {
   display: flex;
   justify-content: flex-start;
@@ -209,7 +230,6 @@ table {
   padding-left: 15px;
   color: #0e0f22;
 }
-
 .side-bar .menu-bar li a .menu-icon {
   width: 52px;
   height: 52px;
@@ -218,9 +238,9 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
-
 .side-bar .menu-bar li a .menu-text {
   margin-left: 20px;
   font-size: 18px;
@@ -229,27 +249,29 @@ table {
   overflow: hidden;
   width: 0;
   transition-property: width;
+  -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
-
 .side-bar .menu-bar li a:hover .menu-icon {
   background-color: #993d90;
 }
-
 .side-bar .menu-bar li a:hover .menu-icon img {
   filter: brightness(10);
 }
-
+.side-bar .menu-bar li.active a .menu-icon {
+  background-color: #993d90;
+}
+.side-bar .menu-bar li.active a .menu-icon img {
+  filter: brightness(10);
+}
 .side-bar:hover {
   width: 370px;
   border-radius: 0 16px 16px 0;
 }
-
 .side-bar:hover .logo a .university-name {
   width: auto;
   display: inline-block;
 }
-
 .side-bar:hover .menu-bar li a .menu-text {
   width: auto;
 }
@@ -260,11 +282,9 @@ Header
 header {
   padding-top: 15px;
 }
-
 header .d-flex {
   justify-content: space-between;
 }
-
 header .header-left.d-flex .fit-to-screen {
   width: 48px;
   height: 48px;
@@ -278,7 +298,6 @@ header .header-left.d-flex .fit-to-screen {
   margin-right: 30px;
   cursor: pointer;
 }
-
 header .header-left.d-flex .search-bar .search-input {
   width: 172px;
   height: 48px;
@@ -289,11 +308,9 @@ header .header-left.d-flex .search-bar .search-input {
   font-size: 16px;
   color: #4a4c5d;
 }
-
 header .header-left.d-flex .search-bar .search-input:focus {
   outline: none;
 }
-
 header .header-right.d-flex .header-icon {
   width: 48px;
   height: 48px;
@@ -305,14 +322,12 @@ header .header-right.d-flex .header-icon {
   margin-left: 30px;
   cursor: pointer;
 }
-
 header .header-right.d-flex .user-details {
   background-color: #f8fafb;
   margin-left: 30px;
   border-radius: 16px;
   padding: 0 10px 0 0;
 }
-
 header .header-right.d-flex .user-details img {
   vertical-align: middle;
   width: 48px;
@@ -321,7 +336,6 @@ header .header-right.d-flex .user-details img {
   object-fit: cover;
   object-position: center;
 }
-
 header .header-right.d-flex .logout {
   margin-left: 30px;
   cursor: pointer;
@@ -332,7 +346,5 @@ header .header-right.d-flex .logout {
   justify-content: center;
   align-items: center;
 }
-
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
