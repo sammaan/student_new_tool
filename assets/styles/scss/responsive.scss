@@ -1,0 +1,118 @@
+$layout-breakpoint-medium: 1199px;
+$layout-breakpoint-small: 991px;
+$layout-breakpoint-xs: 767px;
+
+// style bellow 1199px
+@media (max-width: $layout-breakpoint-medium) {
+
+  // common style
+  .full-body-width {
+    padding: 0 20px;
+  }
+
+  // tab bar style
+  .top-box-container {
+    .inner-boxes {
+      .lext-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .right-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// style bellow 767
+@media (max-width: $layout-breakpoint-xs) {
+
+  // common style
+  .full-body-width {
+    width: calc(100% - 0px);
+    margin-left: 0px;
+  }
+
+  // side nav
+  .side-bar {
+    padding: 0;
+    width: 0;
+  }
+
+  // tap box
+  .top-box-container {
+    .top-box {
+      h2 {
+        font-size: 18px;
+        line-height: 20px;
+
+        img {
+          width: 30px;
+          margin-right: 6px;
+        }
+      }
+    }
+
+    .inner-boxes {
+      padding: 20px;
+      .lext-box {
+        .select-sem {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        .progess-bar {
+          margin-bottom: 10px;
+        }
+
+        .semester-points {
+          font-size: 18px;
+          line-height: 24px;
+
+          span {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .right-box {
+        .upcoming-info {
+          width: 100%;
+
+          .mb-20 {
+            margin-bottom: 9px;
+          }
+
+          .info-heading {
+            font-size: 16px;
+            line-height: 22px;
+          }
+
+          .info-Details {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 600;
+          }
+        }
+
+        .upcoming-dates {
+          .mt-20 {
+            margin-top: 40px;
+          }
+
+          .info-heading {
+            font-size: 18px;
+            line-height: 24px;
+          }
+
+          .info-button {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

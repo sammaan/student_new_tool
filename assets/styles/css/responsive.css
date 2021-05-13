@@ -1,3 +1,79 @@
+@media (max-width: 1199px) {
+  .full-body-width {
+    padding: 0 20px;
+  }
 
+  .top-box-container .inner-boxes .lext-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .top-box-container .inner-boxes .right-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .full-body-width {
+    width: calc(100% - 0px);
+    margin-left: 0px;
+  }
+
+  .side-bar {
+    padding: 0;
+    width: 0;
+  }
+
+  .top-box-container .top-box h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .top-box-container .top-box h2 img {
+    width: 30px;
+    margin-right: 6px;
+  }
+  .top-box-container .inner-boxes {
+    padding: 20px;
+  }
+  .top-box-container .inner-boxes .lext-box .select-sem {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-box-container .inner-boxes .lext-box .progess-bar {
+    margin-bottom: 10px;
+  }
+  .top-box-container .inner-boxes .lext-box .semester-points {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-box-container .inner-boxes .lext-box .semester-points span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info {
+    width: 100%;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info .mb-20 {
+    margin-bottom: 9px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info .info-heading {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info .info-Details {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-dates .mt-20 {
+    margin-top: 40px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-dates .info-heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-dates .info-button {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

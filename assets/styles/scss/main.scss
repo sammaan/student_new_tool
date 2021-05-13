@@ -2,7 +2,7 @@
 
 @use 'common';
 @use 'custom';
-@use 'responsive';
+//@use 'responsive';
 
 
 // varibles
@@ -23,6 +23,11 @@ $text-blue: #0e0f22;
 @mixin transition($proprty) {
   -webkit-transition: $proprty;
   transition: $proprty;
+}
+
+@mixin box-shadow($proprty) {
+  -webkit-box-shadow: $proprty;
+  box-shadow: $proprty;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -338,8 +343,12 @@ table {
 /****************************
 Header
 ****************************/
+.mobile-logo{
+  display: none;
+}
 header{
   padding-top: 15px;
+  margin-bottom: 50px;
   .d-flex{
     justify-content: space-between;
   }
@@ -412,3 +421,243 @@ header{
     }
   }
 }
+
+
+/**************************
+home
+**************************/
+.user-details-panel{
+  .d-flex{
+    justify-content: space-between;
+    .user-name{
+      h1{
+        color: $dark-blue;
+        font-size: 28px;
+        line-height: 34px;
+        span{
+          font-size: 22px;
+          line-height: 28px;
+          display: block;
+        }
+      }
+    }
+    .start-learning{
+      justify-content: flex-end;
+      h2{
+        font-size: 22px;
+        line-height: 28px;
+        color: #0e0f22;
+        width: 100px;
+      }
+      .continue-learning-box{
+        width: 70px;
+        height: 70px;
+        border-radius: 16px;
+        background-color: $violet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+      }
+      p{
+        width: 100%;
+        font-size: 14px;
+        color: $text-blue;
+        text-align: right;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.home{
+  .your-course{
+    font-size: 22px;
+    color: $text-blue;
+  }
+  .course-details{
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $maroon;
+    border-radius: 16px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: #fff;
+    .bor{
+      border-left: 1px solid #b82157;
+      border-right: 1px solid #b82157;
+      width: 300px;
+      padding: 0 20px 0 30px;
+    }
+    .course-name{
+     // padding-right: 75px;
+      box-sizing: border-box;
+     min-width: 300px;
+      .course-details-name{
+        h2{
+          font-size: 22px;
+          max-width: 280px;
+        }
+      }
+      .couese-student-name{
+        h2{
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 30px;
+          span{
+            font-size: 22px;
+            display: inline-block;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+// topbox common
+
+.top-box-container{
+  border-radius: 16px;
+  @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+
+  .top-box{
+    justify-content: flex-start;
+    background-color: $dark-blue;
+    color: #fff;
+    border-radius: 16px;
+    padding: 18px 35px;
+    h2{
+      font-size: 24px;
+      line-height: 20px;
+      font-weight: 600;
+      img{
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+    }
+  }
+  .inner-boxes{
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: stretch;
+    .lext-box{
+      background-color: $yellow;
+      border-radius: 16px;
+      padding: 20px;
+      box-sizing: border-box;
+      color: $text-blue;
+      text-transform: uppercase;
+      width: 35%;
+      @include box-shadow( 0 33px 38px rgba(222, 222, 222, .3));
+
+      .select-sem{
+        background-color: transparent;
+        color: $text-blue;
+        font-size: 20px;
+        border: none;
+        font-weight: normal;
+        display: block;
+        font-family: 'Montserrat';
+        -webkit-appearance: none;
+        background-image: url(../../img/arrow-down.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        width: 170px;
+        margin-bottom: 15px;
+        &:focus{
+          outline: none;
+        }
+        option{
+          font-size: 14px;
+          padding: 4px;
+        }
+      }
+      .progess-bar{
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      .semester-points{
+        justify-content: space-between;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        span{
+          display: block;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .right-box{
+      background-color: $maroon;
+      border-radius: 16px;
+      padding: 20px;
+      color: #fff;
+      box-sizing: border-box;
+      width: 62%;
+      justify-content: space-between;
+      align-items: flex-start;
+      @include box-shadow( 0 33px 38px rgba(222, 222, 222, .3));
+      .upcoming-info{
+        width: 45%;
+        .info-heading{
+          font-size: 20px;
+          line-height: 26px;
+        }
+        .mb-20{
+          margin-bottom: 20px;
+        }
+        .mb-10{
+          margin-bottom: 10px;
+        }
+        .info-Details{
+          font-size: 22px;
+          line-height: 36px;
+          font-weight: 600;
+        }
+        .info-discription{
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+      .upcoming-dates{
+        width: 250px;
+        text-align: center;
+        .info-heading{
+          font-size: 20px;
+          line-height: 26px;
+        }
+        .mt-20{
+          margin-top: 20px;
+        }
+        .mb-10{
+          margin-bottom: 10px;
+        }
+        .info-Details{
+          font-size: 22px;
+          line-height: 36px;
+          font-weight: 600;
+        }
+        .info-discription{
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 600;
+        }
+        .info-button{
+          background-color: $yellow;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 12px;
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 22px;
+          line-height: 28px;
+          font-weight: 600;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+// exmas

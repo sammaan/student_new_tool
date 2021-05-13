@@ -1,3 +1,18 @@
 /* Stylesheet for Common Elements */
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 7px;
+  background: #fff;
+}
+
+progress::-webkit-progress-value {
+  background-color: #45a38f;
+  border-radius: 4px;
+}
 
 /*# sourceMappingURL=common.css.map */
