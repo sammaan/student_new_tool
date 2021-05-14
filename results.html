@@ -8,6 +8,10 @@
     <link href="assets/styles/css/font-face.css" rel="stylesheet">
     <link href="assets/styles/css/main.css" rel="stylesheet">
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/scripts/custom.js"></script>
+    
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
 
@@ -26,64 +30,80 @@
                     </a>
                 </div>
                 <ul class="menu-bar">
-                    <li>
-                        <a href="#">
+                    <li class="link-dashboard">
+                        <a href="dashboard.html">
                             <span class="menu-icon"><img src="assets/img/book.png" alt="nav-icon"></span>
                             <span class="menu-text">Dashboard</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-calendar">
+                        <a href="calendar.html">
                             <span class="menu-icon"><img src="assets/img/calendar.png" alt="nav-icon"></span>
-                            <span class="menu-text">Academic calendar</span>
+                            <span class="menu-text">Academic Calendar</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-pay">
+                        <a href="payments.html">
                             <span class="menu-icon"><img src="assets/img/fees.png" alt="nav-icon"></span>
                             <span class="menu-text">Fees</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-assignments">
+                        <a href="assignments.html">
                             <span class="menu-icon"><img src="assets/img/assignment.png" alt="nav-icon"></span>
-                            <span class="menu-text">Assignment</span>
+                            <span class="menu-text">Assignments</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-lab">
+                        <a href="lab.html">
                             <span class="menu-icon"><img src="assets/img/lab.png" alt="nav-icon"></span>
                             <span class="menu-text">Lab</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-projects">
+                        <a href="projects.html">
                             <span class="menu-icon"><img src="assets/img/project.png" alt="nav-icon"></span>
-                            <span class="menu-text">Project</span>
+                            <span class="menu-text">Projects</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-examinations">
+                        <a href="examinations.html">
                             <span class="menu-icon"><img src="assets/img/examniation.png" alt="nav-icon"></span>
-                            <span class="menu-text">Examniation</span>
+                            <span class="menu-text">Examinations</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-results">
+                        <a href="results.html">
                             <span class="menu-icon"><img src="assets/img/result.png" alt="nav-icon"></span>
-                            <span class="menu-text">Result</span>
+                            <span class="menu-text">Results</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="link-courier">
+                        <a href="courier.html">
+                            
                             <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
                             <span class="menu-text">Courier</span>
+                        </a>
+                    </li>
+                    <li class="link-support">
+                        <a href="support.html">
+                            
+                            
+                            <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
+                            <span class="menu-text">Support</span>
+                        </a>
+                    </li>
+                    <li class="link-tickets">
+                        <a href="tickets.html">
+                            <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
+                            <span class="menu-text">Tickets</span>
                         </a>
                     </li>
 
                 </ul>
             </nav>
         </aside>
+        
         <!-- header -->
         <header>
             <div class="mobile-logo" style="display: none;">
@@ -114,16 +134,9 @@
                     </div>
                 </div>
             </div>
-
         </header>
-        <article id="home"></article>
-        <article id="exams"></article>
-        <article id="calendar"></article>
-        <article id="assignments"></article>
-        <article id="projects"></article>
-        <article id="payments"></article>
         <article id="results"></article>
-        <article id="tickets"></article>
+        <footer></footer>
     </main>
 
     <div class="pop-up-bg"></div>
@@ -132,7 +145,6 @@
     <article class="pop-up" id="editProfile"></article>
     <article class="pop-up" id="editProfileEdu"></article>
     <article class="pop-up" id="editProfileExp"></article>
-    <footer></footer>
 </body>
 
 </html>

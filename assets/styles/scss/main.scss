@@ -137,6 +137,7 @@ section {
 body {
   line-height: 1.6;
   font-family: 'Montserrat';
+  background: #f7f9fa;
 }
 
 ol,
@@ -176,11 +177,39 @@ table {
   margin-left: 110px;
   padding: 0 60px;
   box-sizing: border-box;
-
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  
   .side-bar {
     position: absolute;
     top: 0;
     left: 0;
+    background: #f7f9fa;
+    height: 100vh;
+    overflow-y: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f7f9fa;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #f7f9fa;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
   }
 }
 
@@ -224,7 +253,6 @@ table {
   }
 
   .menu-bar {
-
     li {
       a {
         display: flex;
@@ -260,6 +288,17 @@ table {
         }
 
         &:hover {
+          .menu-icon {
+            background-color: $violet;
+
+            img {
+              filter: brightness(10);
+            }
+          }
+        }
+      }
+      &.active{
+        a{
           .menu-icon {
             background-color: $violet;
 
