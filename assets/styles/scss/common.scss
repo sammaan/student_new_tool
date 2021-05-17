@@ -7,6 +7,66 @@ $book-color: #b143d6;
 $check-color: #47d4a4;
 $circle-color: #f11a1a;
 $modal:#fff;
+$label-color: #0b0984;
+$form-border: #dee5ea;
+$input-color: #6487b1;
+$reset-button: #f4365c;
+$save-button:#5e72e3;
+$close-button: #f1f4f7;
+$resolve-button: #afeed3;
+$resolve-color:#44bf89;
+$button-color: #fff;
+$close-btn-color: #000;
+$input-disabled: #e8ecef;
+ /****************************
+button space
+ *****************************/
+%btn {
+    padding: 13px 21px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-4px) scale(1.02);
+    -moz-transform: translateY(-4px) scale(1.02);
+    -ms-transform: translateY(-4px) scale(1.02);
+    -o-transform: translateY(-4px) scale(1.02);
+    transform: translateY(-4px) scale(1.02);
+    &:hover {
+        -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translateY(-3px) scale(1.02);
+        -moz-transform: translateY(-3px) scale(1.02);
+        -ms-transform: translateY(-3px) scale(1.02);
+        -o-transform: translateY(-3px) scale(1.02);
+        transform: translateY(-3px) scale(1.02);
+    }
+}
+ /****************************
+ form Space label and Form Control
+ *****************************/
+ %form {
+    padding: 1px 0px;
+    margin: 10px 5px;
+    label {
+        font-weight: 500;
+        font-size: 15px;
+        color: $label-color;
+    }
+    .form-control {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 6px;
+        box-sizing: border-box;
+        color: $input-color;
+        padding: 13px 11px;
+        display: block;
+        border-radius: 4px;
+        width: 100%;
+        border:2px solid $form-border;
+    }
+ }
 /****************************
  Table Page Container
  *****************************/
@@ -129,21 +189,123 @@ td, th {
     }
 }
 /****************************
+Input Disabled
+ *****************************/
+input:disabled {
+    background: $input-disabled;
+}
+/****************************
 Modal
  *****************************/
  .modal {
-     padding: 12px 15px;
      background-color: $modal;
      header {
         padding:0px;
         border-bottom: 1px solid $border;
         h3 {
-            color: #494876;
+            color: #5f5d98;
             font-size: 17px;
-            font-weight: 500;
+            font-weight: 600;
+            padding: 14px 20px;
             .fas {
                 float: right;
+                cursor: pointer;
             }
          }
      }
+     .modal-body {
+        padding: 20px 20px;
+        h4 {
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #2d587d;
+            font-weight: 500;
+            margin: 9px 0px 19px;
+        }
+        p {
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #98a4ee;
+        }
+        h5 {
+            font-size: 17px;
+            color: #70718f;
+            font-weight: 600;
+        }
+        .d-flex {
+            align-items: end;
+            justify-content: flex-start;
+            >.form-group-left {
+                
+                width: 40%;
+            }
+            >.form-group-right {
+                
+                width: 60%;
+            }
+            >.form-group {
+                width: 50%;
+               .d-flex {
+                align-items: flex-end;
+               }
+            }
+        }
+        .form {
+            @extend %form;
+        }
+        .resolve-btn {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 9px 17px;
+            border-radius: 54px;
+            border: none;
+            color: $resolve-color;
+            background-color: $resolve-button;
+            cursor: pointer;
+        }
+     }
+     footer {
+        padding: 20px 12px;
+         .d-flex {
+             justify-content: flex-end;
+             >.button-space-left {
+                margin: 0px 12px;
+             }
+             >.button-space-right {
+                margin: 0px 12px;
+             }
+             .form {
+                width: 100%;
+                @extend %form;
+            }
+            .reset-btn {
+                @extend %btn;
+                color: $button-color;
+                background-color: $reset-button;
+                cursor: pointer;
+            }
+            .save-btn {
+                @extend %btn;
+                color: $button-color;
+                background-color: $save-button;
+                cursor: pointer;
+            }
+            .close-btn {
+                @extend %btn;
+                color: $close-btn-color;
+                background-color: $close-button;
+                cursor: pointer;
+                border: 1px solid #dfe9f3;
+            }
+         }
+     }
+ }
+ /****************************
+ Address Border in Popup
+ *****************************/
+ .address-border {
+    margin: 29px 0px;
+    border-top: 1px solid $form-border;
  }
