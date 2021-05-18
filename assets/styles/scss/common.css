@@ -48,6 +48,44 @@ button space
   border: 2px solid #dee5ea;
 }
 
+.modal .modal-body .form ::-webkit-input-placeholder, .modal footer .d-flex .form ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form :-ms-input-placeholder, .modal footer .d-flex .form :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form ::-ms-input-placeholder, .modal footer .d-flex .form ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form ::placeholder, .modal footer .d-flex .form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form :-ms-input-placeholder, .modal footer .d-flex .form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6487b1;
+}
+
+.modal .modal-body .form ::-ms-input-placeholder, .modal footer .d-flex .form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6487b1;
+}
+
 /****************************
  Table Page Container
  *****************************/
@@ -160,6 +198,7 @@ td, th {
 .support ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  position: relative;
 }
 
 .support ul li {
@@ -173,7 +212,11 @@ td, th {
 }
 
 .support ul li:last-child {
-  margin-left: -12px;
+  padding: 7px 7px;
+  width: 18px;
+  top: -6px;
+  right: 26px;
+  position: absolute;
 }
 
 .support .user1 {
@@ -196,7 +239,7 @@ input:disabled {
 
 /****************************
 Modal
- *****************************/
+*****************************/
 .modal {
   background-color: #fff;
 }
@@ -214,6 +257,7 @@ Modal
 }
 
 .modal header h3 .fas {
+  color: #000;
   float: right;
   cursor: pointer;
 }
@@ -329,5 +373,14 @@ Modal
 .address-border {
   margin: 29px 0px;
   border-top: 1px solid #dee5ea;
+}
+
+/****************************
+Media Query
+ *****************************/
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=common.css.map */

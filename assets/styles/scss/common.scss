@@ -7,6 +7,7 @@ $book-color: #b143d6;
 $check-color: #47d4a4;
 $circle-color: #f11a1a;
 $modal:#fff;
+// (Form Colors)
 $label-color: #0b0984;
 $form-border: #dee5ea;
 $input-color: #6487b1;
@@ -18,6 +19,10 @@ $resolve-color:#44bf89;
 $button-color: #fff;
 $close-btn-color: #000;
 $input-disabled: #e8ecef;
+// Media Queries
+$breakpoint-tablet: 768px;
+$breakpoint-smallphone:320px;
+$breakpoint-phone:700px;
  /****************************
 button space
  *****************************/
@@ -65,6 +70,16 @@ button space
         border-radius: 4px;
         width: 100%;
         border:2px solid $form-border;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $input-color;
+        opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $input-color;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $input-color;
     }
  }
 /****************************
@@ -165,6 +180,7 @@ td, th {
     }
     ul {
         padding-inline-start: 0px;
+        position: relative;
         li {
             font-size: 11px;
             display: inline;
@@ -174,7 +190,11 @@ td, th {
             width: 16px;
             text-align: center;
             &:last-child {
-                margin-left: -12px;
+                padding: 7px 7px;
+                width: 18px;
+                top: -6px;
+                right: 26px;
+                position: absolute;
             }
         }
     }
@@ -196,7 +216,7 @@ input:disabled {
 }
 /****************************
 Modal
- *****************************/
+*****************************/
  .modal {
      background-color: $modal;
      header {
@@ -208,6 +228,7 @@ Modal
             font-weight: 600;
             padding: 14px 20px;
             .fas {
+                color: #000;
                 float: right;
                 cursor: pointer;
             }
@@ -309,3 +330,20 @@ Modal
     margin: 29px 0px;
     border-top: 1px solid $form-border;
  }
+ /****************************
+Media Query
+ *****************************/
+@media (min-device-width: $breakpoint-smallphone) and (max-device-width: $breakpoint-phone) {
+    .modal {
+        .modal-body {
+           .d-flex {
+               .form-group, .form-group-left, .form-group-right {
+                   width: 100%;
+               }
+           }
+       } 
+    }
+}
+@media (min-width: $breakpoint-tablet) {
+   
+}
