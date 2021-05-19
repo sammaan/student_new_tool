@@ -324,7 +324,7 @@ progress {
   width: 100%;
   border: none;
   width: 100px;
-  height: 7px;
+  height: 4px;
   background: #fff;
 }
 
@@ -596,6 +596,26 @@ table {
   height: 172px;
   overflow-y: scroll;
   padding: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #993d90;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /****************************
@@ -878,7 +898,7 @@ Dashboard
 .dashboard-top-bpx .course-details-panel .dash-support .tickets {
   background-color: #f8c145;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
   box-sizing: border-box;
   color: #0e0f22;
   text-transform: uppercase;
@@ -893,7 +913,7 @@ Dashboard
 }
 .dashboard-top-bpx .course-details-panel .dash-support .tickets .progess-bar {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points {
   justify-content: space-between;
@@ -943,7 +963,7 @@ Dashboard
   font-size: 20px;
   line-height: 26px;
   color: #0e0f22;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-post {
   font-size: 11px;
@@ -1004,7 +1024,7 @@ Dashboard
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee {
   background-color: #f8c145;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
   box-sizing: border-box;
   color: #0e0f22;
   text-transform: uppercase;

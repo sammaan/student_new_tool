@@ -315,6 +315,29 @@ table {
   }
 }
 
+// scroll style
+
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f7f9fa;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $violet;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
 /****************************
  Navigation
  *****************************/
@@ -672,7 +695,7 @@ Dashboard
       .tickets {
         background-color: $yellow;
         border-radius: 16px;
-        padding: 20px;
+        padding: 15px;
         box-sizing: border-box;
         color: $text-blue;
         text-transform: uppercase;
@@ -685,7 +708,7 @@ Dashboard
         }
         .progess-bar {
           width: 100%;
-          margin-bottom: 25px;
+          margin-bottom: 10px;
         }
   
         .semester-points {
@@ -740,7 +763,7 @@ Dashboard
           font-size: 20px;
           line-height: 26px;
           color: $text-blue;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
           
         }
         .contact-persone-post{
@@ -810,7 +833,7 @@ Dashboard
       .course-fee {
         background-color: $yellow;
         border-radius: 16px;
-        padding: 20px;
+        padding: 15px;
         box-sizing: border-box;
         color: $text-blue;
         text-transform: uppercase;
