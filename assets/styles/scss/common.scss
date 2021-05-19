@@ -323,6 +323,25 @@ Modal
          }
      }
  }
+ /************************
+ Radio Button
+ ***********************/
+.radio-inline {
+    margin-top: 17px;
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/**************
+Date Input
+***************/
+input[type="date" i], input[type="file" i] { 
+    padding: 11px !important;
+}
  /****************************
  Address Border in Popup
  *****************************/
@@ -343,10 +362,6 @@ Media Query
            }
        } 
     }
-}
-}
-@media (min-width: $breakpoint-tablet) {
-   
 }
 
 // style for progess bar

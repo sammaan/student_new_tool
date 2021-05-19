@@ -367,6 +367,27 @@ Modal
   border: 1px solid #dfe9f3;
 }
 
+/************************
+ Radio Button
+ ***********************/
+.radio-inline {
+  margin-top: 17px;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/**************
+Date Input
+***************/
+input[type="date" i], input[type="file" i] {
+  padding: 11px !important;
+}
+
 /****************************
  Address Border in Popup
  *****************************/
@@ -382,5 +403,21 @@ Media Query
   .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
     width: 100%;
   }
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 4px;
+  background: #fff;
+}
+
+progress::-webkit-progress-value {
+  background-color: #45a38f;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=common.css.map */

@@ -1,341 +1,7 @@
-/* Stylesheet for Common Elements */
-/****************************
-button space
- *****************************/
-.modal footer .d-flex .close-btn, .modal footer .d-flex .save-btn, .modal footer .d-flex .reset-btn {
-  padding: 13px 21px;
-  border: none;
-  border-radius: 4px;
-  font-size: 15px;
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(-4px) scale(1.02);
-  -moz-transform: translateY(-4px) scale(1.02);
-  -ms-transform: translateY(-4px) scale(1.02);
-  -o-transform: translateY(-4px) scale(1.02);
-  transform: translateY(-4px) scale(1.02);
-}
-.modal footer .d-flex .close-btn:hover, .modal footer .d-flex .save-btn:hover, .modal footer .d-flex .reset-btn:hover {
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(-3px) scale(1.02);
-  -moz-transform: translateY(-3px) scale(1.02);
-  -ms-transform: translateY(-3px) scale(1.02);
-  -o-transform: translateY(-3px) scale(1.02);
-  transform: translateY(-3px) scale(1.02);
-}
-
-/****************************
-form Space label and Form Control
-*****************************/
-.modal footer .d-flex .form, .modal .modal-body .form {
-  padding: 1px 0px;
-  margin: 10px 5px;
-}
-.modal footer .d-flex .form label, .modal .modal-body .form label {
-  font-weight: 500;
-  font-size: 15px;
-  color: #0b0984;
-}
-.modal footer .d-flex .form .form-control, .modal .modal-body .form .form-control {
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 6px;
-  box-sizing: border-box;
-  color: #6487b1;
-  padding: 13px 11px;
-  display: block;
-  border-radius: 4px;
-  width: 100%;
-  border: 2px solid #dee5ea;
-}
-.modal footer .d-flex .form ::placeholder, .modal .modal-body .form ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #6487b1;
-  opacity: 1;
-  /* Firefox */
-}
-.modal footer .d-flex .form :-ms-input-placeholder, .modal .modal-body .form :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #6487b1;
-}
-.modal footer .d-flex .form ::-ms-input-placeholder, .modal .modal-body .form ::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #6487b1;
-}
-
-/****************************
- Table Page Container
- *****************************/
-.container {
-  padding: 12px 15px;
-}
-
-/****************************
-bold font weight
-*****************************/
-b {
-  font-weight: 600;
-  color: #9a98a7;
-}
-
-/****************************
-
-Table responive css
-*****************************/
-.responsive-table {
-  width: 100%;
-  overflow-x: auto;
-}
-.responsive-table table {
-  text-align: left;
-}
-.responsive-table table thead {
-  font-weight: 500;
-  font-size: 13px;
-  background-color: #f5f9fc;
-  color: #bab6c6;
-  text-transform: uppercase;
-}
-.responsive-table table tbody {
-  font-size: 13px;
-  color: #918e98;
-}
-.responsive-table table tbody .fas {
-  margin-right: 3px;
-}
-
-/****************************
-Table th td css
-*****************************/
-th {
-  justify-content: center;
-}
-
-td, th {
-  font-weight: 500;
-  border-bottom: 1px solid #f4f5f7;
-  border-top: 1px solid #f4f5f7;
-  padding: 12px 25px;
-}
-
-/****************************
-font awsome color
-*****************************/
-.fa-book:before {
-  color: #b143d6;
-}
-
-.fa-check:before {
-  color: #47d4a4;
-}
-
-.fa-circle {
-  font-size: 8px;
-}
-.fa-circle:before {
-  color: #f11a1a;
-}
-
-/****************************
-assignment tr width
-*****************************/
-.assignment tr > *:nth-child(1) {
-  width: 48%;
-}
-.assignment tr > *:nth-child(2) {
-  width: 20%;
-}
-.assignment tr > *:nth-child(3), .assignment tr > *:nth-child(4) {
-  width: 16%;
-}
-
-/****************************
- Result Table
- *****************************/
-.results {
-  border: 1px solid #f4f5f7;
-}
-
-/****************************
- Support Table
- *****************************/
-.support a {
-  text-decoration: none;
-}
-.support ul {
-  padding-inline-start: 0px;
-  position: relative;
-}
-.support ul li {
-  font-size: 11px;
-  display: inline;
-  padding: 8px 8px;
-  border-radius: 50%;
-  font-weight: 600;
-  width: 16px;
-  text-align: center;
-}
-.support ul li:last-child {
-  padding: 7px 7px;
-  width: 18px;
-  top: -6px;
-  right: 26px;
-  position: absolute;
-}
-.support .user1 {
-  background-color: #df3ff8;
-  color: #000;
-}
-.support .user2 {
-  border: 1px solid #fff;
-  background-color: #014d40;
-  color: #fff;
-}
-
-/****************************
-Input Disabled
- *****************************/
-input:disabled {
-  background: #e8ecef;
-}
-
-/****************************
-Modal
-*****************************/
-.modal {
-  background-color: #fff;
-}
-.modal header {
-  padding: 0px;
-  border-bottom: 1px solid #f4f5f7;
-}
-.modal header h3 {
-  color: #5f5d98;
-  font-size: 17px;
-  font-weight: 600;
-  padding: 14px 20px;
-}
-.modal header h3 .fas {
-  color: #000;
-  float: right;
-  cursor: pointer;
-}
-.modal .modal-body {
-  padding: 20px 20px;
-}
-.modal .modal-body h4 {
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #2d587d;
-  font-weight: 500;
-  margin: 9px 0px 19px;
-}
-.modal .modal-body p {
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #98a4ee;
-}
-.modal .modal-body h5 {
-  font-size: 17px;
-  color: #70718f;
-  font-weight: 600;
-}
-.modal .modal-body .d-flex {
-  align-items: end;
-  justify-content: flex-start;
-}
-.modal .modal-body .d-flex > .form-group-left {
-  width: 40%;
-}
-.modal .modal-body .d-flex > .form-group-right {
-  width: 60%;
-}
-.modal .modal-body .d-flex > .form-group {
-  width: 50%;
-}
-.modal .modal-body .d-flex > .form-group .d-flex {
-  align-items: flex-end;
-}
-.modal .modal-body .resolve-btn {
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 9px 17px;
-  border-radius: 54px;
-  border: none;
-  color: #44bf89;
-  background-color: #afeed3;
-  cursor: pointer;
-}
-.modal footer {
-  padding: 20px 12px;
-}
-.modal footer .d-flex {
-  justify-content: flex-end;
-}
-.modal footer .d-flex > .button-space-left {
-  margin: 0px 12px;
-}
-.modal footer .d-flex > .button-space-right {
-  margin: 0px 12px;
-}
-.modal footer .d-flex .form {
-  width: 100%;
-}
-.modal footer .d-flex .reset-btn {
-  color: #fff;
-  background-color: #f4365c;
-  cursor: pointer;
-}
-.modal footer .d-flex .save-btn {
-  color: #fff;
-  background-color: #5e72e3;
-  cursor: pointer;
-}
-.modal footer .d-flex .close-btn {
-  color: #000;
-  background-color: #f1f4f7;
-  cursor: pointer;
-  border: 1px solid #dfe9f3;
-}
-
-/****************************
-Address Border in Popup
-*****************************/
-.address-border {
-  margin: 29px 0px;
-  border-top: 1px solid #dee5ea;
-}
-
-/****************************
-Media Query
- *****************************/
-@media (min-device-width: 320px) and (max-device-width: 700px) {
-  .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
-    width: 100%;
-  }
-}
-progress {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  border: none;
-  width: 100px;
-  height: 4px;
-  background: #fff;
-}
-
-progress::-webkit-progress-value {
-  background-color: #45a38f;
-  border-radius: 4px;
-}
-
-/* Stylesheet for Custom Elements */
 /* Main Stylesheet */
-.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn, .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn, .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn {
+@use 'common';
+@use 'custom';
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn, .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn, .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn {
   font-size: 11px;
   color: #fff;
   border-radius: 50px;
@@ -454,7 +120,7 @@ section {
 
 body {
   line-height: 1.6;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   background: #f7f9fa;
 }
 
@@ -472,7 +138,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -482,10 +148,17 @@ table {
 }
 
 .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /****************************
@@ -495,13 +168,15 @@ table {
   width: calc(100% - 110px);
   margin-left: 110px;
   padding: 0 60px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #fff;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   height: 100vh;
   overflow-y: auto;
 }
+
 .full-body-width .side-bar {
   position: absolute;
   top: 0;
@@ -514,48 +189,64 @@ table {
   /* Handle */
   /* Handle on hover */
 }
+
 .full-body-width .side-bar::-webkit-scrollbar {
   width: 3px;
 }
+
 .full-body-width .side-bar::-webkit-scrollbar-track {
   background: #f7f9fa;
 }
+
 .full-body-width .side-bar::-webkit-scrollbar-thumb {
   background: #f7f9fa;
 }
+
 .full-body-width .side-bar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 .one-column {
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 20px;
 }
+
 .one-column .dashboard-box-container {
   width: 100%;
   border-radius: 16px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .one-column .dashboard-box-container .top-box {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #1d354b;
   height: 100px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #fff;
   border-radius: 16px;
   padding: 18px 35px;
 }
+
 .one-column .dashboard-box-container .top-box h2 {
   font-size: 24px;
   line-height: 20px;
   font-weight: 600;
 }
+
 .one-column .dashboard-box-container .top-box h2 img {
   vertical-align: middle;
   margin-right: 20px;
 }
+
 .one-column .dashboard-box-container .inner-boxes {
   height: 172px;
   overflow-y: scroll;
@@ -563,10 +254,15 @@ table {
 }
 
 .two-column {
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 20px;
 }
+
 .two-column .dashboard-box-container {
   width: 48%;
   border-radius: 16px;
@@ -574,24 +270,31 @@ table {
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .two-column .dashboard-box-container .top-box {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #1d354b;
   height: 100px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #fff;
   border-radius: 16px;
   padding: 18px 35px;
 }
+
 .two-column .dashboard-box-container .top-box h2 {
   font-size: 20px;
   line-height: 26px;
   font-weight: 400;
 }
+
 .two-column .dashboard-box-container .top-box h2 img {
   vertical-align: middle;
   margin-right: 20px;
 }
+
 .two-column .dashboard-box-container .inner-boxes {
   height: 172px;
   overflow-y: scroll;
@@ -625,56 +328,78 @@ table {
   padding: 15px;
   background-color: #f7f9fa;
   width: 110px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-transition-property: width;
   transition-property: width;
 }
+
 .side-bar .logo a {
   margin-bottom: 25px;
   display: block;
   text-decoration: none;
   overflow: hidden;
 }
+
 .side-bar .logo a img {
   width: 80px;
   height: 80px;
   vertical-align: middle;
 }
+
 .side-bar .logo a .university-name {
   margin-left: 20px;
   font-size: 24px;
   line-height: 30px;
   color: #0e0f22;
   width: 0px;
+  -webkit-transition-property: width;
   transition-property: width;
   overflow: hidden;
   display: none;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
+
 .side-bar .menu-bar li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   margin-bottom: 20px;
   text-decoration: none;
   padding-left: 15px;
   color: #0e0f22;
 }
+
 .side-bar .menu-bar li a .menu-icon {
   width: 52px;
   height: 52px;
   background-color: #fff;
   border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
+
 .side-bar .menu-bar li a .menu-text {
   margin-left: 20px;
   font-size: 18px;
@@ -682,30 +407,40 @@ table {
   font-weight: 500;
   overflow: hidden;
   width: 0;
+  -webkit-transition-property: width;
   transition-property: width;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
+
 .side-bar .menu-bar li a:hover .menu-icon {
   background-color: #993d90;
 }
+
 .side-bar .menu-bar li a:hover .menu-icon img {
-  filter: brightness(10);
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
 }
+
 .side-bar .menu-bar li.active a .menu-icon {
   background-color: #993d90;
 }
+
 .side-bar .menu-bar li.active a .menu-icon img {
-  filter: brightness(10);
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
 }
+
 .side-bar:hover {
   width: 370px;
   border-radius: 0 16px 16px 0;
 }
+
 .side-bar:hover .logo a .university-name {
   width: auto;
   display: inline-block;
 }
+
 .side-bar:hover .menu-bar li a .menu-text {
   width: auto;
 }
@@ -721,22 +456,33 @@ header {
   padding-top: 15px;
   margin-bottom: 50px;
 }
+
 header .d-flex {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 header .header-left.d-flex .fit-to-screen {
   width: 48px;
   height: 48px;
   border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #993d90;
   color: #fff;
   font-size: 25px;
   margin-right: 30px;
   cursor: pointer;
 }
+
 header .header-left.d-flex .search-bar .search-input {
   width: 172px;
   height: 48px;
@@ -747,80 +493,115 @@ header .header-left.d-flex .search-bar .search-input {
   font-size: 16px;
   color: #4a4c5d;
 }
+
 header .header-left.d-flex .search-bar .search-input:focus {
   outline: none;
 }
+
 header .header-right.d-flex .header-icon {
   width: 48px;
   height: 48px;
   border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f8fafb;
   margin-left: 30px;
   cursor: pointer;
 }
+
 header .header-right.d-flex .user-details {
   background-color: #f8fafb;
   margin-left: 30px;
   border-radius: 16px;
   padding: 0 10px 0 0;
 }
+
 header .header-right.d-flex .user-details img {
   vertical-align: middle;
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
+
 header .header-right.d-flex .logout {
   margin-left: 30px;
   cursor: pointer;
   width: 48px;
   height: 48px;
   border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /**************************
 Dashboard
 **************************/
 .user-details-panel .d-flex {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .user-details-panel .d-flex .user-name h1 {
   color: #1d354b;
   font-size: 28px;
   line-height: 34px;
 }
+
 .user-details-panel .d-flex .user-name h1 span {
   font-size: 22px;
   line-height: 28px;
   display: block;
 }
+
 .user-details-panel .d-flex .start-learning {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .user-details-panel .d-flex .start-learning h2 {
   font-size: 22px;
   line-height: 28px;
   color: #0e0f22;
   width: 100px;
 }
+
 .user-details-panel .d-flex .start-learning .continue-learning-box {
   width: 70px;
   height: 70px;
   border-radius: 16px;
   background-color: #993d90;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 30px;
 }
+
 .user-details-panel .d-flex .start-learning p {
   width: 100%;
   font-size: 14px;
@@ -833,48 +614,67 @@ Dashboard
   font-size: 22px;
   color: #0e0f22;
 }
+
 .dashboard-top-bpx .course-details {
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #b1113e;
   border-radius: 16px;
   padding: 20px 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #fff;
 }
+
 .dashboard-top-bpx .course-details .bor {
   border-left: 1px solid #b82157;
   border-right: 1px solid #b82157;
   width: 300px;
   padding: 0 20px 0 30px;
 }
+
 .dashboard-top-bpx .course-details .course-name {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 300px;
 }
+
 .dashboard-top-bpx .course-details .course-name .course-details-name h2 {
   font-size: 22px;
   max-width: 280px;
 }
+
 .dashboard-top-bpx .course-details .course-name .couese-student-name h2 {
   font-size: 14px;
   font-weight: 600;
   line-height: 30px;
 }
+
 .dashboard-top-bpx .course-details .course-name .couese-student-name h2 span {
   font-size: 22px;
   display: inline-block;
   font-weight: 600;
 }
+
 .dashboard-top-bpx .course-details-panel {
   padding: 50px 25px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
 .dashboard-top-bpx .course-details-panel .inner-boxes {
-  justify-content: space-between;
-  align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
+
 .dashboard-top-bpx .course-details-panel .semester-status {
   -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
   box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
@@ -882,102 +682,139 @@ Dashboard
   padding: 18px;
   border-radius: 16px;
   margin-bottom: 8px;
-  box-sizing: border-box;
-  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
 }
+
 .dashboard-top-bpx .course-details-panel .semester-status:hover {
   -webkit-box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
   box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
   position: relative;
   z-index: 3;
 }
+
 .dashboard-top-bpx .course-details-panel .semester-status h3 img {
   vertical-align: middle;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .tickets {
   background-color: #f8c145;
   border-radius: 16px;
   padding: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #0e0f22;
   text-transform: uppercase;
   width: 55%;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .tickets h3 {
   margin-bottom: 10px;
   font-size: 20px;
   color: #0e0f22;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .tickets .progess-bar {
   width: 100%;
   margin-bottom: 10px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points span {
   display: block;
   font-size: 16px;
   line-height: 22px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support {
   background-color: #fbfbfb;
   border-radius: 16px;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #0e0f22;
   width: 43%;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 15px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status .profile {
   background-color: #bbb8b8;
   height: 45px;
   width: 45px;
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status .profile span {
   color: #0e0f22;
   font-size: 26px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status .status span {
   color: #027e0e;
   font-size: 12px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-name {
   font-size: 20px;
   line-height: 26px;
   color: #0e0f22;
   margin-bottom: 5px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-post {
   font-size: 11px;
   line-height: 17px;
   color: #0e0f22;
   margin-bottom: 10px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn {
   background-color: #0e0f22;
   color: #fff;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification {
   -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
   box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
@@ -985,90 +822,116 @@ Dashboard
   padding: 18px;
   border-radius: 16px;
   margin-bottom: 8px;
-  box-sizing: border-box;
-  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification:hover {
   -webkit-box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
   box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
   position: relative;
   z-index: 3;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification h3 {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 5px;
   color: #0e0f22;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification h3 strong {
   font-weight: 600;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification h3 img {
   vertical-align: middle;
   margin-right: 10px;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .date {
   font-size: 14px;
   line-height: 20px;
   color: #0e0f22;
   margin-right: 20px;
 }
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn {
   background-color: #b1113e;
   color: #fff;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee {
   background-color: #f8c145;
   border-radius: 16px;
   padding: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #0e0f22;
   text-transform: uppercase;
   width: 58%;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee h3 {
   margin-bottom: 20px;
   font-size: 20px;
   color: #0e0f22;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .progess-bar {
   width: 100%;
   margin-bottom: 25px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points span {
   display: block;
   font-size: 12px;
   line-height: 22px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment {
   background-color: #b1113e;
   border-radius: 16px;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #0e0f22;
   width: 40%;
   color: #fff;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment h3 {
   margin-bottom: 20px;
   font-size: 20px;
   text-transform: uppercase;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .payment-amount {
   font-size: 28px;
   line-height: 34px;
@@ -1076,6 +939,7 @@ Dashboard
   font-weight: 600;
   margin-bottom: 5px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn {
   background-color: #f8c145;
   font-size: 14px;
@@ -1083,6 +947,7 @@ Dashboard
   padding: 2px 14px;
   margin-bottom: 10px;
 }
+
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .due-date {
   font-size: 12px;
   font-weight: 600;
@@ -1093,39 +958,53 @@ Dashboard
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .top-box-container .top-box {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #1d354b;
   color: #fff;
   border-radius: 16px;
   padding: 18px 35px;
 }
+
 .top-box-container .top-box h2 {
   font-size: 24px;
   line-height: 20px;
   font-weight: 600;
 }
+
 .top-box-container .top-box h2 img {
   vertical-align: middle;
   margin-right: 20px;
 }
+
 .top-box-container .inner-boxes {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px 30px;
-  align-items: stretch;
-  box-sizing: border-box;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .top-box-container .inner-boxes .left-box {
   background-color: #f8c145;
   border-radius: 16px;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #0e0f22;
   text-transform: uppercase;
   width: 35%;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .top-box-container .inner-boxes .left-box .select-sem {
   background-color: transparent;
   color: #0e0f22;
@@ -1133,7 +1012,7 @@ Dashboard
   border: none;
   font-weight: normal;
   display: block;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   -webkit-appearance: none;
   background-image: url(../../img/arrow-down.png);
   background-position: center right;
@@ -1141,87 +1020,113 @@ Dashboard
   width: 170px;
   margin-bottom: 15px;
 }
+
 .top-box-container .inner-boxes .left-box .select-sem:focus {
   outline: none;
 }
+
 .top-box-container .inner-boxes .left-box .select-sem option {
   font-size: 14px;
   padding: 4px;
 }
+
 .top-box-container .inner-boxes .left-box .progess-bar {
   width: 100%;
   margin-bottom: 25px;
 }
+
 .top-box-container .inner-boxes .left-box .semester-points {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
 }
+
 .top-box-container .inner-boxes .left-box .semester-points span {
   display: block;
   font-size: 16px;
   line-height: 22px;
 }
+
 .top-box-container .inner-boxes .right-box {
   background-color: #b1113e;
   border-radius: 16px;
   padding: 20px;
   color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 62%;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-info {
   width: 45%;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-info .info-heading {
   font-size: 20px;
   line-height: 26px;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-info .mb-20 {
   margin-bottom: 20px;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-info .mb-10 {
   margin-bottom: 10px;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-info .info-Details {
   font-size: 22px;
   line-height: 36px;
   font-weight: 600;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-info .info-discription {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates {
   width: 250px;
   text-align: center;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates .info-heading {
   font-size: 20px;
   line-height: 26px;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates .mt-20 {
   margin-top: 20px;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates .mb-10 {
   margin-bottom: 10px;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates .info-Details {
   font-size: 22px;
   line-height: 36px;
   font-weight: 600;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates .info-discription {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
 }
+
 .top-box-container .inner-boxes .right-box .upcoming-dates .info-button {
   background-color: #f8c145;
   color: #fff;
@@ -1234,5 +1139,4 @@ Dashboard
   font-weight: 600;
   margin-top: 10px;
 }
-
 /*# sourceMappingURL=main.css.map */
