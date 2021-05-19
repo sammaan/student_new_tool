@@ -1,3 +1,174 @@
+@media (max-width: 1199px) {
+  .full-body-width {
+    padding: 0 20px;
+  }
 
+  .top-box-container .inner-boxes .left-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .top-box-container .inner-boxes .right-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .two-column .dashboard-box-container .top-box {
+    height: 85px;
+  }
+
+  .dashboard-top-bpx .course-details .course-name {
+    width: 33%;
+    min-width: auto;
+    border: none;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee h3 {
+    font-size: 16px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points {
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment h3 {
+    font-size: 16px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .payment-amount {
+    font-size: 22px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .tickets {
+    padding: 15px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .tickets h3 {
+    font-size: 16px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points {
+    font-size: 26px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-name {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .two-column .dashboard-box-container {
+    width: 100%;
+  }
+
+  .user-details-panel .d-flex .user-name {
+    width: 60%;
+  }
+  .user-details-panel .d-flex .user-name h1 {
+    font-size: 22px;
+  }
+  .user-details-panel .d-flex .user-name h1 span {
+    font-size: 18px;
+  }
+  .user-details-panel .d-flex .start-learning {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .full-body-width {
+    width: calc(100% - 0px);
+    margin-left: 0px;
+  }
+
+  .side-bar {
+    padding: 0;
+    width: 0;
+  }
+
+  .top-box-container .top-box h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .top-box-container .top-box h2 img {
+    width: 30px;
+    margin-right: 6px;
+  }
+  .top-box-container .inner-boxes {
+    padding: 20px;
+  }
+  .top-box-container .inner-boxes .left-box .select-sem {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-box-container .inner-boxes .left-box .progess-bar {
+    margin-bottom: 10px;
+  }
+  .top-box-container .inner-boxes .left-box .semester-points {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-box-container .inner-boxes .left-box .semester-points span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info {
+    width: 100%;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info .mb-20 {
+    margin-bottom: 9px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info .info-heading {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-info .info-Details {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-dates .mt-20 {
+    margin-top: 40px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-dates .info-heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-box-container .inner-boxes .right-box .upcoming-dates .info-button {
+    font-size: 18px;
+  }
+
+  .user-details-panel .d-flex .user-name {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .user-details-panel .d-flex .start-learning {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .user-details-panel .d-flex .start-learning p {
+    text-align: left;
+  }
+
+  .dashboard-top-bpx .course-details .course-name {
+    width: 100%;
+    min-width: auto;
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .dashboard-top-bpx .course-details-panel {
+    padding: 25px 0px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .tickets {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support {
+    width: 100%;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

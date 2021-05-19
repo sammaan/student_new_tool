@@ -344,3 +344,25 @@ Media Query
        } 
     }
 }
+}
+@media (min-width: $breakpoint-tablet) {
+   
+}
+
+// style for progess bar
+progress {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+          width: 100%;
+      border: none;
+      width: 100px;
+      height: 4px;
+      background: #fff;
+    }
+  
+    
+    progress::-webkit-progress-value {
+      background-color: #45a38f;
+      border-radius: 4px;
+    }
