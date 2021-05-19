@@ -1,4 +1,352 @@
 /* Stylesheet for Common Elements */
+$th-text: #bab6c6;
+$td-text: #918e98;
+$background: #f5f9fc;
+$border: #f4f5f7;
+$book-color: #b143d6;
+$check-color: #47d4a4;
+$circle-color: #f11a1a;
+$modal:#fff;
+// (Form Colors)
+$label-color: #0b0984;
+$form-border: #dee5ea;
+$input-color: #6487b1;
+$reset-button: #f4365c;
+$save-button:#5e72e3;
+$close-button: #f1f4f7;
+$resolve-button: #afeed3;
+$resolve-color:#44bf89;
+$button-color: #fff;
+$close-btn-color: #000;
+$input-disabled: #e8ecef;
+// Media Queries
+$breakpoint-tablet: 768px;
+$breakpoint-smallphone:320px;
+$breakpoint-phone:700px;
+ /****************************
+button space
+ *****************************/
+%btn {
+    padding: 13px 21px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-4px) scale(1.02);
+    -moz-transform: translateY(-4px) scale(1.02);
+    -ms-transform: translateY(-4px) scale(1.02);
+    -o-transform: translateY(-4px) scale(1.02);
+    transform: translateY(-4px) scale(1.02);
+    &:hover {
+        -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translateY(-3px) scale(1.02);
+        -moz-transform: translateY(-3px) scale(1.02);
+        -ms-transform: translateY(-3px) scale(1.02);
+        -o-transform: translateY(-3px) scale(1.02);
+        transform: translateY(-3px) scale(1.02);
+    }
+}
+ /****************************
+ form Space label and Form Control
+ *****************************/
+ %form {
+    padding: 1px 0px;
+    margin: 10px 5px;
+    label {
+        font-weight: 500;
+        font-size: 15px;
+        color: $label-color;
+    }
+    .form-control {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 6px;
+        box-sizing: border-box;
+        color: $input-color;
+        padding: 13px 11px;
+        display: block;
+        border-radius: 4px;
+        width: 100%;
+        border:2px solid $form-border;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $input-color;
+        opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $input-color;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $input-color;
+    }
+ }
+/****************************
+ Table Page Container
+ *****************************/
+ .container {
+     padding: 12px 15px;
+ }
+ /****************************
+ bold font weight
+ *****************************/
+ b {
+    font-weight: 600;
+    color: #9a98a7;
+ }
+ /****************************
+ 
+ Table responive css
+ *****************************/
+ .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    table {
+        text-align: left;
+        thead {
+            font-weight: 500;
+            font-size: 13px;
+            background-color: $background;
+            color: $th-text;
+            text-transform: uppercase;
+        }
+        tbody {
+            font-size: 13px;
+            color: $td-text;
+            .fas {
+                margin-right: 3px;
+            }
+        }
+    }
+ }
+  /****************************
+ Table th td css
+ *****************************/
+th {
+    justify-content: center;
+}
+td, th {
+   font-weight: 500;
+   border-bottom: 1px solid $border;
+   border-top: 1px solid $border;
+   padding:12px 25px;
+}
+  /****************************
+ font awsome color
+ *****************************/
+.fa-book {
+    &:before {
+     color: $book-color;
+    }
+}
+.fa-check {
+    &:before {
+    color: $check-color;
+    }
+}
+.fa-circle {
+    font-size: 8px;
+    &:before {
+        color: $circle-color;
+    }
+}
+ /****************************
+ assignment tr width
+ *****************************/
+.assignment {
+    tr > *:nth-child(1) {
+        width: 48%;
+    }
+    tr > *:nth-child(2) {
+        width: 20%;
+    }
+    tr > *:nth-child(3), tr > *:nth-child(4) {
+        width: 16%;
+    }
+}
+/****************************
+ Result Table
+ *****************************/
+.results {
+    border:1px solid $border;
+}
+/****************************
+ Support Table
+ *****************************/
+.support {
+    a {
+        text-decoration: none;
+    }
+    ul {
+        padding-inline-start: 0px;
+        position: relative;
+        li {
+            font-size: 11px;
+            display: inline;
+            padding: 8px 8px;
+            border-radius: 50%;
+            font-weight: 600;
+            width: 16px;
+            text-align: center;
+            &:last-child {
+                padding: 7px 7px;
+                width: 18px;
+                top: -6px;
+                right: 26px;
+                position: absolute;
+            }
+        }
+    }
+    .user1 {
+        background-color: #df3ff8;
+        color: #000;
+    }
+    .user2 {
+        border:1px solid #fff;
+        background-color: #014d40;
+        color: #fff;
+    }
+}
+/****************************
+Input Disabled
+ *****************************/
+input:disabled {
+    background: $input-disabled;
+}
+/****************************
+Modal
+*****************************/
+ .modal {
+     background-color: $modal;
+     header {
+        padding:0px;
+        border-bottom: 1px solid $border;
+        h3 {
+            color: #5f5d98;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 14px 20px;
+            .fas {
+                color: #000;
+                float: right;
+                cursor: pointer;
+            }
+         }
+     }
+     .modal-body {
+        padding: 20px 20px;
+        h4 {
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #2d587d;
+            font-weight: 500;
+            margin: 9px 0px 19px;
+        }
+        p {
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #98a4ee;
+        }
+        h5 {
+            font-size: 17px;
+            color: #70718f;
+            font-weight: 600;
+        }
+        .d-flex {
+            align-items: end;
+            justify-content: flex-start;
+            >.form-group-left {
+                
+                width: 40%;
+            }
+            >.form-group-right {
+                
+                width: 60%;
+            }
+            >.form-group {
+                width: 50%;
+               .d-flex {
+                align-items: flex-end;
+               }
+            }
+        }
+        .form {
+            @extend %form;
+        }
+        .resolve-btn {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 9px 17px;
+            border-radius: 54px;
+            border: none;
+            color: $resolve-color;
+            background-color: $resolve-button;
+            cursor: pointer;
+        }
+     }
+     footer {
+        padding: 20px 12px;
+         .d-flex {
+             justify-content: flex-end;
+             >.button-space-left {
+                margin: 0px 12px;
+             }
+             >.button-space-right {
+                margin: 0px 12px;
+             }
+             .form {
+                width: 100%;
+                @extend %form;
+            }
+            .reset-btn {
+                @extend %btn;
+                color: $button-color;
+                background-color: $reset-button;
+                cursor: pointer;
+            }
+            .save-btn {
+                @extend %btn;
+                color: $button-color;
+                background-color: $save-button;
+                cursor: pointer;
+            }
+            .close-btn {
+                @extend %btn;
+                color: $close-btn-color;
+                background-color: $close-button;
+                cursor: pointer;
+                border: 1px solid #dfe9f3;
+            }
+         }
+     }
+ }
+ /****************************
+ Address Border in Popup
+ *****************************/
+ .address-border {
+    margin: 29px 0px;
+    border-top: 1px solid $form-border;
+ }
+ /****************************
+Media Query
+ *****************************/
+@media (min-device-width: $breakpoint-smallphone) and (max-device-width: $breakpoint-phone) {
+    .modal {
+        .modal-body {
+           .d-flex {
+               .form-group, .form-group-left, .form-group-right {
+                   width: 100%;
+               }
+           }
+       } 
+    }
+}
+@media (min-width: $breakpoint-tablet) {
+   
+}
 
 // style for progess bar
 progress {
