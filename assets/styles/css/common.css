@@ -26,8 +26,8 @@ button space
 }
 
 /****************************
-form Space label and Form Control
-*****************************/
+ form Space label and Form Control
+ *****************************/
 .modal footer .d-flex .form, .modal .modal-body .form {
   padding: 1px 0px;
   margin: 10px 5px;
@@ -72,8 +72,8 @@ form Space label and Form Control
 }
 
 /****************************
-bold font weight
-*****************************/
+ bold font weight
+ *****************************/
 b {
   font-weight: 600;
   color: #9a98a7;
@@ -81,8 +81,8 @@ b {
 
 /****************************
 
-Table responive css
-*****************************/
+ Table responive css
+ *****************************/
 .responsive-table {
   width: 100%;
   overflow-x: auto;
@@ -106,13 +106,14 @@ Table responive css
 }
 
 /****************************
-Table th td css
-*****************************/
+ Table th td css
+ *****************************/
 th {
   justify-content: center;
 }
 
-td, th {
+td,
+th {
   font-weight: 500;
   border-bottom: 1px solid #f4f5f7;
   border-top: 1px solid #f4f5f7;
@@ -120,8 +121,8 @@ td, th {
 }
 
 /****************************
-font awsome color
-*****************************/
+ font awsome color
+ *****************************/
 .fa-book:before {
   color: #b143d6;
 }
@@ -138,15 +139,16 @@ font awsome color
 }
 
 /****************************
-assignment tr width
-*****************************/
+ assignment tr width
+ *****************************/
 .assignment tr > *:nth-child(1) {
   width: 48%;
 }
 .assignment tr > *:nth-child(2) {
   width: 20%;
 }
-.assignment tr > *:nth-child(3), .assignment tr > *:nth-child(4) {
+.assignment tr > *:nth-child(3),
+.assignment tr > *:nth-child(4) {
   width: 16%;
 }
 
@@ -302,8 +304,8 @@ Modal
 }
 
 /****************************
-Address Border in Popup
-*****************************/
+ Address Border in Popup
+ *****************************/
 .address-border {
   margin: 29px 0px;
   border-top: 1px solid #dee5ea;
@@ -313,10 +315,16 @@ Address Border in Popup
 Media Query
  *****************************/
 @media (min-device-width: 320px) and (max-device-width: 700px) {
-  .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
+  .modal .modal-body .d-flex .form-group,
+.modal .modal-body .d-flex .form-group-left,
+.modal .modal-body .d-flex .form-group-right {
     width: 100%;
   }
 }
+.no-shodow {
+  box-shadow: none !important;
+}
+
 progress {
   -webkit-appearance: none;
   -moz-appearance: none;

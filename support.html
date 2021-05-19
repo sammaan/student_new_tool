@@ -9,9 +9,10 @@
     <link href="assets/styles/css/main.css" rel="stylesheet">
 
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/scripts/custom.js"></script>
-    
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
 
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-<main class="full-body-width">
+    <main class="full-body-width">
         <!-- side menu -->
         <aside class="side-bar">
             <nav>
@@ -80,15 +81,15 @@
                     </li>
                     <li class="link-courier">
                         <a href="courier.html">
-                            
+
                             <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
                             <span class="menu-text">Courier</span>
                         </a>
                     </li>
                     <li class="link-support">
                         <a href="support.html">
-                            
-                            
+
+
                             <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
                             <span class="menu-text">Support</span>
                         </a>
@@ -103,199 +104,246 @@
                 </ul>
             </nav>
         </aside>
-        
-<div class="page-container">
-        <!-- header -->
-        <header>
-            <div class="mobile-logo" style="display: none;">
-                <img src="assets/img/logo.jpg" alt="logo">
-            </div>
-            <div class="d-flex">
-                <div class="header-left d-flex">
-                    <div class="fit-to-screen">
-                        <i class="fas fa-expand-alt"></i>
+
+        <div class="page-container">
+            <!-- header -->
+            <header>
+                <div class="mobile-logo" style="display: none;">
+                    <img src="assets/img/logo.jpg" alt="logo">
+                </div>
+                <div class="d-flex">
+                    <div class="header-left d-flex">
+                        <div class="fit-to-screen">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <div class="search-bar">
+                            <input type="search" class="search-input" placeholder="Home / Profile">
+                        </div>
                     </div>
-                    <div class="search-bar">
-                        <input type="search" class="search-input" placeholder="Home / Profile">
+                    <div class="header-right d-flex">
+                        <div class="header-icon">
+                            <img src="assets/img/telecall.png" alt="telecaller">
+                        </div>
+                        <div class="header-icon">
+                            <img src="assets/img/notification.png" alt="telecaller">
+                        </div>
+                        <div class="user-details">
+                            <img src="assets/img/user-pic.png" alt="user">
+                            <span class="user-name">Abhilasha Banerjee</span>
+                        </div>
+                        <div class="logout">
+                            <img src="assets/img/logout.png" alt="logout">
+                        </div>
                     </div>
                 </div>
-                <div class="header-right d-flex">
-                    <div class="header-icon">
-                        <img src="assets/img/telecall.png" alt="telecaller">
+            </header>
+            <article id="support" class="support">
+
+                <!-- tab-box start -->
+                <div class="top-box-container">
+                    <div class="top-box d-flex">
+                        <div class="page-name">
+                            <h2> <img src="assets/img/telecall-white.png" alt="icon"> Support</h2>
+                        </div>
+                        <div class="add-ticket">
+                            <i class="fas fa-plus"></i> Create new ticket
+                        </div>
                     </div>
-                    <div class="header-icon">
-                        <img src="assets/img/notification.png" alt="telecaller">
-                    </div>
-                    <div class="user-details">
-                        <img src="assets/img/user-pic.png" alt="user">
-                        <span class="user-name">Abhilasha Banerjee</span>
-                    </div>
-                    <div class="logout">
-                        <img src="assets/img/logout.png" alt="logout">
+                    <div class="inner-boxes d-flex">
+                        <div class="tickets">
+                            <h3>Tickets</h3>
+                            <progress id="file" class="progess-bar" value="80" max="100"> </progress>
+                            <div class="semester-points d-flex">
+                                <p>
+                                    4 / 8
+                                    <span>Completed</span>
+                                </p>
+                                <p>
+                                    3
+                                    <span>Active</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-to-support">
+                            <div class="contact-status d-flex">
+                                <div class="profile">
+                                    <span> MI</span>
+             s                   </div>
+                                <div class="status">
+                                    <span>Active</span>
+                                </div>
+
+                            </div>
+                            <p class="contact-persone-name">Mrinalini Ingale</p>
+                            <p class="contact-persone-post"> Student Relationship Officer</p>
+                            <div class="message-box d-flex">
+                                <a href="#" class="message-btn">Message</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <article id="support">
-            <div class="responsive-table">
-                <table id="table_id" class="support display nowrap" style="width:100%" cellspacing="3px">
-                    <thead>
-                        <tr>
-                            <th>Ticket Type</th>
-                            <th>Department</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                            <th>Users</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                             </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">Testing Mewar My Account Ticket</a></td>
-                            <td>MIS</td>
-                            <td>10-Feb-2021</td>
-                            <td>18-Feb-2021</td>
-                            <td>
-                                <ul>
-                                    <li class="user1">SA</li>
-                                    <li class="user2">MI</li>
-                                </ul>
-                            </td>
-                            <td><i class="fas fa-circle"></i> Resolved</td>
-                            <td>.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </article>
-        <footer></footer>
+                <!-- top-box end -->
+
+
+                <div class="responsive-table">
+                    <table id="table_id" class="support display nowrap" style="width:100%" cellspacing="3px">
+                        <thead>
+                            <tr>
+                                <th>Ticket Type</th>
+                                <th>Department</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Users</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Testing Mewar My Account Ticket</a></td>
+                                <td>MIS</td>
+                                <td>10-Feb-2021</td>
+                                <td>18-Feb-2021</td>
+                                <td>
+                                    <ul>
+                                        <li class="user1">SA</li>
+                                        <li class="user2">MI</li>
+                                    </ul>
+                                </td>
+                                <td><i class="fas fa-circle"></i> Resolved</td>
+                                <td>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <footer></footer>
     </main>
 
     <div class="pop-up-bg"></div>
