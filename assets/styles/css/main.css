@@ -17,6 +17,15 @@ progress::-webkit-progress-value {
 
 /* Stylesheet for Custom Elements */
 /* Main Stylesheet */
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn, .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn, .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn {
+  font-size: 11px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 11px;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -200,6 +209,77 @@ table {
   background: #555;
 }
 
+.one-column {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.one-column .dashboard-box-container {
+  width: 100%;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.one-column .dashboard-box-container .top-box {
+  justify-content: flex-start;
+  background-color: #1d354b;
+  height: 100px;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 16px;
+  padding: 18px 35px;
+}
+.one-column .dashboard-box-container .top-box h2 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.one-column .dashboard-box-container .top-box h2 img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.one-column .dashboard-box-container .inner-boxes {
+  height: 172px;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.two-column {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.two-column .dashboard-box-container {
+  width: 48%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.two-column .dashboard-box-container .top-box {
+  justify-content: flex-start;
+  background-color: #1d354b;
+  height: 100px;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 16px;
+  padding: 18px 35px;
+}
+.two-column .dashboard-box-container .top-box h2 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.two-column .dashboard-box-container .top-box h2 img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.two-column .dashboard-box-container .inner-boxes {
+  height: 172px;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
 /****************************
  Navigation
  *****************************/
@@ -369,7 +449,7 @@ header .header-right.d-flex .logout {
 }
 
 /**************************
-home
+Dashboard
 **************************/
 .user-details-panel .d-flex {
   justify-content: space-between;
@@ -411,11 +491,11 @@ home
   margin-top: 10px;
 }
 
-.home .your-course {
+.dashboard-top-bpx .your-course {
   font-size: 22px;
   color: #0e0f22;
 }
-.home .course-details {
+.dashboard-top-bpx .course-details {
   justify-content: space-between;
   align-items: flex-start;
   background-color: #b1113e;
@@ -424,28 +504,249 @@ home
   box-sizing: border-box;
   color: #fff;
 }
-.home .course-details .bor {
+.dashboard-top-bpx .course-details .bor {
   border-left: 1px solid #b82157;
   border-right: 1px solid #b82157;
   width: 300px;
   padding: 0 20px 0 30px;
 }
-.home .course-details .course-name {
+.dashboard-top-bpx .course-details .course-name {
   box-sizing: border-box;
   min-width: 300px;
 }
-.home .course-details .course-name .course-details-name h2 {
+.dashboard-top-bpx .course-details .course-name .course-details-name h2 {
   font-size: 22px;
   max-width: 280px;
 }
-.home .course-details .course-name .couese-student-name h2 {
+.dashboard-top-bpx .course-details .course-name .couese-student-name h2 {
   font-size: 14px;
   font-weight: 600;
   line-height: 30px;
 }
-.home .course-details .course-name .couese-student-name h2 span {
+.dashboard-top-bpx .course-details .course-name .couese-student-name h2 span {
   font-size: 22px;
   display: inline-block;
+  font-weight: 600;
+}
+.dashboard-top-bpx .course-details-panel {
+  padding: 50px 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.dashboard-top-bpx .course-details-panel .inner-boxes {
+  justify-content: space-between;
+  align-items: stretch;
+}
+.dashboard-top-bpx .course-details-panel .semester-status {
+  -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.dashboard-top-bpx .course-details-panel .semester-status:hover {
+  -webkit-box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
+  box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
+  position: relative;
+  z-index: 3;
+}
+.dashboard-top-bpx .course-details-panel .semester-status h3 img {
+  vertical-align: middle;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .tickets {
+  background-color: #f8c145;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #0e0f22;
+  text-transform: uppercase;
+  width: 55%;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.dashboard-top-bpx .course-details-panel .dash-support .tickets h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #0e0f22;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .tickets .progess-bar {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points {
+  justify-content: space-between;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .tickets .semester-points span {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support {
+  background-color: #fbfbfb;
+  border-radius: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #0e0f22;
+  width: 43%;
+  align-items: stretch;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status {
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status .profile {
+  background-color: #bbb8b8;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status .profile span {
+  color: #0e0f22;
+  font-size: 26px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-status .status span {
+  color: #027e0e;
+  font-size: 12px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-name {
+  font-size: 20px;
+  line-height: 26px;
+  color: #0e0f22;
+  margin-bottom: 10px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-post {
+  font-size: 11px;
+  line-height: 17px;
+  color: #0e0f22;
+  margin-bottom: 10px;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box {
+  justify-content: flex-end;
+}
+.dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn {
+  background-color: #0e0f22;
+  color: #fff;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification {
+  -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification:hover {
+  -webkit-box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
+  box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
+  position: relative;
+  z-index: 3;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  color: #0e0f22;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification h3 strong {
+  font-weight: 600;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification h3 img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification .date-info {
+  justify-content: flex-end;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .date {
+  font-size: 14px;
+  line-height: 20px;
+  color: #0e0f22;
+  margin-right: 20px;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn {
+  background-color: #b1113e;
+  color: #fff;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee {
+  background-color: #f8c145;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #0e0f22;
+  text-transform: uppercase;
+  width: 58%;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #0e0f22;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .progess-bar {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points {
+  justify-content: space-between;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points span {
+  display: block;
+  font-size: 12px;
+  line-height: 22px;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment {
+  background-color: #b1113e;
+  border-radius: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #0e0f22;
+  width: 40%;
+  color: #fff;
+  align-items: stretch;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .payment-amount {
+  font-size: 28px;
+  line-height: 34px;
+  color: #f8c145;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn {
+  background-color: #f8c145;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 14px;
+  margin-bottom: 10px;
+}
+.dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .due-date {
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -474,8 +775,9 @@ home
   justify-content: space-between;
   padding: 20px 30px;
   align-items: stretch;
+  box-sizing: border-box;
 }
-.top-box-container .inner-boxes .lext-box {
+.top-box-container .inner-boxes .left-box {
   background-color: #f8c145;
   border-radius: 16px;
   padding: 20px;
@@ -486,7 +788,7 @@ home
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
-.top-box-container .inner-boxes .lext-box .select-sem {
+.top-box-container .inner-boxes .left-box .select-sem {
   background-color: transparent;
   color: #0e0f22;
   font-size: 20px;
@@ -501,24 +803,24 @@ home
   width: 170px;
   margin-bottom: 15px;
 }
-.top-box-container .inner-boxes .lext-box .select-sem:focus {
+.top-box-container .inner-boxes .left-box .select-sem:focus {
   outline: none;
 }
-.top-box-container .inner-boxes .lext-box .select-sem option {
+.top-box-container .inner-boxes .left-box .select-sem option {
   font-size: 14px;
   padding: 4px;
 }
-.top-box-container .inner-boxes .lext-box .progess-bar {
+.top-box-container .inner-boxes .left-box .progess-bar {
   width: 100%;
   margin-bottom: 25px;
 }
-.top-box-container .inner-boxes .lext-box .semester-points {
+.top-box-container .inner-boxes .left-box .semester-points {
   justify-content: space-between;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
 }
-.top-box-container .inner-boxes .lext-box .semester-points span {
+.top-box-container .inner-boxes .left-box .semester-points span {
   display: block;
   font-size: 16px;
   line-height: 22px;

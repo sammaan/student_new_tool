@@ -13,7 +13,7 @@ $layout-breakpoint-xs: 767px;
   // tab bar style
   .top-box-container {
     .inner-boxes {
-      .lext-box {
+      .left-box {
         width: 100%;
         margin-bottom: 20px;
       }
@@ -24,7 +24,109 @@ $layout-breakpoint-xs: 767px;
       }
     }
   }
+
+  .two-column {
+    .dashboard-box-container {
+      .top-box {
+        height: 85px;
+      }
+    }
+  }
+
+  // dashboard 
+  .dashboard-top-bpx {
+    .course-details {
+      .course-name {
+        width: 33%;
+        min-width: auto;
+        border: none;
+      }
+    }
+
+    .course-details-panel {
+      .dash-fee-payment {
+        .course-fee {
+          h3 {
+            font-size: 16px;
+          }
+
+          .semester-points {
+            justify-content: space-between;
+            font-size: 18px;
+          }
+        }
+
+        .due-payment {
+          h3 {
+            font-size: 16px;
+          }
+
+          .payment-amount {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .dash-support {
+        .tickets {
+          padding: 15px;
+
+          h3 {
+            font-size: 16px;
+          }
+
+          .semester-points {
+            font-size: 26px;
+
+            span {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+
+        .contact-to-support {
+          .contact-persone-name {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }
+
+@media (max-width: $layout-breakpoint-small) {
+
+  // common
+  // two column bopbox
+  .two-column {
+    .dashboard-box-container {
+      width: 100%;
+    }
+  }
+
+  .user-details-panel {
+    .d-flex {
+      .user-name {
+        width: 60%;
+
+        h1 {
+          font-size: 22px;
+
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .start-learning {
+        width: 40%;
+      }
+    }
+  }
+}
+
+
 
 // style bellow 767
 @media (max-width: $layout-breakpoint-xs) {
@@ -34,6 +136,7 @@ $layout-breakpoint-xs: 767px;
     width: calc(100% - 0px);
     margin-left: 0px;
   }
+
 
   // side nav
   .side-bar {
@@ -57,7 +160,8 @@ $layout-breakpoint-xs: 767px;
 
     .inner-boxes {
       padding: 20px;
-      .lext-box {
+
+      .left-box {
         .select-sem {
           font-size: 18px;
           line-height: 24px;
@@ -115,4 +219,64 @@ $layout-breakpoint-xs: 767px;
       }
     }
   }
+
+  // dashboard
+
+  .user-details-panel {
+    .d-flex {
+      .user-name {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .start-learning {
+        width: 100%;
+        justify-content: flex-start;
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .dashboard-top-bpx {
+    .course-details {
+      .course-name {
+        width: 100%;
+        min-width: auto;
+        border: none;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .course-details-panel {
+      padding: 25px 0px;
+    
+      .dash-support {
+        .tickets{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .contact-to-support {
+          width: 100%;
+        }
+      }
+      .dash-fee-payment {
+        .course-fee{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .due-payment{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    
+  }
 }
+
+
+// dashboard responsive

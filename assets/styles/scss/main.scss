@@ -30,6 +30,17 @@ $text-blue: #0e0f22;
   box-shadow: $proprty;
 }
 
+//extention
+
+%small-btn {
+  font-size: 11px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 11px;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,17 +178,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.d-flex{
+
+.d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
 /****************************
  Common 
  ***************************/
 
- .full-body-width {
+.full-body-width {
   width: calc(100% - 110px);
   margin-left: 110px;
   padding: 0 60px;
@@ -187,7 +200,7 @@ table {
   border-bottom-left-radius: 20px;
   height: 100vh;
   overflow-y: auto;
-  
+
   .side-bar {
     position: absolute;
     top: 0;
@@ -200,20 +213,104 @@ table {
     &::-webkit-scrollbar {
       width: 3px;
     }
-    
+
     /* Track */
     &::-webkit-scrollbar-track {
       background: #f7f9fa;
     }
-    
+
     /* Handle */
     &::-webkit-scrollbar-thumb {
       background: #f7f9fa;
     }
-    
+
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
       background: #555;
+    }
+  }
+}
+
+// tab boxes with one column
+
+.one-column {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .dashboard-box-container {
+    width: 100%;
+    border-radius: 16px;
+
+    @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+
+    .top-box {
+      justify-content: flex-start;
+      background-color: $dark-blue;
+      height: 100px;
+      box-sizing: border-box;
+      color: #fff;
+      border-radius: 16px;
+      padding: 18px 35px;
+
+      h2 {
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 600;
+
+        img {
+          vertical-align: middle;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .inner-boxes {
+      height: 172px;
+      overflow-y: scroll;
+      padding: 20px;
+    }
+  }
+}
+
+// tab boxes with two column
+
+.two-column {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  .dashboard-box-container {
+    width: 48%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+
+    .top-box {
+      justify-content: flex-start;
+      background-color: $dark-blue;
+      height: 100px;
+      box-sizing: border-box;
+      color: #fff;
+      border-radius: 16px;
+      padding: 18px 35px;
+
+      h2 {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+
+        img {
+          vertical-align: middle;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .inner-boxes {
+      height: 172px;
+      overflow-y: scroll;
+      padding: 20px;
     }
   }
 }
@@ -302,8 +399,9 @@ table {
           }
         }
       }
-      &.active{
-        a{
+
+      &.active {
+        a {
           .menu-icon {
             background-color: $violet;
 
@@ -319,6 +417,7 @@ table {
   &:hover {
     width: 370px;
     border-radius: 0 16px 16px 0;
+
     .logo {
       a {
         .university-name {
@@ -343,17 +442,20 @@ table {
 /****************************
 Header
 ****************************/
-.mobile-logo{
+.mobile-logo {
   display: none;
 }
-header{
+
+header {
   padding-top: 15px;
   margin-bottom: 50px;
-  .d-flex{
+
+  .d-flex {
     justify-content: space-between;
   }
-  .header-left.d-flex{
-    .fit-to-screen{
+
+  .header-left.d-flex {
+    .fit-to-screen {
       width: 48px;
       height: 48px;
       border-radius: 16px;
@@ -367,8 +469,9 @@ header{
       cursor: pointer;
 
     }
-    .search-bar{
-      .search-input{
+
+    .search-bar {
+      .search-input {
         width: 172px;
         height: 48px;
         border-radius: 16px;
@@ -377,14 +480,16 @@ header{
         background-color: #f4f4f6;
         font-size: 16px;
         color: #4a4c5d;
-        &:focus{
+
+        &:focus {
           outline: none;
         }
       }
     }
   }
-  .header-right.d-flex{
-    .header-icon{
+
+  .header-right.d-flex {
+    .header-icon {
       width: 48px;
       height: 48px;
       border-radius: 16px;
@@ -395,12 +500,14 @@ header{
       margin-left: 30px;
       cursor: pointer;
     }
-    .user-details{
+
+    .user-details {
       background-color: #f8fafb;
       margin-left: 30px;
       border-radius: 16px;
       padding: 0 10px 0 0;
-      img{
+
+      img {
         vertical-align: middle;
         width: 48px;
         height: 48px;
@@ -409,7 +516,8 @@ header{
         object-position: center;
       }
     }
-    .logout{
+
+    .logout {
       margin-left: 30px;
       cursor: pointer;
       width: 48px;
@@ -424,32 +532,39 @@ header{
 
 
 /**************************
-home
+Dashboard
 **************************/
-.user-details-panel{
-  .d-flex{
+
+// dashboard top-box
+.user-details-panel {
+  .d-flex {
     justify-content: space-between;
-    .user-name{
-      h1{
+
+    .user-name {
+      h1 {
         color: $dark-blue;
         font-size: 28px;
         line-height: 34px;
-        span{
+
+        span {
           font-size: 22px;
           line-height: 28px;
           display: block;
         }
       }
     }
-    .start-learning{
+
+    .start-learning {
       justify-content: flex-end;
-      h2{
+
+      h2 {
         font-size: 22px;
         line-height: 28px;
         color: #0e0f22;
         width: 100px;
       }
-      .continue-learning-box{
+
+      .continue-learning-box {
         width: 70px;
         height: 70px;
         border-radius: 16px;
@@ -459,7 +574,8 @@ home
         align-items: center;
         margin-left: 30px;
       }
-      p{
+
+      p {
         width: 100%;
         font-size: 14px;
         color: $text-blue;
@@ -469,12 +585,14 @@ home
     }
   }
 }
-.home{
-  .your-course{
+
+.dashboard-top-bpx {
+  .your-course {
     font-size: 22px;
     color: $text-blue;
   }
-  .course-details{
+
+  .course-details {
     justify-content: space-between;
     align-items: flex-start;
     background-color: $maroon;
@@ -482,28 +600,33 @@ home
     padding: 20px 30px;
     box-sizing: border-box;
     color: #fff;
-    .bor{
+
+    .bor {
       border-left: 1px solid #b82157;
       border-right: 1px solid #b82157;
       width: 300px;
       padding: 0 20px 0 30px;
     }
-    .course-name{
-     // padding-right: 75px;
+
+    .course-name {
+      // padding-right: 75px;
       box-sizing: border-box;
-     min-width: 300px;
-      .course-details-name{
-        h2{
+      min-width: 300px;
+
+      .course-details-name {
+        h2 {
           font-size: 22px;
           max-width: 280px;
         }
       }
-      .couese-student-name{
-        h2{
+
+      .couese-student-name {
+        h2 {
           font-size: 14px;
           font-weight: 600;
           line-height: 30px;
-          span{
+
+          span {
             font-size: 22px;
             display: inline-block;
             font-weight: 600;
@@ -512,34 +635,287 @@ home
       }
     }
   }
-}
-// topbox common
 
-.top-box-container{
+  .course-details-panel {
+    padding: 50px 25px;
+    @include transition(.4s);
+
+    .inner-boxes {
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .semester-status {
+      @include box-shadow(5px 0px 10px rgba(153, 61, 144, .57));
+      width: 100%;
+      padding: 18px;
+      border-radius: 16px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      overflow: hidden;
+
+      &:hover {
+        @include box-shadow(20px 0px 38px rgba(153, 61, 144, .57));
+        position: relative;
+        z-index: 3;
+      }
+
+      h3 {
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .dash-support{
+      .tickets {
+        background-color: $yellow;
+        border-radius: 16px;
+        padding: 20px;
+        box-sizing: border-box;
+        color: $text-blue;
+        text-transform: uppercase;
+        width: 55%;
+        @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+        h3{
+          margin-bottom: 10px;
+          font-size: 20px;
+          color: $text-blue;
+        }
+        .progess-bar {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+  
+        .semester-points {
+          justify-content: space-between;
+          font-size: 36px;
+          line-height: 48px;
+          text-align: center;
+  
+          span {
+            display: block;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+  
+      .contact-to-support{
+        background-color: #fbfbfb;
+        border-radius: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: $text-blue;
+        width: 43%;
+        align-items: stretch;
+        @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+        .contact-status{
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .profile{
+            background-color: #bbb8b8;
+            height: 45px;
+            width: 45px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            span{
+              color: $text-blue;
+              font-size: 26px;
+  
+            }
+          }
+          .status{
+            span{
+              color: #027e0e;
+              font-size: 12px;
+            }
+          }
+        }
+        .contact-persone-name{
+          font-size: 20px;
+          line-height: 26px;
+          color: $text-blue;
+          margin-bottom: 10px;
+          
+        }
+        .contact-persone-post{
+          font-size: 11px;
+          line-height: 17px;
+          color: $text-blue;
+          margin-bottom: 10px;
+        }
+        .message-box{
+          justify-content: flex-end;
+          .message-btn{
+            background-color: $text-blue;
+            color: #fff;
+           @extend %small-btn;
+          }
+        }
+      }
+    }
+    .notification-item{
+      .notification{
+        @include box-shadow(5px 0px 10px rgba(153, 61, 144, .57));
+        width: 100%;
+        padding: 18px;
+        border-radius: 16px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        overflow: hidden;
+  
+        &:hover {
+          @include box-shadow(20px 0px 38px rgba(153, 61, 144, .57));
+          position: relative;
+          z-index: 3;
+        }
+  
+        h3 {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 5px;
+          color: $text-blue;
+          strong{
+            font-weight: 600;
+          }
+          img {
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+        .date-info{
+          justify-content: flex-end;
+          .date{
+            font-size: 14px;
+            line-height: 20px;
+            color: $text-blue;
+            margin-right: 20px;
+          }
+          .complete-btn{
+            background-color: $maroon;
+            color: #fff;
+            @extend %small-btn;
+          }
+        }
+      }
+    }
+
+    .dash-fee-payment{
+      .course-fee {
+        background-color: $yellow;
+        border-radius: 16px;
+        padding: 20px;
+        box-sizing: border-box;
+        color: $text-blue;
+        text-transform: uppercase;
+        width: 58%;
+       
+        @include box-shadow(0 33px 38px rgba(222, 222, 222, .6));
+        h3{
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: $text-blue;
+        }
+  
+        .progess-bar {
+          width: 100%;
+          margin-bottom: 25px;
+        }
+  
+        .semester-points {
+          justify-content: space-between;
+          font-size: 22px;
+          line-height: 28px;
+          text-align: center;
+  
+          span {
+            display: block;
+            font-size: 12px;
+            line-height: 22px;
+          }
+        }
+      }
+  
+      .due-payment{
+        background-color: $maroon;
+        border-radius: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: $text-blue;
+        width: 40%;
+        color: #fff;
+        align-items: stretch;
+        @include box-shadow(0 33px 38px rgba(222, 222, 222, .6));
+        h3{
+          margin-bottom: 20px;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        .payment-amount{
+          font-size: 28px;
+          line-height: 34px;
+          color: $yellow;
+          font-weight: 600;
+          margin-bottom: 5px;
+          
+        }
+        .pay-btn{
+          @extend %small-btn;
+          background-color: $yellow;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 2px 14px;
+          margin-bottom: 10px;
+
+        }
+        .due-date{
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+
+// topbox common 
+
+.top-box-container {
   border-radius: 16px;
   @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
 
-  .top-box{
+  .top-box {
     justify-content: flex-start;
     background-color: $dark-blue;
     color: #fff;
     border-radius: 16px;
     padding: 18px 35px;
-    h2{
+
+    h2 {
       font-size: 24px;
       line-height: 20px;
       font-weight: 600;
-      img{
+
+      img {
         vertical-align: middle;
         margin-right: 20px;
       }
     }
   }
-  .inner-boxes{
+
+  .inner-boxes {
     justify-content: space-between;
     padding: 20px 30px;
     align-items: stretch;
-    .lext-box{
+    box-sizing: border-box;
+
+    .left-box {
       background-color: $yellow;
       border-radius: 16px;
       padding: 20px;
@@ -547,9 +923,9 @@ home
       color: $text-blue;
       text-transform: uppercase;
       width: 35%;
-      @include box-shadow( 0 33px 38px rgba(222, 222, 222, .3));
+      @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
 
-      .select-sem{
+      .select-sem {
         background-color: transparent;
         color: $text-blue;
         font-size: 20px;
@@ -563,31 +939,37 @@ home
         background-repeat: no-repeat;
         width: 170px;
         margin-bottom: 15px;
-        &:focus{
+
+        &:focus {
           outline: none;
         }
-        option{
+
+        option {
           font-size: 14px;
           padding: 4px;
         }
       }
-      .progess-bar{
+
+      .progess-bar {
         width: 100%;
         margin-bottom: 25px;
       }
-      .semester-points{
+
+      .semester-points {
         justify-content: space-between;
         font-size: 36px;
         line-height: 48px;
         text-align: center;
-        span{
+
+        span {
           display: block;
           font-size: 16px;
           line-height: 22px;
         }
       }
     }
-    .right-box{
+
+    .right-box {
       background-color: $maroon;
       border-radius: 16px;
       padding: 20px;
@@ -596,54 +978,67 @@ home
       width: 62%;
       justify-content: space-between;
       align-items: flex-start;
-      @include box-shadow( 0 33px 38px rgba(222, 222, 222, .3));
-      .upcoming-info{
+      @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+
+      .upcoming-info {
         width: 45%;
-        .info-heading{
+
+        .info-heading {
           font-size: 20px;
           line-height: 26px;
         }
-        .mb-20{
+
+        .mb-20 {
           margin-bottom: 20px;
         }
-        .mb-10{
+
+        .mb-10 {
           margin-bottom: 10px;
         }
-        .info-Details{
+
+        .info-Details {
           font-size: 22px;
           line-height: 36px;
           font-weight: 600;
         }
-        .info-discription{
+
+        .info-discription {
           font-size: 16px;
           line-height: 22px;
           font-weight: 600;
         }
       }
-      .upcoming-dates{
+
+      .upcoming-dates {
         width: 250px;
         text-align: center;
-        .info-heading{
+
+        .info-heading {
           font-size: 20px;
           line-height: 26px;
         }
-        .mt-20{
+
+        .mt-20 {
           margin-top: 20px;
         }
-        .mb-10{
+
+        .mb-10 {
           margin-bottom: 10px;
         }
-        .info-Details{
+
+        .info-Details {
           font-size: 22px;
           line-height: 36px;
           font-weight: 600;
         }
-        .info-discription{
+
+        .info-discription {
           font-size: 16px;
           line-height: 22px;
           font-weight: 600;
         }
-        .info-button{
+
+        .info-button {
           background-color: $yellow;
           color: #fff;
           text-decoration: none;
@@ -659,5 +1054,9 @@ home
     }
   }
 }
+
+
+
+
 
 // exmas
