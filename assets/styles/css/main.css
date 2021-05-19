@@ -317,6 +317,22 @@ Media Query
     width: 100%;
   }
 }
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 7px;
+  background: #fff;
+}
+
+progress::-webkit-progress-value {
+  background-color: #45a38f;
+  border-radius: 4px;
+}
+
 /* Stylesheet for Custom Elements */
 /* Main Stylesheet */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -597,8 +613,13 @@ table {
 /****************************
 Header
 ****************************/
+.mobile-logo {
+  display: none;
+}
+
 header {
   padding-top: 15px;
+  margin-bottom: 50px;
 }
 header .d-flex {
   justify-content: space-between;
@@ -663,6 +684,233 @@ header .header-right.d-flex .logout {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/**************************
+home
+**************************/
+.user-details-panel .d-flex {
+  justify-content: space-between;
+}
+.user-details-panel .d-flex .user-name h1 {
+  color: #1d354b;
+  font-size: 28px;
+  line-height: 34px;
+}
+.user-details-panel .d-flex .user-name h1 span {
+  font-size: 22px;
+  line-height: 28px;
+  display: block;
+}
+.user-details-panel .d-flex .start-learning {
+  justify-content: flex-end;
+}
+.user-details-panel .d-flex .start-learning h2 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #0e0f22;
+  width: 100px;
+}
+.user-details-panel .d-flex .start-learning .continue-learning-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background-color: #993d90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.user-details-panel .d-flex .start-learning p {
+  width: 100%;
+  font-size: 14px;
+  color: #0e0f22;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.home .your-course {
+  font-size: 22px;
+  color: #0e0f22;
+}
+.home .course-details {
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #b1113e;
+  border-radius: 16px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.home .course-details .bor {
+  border-left: 1px solid #b82157;
+  border-right: 1px solid #b82157;
+  width: 300px;
+  padding: 0 20px 0 30px;
+}
+.home .course-details .course-name {
+  box-sizing: border-box;
+  min-width: 300px;
+}
+.home .course-details .course-name .course-details-name h2 {
+  font-size: 22px;
+  max-width: 280px;
+}
+.home .course-details .course-name .couese-student-name h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.home .course-details .course-name .couese-student-name h2 span {
+  font-size: 22px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.top-box-container {
+  border-radius: 16px;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.top-box-container .top-box {
+  justify-content: flex-start;
+  background-color: #1d354b;
+  color: #fff;
+  border-radius: 16px;
+  padding: 18px 35px;
+}
+.top-box-container .top-box h2 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.top-box-container .top-box h2 img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.top-box-container .inner-boxes {
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: stretch;
+}
+.top-box-container .inner-boxes .lext-box {
+  background-color: #f8c145;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #0e0f22;
+  text-transform: uppercase;
+  width: 35%;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.top-box-container .inner-boxes .lext-box .select-sem {
+  background-color: transparent;
+  color: #0e0f22;
+  font-size: 20px;
+  border: none;
+  font-weight: normal;
+  display: block;
+  font-family: "Montserrat";
+  -webkit-appearance: none;
+  background-image: url(../../img/arrow-down.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 170px;
+  margin-bottom: 15px;
+}
+.top-box-container .inner-boxes .lext-box .select-sem:focus {
+  outline: none;
+}
+.top-box-container .inner-boxes .lext-box .select-sem option {
+  font-size: 14px;
+  padding: 4px;
+}
+.top-box-container .inner-boxes .lext-box .progess-bar {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.top-box-container .inner-boxes .lext-box .semester-points {
+  justify-content: space-between;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+.top-box-container .inner-boxes .lext-box .semester-points span {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+}
+.top-box-container .inner-boxes .right-box {
+  background-color: #b1113e;
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 62%;
+  justify-content: space-between;
+  align-items: flex-start;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+}
+.top-box-container .inner-boxes .right-box .upcoming-info {
+  width: 45%;
+}
+.top-box-container .inner-boxes .right-box .upcoming-info .info-heading {
+  font-size: 20px;
+  line-height: 26px;
+}
+.top-box-container .inner-boxes .right-box .upcoming-info .mb-20 {
+  margin-bottom: 20px;
+}
+.top-box-container .inner-boxes .right-box .upcoming-info .mb-10 {
+  margin-bottom: 10px;
+}
+.top-box-container .inner-boxes .right-box .upcoming-info .info-Details {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.top-box-container .inner-boxes .right-box .upcoming-info .info-discription {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates {
+  width: 250px;
+  text-align: center;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-heading {
+  font-size: 20px;
+  line-height: 26px;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates .mt-20 {
+  margin-top: 20px;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates .mb-10 {
+  margin-bottom: 10px;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-Details {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-discription {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-button {
+  background-color: #f8c145;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
