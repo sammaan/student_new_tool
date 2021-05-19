@@ -141,10 +141,10 @@ th {
 }
 
 td, th {
-  font-weight: 500;
-  border-bottom: 1px solid #f4f5f7;
-  border-top: 1px solid #f4f5f7;
-  padding: 12px 25px;
+  font-weight: 500 !important;
+  border-bottom: 1px solid #f4f5f7 !important;
+  border-top: 1px solid #f4f5f7 !important;
+  padding: 12px 25px !important;
 }
 
 /****************************
@@ -215,7 +215,7 @@ td, th {
   padding: 7px 7px;
   width: 18px;
   top: -6px;
-  right: 26px;
+  right: 34px;
   position: absolute;
 }
 
@@ -388,6 +388,38 @@ input[type="date" i], input[type="file" i] {
   padding: 11px !important;
 }
 
+/**************
+Datatable Header Footer
+***************/
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+  color: #413173 !important;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  color: #fbfbfb !important;
+  border: 1px solid #d0c7c7 !important;
+  background-color: #5e72e4;
+  border-radius: 50%;
+  background: #5e72e4 !important;
+  padding: 4px 12px !important;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  color: #3d4992;
+  border: 1px solid #3d4992;
+}
+
+.dataTables_wrapper .dataTables_length {
+  float: right !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  margin-right: 36px;
+}
+
 /****************************
  Address Border in Popup
  *****************************/
@@ -402,6 +434,13 @@ Media Query
 @media (min-device-width: 320px) and (max-device-width: 700px) {
   .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
     width: 100%;
+  }
+  .support ul li:last-child {
+    padding: 8px 8px;
+    width: 18px;
+    top: 0px;
+    right: 11px;
+    position: inherit;
   }
 }
 

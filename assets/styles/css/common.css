@@ -141,10 +141,10 @@ th {
 }
 
 td, th {
-  font-weight: 500;
-  border-bottom: 1px solid #f4f5f7;
-  border-top: 1px solid #f4f5f7;
-  padding: 12px 25px;
+  font-weight: 500 !important;
+  border-bottom: 1px solid #f4f5f7 !important;
+  border-top: 1px solid #f4f5f7 !important;
+  padding: 12px 25px !important;
 }
 
 /****************************
