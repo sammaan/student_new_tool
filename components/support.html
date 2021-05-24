@@ -4,12 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
+    <!-- Styles -->
     <link href="../assets/styles/css/font-face.css" rel="stylesheet">
     <link href="../assets/styles/css/main.css" rel="stylesheet">
     <link href="../assets/styles/scss/common.css" rel="stylesheet">
     <link href="http://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
@@ -175,14 +183,12 @@
             </table>
         </div>
     </div>
-    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  
 <script>
     $(document).ready(function() {
-    $('#table_id').DataTable({
+        $('#table_id').DataTable({
+        });
     });
-});
 </script>
 </body>
 </html>

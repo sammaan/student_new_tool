@@ -12,6 +12,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/scripts/custom.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+
+    <link href="http://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
@@ -186,7 +192,7 @@
 
 
                 <div class="responsive-table">
-                    <table id="table_id" class="support display nowrap" style="width:100%" cellspacing="3px">
+                    <table id="supportTable" class="support display nowrap" style="width:100%" cellspacing="3px">
                         <thead>
                             <tr>
                                 <th>Ticket Type</th>
@@ -344,22 +350,77 @@
                 </div>
             </article>
             <footer></footer>
-    </main>
+    </main>    
 
-    <div class="pop-up-bg"></div>
-    <article class="pop-up" id="createTicket"></article>
+    <div class="pop-up-bg">
+        <article class="pop-up-container" id="supportTicket">
+            <div class="modal">
+                <header>
+                    <h3>Support Ticket <i class="fas fa-times-circle close-popup"></i></h3>
+                </header>
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <div class="form-group-left">
+                            <div class="form">
+                                <label>Ticket Title</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form">
+                                <label>Ticket Type</label>
+                                <select class="form-control">
+                                    <option >Select Ticket Type</option>
+                                    <option>1</option>
+                                    <option>1</option>
+                                    <option>1</option>
+                                </select>
+                            </div>
+                            <div class="form">
+                                <label>Assigned To</label>
+                                <input type="text" class="form-control" value="mydusi" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group-right">
+                            <div class="form">
+                                <label>Ticket Description</label>
+                                <textarea class="form-control" name="cke" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="d-flex">
+                        <div class="button-space-left">
+                            <input type="button" class="form-control reset-btn" value="Reset"/> 
+                        </div>
+                        <div class="button-space-right">
+                            <input type="button" class="form-control save-btn" value="Save Changes"/> 
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </article>
+    </div>
     <article class="pop-up" id="updateTicket"></article>
-    <article class="pop-up" id="editProfile"></article>
-    <article class="pop-up" id="editProfileEdu"></article>
-    <article class="pop-up" id="editProfileExp"></article>
-    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-        $('#table_id').DataTable({
+            
+            
+            $('#supportTable').DataTable({
+            });
+
+            $('.sorting_1 a').click(function(e){
+                e.preventDefault;
+                $('.pop-up-bg').addClass('active');
+            });
+            
+            $('.close-popup').click(function(e){
+                $('.pop-up-bg').removeClass('active');
+            });
+
+            // CKEDITOR.replace( 'cke' );
         });
-    });
+
+
     </script>
 </body>
 
