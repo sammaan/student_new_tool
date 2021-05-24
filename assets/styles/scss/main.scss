@@ -1278,6 +1278,10 @@ Dashboard
   justify-content: center;
   align-items: center;
 
+  &.active{
+    display: flex;
+  }
+
   .pop-up-container{
     width: 80%;
  

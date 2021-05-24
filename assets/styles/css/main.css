@@ -1430,6 +1430,9 @@ Dashboard
   justify-content: center;
   align-items: center;
 }
+.pop-up-bg.active {
+  display: flex;
+}
 .pop-up-bg .pop-up-container {
   width: 80%;
 }
