@@ -177,7 +177,8 @@ td, th {
   width: 20%;
 }
 
-.assignment tr > *:nth-child(3), .assignment tr > *:nth-child(4) {
+.assignment tr > *:nth-child(3),
+.assignment tr > *:nth-child(4) {
   width: 16%;
 }
 
@@ -215,7 +216,7 @@ td, th {
   padding: 7px 7px;
   width: 18px;
   top: -6px;
-  right: 34px;
+  right: 5px;
   position: absolute;
 }
 
@@ -432,7 +433,9 @@ Datatable Header Footer
 Media Query
  *****************************/
 @media (min-device-width: 320px) and (max-device-width: 700px) {
-  .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
+  .modal .modal-body .d-flex .form-group,
+  .modal .modal-body .d-flex .form-group-left,
+  .modal .modal-body .d-flex .form-group-right {
     width: 100%;
   }
   .support ul li:last-child {
@@ -442,6 +445,11 @@ Media Query
     right: 11px;
     position: inherit;
   }
+}
+
+.no-shodow {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 progress {
