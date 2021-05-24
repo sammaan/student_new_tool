@@ -1419,4 +1419,26 @@ Dashboard
   color: #fff;
 }
 
+.pop-up-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.329);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-bg .pop-up-container {
+  width: 80%;
+}
+.pop-up-bg .pop-up-container .pop-up-container header {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none !important;
+}
+
 /*# sourceMappingURL=main.css.map */
