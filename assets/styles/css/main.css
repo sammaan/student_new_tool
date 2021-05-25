@@ -1436,8 +1436,8 @@ Dashboard
 .pop-up-bg .pop-up-container {
   width: 80%;
 }
-.pop-up-bg .pop-up-container .pop-up-container header {
-  margin-bottom: 10px;
+.pop-up-bg .pop-up-container .modal header {
+  margin-bottom: 10px !important;
 }
 
 textarea {
