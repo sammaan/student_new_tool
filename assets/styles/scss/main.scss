@@ -917,10 +917,32 @@ Dashboard
   }
 }
 
-
+//Table container
+.table-container {
+  position: relative;
+  padding: 13px 11px;
+  border-radius: 4px;
+  margin-bottom: 45px;
+  @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #41419e;
+    margin-top: 8px;
+    margin-bottom: 7px;
+  }
+  h4 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #41419e;
+    margin-top: 8px;
+    margin-bottom: 7px;
+  }
+}
 // topbox common 
 
-.top-box-container {
+.top-box-container, .table-container {
   border-radius: 16px;
   margin-bottom: 45px;
   @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));

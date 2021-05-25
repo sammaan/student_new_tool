@@ -142,8 +142,8 @@ th {
 
 td, th {
   font-weight: 500 !important;
-  border-bottom: 1px solid #f4f5f7 !important;
-  border-top: 1px solid #f4f5f7 !important;
+  border-bottom: 1px solid #e7eaef !important;
+  border-top: 1px solid #e7eaef !important;
   padding: 12px 25px !important;
 }
 
@@ -177,7 +177,8 @@ td, th {
   width: 20%;
 }
 
-.assignment tr > *:nth-child(3), .assignment tr > *:nth-child(4) {
+.assignment tr > *:nth-child(3),
+.assignment tr > *:nth-child(4) {
   width: 16%;
 }
 
@@ -185,7 +186,7 @@ td, th {
  Result Table
  *****************************/
 .results {
-  border: 1px solid #f4f5f7;
+  border: 1px solid #e7eaef;
 }
 
 /****************************
@@ -215,7 +216,7 @@ td, th {
   padding: 7px 7px;
   width: 18px;
   top: -6px;
-  right: 34px;
+  right: 14px;
   position: absolute;
 }
 
@@ -246,7 +247,7 @@ Modal
 
 .modal header {
   padding: 0px;
-  border-bottom: 1px solid #f4f5f7;
+  border-bottom: 1px solid #e7eaef;
 }
 
 .modal header h3 {
@@ -432,7 +433,9 @@ Datatable Header Footer
 Media Query
  *****************************/
 @media (min-device-width: 320px) and (max-device-width: 700px) {
-  .modal .modal-body .d-flex .form-group, .modal .modal-body .d-flex .form-group-left, .modal .modal-body .d-flex .form-group-right {
+  .modal .modal-body .d-flex .form-group,
+  .modal .modal-body .d-flex .form-group-left,
+  .modal .modal-body .d-flex .form-group-right {
     width: 100%;
   }
   .support ul li:last-child {
@@ -442,6 +445,11 @@ Media Query
     right: 11px;
     position: inherit;
   }
+}
+
+.no-shodow {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 progress {
