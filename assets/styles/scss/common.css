@@ -458,6 +458,9 @@ Media Query
     right: 11px;
     position: inherit;
   }
+  .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
+    font-size: 12px !important;
+  }
   .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right, .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
     width: 100% !important;
   }
@@ -468,13 +471,48 @@ Media Query
     position: relative;
   }
   .profile-body .profile-box .d-flex .profile-text {
-    padding: 0px !important;
+    padding: 20px !important;
   }
   .profile-body .profile-box .d-flex .profile-text .d-flex .text {
     width: 100% !important;
   }
   .profile-body .ticket-column .ticket-box-container {
     width: 100% !important;
+  }
+  .ticket-body .ticket-box .d-flex .start-learning {
+    padding-top: 19px !important;
+  }
+  .ticket-body .ticket-box .d-flex .start-learning h2 {
+    font-size: 15px !important;
+  }
+  .ticket-body .ticket-box .d-flex .start-learning .resolve-btn {
+    font-size: 11px !important;
+  }
+  .ticket-body .ticket-box .d-flex .user-name h1 {
+    font-size: 15px !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container {
+    width: 100% !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .top-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
+    font-size: 11px !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .top-box h2 {
+    font-size: 16px !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .heading {
+    width: 47% !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
+    width: 53% !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+    font-size: 14px !important;
   }
 }
 
