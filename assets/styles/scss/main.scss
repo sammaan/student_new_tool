@@ -477,17 +477,21 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $violet;
-      color: #fff;
+      background-color: #f8fafb;
+      color: #1e374d;
       font-size: 25px;
       margin-right: 30px;
       cursor: pointer;
-
+      &:hover {
+        background-color: $violet;
+        color: #fff;
+        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+      }
     }
 
     .search-bar {
       .search-input {
-        width: 172px;
+        width: 195px;
         height: 48px;
         border-radius: 16px;
         border: none;
@@ -514,6 +518,14 @@ header {
       background-color: #f8fafb;
       margin-left: 30px;
       cursor: pointer;
+      &:hover {
+        background-color: $violet;
+        color: #fff;
+        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        img{
+          filter: brightness(10);
+        }
+      }
     }
 
     .user-details {
@@ -521,6 +533,13 @@ header {
       margin-left: 30px;
       border-radius: 16px;
       padding: 0 10px 0 0;
+      cursor: pointer;
+      &:hover {
+        background-color: $violet;
+        color: #fff;
+        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        
+      }
 
       img {
         vertical-align: middle;
@@ -541,8 +560,17 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      &:hover {
+        background-color: $violet;
+        color: #fff;
+        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        img{
+          filter: brightness(10);
+        }
+      }
     }
   }
+  
 }
 
 
@@ -669,7 +697,7 @@ Dashboard
       box-sizing: border-box;
       justify-content: space-between;
       overflow: hidden;
-
+      cursor: pointer;
       &:hover {
         @include box-shadow(20px 0px 38px rgba(153, 61, 144, .57));
         position: relative;
@@ -780,6 +808,11 @@ Dashboard
             background-color: $text-blue;
             color: #fff;
             @extend %small-btn;
+            &:hover {
+              background-color: $violet;
+              color: #fff;
+              @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+            }
           }
         }
       }
@@ -795,7 +828,7 @@ Dashboard
         box-sizing: border-box;
         justify-content: space-between;
         overflow: hidden;
-
+        cursor: pointer;
         &:hover {
           @include box-shadow(20px 0px 38px rgba(153, 61, 144, .57));
           position: relative;
@@ -907,7 +940,11 @@ Dashboard
           font-weight: 600;
           padding: 2px 14px;
           margin-bottom: 10px;
-
+          &:hover {
+            background-color: $violet;
+            color: #fff;
+            @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+          }
         }
 
         .due-date {
@@ -919,10 +956,32 @@ Dashboard
   }
 }
 
-
+//Table container
+.table-container {
+  position: relative;
+  padding: 13px 11px;
+  border-radius: 4px;
+  margin-bottom: 45px;
+  @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #41419e;
+    margin-top: 8px;
+    margin-bottom: 7px;
+  }
+  h4 {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #41419e;
+    margin-top: 8px;
+    margin-bottom: 7px;
+  }
+}
 // topbox common 
 
-.top-box-container {
+.top-box-container, .table-container {
   border-radius: 16px;
   margin-bottom: 45px;
   @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
@@ -1113,6 +1172,11 @@ Dashboard
           line-height: 26px;
           font-weight: 600;
           margin-top: 10px;
+          &:hover {
+            background-color: $violet;
+            color: #fff;
+            @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        }
         }
       }
     }
@@ -1164,6 +1228,12 @@ Dashboard
     font-size: 20px;
     font-weight: 600;
     padding: 3px 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: $violet;
+      color: #fff;
+      @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+    }
   }
 
   .tickets {
@@ -1265,6 +1335,12 @@ Dashboard
         background-color: $text-blue;
         color: #fff;
         @extend %small-btn;
+        cursor: pointer;
+        &:hover {
+          background-color: $violet;
+          color: #fff;
+          @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        }
       }
     }
   }
@@ -1287,16 +1363,83 @@ Dashboard
   &.active {
     display: flex;
   }
+  .pop-up{
+    display: none;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
 
   .pop-up-container {
     width: 80%;
-
-    .pop-up-container header {
-      margin-bottom: 10px;
+ 
+    .modal header{
+      margin-bottom: 10px !important;
     }
   }
 }
 
 textarea {
   resize: none !important;
+}
+
+
+
+
+
+/**********************
+calendar
+***********************/
+.academic-calendar {
+  .top-box-gray{
+    background-color: #f8fafb;
+    padding: 22px;
+    border-radius: 10px 10px 0 0;
+    h2{
+      img{
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+      font-weight: 600;
+      color: $text-blue;
+      font-size: 18px;
+    }
+  }
+  .indication {
+    width: 110px;
+    background-color: #f8fafb;
+    border-radius: 4px;
+    padding: 15px 10px 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+    ul {
+      li {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 5px;
+        list-style: none;
+        margin-bottom: 7px;
+
+        .mark {
+          width: 20px;
+          display: block;
+          height: 6px;
+          border-radius: 50px;
+          margin-bottom: 3px;
+        }
+        &:nth-child(1) .mark{
+          background-color: #b1113e;
+        }
+        &:nth-child(2) .mark{
+          background-color: #993d90;
+        }
+        &:nth-child(3) .mark{
+          background-color: #166302;
+        }
+        &:nth-child(4) .mark{
+          background-color: #fcbb1e;
+        }
+      }
+    }
+  }
 }
