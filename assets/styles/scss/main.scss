@@ -236,30 +236,32 @@ table {
 
 .horizontal-tab {
   .tab-box {
-      justify-content: flex-start;
-      border-bottom: 1px solid $light-voilet;
-      margin-bottom: 30px;
-      .tab-list {
-          padding: 4px 20px;
-          border-bottom: 4px solid transparent;
-          cursor: pointer;
-          font-size: 20px;
-          color: $text-blue;
-          margin-right: 20px;
-          &.active,
-          &:hover {
-              border-bottom: 4px solid $violet;
-          }
+    justify-content: flex-start;
+    border-bottom: 1px solid $light-voilet;
+    margin-bottom: 30px;
+
+    .tab-list {
+      padding: 4px 20px;
+      border-bottom: 4px solid transparent;
+      cursor: pointer;
+      font-size: 20px;
+      color: $text-blue;
+      margin-right: 20px;
+
+      &.active,
+      &:hover {
+        border-bottom: 4px solid $violet;
       }
+    }
   }
 
   .subject-selection-box {
-      display: none;
-      
+    display: none;
 
-      &.active {
-          display: block;
-      }
+
+    &.active {
+      display: block;
+    }
   }
 }
 
@@ -1098,7 +1100,7 @@ Dashboard
           line-height: 22px;
           font-weight: 400;
         }
-      
+
 
         .info-button {
           background-color: $yellow;
@@ -1120,30 +1122,33 @@ Dashboard
 
 // Fees & payments 
 
-.payments{
+.payments {
   .top-box-container {
     margin-bottom: 45px;
+
     .inner-boxes {
       .right-box {
         .upcoming-info {
-          .info-Details{
+          .info-Details {
             font-size: 28px;
             line-height: 34px;
             margin: 40px 0 10px;
           }
-          .info-discription{
+
+          .info-discription {
             font-size: 20px;
             line-height: 26px;
           }
         }
+
         .upcoming-dates {
-          .emi-amount{
+          .emi-amount {
             margin-top: 20px;
             font-size: 36px;
             font-weight: 600;
             color: $yellow;
           }
-         
+
         }
       }
     }
@@ -1153,13 +1158,14 @@ Dashboard
 // support style
 
 .support {
-  .add-ticket{
+  .add-ticket {
     @extend %small-btn;
     background-color: $yellow;
     font-size: 20px;
     font-weight: 600;
     padding: 3px 20px;
   }
+
   .tickets {
     background-color: $yellow;
     border-radius: 16px;
@@ -1267,7 +1273,7 @@ Dashboard
 
 // pop ups
 
-.pop-up-bg{
+.pop-up-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1278,23 +1284,19 @@ Dashboard
   justify-content: center;
   align-items: center;
 
-  &.active{
+  &.active {
     display: flex;
   }
 
-  .pop-up-container{
+  .pop-up-container {
     width: 80%;
- 
-    .pop-up-container header{
+
+    .pop-up-container header {
       margin-bottom: 10px;
     }
   }
 }
-textarea{
+
+textarea {
   resize: none !important;
 }
-
-
-
-
-// exmas
