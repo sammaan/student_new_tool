@@ -413,10 +413,12 @@
             $('.sorting_1 a').click(function(e){
                 e.preventDefault;
                 $('.pop-up-bg').addClass('active');
+                $('.pop-up-bg .pop-up').fadeIn();
             });
             
             $('.close-popup').click(function(e){
                 $('.pop-up-bg').removeClass('active');
+                $('.pop-up-bg .pop-up').fadeOut();
             });
 
             // CKEDITOR.replace( 'cke' );
