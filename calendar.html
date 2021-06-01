@@ -8,6 +8,9 @@
     <link href="assets/styles/css/font-face.css" rel="stylesheet">
     <link href="assets/styles/css/main.css" rel="stylesheet">
 
+    <!-- full calendar style cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.css">
+
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -141,17 +144,37 @@
                 <div class="top-box-gray">
                     <h2><img src="assets/img/calendar-icon.png" alt="icon"> Academic Calendar </h2>
                 </div>
-                <div class="indication">
-                <ul class="legends">
-					<li><span class="mark"></span> Examinations</li>
-					<li><span class="mark"></span>Assignments</li>
-					<li><span class="mark"></span>Project</li>
-					<li><span class="mark"></span>Virtual Lab</li>
-				</ul>
-            </div>
+                <div class="d-flex cal-section">    
+                    <div id="fccalendar"></div>
+                    <div class="indication">
+                        <ul class="legends">
+                            <li><span class="mark"></span> Examinations</li>
+                            <li><span class="mark"></span>Assignments</li>
+                            <li><span class="mark"></span>Project</li>
+                            <li><span class="mark"></span>Virtual Lab</li>
+                        </ul>
+                    </div>
+                </div>
             </article>
             <footer></footer>
     </main>
+
+    <style>
+        .cal-section{
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        #fccalendar{
+            width: 75%;
+        }
+        .indication{
+            width: 20%;
+        }
+        .indication .legends{
+            width: 100%;
+            /* height: 100%; */
+        }
+    </style>
 
     <div class="pop-up-bg"></div>
     <article class="pop-up" id="createTicket"></article>
@@ -160,5 +183,17 @@
     <article class="pop-up" id="editProfileEdu"></article>
     <article class="pop-up" id="editProfileExp"></article>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.min.js"></script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('fccalendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+  </script>
 
 </html>
