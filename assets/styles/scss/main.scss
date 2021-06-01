@@ -341,6 +341,7 @@ table {
   box-sizing: border-box;
   @include transition(.3s ease-in-out);
   transition-property: width;
+  z-index: 9;
 
   .logo {
     a {
@@ -631,6 +632,9 @@ Dashboard
 }
 
 .dashboard-top-bpx {
+  .collapse-button{
+    display: none;
+  }
   .your-course {
     font-size: 22px;
     color: $text-blue;

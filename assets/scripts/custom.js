@@ -50,4 +50,11 @@ function openSubject(evt, semName) {
     evt.currentTarget.className += " active";
 }
 
-
+// calendar
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('fccalendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth'
+    });
+    calendar.render();
+  });

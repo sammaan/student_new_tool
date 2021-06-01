@@ -1228,6 +1228,7 @@ table {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   transition-property: width;
+  z-index: 9;
 }
 .side-bar .logo a {
   margin-bottom: 25px;
@@ -1460,6 +1461,9 @@ Dashboard
   margin-top: 10px;
 }
 
+.dashboard-top-bpx .collapse-button {
+  display: none;
+}
 .dashboard-top-bpx .your-course {
   font-size: 22px;
   color: #0e0f22;

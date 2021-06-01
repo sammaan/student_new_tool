@@ -314,6 +314,7 @@
     border-radius: 5px;
     font-size: 24px;
     transition: all 0.3s ease-in-out;
+    display: block;
   }
   .two-column .dashboard-box-container .inner-boxes {
     height: 100%;
@@ -330,6 +331,15 @@
   .two-column .dashboard-box-container.open .inner-boxes {
     height: 100%;
     padding: 20px;
+  }
+
+  .support .tickets {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .support .contact-to-support {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
