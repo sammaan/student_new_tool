@@ -349,6 +349,8 @@ table {
       display: block;
       text-decoration: none;
       overflow: hidden;
+      height: 80px;
+
 
       img {
         width: 80px;
@@ -366,6 +368,9 @@ table {
         overflow: hidden;
         display: none;
         @include transition(.6s ease-in-out);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
@@ -382,7 +387,10 @@ table {
         text-decoration: none;
         padding-left: 15px;
         color: $text-blue;
-
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 52px;
         .menu-icon {
           width: 52px;
           height: 52px;
