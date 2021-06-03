@@ -167,11 +167,11 @@ b {
 /****************************
  Table th td css
  *****************************/
-th {
+.responsive-table th {
     justify-content: center;
 }
 
-td, th {
+.responsive-table td, .responsive-table th {
    font-weight: 500 !important;
    border-bottom: 1px solid $border !important;
    border-top: 1px solid $border !important;
@@ -179,7 +179,7 @@ td, th {
 }
 
 /****************************
- font awsome color
+ font awesome color
  *****************************/
 .fa-book {
     &:before {

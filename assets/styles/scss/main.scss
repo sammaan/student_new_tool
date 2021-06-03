@@ -391,6 +391,7 @@ table {
         overflow: hidden;
         text-overflow: ellipsis;
         height: 52px;
+
         .menu-icon {
           width: 52px;
           height: 52px;
@@ -492,10 +493,10 @@ header {
       font-size: 25px;
       margin-right: 30px;
       cursor: pointer;
+      transition: 0.3s linear all !important;
+
       &:hover {
-        background-color: $violet;
-        color: #fff;
-        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }
     }
 
@@ -528,13 +529,12 @@ header {
       background-color: #f8fafb;
       margin-left: 30px;
       cursor: pointer;
+
+      transition: 0.3s linear all !important;
+
       &:hover {
-        background-color: $violet;
-        color: #fff;
-        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
-        img{
-          filter: brightness(10);
-        }
+        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+
       }
     }
 
@@ -544,11 +544,11 @@ header {
       border-radius: 16px;
       padding: 0 10px 0 0;
       cursor: pointer;
+
+      transition: 0.3s linear all !important;
+
       &:hover {
-        background-color: $violet;
-        color: #fff;
-        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
-        
+        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }
 
       img {
@@ -570,17 +570,15 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: 0.3s linear all !important;
+
       &:hover {
-        background-color: $violet;
-        color: #fff;
-        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
-        img{
-          filter: brightness(10);
-        }
+        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+
       }
     }
   }
-  
+
 }
 
 
@@ -640,9 +638,10 @@ Dashboard
 }
 
 .dashboard-top-bpx {
-  .collapse-button{
+  .collapse-button {
     display: none;
   }
+
   .your-course {
     font-size: 22px;
     color: $text-blue;
@@ -711,9 +710,11 @@ Dashboard
       justify-content: space-between;
       overflow: hidden;
       cursor: pointer;
+
+      transition: 0.3s linear all !important;
+
       &:hover {
-        @include box-shadow(20px 0px 38px rgba(161, 159, 161, .57));
-        position: relative;
+        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
         z-index: 3;
       }
 
@@ -821,10 +822,10 @@ Dashboard
             background-color: $text-blue;
             color: #fff;
             @extend %small-btn;
+            transition: 0.3s linear all !important;
+
             &:hover {
-              background-color: $violet;
-              color: #fff;
-              @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+              box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
             }
           }
         }
@@ -842,10 +843,11 @@ Dashboard
         justify-content: space-between;
         overflow: hidden;
         cursor: pointer;
+
+        transition: 0.3s linear all !important;
+
         &:hover {
-          @include box-shadow(20px 0px 38px rgba(153, 61, 144, .57));
-          position: relative;
-          z-index: 3;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
         }
 
         h3 {
@@ -878,6 +880,10 @@ Dashboard
             background-color: $maroon;
             color: #fff;
             @extend %small-btn;
+            transition: 0.3s linear all !important;
+            &:hover {
+              box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+            }
           }
         }
       }
@@ -953,10 +959,11 @@ Dashboard
           font-weight: 600;
           padding: 2px 14px;
           margin-bottom: 10px;
+
+          transition: 0.3s linear all !important;
+
           &:hover {
-            background-color: $violet;
-            color: #fff;
-            @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+            box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
           }
         }
 
@@ -976,6 +983,7 @@ Dashboard
   border-radius: 4px;
   margin-bottom: 45px;
   @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+
   h3 {
     font-size: 15px;
     font-weight: 600;
@@ -983,6 +991,7 @@ Dashboard
     margin-top: 8px;
     margin-bottom: 7px;
   }
+
   h4 {
     position: relative;
     font-size: 15px;
@@ -992,9 +1001,11 @@ Dashboard
     margin-bottom: 7px;
   }
 }
+
 // topbox common 
 
-.top-box-container, .table-container {
+.top-box-container,
+.table-container {
   border-radius: 16px;
   margin-bottom: 45px;
   @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
@@ -1185,11 +1196,11 @@ Dashboard
           line-height: 26px;
           font-weight: 600;
           margin-top: 10px;
+          transition: 0.3s linear all !important;
+
           &:hover {
-            background-color: $violet;
-            color: #fff;
-            @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
-        }
+            box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+          }
         }
       }
     }
@@ -1242,6 +1253,7 @@ Dashboard
     font-weight: 600;
     padding: 3px 20px;
     cursor: pointer;
+
     &:hover {
       background-color: $violet;
       color: #fff;
@@ -1349,6 +1361,7 @@ Dashboard
         color: #fff;
         @extend %small-btn;
         cursor: pointer;
+
         &:hover {
           background-color: $violet;
           color: #fff;
@@ -1376,7 +1389,8 @@ Dashboard
   &.active {
     display: flex;
   }
-  .pop-up{
+
+  .pop-up {
     display: none;
     max-height: 80vh;
     overflow-y: auto;
@@ -1384,8 +1398,8 @@ Dashboard
 
   .pop-up-container {
     width: 80%;
- 
-    .modal header{
+
+    .modal header {
       margin-bottom: 10px !important;
     }
   }
@@ -1403,20 +1417,24 @@ textarea {
 calendar
 ***********************/
 .academic-calendar {
-  .top-box-gray{
+  .top-box-gray {
     background-color: #f8fafb;
     padding: 22px;
-    border-radius: 10px 10px 0 0;
-    h2{
-      img{
+    border-radius: 10px 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      img {
         vertical-align: middle;
         margin-right: 20px;
       }
+
       font-weight: 600;
       color: $text-blue;
       font-size: 18px;
     }
   }
+
   .indication {
     width: 110px;
     background-color: #f8fafb;
@@ -1424,6 +1442,7 @@ calendar
     padding: 15px 10px 10px;
     margin-bottom: 20px;
     position: relative;
+    margin-top: 120px;
 
     ul {
       li {
@@ -1440,19 +1459,100 @@ calendar
           border-radius: 50px;
           margin-bottom: 3px;
         }
-        &:nth-child(1) .mark{
+
+        &:nth-child(1) .mark {
           background-color: #b1113e;
         }
-        &:nth-child(2) .mark{
+
+        &:nth-child(2) .mark {
           background-color: #993d90;
         }
-        &:nth-child(3) .mark{
+
+        &:nth-child(3) .mark {
           background-color: #166302;
         }
-        &:nth-child(4) .mark{
+
+        &:nth-child(4) .mark {
           background-color: #fcbb1e;
         }
       }
     }
+  }
+
+  .cal-section {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #fccalendar {
+    width: 75%;
+  }
+
+
+  .indication .legends {
+    width: 100%;
+  }
+
+  #fccalendar {
+    width: calc(100% - 150px);
+    box-sizing: border-box;
+  }
+
+  .fc-header-toolbar {
+    background-color: #1e364c;
+    padding: 25px 20px;
+    border-radius: 16px;
+    color: #fff;
+  }
+
+  #fccalendar td {
+    border-bottom: 1px solid #ddd !important;
+  }
+
+  .fc-theme-standard th,
+  .fc-col-header td {
+    border: none !important;
+
+  }
+
+  .fc .fc-scrollgrid-section>td {
+    padding: 0 !important;
+  }
+
+  #fccalendar td,
+  #fccalendar th {
+    border-top: none;
+  }
+
+  .academic-calendar #fccalendar td {
+    padding: 3px 7px !important;
+
+  }
+
+  //.fc-toolbar-chunk{}
+  .fc-direction-ltr .fc-button-group>.fc-button {
+    background-color: #f7f9fb;
+    border-radius: 8px !important;
+    margin-left: 10px !important;
+    color: #1d354b;
+    font-size: 18px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fc .fc-button-primary {
+    background-color: #f7f9fb;
+    border-radius: 8px !important;
+    margin-left: 10px !important;
+    color: #1d354b;
+    font-size: 18px;
+  }
+
+  .fc-scroller-harness-liquid td,
+  .fc-scroller-harness-liquid th {
+    padding: 0 !important;
   }
 }
