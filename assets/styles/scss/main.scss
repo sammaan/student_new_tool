@@ -236,30 +236,32 @@ table {
 
 .horizontal-tab {
   .tab-box {
-      justify-content: flex-start;
-      border-bottom: 1px solid $light-voilet;
-      margin-bottom: 30px;
-      .tab-list {
-          padding: 4px 20px;
-          border-bottom: 4px solid transparent;
-          cursor: pointer;
-          font-size: 20px;
-          color: $text-blue;
-          margin-right: 20px;
-          &.active,
-          &:hover {
-              border-bottom: 4px solid $violet;
-          }
+    justify-content: flex-start;
+    border-bottom: 1px solid $light-voilet;
+    margin-bottom: 30px;
+
+    .tab-list {
+      padding: 4px 20px;
+      border-bottom: 4px solid transparent;
+      cursor: pointer;
+      font-size: 20px;
+      color: $text-blue;
+      margin-right: 20px;
+
+      &.active,
+      &:hover {
+        border-bottom: 4px solid $violet;
       }
+    }
   }
 
   .subject-selection-box {
-      display: none;
-      
+    display: none;
 
-      &.active {
-          display: block;
-      }
+
+    &.active {
+      display: block;
+    }
   }
 }
 
@@ -520,6 +522,9 @@ header {
         background-color: $violet;
         color: #fff;
         @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        img{
+          filter: brightness(10);
+        }
       }
     }
 
@@ -533,6 +538,7 @@ header {
         background-color: $violet;
         color: #fff;
         @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        
       }
 
       img {
@@ -558,6 +564,9 @@ header {
         background-color: $violet;
         color: #fff;
         @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+        img{
+          filter: brightness(10);
+        }
       }
     }
   }
@@ -1150,7 +1159,7 @@ Dashboard
           line-height: 22px;
           font-weight: 400;
         }
-      
+
 
         .info-button {
           background-color: $yellow;
@@ -1177,30 +1186,33 @@ Dashboard
 
 // Fees & payments 
 
-.payments{
+.payments {
   .top-box-container {
     margin-bottom: 45px;
+
     .inner-boxes {
       .right-box {
         .upcoming-info {
-          .info-Details{
+          .info-Details {
             font-size: 28px;
             line-height: 34px;
             margin: 40px 0 10px;
           }
-          .info-discription{
+
+          .info-discription {
             font-size: 20px;
             line-height: 26px;
           }
         }
+
         .upcoming-dates {
-          .emi-amount{
+          .emi-amount {
             margin-top: 20px;
             font-size: 36px;
             font-weight: 600;
             color: $yellow;
           }
-         
+
         }
       }
     }
@@ -1210,7 +1222,7 @@ Dashboard
 // support style
 
 .support {
-  .add-ticket{
+  .add-ticket {
     @extend %small-btn;
     background-color: $yellow;
     font-size: 20px;
@@ -1223,6 +1235,7 @@ Dashboard
       @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
     }
   }
+
   .tickets {
     background-color: $yellow;
     border-radius: 16px;
@@ -1336,7 +1349,7 @@ Dashboard
 
 // pop ups
 
-.pop-up-bg{
+.pop-up-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1347,7 +1360,7 @@ Dashboard
   justify-content: center;
   align-items: center;
 
-  &.active{
+  &.active {
     display: flex;
   }
   .pop-up{
@@ -1356,7 +1369,7 @@ Dashboard
     overflow-y: auto;
   }
 
-  .pop-up-container{
+  .pop-up-container {
     width: 80%;
  
     .modal header{
@@ -1364,11 +1377,69 @@ Dashboard
     }
   }
 }
-textarea{
+
+textarea {
   resize: none !important;
 }
 
 
 
 
-// exmas
+
+/**********************
+calendar
+***********************/
+.academic-calendar {
+  .top-box-gray{
+    background-color: #f8fafb;
+    padding: 22px;
+    border-radius: 10px 10px 0 0;
+    h2{
+      img{
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+      font-weight: 600;
+      color: $text-blue;
+      font-size: 18px;
+    }
+  }
+  .indication {
+    width: 110px;
+    background-color: #f8fafb;
+    border-radius: 4px;
+    padding: 15px 10px 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+    ul {
+      li {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 5px;
+        list-style: none;
+        margin-bottom: 7px;
+
+        .mark {
+          width: 20px;
+          display: block;
+          height: 6px;
+          border-radius: 50px;
+          margin-bottom: 3px;
+        }
+        &:nth-child(1) .mark{
+          background-color: #b1113e;
+        }
+        &:nth-child(2) .mark{
+          background-color: #993d90;
+        }
+        &:nth-child(3) .mark{
+          background-color: #166302;
+        }
+        &:nth-child(4) .mark{
+          background-color: #fcbb1e;
+        }
+      }
+    }
+  }
+}

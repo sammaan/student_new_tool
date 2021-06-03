@@ -1,4 +1,3 @@
-
 <!Doctype html>
 <html>
 
@@ -9,10 +8,14 @@
     <link href="assets/styles/css/font-face.css" rel="stylesheet">
     <link href="assets/styles/css/main.css" rel="stylesheet">
 
+    <!-- full calendar style cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.css">
+
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/scripts/custom.js"></script>
-    
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
 
@@ -20,7 +23,7 @@
 </head>
 
 <body>
-<main class="full-body-width">
+    <main class="full-body-width">
         <!-- side menu -->
         <aside class="side-bar">
             <nav>
@@ -81,15 +84,15 @@
                     </li>
                     <li class="link-courier">
                         <a href="courier.html">
-                            
+
                             <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
                             <span class="menu-text">Courier</span>
                         </a>
                     </li>
                     <li class="link-support">
                         <a href="support.html">
-                            
-                            
+
+
                             <span class="menu-icon"><img src="assets/img/courier.png" alt="nav-icon"></span>
                             <span class="menu-text">Support</span>
                         </a>
@@ -104,42 +107,74 @@
                 </ul>
             </nav>
         </aside>
-        
-<div class="page-container">
-        <!-- header -->
-        <header>
-            <div class="mobile-logo" style="display: none;">
-                <img src="assets/img/logo.jpg" alt="logo">
-            </div>
-            <div class="d-flex">
-                <div class="header-left d-flex">
-                    <div class="fit-to-screen">
-                        <i class="fas fa-expand-alt"></i>
+
+        <div class="page-container">
+            <!-- header -->
+            <header>
+                <div class="mobile-logo" style="display: none;">
+                    <img src="assets/img/logo.jpg" alt="logo">
+                </div>
+                <div class="d-flex">
+                    <div class="header-left d-flex">
+                        <div class="fit-to-screen">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <div class="search-bar">
+                            <input type="search" class="search-input" placeholder="Home / Profile">
+                        </div>
                     </div>
-                    <div class="search-bar">
-                        <input type="search" class="search-input" placeholder="Home / Profile">
+                    <div class="header-right d-flex">
+                        <div class="header-icon">
+                            <img src="assets/img/telecall.png" alt="telecaller">
+                        </div>
+                        <div class="header-icon">
+                            <img src="assets/img/notification.png" alt="telecaller">
+                        </div>
+                        <div class="user-details">
+                            <img src="assets/img/user-pic.png" alt="user">
+                            <span class="user-name">Abhilasha Banerjee</span>
+                        </div>
+                        <div class="logout">
+                            <img src="assets/img/logout.png" alt="logout">
+                        </div>
                     </div>
                 </div>
-                <div class="header-right d-flex">
-                    <div class="header-icon">
-                        <img src="assets/img/telecall.png" alt="telecaller">
-                    </div>
-                    <div class="header-icon">
-                        <img src="assets/img/notification.png" alt="telecaller">
-                    </div>
-                    <div class="user-details">
-                        <img src="assets/img/user-pic.png" alt="user">
-                        <span class="user-name">Abhilasha Banerjee</span>
-                    </div>
-                    <div class="logout">
-                        <img src="assets/img/logout.png" alt="logout">
+            </header>
+            <article id="calendar" class="academic-calendar">
+                <div class="top-box-gray">
+                    <h2><img src="assets/img/calendar-icon.png" alt="icon"> Academic Calendar </h2>
+                </div>
+                <div class="d-flex cal-section">    
+                    <div id="fccalendar"></div>
+                    <div class="indication">
+                        <ul class="legends">
+                            <li><span class="mark"></span> Examinations</li>
+                            <li><span class="mark"></span>Assignments</li>
+                            <li><span class="mark"></span>Project</li>
+                            <li><span class="mark"></span>Virtual Lab</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </header>
-        <article id="calendar"></article>
-        <footer></footer>
+            </article>
+            <footer></footer>
     </main>
+
+    <style>
+        .cal-section{
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        #fccalendar{
+            width: 75%;
+        }
+        .indication{
+            width: 20%;
+        }
+        .indication .legends{
+            width: 100%;
+            /* height: 100%; */
+        }
+    </style>
 
     <div class="pop-up-bg"></div>
     <article class="pop-up" id="createTicket"></article>
@@ -148,5 +183,17 @@
     <article class="pop-up" id="editProfileEdu"></article>
     <article class="pop-up" id="editProfileExp"></article>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.min.js"></script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('fccalendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+  </script>
 
 </html>
