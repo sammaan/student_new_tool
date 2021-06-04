@@ -1280,6 +1280,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
@@ -1296,12 +1297,14 @@ table {
 }
 .side-bar .menu-bar li a:hover .menu-icon {
   background-color: #993d90;
+  color: #fff;
 }
 .side-bar .menu-bar li a:hover .menu-icon img {
   filter: brightness(10);
 }
 .side-bar .menu-bar li.active a .menu-icon {
   background-color: #993d90;
+  color: #fff;
 }
 .side-bar .menu-bar li.active a .menu-icon img {
   filter: brightness(10);
@@ -1373,6 +1376,7 @@ header .header-right.d-flex .header-icon {
   background-color: #f8fafb;
   margin-left: 30px;
   cursor: pointer;
+  font-size: 25px;
   transition: 0.3s linear all !important;
 }
 header .header-right.d-flex .header-icon:hover {
@@ -1407,6 +1411,7 @@ header .header-right.d-flex .logout {
   justify-content: center;
   align-items: center;
   transition: 0.3s linear all !important;
+  font-size: 25px;
 }
 header .header-right.d-flex .logout:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;

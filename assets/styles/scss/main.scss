@@ -400,6 +400,7 @@ table {
           display: flex;
           justify-content: center;
           align-items: center;
+          font-size: 25px;
           @include transition(.6s ease-in-out);
         }
 
@@ -417,7 +418,7 @@ table {
         &:hover {
           .menu-icon {
             background-color: $violet;
-
+            color: #fff;
             img {
               filter: brightness(10);
             }
@@ -429,7 +430,7 @@ table {
         a {
           .menu-icon {
             background-color: $violet;
-
+            color: #fff;
             img {
               filter: brightness(10);
             }
@@ -529,7 +530,7 @@ header {
       background-color: #f8fafb;
       margin-left: 30px;
       cursor: pointer;
-
+      font-size: 25px;
       transition: 0.3s linear all !important;
 
       &:hover {
@@ -571,7 +572,7 @@ header {
       justify-content: center;
       align-items: center;
       transition: 0.3s linear all !important;
-
+      font-size: 25px;
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
 
