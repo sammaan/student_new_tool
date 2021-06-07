@@ -69,11 +69,15 @@ button space
     line-height: 26px;
     font-weight: 600;
     text-align: center;
-    &:hover {
-        background-color: $violet;
-        color: #fff;
-        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
-    }
+    transition: 0.3s linear all !important;
+
+    > span{
+        font-size: 22px;
+        vertical-align: middle;
+      }
+      &:hover {
+          box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+      }
 }
 /****************************
  form Space label and Form Control
@@ -361,10 +365,9 @@ Modal
             color: $resolve-color;
             background-color: $resolve-button;
             cursor: pointer;
+            transition: 0.3s linear all !important;
             &:hover {
-                background-color: $violet;
-                color: #fff;
-                @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+                box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
             }
         }
     }
@@ -498,6 +501,11 @@ Datatable Header Footer
             /*Ticket */
             .user-name{
                 display: inline-flex;
+                > span{
+                    font-size: 25px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                  }
                 h1 {
                     font-size: 24px;
                     line-height: 34px;
@@ -530,10 +538,9 @@ Datatable Header Footer
                     color: #fff;
                     background-color: #64c0ab;
                     cursor: pointer;
+                    transition: 0.3s linear all !important;
                     &:hover {
-                        background-color: $violet;
-                        color: #fff;
-                        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+                        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
                     }
                 }
             }
@@ -583,12 +590,18 @@ Datatable Header Footer
                     line-height: 26px;
                     font-weight: 600;
                     margin-top: 10px;
-                    &:hover {
-                        background-color: $violet;
-                        color: #fff;
-                        @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
-                    }
+
+                    > span{
+                        font-size: 16px;
+                        vertical-align: middle;
+                        margin-right: 4px;
+                      }
+                      transition: 0.3s linear all !important;
+                      &:hover {
+                        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+                      }
                 }
+                
             }
             .ticket-history {
                 height: 172px;
@@ -636,10 +649,9 @@ Datatable Header Footer
                             font-weight: 600;
                             margin-top: 10px;
                             text-transform: uppercase;
+                            transition: 0.3s linear all !important;
                             &:hover {
-                                background-color: $violet;
-                                color: #fff;
-                                @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
+                                box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
                             }
                         }
                         p {
@@ -678,6 +690,11 @@ Datatable Header Footer
                     h3 {
                       color: #314384;
                       font-weight: 600;
+                      > span{
+                        font-size: 22px;
+                        vertical-align: middle;
+                        margin-right: 9px;
+                      }
                     }
                     h4 {
                         font-size: 17px;
@@ -725,7 +742,8 @@ Datatable Header Footer
                 font-size: 18px;
                 bottom: 46px;
                 right: 0px;
-                position: absolute;
+                position: absolute; 
+                
             }
             .username {
                 width: 22%;

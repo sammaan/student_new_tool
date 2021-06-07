@@ -296,6 +296,11 @@ table {
           vertical-align: middle;
           margin-right: 20px;
         }
+        > span{
+          font-size: 26px;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
       }
     }
 
@@ -727,6 +732,11 @@ Dashboard
         img {
           vertical-align: middle;
         }
+        > span{
+          font-size: 20px;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
       }
     }
 
@@ -868,6 +878,11 @@ Dashboard
           img {
             vertical-align: middle;
             margin-right: 10px;
+          }
+          > span{
+            font-size: 20px;
+            margin-right: 4px;
+            vertical-align: middle;
           }
         }
 
@@ -1021,6 +1036,8 @@ Dashboard
     color: #fff;
     border-radius: 16px;
     padding: 18px 35px;
+    height: 86px;
+    box-sizing: border-box;
 
     h2 {
       font-size: 24px;

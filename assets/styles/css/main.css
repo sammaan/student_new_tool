@@ -37,12 +37,14 @@ button space
   line-height: 26px;
   font-weight: 600;
   text-align: center;
+  transition: 0.3s linear all !important;
+}
+.icon-btn > span {
+  font-size: 22px;
+  vertical-align: middle;
 }
 .icon-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 /****************************
@@ -289,12 +291,10 @@ Modal
   color: #44bf89;
   background-color: #afeed3;
   cursor: pointer;
+  transition: 0.3s linear all !important;
 }
 .modal .modal-body .resolve-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .modal footer {
   padding: 20px 12px;
@@ -417,6 +417,11 @@ Address Border in Popup
 .ticket-body .ticket-box .d-flex .user-name {
   display: inline-flex;
 }
+.ticket-body .ticket-box .d-flex .user-name > span {
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 .ticket-body .ticket-box .d-flex .user-name h1 {
   font-size: 24px;
   line-height: 34px;
@@ -449,12 +454,10 @@ Address Border in Popup
   color: #fff;
   background-color: #64c0ab;
   cursor: pointer;
+  transition: 0.3s linear all !important;
 }
 .ticket-body .ticket-box .d-flex .start-learning .resolve-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .ticket-body .ticket-details {
   padding: 50px 25px;
@@ -501,12 +504,15 @@ Address Border in Popup
   line-height: 26px;
   font-weight: 600;
   margin-top: 10px;
+  transition: 0.3s linear all !important;
+}
+.ticket-body .ticket-column .ticket-box-container .top-box .info-button > span {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .ticket-body .ticket-column .ticket-box-container .ticket-history {
   height: 172px;
@@ -557,12 +563,10 @@ Address Border in Popup
   font-weight: 600;
   margin-top: 10px;
   text-transform: uppercase;
+  transition: 0.3s linear all !important;
 }
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
   font-size: 14px;
@@ -599,6 +603,11 @@ Address Border in Popup
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 {
   color: #314384;
   font-weight: 600;
+}
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 > span {
+  font-size: 22px;
+  vertical-align: middle;
+  margin-right: 9px;
 }
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
   font-size: 17px;
@@ -1191,6 +1200,11 @@ table {
   vertical-align: middle;
   margin-right: 20px;
 }
+.two-column .dashboard-box-container .top-box h2 > span {
+  font-size: 26px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
 .two-column .dashboard-box-container .inner-boxes {
   height: 172px;
   overflow-y: scroll;
@@ -1533,6 +1547,11 @@ Dashboard
 .dashboard-top-bpx .course-details-panel .semester-status h3 img {
   vertical-align: middle;
 }
+.dashboard-top-bpx .course-details-panel .semester-status h3 > span {
+  font-size: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
 .dashboard-top-bpx .course-details-panel .dash-support .tickets {
   background-color: #f8c145;
   border-radius: 16px;
@@ -1648,6 +1667,11 @@ Dashboard
 .dashboard-top-bpx .course-details-panel .notification-item .notification h3 img {
   vertical-align: middle;
   margin-right: 10px;
+}
+.dashboard-top-bpx .course-details-panel .notification-item .notification h3 > span {
+  font-size: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
 }
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info {
   justify-content: flex-end;
@@ -1775,6 +1799,8 @@ Dashboard
   color: #fff;
   border-radius: 16px;
   padding: 18px 35px;
+  height: 86px;
+  box-sizing: border-box;
 }
 .top-box-container .top-box h2,
 .table-container .top-box h2 {
