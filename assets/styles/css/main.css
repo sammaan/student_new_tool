@@ -2247,6 +2247,11 @@ calendar
   justify-content: center;
   align-items: center;
 }
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-dayGridMonth-button,
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-timeGridWeek-button,
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-timeGridDay-button {
+  width: auto;
+}
 .academic-calendar .fc .fc-button-primary {
   background-color: #f7f9fb;
   border-radius: 8px !important;

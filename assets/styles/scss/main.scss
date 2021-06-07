@@ -1564,7 +1564,11 @@ calendar
     justify-content: center;
     align-items: center;
   }
-
+  .fc-direction-ltr .fc-button-group> .fc-dayGridMonth-button,
+  .fc-direction-ltr .fc-button-group>  .fc-timeGridWeek-button,
+  .fc-direction-ltr .fc-button-group> .fc-timeGridDay-button{
+    width: auto;
+  }
   .fc .fc-button-primary {
     background-color: #f7f9fb;
     border-radius: 8px !important;
