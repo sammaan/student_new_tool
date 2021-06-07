@@ -538,16 +538,20 @@ header {
 
       }
     }
-
+    
     .user-details {
       background-color: #f8fafb;
       margin-left: 30px;
       border-radius: 16px;
       padding: 0 10px 0 0;
       cursor: pointer;
-
       transition: 0.3s linear all !important;
-
+      
+      a{
+        color: inherit;
+        text-decoration: auto;
+      }
+      
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }

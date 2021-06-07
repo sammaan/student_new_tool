@@ -1390,6 +1390,10 @@ header .header-right.d-flex .user-details {
   cursor: pointer;
   transition: 0.3s linear all !important;
 }
+header .header-right.d-flex .user-details a {
+  color: inherit;
+  text-decoration: auto;
+}
 header .header-right.d-flex .user-details:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }

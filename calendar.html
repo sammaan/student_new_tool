@@ -137,8 +137,10 @@
                         <div class="header-icon">
 <span class="icon-Notifications"><span class="path1"></span><span class="path2"></span></span>                        </div>
                         <div class="user-details">
-                            <img src="assets/img/user-pic.png" alt="user">
-                            <span class="user-name">Abhilasha Banerjee</span>
+                            <a href="profile.html">
+                                <img src="assets/img/user-pic.png" alt="user">
+                                <span class="user-name">Abhilasha Banerjee</span>
+                            </a>
                         </div>
                         <div class="logout">
 <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>                        </div>
@@ -178,7 +180,12 @@
     document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('fccalendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth'
+        // initialView: 'dayGridMonth'
+        headerToolbar: {
+                left: 'prev,next',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            }
       });
       calendar.render();
     });
