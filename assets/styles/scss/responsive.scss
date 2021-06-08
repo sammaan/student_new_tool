@@ -52,7 +52,6 @@ $layout-breakpoint-xs: 767px;
 
           .semester-points {
             justify-content: space-between;
-            font-size: 18px;
           }
         }
 
@@ -63,6 +62,17 @@ $layout-breakpoint-xs: 767px;
 
           .payment-amount {
             font-size: 22px;
+            width: 100%;
+            text-align: center;
+          }
+
+          .pay-btn {
+            text-align: center;
+          }
+
+          .due-date {
+            width: 100%;
+            text-align: center;
           }
         }
       }
@@ -85,11 +95,7 @@ $layout-breakpoint-xs: 767px;
           }
         }
 
-        .contact-to-support {
-          .contact-persone-name {
-            font-size: 16px;
-          }
-        }
+
       }
     }
   }
@@ -155,6 +161,15 @@ $layout-breakpoint-xs: 767px;
       }
     }
   }
+
+  // calendar
+  .fc h2.fc-toolbar-title {
+    font-size: 16px;
+  }
+
+  .academic-calendar .fc-direction-ltr .fc-button-group>.fc-button {
+    font-size: 14px;
+  }
 }
 
 
@@ -185,7 +200,7 @@ $layout-breakpoint-xs: 767px;
 
     .mobile-logo {
       display: block;
-      width: 200px;
+      width: 240px;
 
       img {
         max-width: 100%;
@@ -251,8 +266,13 @@ $layout-breakpoint-xs: 767px;
   .top-box-container {
     .top-box {
       h2 {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 24px;
+        line-height: 30px;
+
+        >span {
+          font-size: 30px;
+          margin-right: 10px;
+        }
 
         img {
           width: 30px;
@@ -274,15 +294,15 @@ $layout-breakpoint-xs: 767px;
           margin-bottom: 10px;
         }
 
-        .semester-points {
-          font-size: 18px;
-          line-height: 24px;
+        // .semester-points {
+        //   font-size: 18px;
+        //   line-height: 24px;
 
-          span {
-            font-size: 12px;
-            line-height: 18px;
-          }
-        }
+        //   span {
+        //     font-size: 12px;
+        //     line-height: 18px;
+        //   }
+        // }
       }
 
       .right-box {
@@ -293,10 +313,10 @@ $layout-breakpoint-xs: 767px;
             margin-bottom: 9px;
           }
 
-          .info-heading {
-            font-size: 16px;
-            line-height: 22px;
-          }
+          // .info-heading {
+          //   font-size: 16px;
+          //   line-height: 22px;
+          // }
 
           .info-Details {
             font-size: 18px;
@@ -358,6 +378,7 @@ $layout-breakpoint-xs: 767px;
           width: 40px;
           height: 40px;
           border-radius: 10px;
+          font-size: 24px;
 
           img {
             width: 25px;
@@ -398,6 +419,12 @@ $layout-breakpoint-xs: 767px;
 
           h2 {
             font-size: 15px;
+          }
+        }
+
+        .course-details-name {
+          h2 {
+            font-size: 18px;
           }
         }
       }
@@ -443,27 +470,31 @@ $layout-breakpoint-xs: 767px;
         height: 70px;
         justify-content: space-between;
         padding: 0 20px;
+
         h2 {
           font-size: 16px;
+
           img {
-           max-height: 26px;
+            max-height: 26px;
             max-width: 26px;
           }
         }
-        .collapse-button{
+
+        .collapse-button {
           width: 30px;
           height: 30px;
           background-color: #f8c145;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 5px;
+          border-radius: 8px;
           font-size: 24px;
           transition: all .3s ease-in-out;
-          display: block;
+          opacity: 1;
         }
       }
-      .inner-boxes{
+
+      .inner-boxes {
         height: 100%;
         height: 0;
         transition: all .3s ease-in-out;
@@ -472,26 +503,71 @@ $layout-breakpoint-xs: 767px;
         padding: 0;
       }
     }
-    .dashboard-box-container.open{
-      .collapse-button{
+
+    .dashboard-box-container.open {
+      .collapse-button {
         transform: rotate(180deg);
         transition: all .7s ease-in-out;
       }
-      .inner-boxes{
+
+      .inner-boxes {
         height: 100%;
         padding: 20px;
       }
     }
   }
+
   // support
   .support {
-    .tickets{
+    .tickets {
       width: 100%;
       margin-bottom: 10px;
     }
-    .contact-to-support{
+
+    .contact-to-support {
       width: 100%;
       max-width: 100%;
+    }
+  }
+
+  // calender
+  .academic-calendar {
+    #fccalendar {
+      width: calc(100% - 0px);
+      box-sizing: border-box;
+    }
+
+    .indication {
+      margin-top: 20px;
+    }
+
+    .fc-header-toolbar {
+      flex-wrap: wrap;
+
+      .fc-toolbar-chunk {
+
+        &:nth-child(2) {
+          width: 50%;
+          text-align: right;
+
+          h2.fc-toolbar-title {
+            font-size: 20px;
+          }
+        }
+
+        &:nth-child(3) {
+          width: 100%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .payments,.support {
+    .top-box-container {
+      .top-box {
+        height: auto;
+      }
     }
   }
 }

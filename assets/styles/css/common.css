@@ -134,7 +134,8 @@ b {
   justify-content: center;
 }
 
-.responsive-table td, .responsive-table th {
+.responsive-table td,
+.responsive-table th {
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
@@ -329,8 +330,8 @@ Modal
 }
 
 /************************
-Radio Button
-***********************/
+ Radio Button
+ ***********************/
 .radio-inline {
   margin-top: 17px;
   position: relative;
@@ -345,20 +346,26 @@ Radio Button
 /**************
 Date Input
 ***************/
-input[type=date i], input[type=file i] {
+input[type=date i],
+input[type=file i] {
   padding: 11px !important;
 }
 
 /**************
 Datatable Header Footer
 ***************/
-.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
   color: #413173 !important;
   font-size: 13px;
   margin-bottom: 12px;
   font-weight: 500;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #fbfbfb !important;
   border: 1px solid #d0c7c7 !important;
   background-color: #5e72e4;
@@ -378,8 +385,8 @@ Datatable Header Footer
 }
 
 /****************************
-Address Border in Popup
-*****************************/
+ Address Border in Popup
+ *****************************/
 .address-border {
   margin: 29px 0px;
   border-top: 1px solid #dee5ea;
@@ -469,13 +476,15 @@ Address Border in Popup
 }
 .ticket-body .ticket-column {
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   margin-bottom: 20px;
 }
 .ticket-body .ticket-column .ticket-box-container {
   width: 48%;
   border-radius: 16px;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 .ticket-body .ticket-column .ticket-box-container .top-box {
   justify-content: space-between;
@@ -484,7 +493,8 @@ Address Border in Popup
   box-sizing: border-box;
   color: #000;
   border-radius: 16px 16px 0px 0px;
-  padding: 26px 35px;
+  padding: 0px 35px;
+  height: 85px;
 }
 .ticket-body .ticket-column .ticket-box-container .top-box h2 {
   font-size: 20px;
@@ -867,7 +877,8 @@ Media Query
   .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
     font-size: 12px !important;
   }
-  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right, .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
+  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right,
+.profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
     width: 100% !important;
   }
   .profile-body .profile-box .d-flex .username {
@@ -929,7 +940,10 @@ Media Query
   .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
     width: 53% !important;
   }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
     font-size: 13px !important;
   }
 }
@@ -949,7 +963,22 @@ progress {
 }
 
 progress::-webkit-progress-value {
-  background-color: #45a38f;
+  background-color: #993d90;
+  border-radius: 4px;
+}
+
+progress::-moz-progress-value {
+  background-color: #993d90;
+  border-radius: 4px;
+}
+
+progress::-moz-progress-bar {
+  background: #e8e8eb;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-bar {
+  background: #e8e8eb;
   border-radius: 4px;
 }
 

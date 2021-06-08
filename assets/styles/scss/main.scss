@@ -33,10 +33,9 @@ $text-blue: #0e0f22;
 //extention
 
 %small-btn {
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
   border-radius: 50px;
-  font-size: 11px;
   padding: 2px 10px;
   text-decoration: none;
 }
@@ -297,8 +296,8 @@ table {
           margin-right: 20px;
         }
         > span{
-          font-size: 26px;
-          margin-right: 4px;
+          font-size: 32px;
+          margin-right: 14px;
           vertical-align: middle;
         }
       }
@@ -405,7 +404,8 @@ table {
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 25px;
+          font-size: 30px;
+          color: $violet;
           @include transition(.6s ease-in-out);
         }
 
@@ -495,8 +495,8 @@ header {
       justify-content: center;
       align-items: center;
       background-color: #f8fafb;
-      color: #1e374d;
-      font-size: 25px;
+      color: $violet;
+      font-size: 30px;
       margin-right: 30px;
       cursor: pointer;
       transition: 0.3s linear all !important;
@@ -535,7 +535,8 @@ header {
       background-color: #f8fafb;
       margin-left: 30px;
       cursor: pointer;
-      font-size: 25px;
+      font-size: 30px;
+      color: $violet;
       transition: 0.3s linear all !important;
 
       &:hover {
@@ -578,13 +579,13 @@ header {
       height: 48px;
       border-radius: 16px;
       display: flex;
+      color: $violet;
       justify-content: center;
       align-items: center;
       transition: 0.3s linear all !important;
-      font-size: 25px;
+      font-size: 30px;
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
-
       }
     }
   }
@@ -634,6 +635,8 @@ Dashboard
         justify-content: center;
         align-items: center;
         margin-left: 30px;
+        font-size: 35px;
+        color: #fff;
       }
 
       p {
@@ -649,7 +652,7 @@ Dashboard
 
 .dashboard-top-bpx {
   .collapse-button {
-    display: none;
+   opacity: 0;
   }
 
   .your-course {
@@ -733,7 +736,7 @@ Dashboard
           vertical-align: middle;
         }
         > span{
-          font-size: 20px;
+          font-size: 26px;
           margin-right: 4px;
           vertical-align: middle;
         }
@@ -824,7 +827,7 @@ Dashboard
         }
 
         .contact-persone-post {
-          font-size: 11px;
+          font-size: 14px;
           line-height: 17px;
           color: $text-blue;
           margin-bottom: 10px;
@@ -836,6 +839,7 @@ Dashboard
           .message-btn {
             background-color: $text-blue;
             color: #fff;
+            font-size: 14px;
             @extend %small-btn;
             transition: 0.3s linear all !important;
 
@@ -880,7 +884,8 @@ Dashboard
             margin-right: 10px;
           }
           > span{
-            font-size: 20px;
+            font-size: 25px;
+            color: $violet;
             margin-right: 4px;
             vertical-align: middle;
           }
@@ -1047,6 +1052,10 @@ Dashboard
       img {
         vertical-align: middle;
         margin-right: 20px;
+      }
+      > span{
+        font-size: 30px;
+        margin-right: 10px;
       }
     }
 
@@ -1581,4 +1590,8 @@ calendar
   .fc-scroller-harness-liquid th {
     padding: 0 !important;
   }
+  .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    position: relative;
+    min-height: 0;
+}
 }
