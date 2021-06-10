@@ -139,7 +139,9 @@ b {
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
-  padding: 12px 25px !important;
+  padding: 12px 11px !important;
+  min-width: 100px;
+  white-space: nowrap;
 }
 
 /****************************
@@ -2129,13 +2131,13 @@ Dashboard
   font-size: 12px;
 }
 .support .contact-to-support .contact-persone-name {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 26px;
   color: #0e0f22;
   margin-bottom: 5px;
 }
 .support .contact-to-support .contact-persone-post {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 17px;
   color: #0e0f22;
   margin-bottom: 10px;

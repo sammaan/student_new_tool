@@ -139,7 +139,9 @@ b {
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
-  padding: 12px 25px !important;
+  padding: 12px 11px !important;
+  min-width: 100px;
+  white-space: nowrap;
 }
 
 /****************************
