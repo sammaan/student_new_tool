@@ -37,12 +37,14 @@ button space
   line-height: 26px;
   font-weight: 600;
   text-align: center;
+  transition: 0.3s linear all !important;
+}
+.icon-btn > span {
+  font-size: 22px;
+  vertical-align: middle;
 }
 .icon-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 /****************************
@@ -128,11 +130,12 @@ b {
 /****************************
  Table th td css
  *****************************/
-th {
+.responsive-table th {
   justify-content: center;
 }
 
-td, th {
+.responsive-table td,
+.responsive-table th {
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
@@ -140,7 +143,7 @@ td, th {
 }
 
 /****************************
- font awsome color
+ font awesome color
  *****************************/
 .fa-book:before {
   color: #b143d6;
@@ -289,12 +292,10 @@ Modal
   color: #44bf89;
   background-color: #afeed3;
   cursor: pointer;
+  transition: 0.3s linear all !important;
 }
 .modal .modal-body .resolve-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .modal footer {
   padding: 20px 12px;
@@ -329,8 +330,8 @@ Modal
 }
 
 /************************
-Radio Button
-***********************/
+ Radio Button
+ ***********************/
 .radio-inline {
   margin-top: 17px;
   position: relative;
@@ -345,20 +346,26 @@ Radio Button
 /**************
 Date Input
 ***************/
-input[type=date i], input[type=file i] {
+input[type=date i],
+input[type=file i] {
   padding: 11px !important;
 }
 
 /**************
 Datatable Header Footer
 ***************/
-.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
   color: #413173 !important;
   font-size: 13px;
   margin-bottom: 12px;
   font-weight: 500;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #fbfbfb !important;
   border: 1px solid #d0c7c7 !important;
   background-color: #5e72e4;
@@ -378,8 +385,8 @@ Datatable Header Footer
 }
 
 /****************************
-Address Border in Popup
-*****************************/
+ Address Border in Popup
+ *****************************/
 .address-border {
   margin: 29px 0px;
   border-top: 1px solid #dee5ea;
@@ -417,6 +424,11 @@ Address Border in Popup
 .ticket-body .ticket-box .d-flex .user-name {
   display: inline-flex;
 }
+.ticket-body .ticket-box .d-flex .user-name > span {
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 .ticket-body .ticket-box .d-flex .user-name h1 {
   font-size: 24px;
   line-height: 34px;
@@ -449,12 +461,10 @@ Address Border in Popup
   color: #fff;
   background-color: #64c0ab;
   cursor: pointer;
+  transition: 0.3s linear all !important;
 }
 .ticket-body .ticket-box .d-flex .start-learning .resolve-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .ticket-body .ticket-details {
   padding: 50px 25px;
@@ -466,13 +476,15 @@ Address Border in Popup
 }
 .ticket-body .ticket-column {
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   margin-bottom: 20px;
 }
 .ticket-body .ticket-column .ticket-box-container {
   width: 48%;
   border-radius: 16px;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 .ticket-body .ticket-column .ticket-box-container .top-box {
   justify-content: space-between;
@@ -481,7 +493,8 @@ Address Border in Popup
   box-sizing: border-box;
   color: #000;
   border-radius: 16px 16px 0px 0px;
-  padding: 26px 35px;
+  padding: 0px 35px;
+  height: 85px;
 }
 .ticket-body .ticket-column .ticket-box-container .top-box h2 {
   font-size: 20px;
@@ -501,12 +514,15 @@ Address Border in Popup
   line-height: 26px;
   font-weight: 600;
   margin-top: 10px;
+  transition: 0.3s linear all !important;
+}
+.ticket-body .ticket-column .ticket-box-container .top-box .info-button > span {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .ticket-body .ticket-column .ticket-box-container .ticket-history {
   height: 172px;
@@ -557,12 +573,10 @@ Address Border in Popup
   font-weight: 600;
   margin-top: 10px;
   text-transform: uppercase;
+  transition: 0.3s linear all !important;
 }
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
   font-size: 14px;
@@ -599,6 +613,11 @@ Address Border in Popup
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 {
   color: #314384;
   font-weight: 600;
+}
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 > span {
+  font-size: 22px;
+  vertical-align: middle;
+  margin-right: 9px;
 }
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
   font-size: 17px;
@@ -858,7 +877,8 @@ Media Query
   .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
     font-size: 12px !important;
   }
-  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right, .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
+  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right,
+.profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
     width: 100% !important;
   }
   .profile-body .profile-box .d-flex .username {
@@ -920,7 +940,10 @@ Media Query
   .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
     width: 53% !important;
   }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
     font-size: 13px !important;
   }
 }
@@ -940,7 +963,22 @@ progress {
 }
 
 progress::-webkit-progress-value {
-  background-color: #45a38f;
+  background-color: #993d90;
+  border-radius: 4px;
+}
+
+progress::-moz-progress-value {
+  background-color: #993d90;
+  border-radius: 4px;
+}
+
+progress::-moz-progress-bar {
+  background: #e8e8eb;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-bar {
+  background: #e8e8eb;
   border-radius: 4px;
 }
 

@@ -26,13 +26,21 @@
   }
   .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points {
     justify-content: space-between;
-    font-size: 18px;
   }
   .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment h3 {
     font-size: 16px;
   }
   .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .payment-amount {
     font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn {
+    text-align: center;
+  }
+  .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .due-date {
+    width: 100%;
+    text-align: center;
   }
   .dashboard-top-bpx .course-details-panel .dash-support .tickets {
     padding: 15px;
@@ -47,13 +55,29 @@
     font-size: 12px;
     line-height: 16px;
   }
-  .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-name {
-    font-size: 16px;
-  }
 }
 @media (max-width: 991px) {
   .two-column .dashboard-box-container {
     width: 100%;
+  }
+
+  header .header-left.d-flex .search-bar .search-input {
+    width: 152px;
+  }
+  header .header-right.d-flex .header-icon {
+    margin-left: 7px;
+  }
+  header .header-right.d-flex .user-details {
+    margin-left: 7px;
+    width: 209px;
+  }
+  header .header-right.d-flex .user-details .user-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  header .header-right.d-flex .logout {
+    margin-left: 0px;
   }
 
   .user-details-panel .d-flex .user-name {
@@ -68,21 +92,86 @@
   .user-details-panel .d-flex .start-learning {
     width: 40%;
   }
+
+  .fc h2.fc-toolbar-title {
+    font-size: 16px;
+  }
+
+  .academic-calendar .fc-direction-ltr .fc-button-group > .fc-button {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   .full-body-width {
     width: calc(100% - 0px);
     margin-left: 0px;
+    padding: 0 10px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  header .mobile-hamburger {
+    display: block;
+    font-size: 30px;
+  }
+  header .mobile-logo {
+    display: block;
+    width: 240px;
+  }
+  header .mobile-logo img {
+    max-width: 100%;
+  }
+  header .header-left {
+    display: none;
+  }
+  header .header-right.d-flex .header-icon {
+    display: none;
+  }
+  header .header-right.d-flex .user-details {
+    display: none;
+  }
+  header .header-right.d-flex .user-details .user-name {
+    display: none;
   }
 
   .side-bar {
     padding: 0;
     width: 0;
+    margin-top: 70px;
+    padding-top: 10px;
+  }
+  .side-bar .menu-bar li a {
+    box-sizing: border-box;
+  }
+  .side-bar .menu-bar li a .menu-text {
+    width: auto;
+    font-size: 16px;
+  }
+  .side-bar .logo {
+    width: 300px;
+    display: none;
+  }
+  .side-bar .logo a .university-name {
+    width: auto;
+    display: inline-block;
+    font-size: 22px;
+  }
+
+  .side-bar.open-menu {
+    width: 300px;
+    transition: width 1s;
   }
 
   .top-box-container .top-box h2 {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .top-box-container .top-box h2 > span {
+    font-size: 30px;
+    margin-right: 10px;
   }
   .top-box-container .top-box h2 img {
     width: 30px;
@@ -98,23 +187,11 @@
   .top-box-container .inner-boxes .left-box .progess-bar {
     margin-bottom: 10px;
   }
-  .top-box-container .inner-boxes .left-box .semester-points {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .top-box-container .inner-boxes .left-box .semester-points span {
-    font-size: 12px;
-    line-height: 18px;
-  }
   .top-box-container .inner-boxes .right-box .upcoming-info {
     width: 100%;
   }
   .top-box-container .inner-boxes .right-box .upcoming-info .mb-20 {
     margin-bottom: 9px;
-  }
-  .top-box-container .inner-boxes .right-box .upcoming-info .info-heading {
-    font-size: 16px;
-    line-height: 22px;
   }
   .top-box-container .inner-boxes .right-box .upcoming-info .info-Details {
     font-size: 18px;
@@ -133,23 +210,77 @@
   }
 
   .user-details-panel .d-flex .user-name {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
   }
+  .user-details-panel .d-flex .user-name h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .user-details-panel .d-flex .user-name h1 span {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .user-details-panel .d-flex .start-learning {
-    width: 100%;
-    justify-content: flex-start;
+    width: 20%;
+    justify-content: space-between;
+  }
+  .user-details-panel .d-flex .start-learning h2 {
+    display: none;
   }
   .user-details-panel .d-flex .start-learning p {
-    text-align: left;
+    display: none;
+  }
+  .user-details-panel .d-flex .start-learning .continue-learning-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+  .user-details-panel .d-flex .start-learning .continue-learning-box img {
+    width: 25px;
   }
 
-  .dashboard-top-bpx .course-details .course-name {
+  .dashboard-top-bpx .your-course {
+    display: none;
+  }
+  .dashboard-top-bpx .course-details .course-name,
+.dashboard-top-bpx .course-details .course-details-icon {
     width: 100%;
     min-width: auto;
     border: none;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .dashboard-top-bpx .course-details .course-name .course-details-icon,
+.dashboard-top-bpx .course-details .course-details-icon .course-details-icon {
+    width: 60px;
+    padding-top: 20px;
+  }
+  .dashboard-top-bpx .course-details .course-name .course-details-name,
+.dashboard-top-bpx .course-details .course-name .couese-student-name,
+.dashboard-top-bpx .course-details .course-details-icon .course-details-name,
+.dashboard-top-bpx .course-details .course-details-icon .couese-student-name {
+    width: calc(100% - 60px);
+    padding: 10px 0;
+  }
+  .dashboard-top-bpx .course-details .course-name .course-details-name h2,
+.dashboard-top-bpx .course-details .course-name .couese-student-name h2,
+.dashboard-top-bpx .course-details .course-details-icon .course-details-name h2,
+.dashboard-top-bpx .course-details .course-details-icon .couese-student-name h2 {
+    font-size: 15px;
+  }
+  .dashboard-top-bpx .course-details .course-name .course-details-name h2,
+.dashboard-top-bpx .course-details .course-details-icon .course-details-name h2 {
+    font-size: 18px;
+  }
+  .dashboard-top-bpx .course-details .bor {
+    border-top: 1px solid #b82157;
+    border-bottom: 1px solid #b82157;
   }
   .dashboard-top-bpx .course-details-panel {
     padding: 25px 0px;
@@ -168,6 +299,83 @@
   .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .two-column .dashboard-box-container .top-box {
+    background-color: #441b40;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .two-column .dashboard-box-container .top-box h2 {
+    font-size: 16px;
+  }
+  .two-column .dashboard-box-container .top-box h2 img {
+    max-height: 26px;
+    max-width: 26px;
+  }
+  .two-column .dashboard-box-container .top-box .collapse-button {
+    width: 30px;
+    height: 30px;
+    background-color: #f8c145;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+  .two-column .dashboard-box-container .inner-boxes {
+    height: 100%;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+    transition-property: height;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .two-column .dashboard-box-container.open .collapse-button {
+    transform: rotate(180deg);
+    transition: all 0.7s ease-in-out;
+  }
+  .two-column .dashboard-box-container.open .inner-boxes {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .support .tickets {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .support .contact-to-support {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .academic-calendar #fccalendar {
+    width: calc(100% - 0px);
+    box-sizing: border-box;
+  }
+  .academic-calendar .indication {
+    margin-top: 20px;
+  }
+  .academic-calendar .fc-header-toolbar {
+    flex-wrap: wrap;
+  }
+  .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    width: 50%;
+    text-align: right;
+  }
+  .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) h2.fc-toolbar-title {
+    font-size: 20px;
+  }
+  .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+    width: 100%;
+    text-align: right;
+  }
+
+  .payments .top-box-container .top-box, .support .top-box-container .top-box {
+    height: auto;
   }
 }
 

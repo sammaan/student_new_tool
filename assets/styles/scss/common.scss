@@ -585,7 +585,7 @@ Datatable Header Footer
                     font-weight: 600;
                     margin-top: 10px;
                     &:hover {
-                        
+                        background-color: $violet;
                         color: #fff;
                         @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
                     }
