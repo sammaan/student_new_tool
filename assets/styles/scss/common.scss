@@ -158,7 +158,9 @@ b {
             color: $td-text;
 
             .fas {
-                margin-right: 3px;
+                left: 10px;
+                position: absolute;
+                top: 17px;
             }
         }
     }
@@ -169,9 +171,11 @@ b {
  *****************************/
 th {
     justify-content: center;
+    vertical-align: middle !important;
 }
 
 td, th {
+   position: relative;
    font-weight: 500 !important;
    border-bottom: 1px solid $border !important;
    border-top: 1px solid $border !important;
@@ -1000,6 +1004,9 @@ Media Query
         .ticket-column {
             .ticket-box-container {
                 width: 100% !important;
+                .ticket-history {
+                    height: auto !important;
+                }
             }
         }
     }
