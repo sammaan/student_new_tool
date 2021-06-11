@@ -615,7 +615,6 @@ Datatable Header Footer
 }
 
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button:hover {
-  background-color: #993d90;
   color: #fff;
   -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
   box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
