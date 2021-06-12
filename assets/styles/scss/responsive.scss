@@ -52,6 +52,7 @@ $layout-breakpoint-xs: 767px;
 
           .semester-points {
             justify-content: space-between;
+
           }
         }
 
@@ -172,7 +173,11 @@ $layout-breakpoint-xs: 767px;
   }
 }
 
-
+@media (min-width: $layout-breakpoint-xs) {
+  .mobile-only {
+    display: none;
+  }
+}
 
 // style bellow 767
 @media (max-width: $layout-breakpoint-xs) {
@@ -183,6 +188,7 @@ $layout-breakpoint-xs: 767px;
     width: calc(100% - 0px);
     margin-left: 0px;
     padding: 0 10px;
+    border-radius: 0;
   }
 
   // header
@@ -217,11 +223,16 @@ $layout-breakpoint-xs: 767px;
       }
 
       .user-details {
-        display: none;
+        width: 48px;
+        padding: 0;
 
         .user-name {
           display: none;
         }
+      }
+
+      .logout {
+        display: none;
       }
     }
   }
@@ -258,7 +269,7 @@ $layout-breakpoint-xs: 767px;
   }
 
   .side-bar.open-menu {
-    width: 300px;
+    width: 100%;
     transition: width 1s;
   }
 
@@ -294,15 +305,15 @@ $layout-breakpoint-xs: 767px;
           margin-bottom: 10px;
         }
 
-        // .semester-points {
-        //   font-size: 18px;
-        //   line-height: 24px;
+        .semester-points {
+          font-size: 28px;
+          line-height: 34px;
 
-        //   span {
-        //     font-size: 12px;
-        //     line-height: 18px;
-        //   }
-        // }
+          span {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
       }
 
       .right-box {
@@ -326,6 +337,8 @@ $layout-breakpoint-xs: 767px;
         }
 
         .upcoming-dates {
+          width: 100%;
+
           .mt-20 {
             margin-top: 40px;
           }
@@ -339,6 +352,35 @@ $layout-breakpoint-xs: 767px;
             font-size: 18px;
           }
         }
+      }
+    }
+  }
+
+  .payments,
+  .support {
+    .top-box-container {
+      .top-box {
+        height: auto;
+      }
+
+      .payment-type p span {
+        display: inline;
+      }
+    }
+  }
+
+  // tab
+  .horizontal-tab {
+    .tab-box {
+      justify-content: flex-start;
+      border-bottom: 1px solid #cfa4cb;
+      margin-bottom: 30px;
+      flex-wrap: nowrap;
+      overflow: scroll;
+
+      .tab-list {
+        white-space: nowrap;
+        font-size: 16px;
       }
     }
   }
@@ -539,16 +581,31 @@ $layout-breakpoint-xs: 767px;
 
     .indication {
       margin-top: 20px;
+      width: 100%;
+
+      .legends {
+        display: flex;
+
+        li {
+          margin: 10px 5px;
+          padding: 0;
+        }
+      }
     }
 
     .fc-header-toolbar {
       flex-wrap: wrap;
 
       .fc-toolbar-chunk {
+        &:nth-child(1) {
+          width: 33%;
+        }
 
         &:nth-child(2) {
-          width: 50%;
+          width: 100%;
           text-align: right;
+          margin-top: 20px;
+          order: 3;
 
           h2.fc-toolbar-title {
             font-size: 20px;
@@ -556,18 +613,14 @@ $layout-breakpoint-xs: 767px;
         }
 
         &:nth-child(3) {
-          width: 100%;
+          width: 67%;
           text-align: right;
+          order: 2;
         }
       }
     }
   }
 
-  .payments,.support {
-    .top-box-container {
-      .top-box {
-        height: auto;
-      }
-    }
-  }
+
+
 }

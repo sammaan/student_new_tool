@@ -27,7 +27,7 @@
         <aside class="side-bar">
             <nav>
                 <div class="logo">
-                    <a href="#">
+                    <a href="dashboard.html">
                         <img src="assets/img/logo-small.png" alt="logo">
                         <span class="university-name">Mewar University</span>
                     </a>
@@ -94,7 +94,7 @@
                             <span class="menu-text">Courier</span>
                         </a>
                     </li> -->
-                    <li class="link-support">
+                    <li class="mobile-only link-support">
                         <a href="support.html">
 
 
@@ -105,8 +105,18 @@
                     </li>
                     <li class="link-tickets">
                         <a href="tickets.html">
-                            <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
                             <span class="menu-text">Tickets</span>
+                        </a>
+                    </li>
+
+                    <li class="link-support mobile-only">
+                        <a href="support.html">
+                            <span class="menu-icon"> <span class="icon-Sign-out"><span class="path1"></span><span
+                                        class="path2"></span><span class="path3"></span></span> </div>
+                            </span>
+                            <span class="menu-text">Logout</span>
                         </a>
                     </li>
 
@@ -122,13 +132,18 @@
                             class="path3"></span></span>
                 </div>
                 <div class="mobile-logo">
-                    <img src="assets/img/logo.jpg" alt="logo">
+
+                    <a href="dashboard.html">
+                        <img src="assets/img/logo.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="d-flex">
                     <div class="header-left d-flex">
                         <div class="fit-to-screen">
-                            <span class="icon-Expand-arrows"><span class="path1"></span><span
-                                    class="path2"></span></span>
+                            <a class="tooltip" title="Full Screen" href="support.html">
+                                <span class="icon-Expand-arrows"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                            </a>
                         </div>
                         <div class="search-bar">
                             <input type="search" class="search-input" placeholder="Home / Profile">
@@ -136,11 +151,19 @@
                     </div>
                     <div class="header-right d-flex">
                         <div class="header-icon">
-                            <span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span>
+                            <a class="tooltip" title="Support" href="support.html">
+                                <span class="icon-Add-user"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                            </a>
                         </div>
+
                         <div class="header-icon">
-                            <span class="icon-Notifications"><span class="path1"></span><span
-                                    class="path2"></span></span> </div>
+                            <a class="tooltip" title="Notifications" href="#">
+                                <span class="icon-Notifications"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                            </a> </div>
+
+
                         <div class="user-details">
                             <a href="profile.html">
                                 <img src="assets/img/user-pic.png" alt="user">
@@ -148,8 +171,10 @@
                             </a>
                         </div>
                         <div class="logout">
-                            <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span
-                                    class="path3"></span></span> </div>
+                            <a class="tooltip" title="Logout" href="#">
+                                <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span></span>
+                            </a> </div>
                     </div>
                 </div>
             </header>
@@ -165,7 +190,8 @@
                         <div class="d-flex start-learning">
                             <h2>Start Learning</h2>
                             <div class="continue-learning-box">
-                                <span class="icon-Playlist1"><span class="path1"></span><span class="path2"></span></span>
+                                <span class="icon-Playlist1"><span class="path1"></span><span
+                                        class="path2"></span></span>
                             </div>
                             <p>Resume where you left off</p>
                         </div>
@@ -211,7 +237,8 @@
                     <div class="dashboard-box-container open">
                         <div class="top-box d-flex">
                             <div class="page-name">
-                                <h2> <span class="icon-Layout-left-panel-2"><span class="path1"></span><span class="path2"></span></span>  Course proress</h2>
+                                <h2> <span class="icon-Layout-left-panel-2"><span class="path1"></span><span
+                                            class="path2"></span></span> Course proress</h2>
 
                             </div>
                             <div class="collapse-button">
@@ -221,7 +248,8 @@
                         <div class="inner-boxes">
                             <div class="semester-status d-flex">
                                 <div class="sem-name">
-                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span class="path2"></span></span> semester 1 </h3>
+                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span
+                                                class="path2"></span></span> semester 1 </h3>
                                 </div>
                                 <div class="sem-progress">
                                     <progress id="file" class="progess-bar" value="100" max="100"> </progress>
@@ -229,7 +257,8 @@
                             </div>
                             <div class="semester-status d-flex">
                                 <div class="sem-name">
-                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span class="path2"></span></span> semester 2 </h3>
+                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span
+                                                class="path2"></span></span> semester 2 </h3>
                                 </div>
                                 <div class="sem-progress">
                                     <progress id="file" class="progess-bar" value="30" max="100"> </progress>
@@ -237,7 +266,8 @@
                             </div>
                             <div class="semester-status d-flex">
                                 <div class="sem-name">
-                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span class="path2"></span></span> semester 3 </h3>
+                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span
+                                                class="path2"></span></span> semester 3 </h3>
                                 </div>
                                 <div class="sem-progress">
                                     <progress id="file" class="progess-bar" value="70" max="100"> </progress>
@@ -245,7 +275,8 @@
                             </div>
                             <div class="semester-status d-flex">
                                 <div class="sem-name">
-                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span class="path2"></span></span> semester 4 </h3>
+                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span
+                                                class="path2"></span></span> semester 4 </h3>
                                 </div>
                                 <div class="sem-progress">
                                     <progress id="file" class="progess-bar" value="60" max="100"> </progress>
@@ -253,7 +284,8 @@
                             </div>
                             <div class="semester-status d-flex">
                                 <div class="sem-name">
-                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span class="path2"></span></span> semester 5 </h3>
+                                    <h3><span class="icon-Bullet-list"><span class="path1"></span><span
+                                                class="path2"></span></span> semester 5 </h3>
                                 </div>
                                 <div class="sem-progress">
                                     <progress id="file" class="progess-bar" value="10" max="100"> </progress>
@@ -265,7 +297,8 @@
                     <div class="dashboard-box-container dash-support open">
                         <div class="top-box d-flex">
                             <div class="page-name">
-                                <h2> <span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span> Support</h2>
+                                <h2> <span class="icon-Add-user"><span class="path1"></span><span
+                                            class="path2"></span></span> Support</h2>
                             </div>
                             <div class="collapse-button">
                                 <span class="icon-Angle-down"></span>
@@ -308,7 +341,8 @@
                     <div class="dashboard-box-container dash-notifications open">
                         <div class="top-box d-flex">
                             <div class="page-name">
-                                <h2><span class="icon-Notifications"><span class="path1"></span><span class="path2"></span></span> Alerts & Notifications
+                                <h2><span class="icon-Notifications"><span class="path1"></span><span
+                                            class="path2"></span></span> Alerts & Notifications
                                 </h2>
                             </div>
                             <div class="collapse-button">
@@ -318,7 +352,8 @@
                         <div class="inner-boxes">
                             <div class="notification-item d-flex">
                                 <div class="notification">
-                                    <h3><span class="icon-Folder-error"><span class="path1"></span><span class="path2"></span></span> <strong>Assignment 11</strong>
+                                    <h3><span class="icon-Folder-error"><span class="path1"></span><span
+                                                class="path2"></span></span> <strong>Assignment 11</strong>
                                         due date is approaching! </h3>
                                     <div class="d-flex date-info">
                                         <span class="date">23- Jan- 2021</span>
@@ -342,7 +377,8 @@
                     <div class="dashboard-box-container dash-fee-payment open">
                         <div class="top-box d-flex">
                             <div class="page-name">
-                                <h2> <span class="icon-Wallet2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span> Fee & Payments</h2>
+                                <h2> <span class="icon-Wallet2"><span class="path1"></span><span
+                                            class="path2"></span><span class="path3"></span></span> Fee & Payments</h2>
                             </div>
                             <div class="collapse-button">
                                 <span class="icon-Angle-down"></span>

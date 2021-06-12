@@ -139,9 +139,7 @@ b {
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
-  padding: 12px 11px !important;
-  min-width: 100px;
-  white-space: nowrap;
+  padding: 12px 25px !important;
 }
 
 /****************************
@@ -1244,6 +1242,7 @@ table {
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
 }
 
 /* Track */
@@ -1385,9 +1384,6 @@ header .header-left.d-flex .fit-to-screen {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f8fafb;
   color: #993d90;
   font-size: 30px;
@@ -1397,6 +1393,15 @@ header .header-left.d-flex .fit-to-screen {
 }
 header .header-left.d-flex .fit-to-screen:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+}
+header .header-left.d-flex .fit-to-screen a {
+  padding: 4px 10px;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  color: #993d90;
 }
 header .header-left.d-flex .search-bar .search-input {
   width: 195px;
@@ -1415,9 +1420,6 @@ header .header-right.d-flex .header-icon {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f8fafb;
   margin-left: 30px;
   cursor: pointer;
@@ -1427,6 +1429,15 @@ header .header-right.d-flex .header-icon {
 }
 header .header-right.d-flex .header-icon:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+}
+header .header-right.d-flex .header-icon a {
+  padding: 4px 10px;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  color: #993d90;
 }
 header .header-right.d-flex .user-details {
   background-color: #f8fafb;
@@ -1457,15 +1468,20 @@ header .header-right.d-flex .logout {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  display: flex;
-  color: #993d90;
-  justify-content: center;
-  align-items: center;
   transition: 0.3s linear all !important;
   font-size: 30px;
 }
 header .header-right.d-flex .logout:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+}
+header .header-right.d-flex .logout a {
+  padding: 4px 10px;
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  color: #993d90;
 }
 
 /**************************
@@ -1854,6 +1870,7 @@ Dashboard
 .table-container .top-box h2 > span {
   font-size: 30px;
   margin-right: 10px;
+  vertical-align: middle;
 }
 .top-box-container .top-box .payment-type p,
 .table-container .top-box .payment-type p {

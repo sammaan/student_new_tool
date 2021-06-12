@@ -11,9 +11,10 @@
     <link href="assets/styles/css/responsive.css" rel="stylesheet">
 
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/scripts/custom.js"></script>
-    
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
 
@@ -26,7 +27,7 @@
         <aside class="side-bar">
             <nav>
                 <div class="logo">
-                    <a href="#">
+                    <a href="dashboard.html">
                         <img src="assets/img/logo-small.png" alt="logo">
                         <span class="university-name">Mewar University</span>
                     </a>
@@ -34,33 +35,38 @@
                 <ul class="menu-bar">
                     <li class="link-dashboard">
                         <a href="dashboard.html">
-                                                       <span class="menu-icon"><span class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Layout-4-blocks"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
 
                             <span class="menu-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="link-calendar">
                         <a href="calendar.html">
-                            <span class="menu-icon"><span class="icon-Time-schedule"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Time-schedule"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
                             <span class="menu-text">Academic Calendar</span>
                         </a>
                     </li>
                     <li class="link-payments">
                         <a href="payments.html">
-                                                      <span class="menu-icon"><span class="icon-Wallet2"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Wallet2"><span class="path1"></span><span
+                                        class="path2"></span><span class="path3"></span></span></span>
 
                             <span class="menu-text">Fees</span>
                         </a>
                     </li>
                     <li class="link-assignments">
                         <a href="assignments.html">
-                            <span class="menu-icon"><span class="icon-Folder-error"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Folder-error"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
                             <span class="menu-text">Assignments</span>
                         </a>
                     </li>
                     <li class="link-lab">
                         <a href="lab.html">
-                            <span class="menu-icon"><span class="icon-Airplay-video"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Airplay-video"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
                             <span class="menu-text">Lab</span>
                         </a>
                     </li>
@@ -72,7 +78,8 @@
                     </li>
                     <li class="link-examinations">
                         <a href="examinations.html">
-                            <span class="menu-icon"><span class="icon-Folder-check"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Folder-check"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
                             <span class="menu-text">Examinations</span>
                         </a>
                     </li>
@@ -82,33 +89,43 @@
                             <span class="menu-text">Results</span>
                         </a>
                     </li>
-                   <!-- <li class="link-courier">
+                    <!-- <li class="link-courier">
                         <a href="courier.html">
 
                             <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span></span>
                             <span class="menu-text">Courier</span>
                         </a>
                     </li> -->
-                    <li class="link-support">
+                    <li class="mobile-only link-support">
                         <a href="support.html">
 
 
-                            <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span></span>
+                            <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span
+                                        class="path2"></span></span></span>
                             <span class="menu-text">Support</span>
                         </a>
                     </li>
-                     <li class="link-tickets">
+                    <!-- <li class="link-tickets">
                         <a href="tickets.html">
                             <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span></span>
                             <span class="menu-text">Tickets</span>
                         </a>
-                    </li>
+                    </li> -->
 
+
+                    <li class="link-support mobile-only">
+                        <a href="support.html">
+                            <span class="menu-icon"> <span class="icon-Sign-out"><span class="path1"></span><span
+                                        class="path2"></span><span class="path3"></span></span> </div>
+                            </span>
+                            <span class="menu-text">Logout</span>
+                        </a>
+                    </li>
 
                 </ul>
             </nav>
         </aside>
-        
+
         <!-- header -->
         <header>
             <div class="mobile-hamburger">
@@ -116,38 +133,55 @@
                         class="path3"></span></span>
             </div>
             <div class="mobile-logo">
-                <img src="assets/img/logo.jpg" alt="logo">
+
+                <a href="dashboard.html">
+                    <img src="assets/img/logo.jpg" alt="logo">
+                </a>
             </div>
-            
             <div class="d-flex">
                 <div class="header-left d-flex">
                     <div class="fit-to-screen">
-                      <span onclick="go_full_screen()" class="icon-Expand-arrows"><span class="path1"></span><span class="path2"></span></span>
+                        <a class="tooltip" title="Full Screen" href="support.html">
+                            <span class="icon-Expand-arrows"><span class="path1"></span><span
+                                    class="path2"></span></span>
+                        </a>
                     </div>
                     <div class="search-bar">
                         <input type="search" class="search-input" placeholder="Home / Profile">
                     </div>
                 </div>
-               <div class="header-right d-flex">
-                        <div class="header-icon">
-                            <span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span>                        </div>
-                        <div class="header-icon">
-                            <span class="icon-Notifications"><span class="path1"></span><span class="path2"></span></span>                        </div>
-                        <div class="user-details">
-                            <a href="profile.html">
-                                <img src="assets/img/user-pic.png" alt="user">
-                                <span class="user-name">Abhilasha Banerjee</span>
-                            </a>
-                        </div>
-                        <div class="logout">
-                            <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>                        </div>
+                <div class="header-right d-flex">
+                    <div class="header-icon">
+                        <a class="tooltip" title="Support" href="support.html">
+                            <span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span>
+                        </a>
                     </div>
+
+                    <div class="header-icon">
+                        <a class="tooltip" title="Notifications" href="#">
+                            <span class="icon-Notifications"><span class="path1"></span><span
+                                    class="path2"></span></span>
+                        </a> </div>
+
+
+                    <div class="user-details">
+                        <a href="profile.html">
+                            <img src="assets/img/user-pic.png" alt="user">
+                            <span class="user-name">Abhilasha Banerjee</span>
+                        </a>
+                    </div>
+                    <div class="logout">
+                        <a class="tooltip" title="Logout" href="#">
+                            <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span
+                                    class="path3"></span></span>
+                        </a> </div>
+                </div>
             </div>
         </header>
         <article id="results" class="result">
 
-             <!-- tab-box start -->
-             <div class="top-box-container no-shodow">
+            <!-- tab-box start -->
+            <div class="top-box-container no-shodow">
                 <div class="top-box d-flex">
                     <div class="page-name">
                         <h2> <span class="icon-Folder-star"></span> Results</h2>
@@ -156,57 +190,57 @@
             </div>
             <!-- top-box end -->
             <div class="horizontal-tab">
-            <div class="tab-box d-flex">
-                <div class="tab-list active" onclick="openSubject(event, 'sem-selection-1')">Semester 1</div>
-                <div class="tab-list" onclick="openSubject(event, 'sem-selection-2')">Semester 2</div>
-                <div class="tab-list" onclick="openSubject(event, 'sem-selection-3')">Semester 3</div>
-                <div class="tab-list" onclick="openSubject(event, 'sem-selection-4')">Semester 4</div>
-            </div>
-            <div id="sem-selection-1" class="subject-selection-box active">
-                <div class="responsive-table">
-                    <table class="results" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Subject</th>
-                                <th>Grade</th>
-                                <th>Result</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i class="fas fa-book"></i> Business Communication Skills</td>
-                                <td>B+</td>
-                                <td>Pass</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-book"></i> Business Research Methodology</td>
-                                <td>B+</td>
-                                <td>Pass</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-book"></i> Modern Marketing Management</td>
-                                <td>B+</td>
-                                <td>Pass</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-book"></i> Production Operations And SCM</td>
-                                <td>A</td>
-                                <td>Pass</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-book"></i> Information Technology For Business</td>
-                                <td>A</td>
-                                <td>Pass</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="tab-box d-flex">
+                    <div class="tab-list active" onclick="openSubject(event, 'sem-selection-1')">Semester 1</div>
+                    <div class="tab-list" onclick="openSubject(event, 'sem-selection-2')">Semester 2</div>
+                    <div class="tab-list" onclick="openSubject(event, 'sem-selection-3')">Semester 3</div>
+                    <div class="tab-list" onclick="openSubject(event, 'sem-selection-4')">Semester 4</div>
                 </div>
+                <div id="sem-selection-1" class="subject-selection-box active">
+                    <div class="responsive-table">
+                        <table class="results" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Grade</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-book"></i> Business Communication Skills</td>
+                                    <td>B+</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-book"></i> Business Research Methodology</td>
+                                    <td>B+</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-book"></i> Modern Marketing Management</td>
+                                    <td>B+</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-book"></i> Production Operations And SCM</td>
+                                    <td>A</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-book"></i> Information Technology For Business</td>
+                                    <td>A</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="sem-selection-2" class="subject-selection-box">2</div>
+                <div id="sem-selection-3" class="subject-selection-box">3</div>
+                <div id="sem-selection-4" class="subject-selection-box">4</div>
             </div>
-            <div id="sem-selection-2" class="subject-selection-box">2</div>
-            <div id="sem-selection-3" class="subject-selection-box">3</div>
-            <div id="sem-selection-4" class="subject-selection-box">4</div>
-        </div>
-            
+
         </article>
         <footer></footer>
     </main>

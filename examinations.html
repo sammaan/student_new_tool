@@ -27,7 +27,7 @@
         <aside class="side-bar">
             <nav>
                 <div class="logo">
-                    <a href="#">
+                    <a href="dashboard.html">
                         <img src="assets/img/logo-small.png" alt="logo">
                         <span class="university-name">Mewar University</span>
                     </a>
@@ -97,7 +97,7 @@
                             <span class="menu-text">Courier</span>
                         </a>
                     </li>
-                    <li class="link-support">
+                    <li class="mobile-only link-support">
                         <a href="support.html">
 
 
@@ -106,11 +106,20 @@
                             <span class="menu-text">Support</span>
                         </a>
                     </li>
-                    <li class="link-tickets">
+                    <!-- <li class="link-tickets">
                         <a href="tickets.html">
                             <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span
                                         class="path2"></span></span></span>
                             <span class="menu-text">Tickets</span>
+                        </a>
+                    </li> -->
+
+                    <li class="link-support mobile-only">
+                        <a href="support.html">
+                            <span class="menu-icon"> <span class="icon-Sign-out"><span class="path1"></span><span
+                                        class="path2"></span><span class="path3"></span></span> </div>
+                            </span>
+                            <span class="menu-text">Logout</span>
                         </a>
                     </li>
 
@@ -125,13 +134,18 @@
                             class="path3"></span></span>
                 </div>
                 <div class="mobile-logo">
-                    <img src="assets/img/logo.jpg" alt="logo">
+
+                    <a href="dashboard.html">
+                        <img src="assets/img/logo.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="d-flex">
                     <div class="header-left d-flex">
                         <div class="fit-to-screen">
-                            <span onclick="go_full_screen()" class="icon-Expand-arrows"><span class="path1"></span><span
-                                    class="path2"></span></span>
+                            <a class="tooltip" title="Full Screen" href="support.html">
+                                <span class="icon-Expand-arrows"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                            </a>
                         </div>
                         <div class="search-bar">
                             <input type="search" class="search-input" placeholder="Home / Profile">
@@ -139,11 +153,19 @@
                     </div>
                     <div class="header-right d-flex">
                         <div class="header-icon">
-                            <span class="icon-Add-user"><span class="path1"></span><span class="path2"></span></span>
+                            <a class="tooltip" title="Support" href="support.html">
+                                <span class="icon-Add-user"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                            </a>
                         </div>
+
                         <div class="header-icon">
-                            <span class="icon-Notifications"><span class="path1"></span><span
-                                    class="path2"></span></span> </div>
+                            <a class="tooltip" title="Notifications" href="#">
+                                <span class="icon-Notifications"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                            </a> </div>
+
+
                         <div class="user-details">
                             <a href="profile.html">
                                 <img src="assets/img/user-pic.png" alt="user">
@@ -151,8 +173,10 @@
                             </a>
                         </div>
                         <div class="logout">
-                            <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span
-                                    class="path3"></span></span> </div>
+                            <a class="tooltip" title="Logout" href="#">
+                                <span class="icon-Sign-out"><span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span></span>
+                            </a> </div>
                     </div>
                 </div>
             </header>
@@ -161,7 +185,8 @@
                 <div class="top-box-container">
                     <div class="top-box d-flex">
                         <div class="page-name">
-                            <h2> <span class="icon-Folder-check"><span class="path1"></span><span class="path2"></span></span> Examinations</h2>
+                            <h2> <span class="icon-Folder-check"><span class="path1"></span><span
+                                        class="path2"></span></span> Examinations</h2>
                         </div>
                     </div>
                     <div class="inner-boxes d-flex">

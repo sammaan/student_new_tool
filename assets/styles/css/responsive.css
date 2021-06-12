@@ -101,11 +101,17 @@
     font-size: 14px;
   }
 }
+@media (min-width: 767px) {
+  .mobile-only {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .full-body-width {
     width: calc(100% - 0px);
     margin-left: 0px;
     padding: 0 10px;
+    border-radius: 0;
   }
 
   header {
@@ -131,9 +137,13 @@
     display: none;
   }
   header .header-right.d-flex .user-details {
-    display: none;
+    width: 48px;
+    padding: 0;
   }
   header .header-right.d-flex .user-details .user-name {
+    display: none;
+  }
+  header .header-right.d-flex .logout {
     display: none;
   }
 
@@ -161,7 +171,7 @@
   }
 
   .side-bar.open-menu {
-    width: 300px;
+    width: 100%;
     transition: width 1s;
   }
 
@@ -187,6 +197,14 @@
   .top-box-container .inner-boxes .left-box .progess-bar {
     margin-bottom: 10px;
   }
+  .top-box-container .inner-boxes .left-box .semester-points {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .top-box-container .inner-boxes .left-box .semester-points span {
+    font-size: 16px;
+    line-height: 22px;
+  }
   .top-box-container .inner-boxes .right-box .upcoming-info {
     width: 100%;
   }
@@ -198,6 +216,9 @@
     line-height: 26px;
     font-weight: 600;
   }
+  .top-box-container .inner-boxes .right-box .upcoming-dates {
+    width: 100%;
+  }
   .top-box-container .inner-boxes .right-box .upcoming-dates .mt-20 {
     margin-top: 40px;
   }
@@ -207,6 +228,27 @@
   }
   .top-box-container .inner-boxes .right-box .upcoming-dates .info-button {
     font-size: 18px;
+  }
+
+  .payments .top-box-container .top-box,
+.support .top-box-container .top-box {
+    height: auto;
+  }
+  .payments .top-box-container .payment-type p span,
+.support .top-box-container .payment-type p span {
+    display: inline;
+  }
+
+  .horizontal-tab .tab-box {
+    justify-content: flex-start;
+    border-bottom: 1px solid #cfa4cb;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .horizontal-tab .tab-box .tab-list {
+    white-space: nowrap;
+    font-size: 16px;
   }
 
   .user-details-panel .d-flex .user-name {
@@ -358,24 +400,34 @@
   }
   .academic-calendar .indication {
     margin-top: 20px;
+    width: 100%;
+  }
+  .academic-calendar .indication .legends {
+    display: flex;
+  }
+  .academic-calendar .indication .legends li {
+    margin: 10px 5px;
+    padding: 0;
   }
   .academic-calendar .fc-header-toolbar {
     flex-wrap: wrap;
   }
+  .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
+    width: 33%;
+  }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
-    width: 50%;
+    width: 100%;
     text-align: right;
+    margin-top: 20px;
+    order: 3;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) h2.fc-toolbar-title {
     font-size: 20px;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
-    width: 100%;
+    width: 67%;
     text-align: right;
-  }
-
-  .payments .top-box-container .top-box, .support .top-box-container .top-box {
-    height: auto;
+    order: 2;
   }
 }
 

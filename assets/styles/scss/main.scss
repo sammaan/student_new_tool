@@ -229,7 +229,38 @@ table {
     }
   }
 }
+// tooltip
 
+// .tooltip {
+//   display: inline;
+//   position: relative;
+// }
+// .tooltip:hover:after{
+//   display: -webkit-flex;
+//     display: flex;
+//     -webkit-justify-content: center;
+//     justify-content: center;
+//     background: #fff;
+//     border-radius: 8px;
+//     color: #0e0f22;
+//     content: attr(title);
+//     margin: -3px auto 4px;
+//     font-size: 12px;
+//     padding: 3px;
+//     width: 110px;
+//     margin-left: -30px;
+//     @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
+
+// }
+// .tooltip:hover:before{
+//   border: solid;
+//   border-color: #fff transparent;
+//   border-width: 0 6px 12px 6px;
+//   content: "";
+//   left: 45%;
+//   bottom: -1px;
+//   position: absolute;
+// }
 
 // horizontal-tab
 
@@ -318,6 +349,7 @@ table {
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;  
 }
 
 /* Track */
@@ -494,9 +526,9 @@ header {
       width: 48px;
       height: 48px;
       border-radius: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       background-color: #f8fafb;
       color: $violet;
       font-size: 30px;
@@ -506,6 +538,15 @@ header {
 
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+      }
+      a{
+        padding: 4px 10px;
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none;
+        width: 48px;
+        height: 48px;
+        color: $violet;
       }
     }
 
@@ -532,9 +573,9 @@ header {
       width: 48px;
       height: 48px;
       border-radius: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       background-color: #f8fafb;
       margin-left: 30px;
       cursor: pointer;
@@ -545,6 +586,15 @@ header {
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
 
+      }
+      a{
+        padding: 4px 10px;
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none;
+        width: 48px;
+        height: 48px;
+        color: $violet;
       }
     }
 
@@ -581,15 +631,24 @@ header {
       width: 48px;
       height: 48px;
       border-radius: 16px;
-      display: flex;
-      color: $violet;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // color: $violet;
+      // justify-content: center;
+      // align-items: center;
       transition: 0.3s linear all !important;
       font-size: 30px;
 
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
+      }
+      a{
+        padding: 4px 10px;
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none;
+        width: 48px;
+        height: 48px;
+        color: $violet;
       }
     }
   }
@@ -1064,6 +1123,7 @@ Dashboard
       >span {
         font-size: 30px;
         margin-right: 10px;
+        vertical-align: middle;
       }
     }
 
