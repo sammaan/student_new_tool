@@ -860,6 +860,10 @@ Media Query
     width: 100%;
   }
 
+  .page-name {
+    margin-bottom: 20px;
+  }
+
   .support ul li:last-child {
     padding: 8px 8px;
     width: 18px;
@@ -1258,6 +1262,11 @@ table {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.horizontal-tab .tab-box::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 
 /****************************
