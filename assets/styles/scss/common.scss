@@ -331,11 +331,17 @@ Modal
         }
 
         h5 {
+            margin-right: 20px;
             font-size: 17px;
             color: #70718f;
             font-weight: 600;
         }
-
+        .resolve {
+            .d-flex {
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
         .d-flex {
             align-items: end;
             justify-content: flex-start;
@@ -363,7 +369,7 @@ Modal
             @extend %form;
         }
 
-        .resolve-btn {
+        .resolve-label {
             font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
