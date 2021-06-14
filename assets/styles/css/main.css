@@ -266,9 +266,14 @@ Modal
   color: #98a4ee;
 }
 .modal .modal-body h5 {
+  margin-right: 20px;
   font-size: 17px;
   color: #70718f;
   font-weight: 600;
+}
+.modal .modal-body .resolve .d-flex {
+  align-items: center;
+  justify-content: flex-end;
 }
 .modal .modal-body .d-flex {
   align-items: end;
@@ -286,7 +291,7 @@ Modal
 .modal .modal-body .d-flex > .form-group .d-flex {
   align-items: flex-end;
 }
-.modal .modal-body .resolve-btn {
+.modal .modal-body .resolve-label {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -298,7 +303,7 @@ Modal
   cursor: pointer;
   transition: 0.3s linear all !important;
 }
-.modal .modal-body .resolve-btn:hover {
+.modal .modal-body .resolve-label:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .modal footer {
@@ -2226,6 +2231,7 @@ Dashboard
   display: flex;
 }
 .pop-up-bg .pop-up {
+  z-index: 9999;
   display: none;
   max-height: 80vh;
   overflow-y: auto;
@@ -2249,6 +2255,7 @@ calendar
   padding: 22px;
   border-radius: 10px 10px;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 .academic-calendar .top-box-gray h2 {
   font-weight: 600;
@@ -2260,20 +2267,20 @@ calendar
   margin-right: 20px;
 }
 .academic-calendar .indication {
-  width: 110px;
+  width: 40%;
   background-color: #f8fafb;
   border-radius: 4px;
-  padding: 15px 10px 10px;
-  margin-bottom: 20px;
   position: relative;
-  margin-top: 120px;
+}
+.academic-calendar .indication ul {
+  justify-content: space-between;
 }
 .academic-calendar .indication ul li {
   font-size: 12px;
   line-height: 20px;
   padding: 5px;
   list-style: none;
-  margin-bottom: 7px;
+  width: fit-content;
 }
 .academic-calendar .indication ul li .mark {
   width: 20px;

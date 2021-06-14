@@ -266,9 +266,14 @@ Modal
   color: #98a4ee;
 }
 .modal .modal-body h5 {
+  margin-right: 20px;
   font-size: 17px;
   color: #70718f;
   font-weight: 600;
+}
+.modal .modal-body .resolve .d-flex {
+  align-items: center;
+  justify-content: flex-end;
 }
 .modal .modal-body .d-flex {
   align-items: end;
@@ -286,7 +291,7 @@ Modal
 .modal .modal-body .d-flex > .form-group .d-flex {
   align-items: flex-end;
 }
-.modal .modal-body .resolve-btn {
+.modal .modal-body .resolve-label {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -298,7 +303,7 @@ Modal
   cursor: pointer;
   transition: 0.3s linear all !important;
 }
-.modal .modal-body .resolve-btn:hover {
+.modal .modal-body .resolve-label:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .modal footer {
