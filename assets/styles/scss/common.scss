@@ -166,7 +166,10 @@ b {
             color: $td-text;
 
             .fas {
-                margin-right: 3px;
+                // margin-right: 3px;
+                left: 10px;
+                position: absolute;
+                top: 17px;
             }
         }
     }
@@ -177,10 +180,12 @@ b {
  *****************************/
 .responsive-table th {
     justify-content: center;
+    vertical-align: middle !important;
 }
 
 .responsive-table td,
 .responsive-table th {
+    position: relative;
     font-weight: 500 !important;
     border-bottom: 1px solid $border !important;
     border-top: 1px solid $border !important;
