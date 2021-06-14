@@ -805,22 +805,19 @@ Datatable Header Footer
         padding: 7px 4px;
         box-sizing: border-box;
         color: #ddd;
-
+        position: relative;
+        .icon-btn {
+            right: 16px;
+            position: absolute;
+            top: 16px;
+        }
         .d-flex {
             position: relative;
-            justify-content: flex-start;
+            justify-content: flex-end;
 
             /*profile */
-            .icon-btn {
-                font-size: 18px;
-                bottom: 46px;
-                right: 0px;
-                position: absolute;
-
-            }
-
             .username {
-                width: 22%;
+                width: 20%;
                 text-align: center;
 
                 img {
@@ -837,8 +834,8 @@ Datatable Header Footer
             }
 
             .profile-text {
-                padding: 0px 58px;
-                width: 67%;
+                padding: 0px 22px;
+                width: 76%;
 
                 img {
                     width: 36px;
@@ -868,7 +865,7 @@ Datatable Header Footer
 
                         .profile-name-text {
                             display: inline-flex;
-                            width: 47%;
+                            width: 39%;
 
                             img {
                                 width: auto;
@@ -1083,7 +1080,10 @@ Media Query
         }
     }
     .page-name{
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
+    }
+    .payment-type {
+        margin-top: 8px;
     }
     .support {
         ul {
@@ -1096,7 +1096,12 @@ Media Query
             }
         }
     }
-
+    .profile-box {
+        .icon-btn {
+                right: 18px;
+                top: 16px;
+            }
+    }
     .profile-body {
         .ticket-details {
             padding: 50px 0px;
