@@ -1061,6 +1061,12 @@ Media Query
  *****************************/
 @media (min-device-width: $breakpoint-smallphone) and (max-device-width: $breakpoint-phone) {
     .modal {
+        header {
+            width:100%;
+            h3 {
+                width: 100%;
+            }
+        }
         .modal-body {
             .d-flex {
 
@@ -1070,6 +1076,11 @@ Media Query
                     width: 100%;
                 }
             }
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_filter input {
+            width: 45%;
         }
     }
     .page-name{
