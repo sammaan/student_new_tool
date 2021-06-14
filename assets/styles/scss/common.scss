@@ -290,11 +290,10 @@ Modal
 *****************************/
 .modal {
     background-color: $modal;
-
     header {
         padding: 0px;
         border-bottom: 1px solid $border;
-
+        margin-bottom: 0px;
         h3 {
             color: #5f5d98;
             font-size: 17px;
@@ -1254,7 +1253,7 @@ progress {
     border: none;
     width: 100px;
     height: 4px;
-    background: #fff;
+    background: transparent;
 }
 
 
