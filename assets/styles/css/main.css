@@ -1218,6 +1218,10 @@ table {
 .horizontal-tab .tab-box .tab-list.active, .horizontal-tab .tab-box .tab-list:hover {
   border-bottom: 4px solid #993d90;
 }
+.horizontal-tab .tab-box::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
 .horizontal-tab .subject-selection-box {
   display: none;
 }

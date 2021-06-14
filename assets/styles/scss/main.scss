@@ -283,6 +283,10 @@ table {
         border-bottom: 4px solid $violet;
       }
     }
+    &::-webkit-scrollbar{
+      height: 0;
+      width: 0;
+    }
   }
 
   .subject-selection-box {
