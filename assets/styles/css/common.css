@@ -859,10 +859,20 @@ Datatable Header Footer
 Media Query
  *****************************/
 @media (min-device-width: 320px) and (max-device-width: 700px) {
+  .modal header {
+    width: 100%;
+  }
+  .modal header h3 {
+    width: 100%;
+  }
   .modal .modal-body .d-flex .form-group,
 .modal .modal-body .d-flex .form-group-left,
 .modal .modal-body .d-flex .form-group-right {
     width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_filter input {
+    width: 45%;
   }
 
   .page-name {

@@ -859,10 +859,20 @@ Datatable Header Footer
 Media Query
  *****************************/
 @media (min-device-width: 320px) and (max-device-width: 700px) {
+  .modal header {
+    width: 100%;
+  }
+  .modal header h3 {
+    width: 100%;
+  }
   .modal .modal-body .d-flex .form-group,
 .modal .modal-body .d-flex .form-group-left,
 .modal .modal-body .d-flex .form-group-right {
     width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_filter input {
+    width: 45%;
   }
 
   .page-name {
@@ -1447,6 +1457,12 @@ header .header-right.d-flex .header-icon a {
   width: 48px;
   height: 48px;
   color: #993d90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-right.d-flex .header-icon a .fas.fa-headset {
+  font-size: 26px;
 }
 header .header-right.d-flex .user-details {
   background-color: #f8fafb;

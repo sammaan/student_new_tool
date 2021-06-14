@@ -595,6 +595,13 @@ header {
         width: 48px;
         height: 48px;
         color: $violet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fas.fa-headset{
+          font-size: 26px;
+        }
       }
     }
 
