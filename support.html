@@ -105,8 +105,13 @@
                     </li> -->
                     <li class="mobile-only link-support">
                         <a href="support.html">
-                            <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span
-                                        class="path2"></span></span></span>
+                            <span class="menu-icon">
+                                <i class="fas fa-headset"></i>
+                                <!-- <span class="icon-Add-user">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </span> -->
+                            </span>
                             <span class="menu-text">Support</span>
                         </a>
                     </li>
@@ -160,8 +165,9 @@
                     <div class="header-right d-flex">
                         <div class="header-icon">
                             <a class="tooltip" title="Support" href="support.html">
-                                <span class="icon-Add-user"><span class="path1"></span><span
-                                        class="path2"></span></span>
+                                <i class="fas fa-headset"></i>
+                                <!-- <span class="icon-Add-user"><span class="path1"></span><span
+                                        class="path2"></span></span> -->
                             </a>
                         </div>
 
@@ -399,7 +405,7 @@
     </main>
 
     <div class="pop-up-bg">
-        <article class="pop-up-container" id="supportTicket">
+        <article class="pop-up" id="supportTicket">
             <div class="modal">
                 <header>
                     <h3>Support Ticket <i class="fas fa-times-circle close-popup"></i></h3>
@@ -453,10 +459,17 @@
 
             $('#supportTable').DataTable({});
 
+            // $('#ctaEditExp').click(function (e) {
+            //     e.preventDefault;
+            //     $('.pop-up-bg').addClass('active');
+            //     $('.pop-up-bg .pop-up#editProfileExp').fadeIn();
+            // });
+
+
             $('.sorting_1 a').click(function (e) {
                 e.preventDefault;
                 $('.pop-up-bg').addClass('active');
-                $('.pop-up-bg .pop-up').fadeIn();
+                $('.pop-up-bg .pop-up#supportTicket').fadeIn();
             });
 
             $('.close-popup').click(function (e) {
