@@ -237,6 +237,7 @@ Modal
 .modal header {
   padding: 0px;
   border-bottom: 1px solid #e7eaef;
+  margin-bottom: 0px;
 }
 .modal header h3 {
   color: #5f5d98;
@@ -967,7 +968,7 @@ progress {
   border: none;
   width: 100px;
   height: 4px;
-  background: #fff;
+  background: transparent;
 }
 
 progress::-webkit-progress-value {

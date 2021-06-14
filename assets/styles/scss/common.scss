@@ -295,11 +295,10 @@ Modal
 *****************************/
 .modal {
     background-color: $modal;
-
     header {
         padding: 0px;
         border-bottom: 1px solid $border;
-
+        margin-bottom: 0px;
         h3 {
             color: #5f5d98;
             font-size: 17px;
@@ -1067,6 +1066,12 @@ Media Query
  *****************************/
 @media (min-device-width: $breakpoint-smallphone) and (max-device-width: $breakpoint-phone) {
     .modal {
+        header {
+            width:100%;
+            h3 {
+                width: 100%;
+            }
+        }
         .modal-body {
             .d-flex {
 
@@ -1076,6 +1081,11 @@ Media Query
                     width: 100%;
                 }
             }
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_filter input {
+            width: 45%;
         }
     }
     .page-name{
@@ -1259,7 +1269,7 @@ progress {
     border: none;
     width: 100px;
     height: 4px;
-    background: #fff;
+    background: transparent;
 }
 
 

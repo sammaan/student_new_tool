@@ -860,6 +860,10 @@ Media Query
     width: 100%;
   }
 
+  .page-name {
+    margin-bottom: 20px;
+  }
+
   .support ul li:last-child {
     padding: 8px 8px;
     width: 18px;
