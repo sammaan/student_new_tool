@@ -1264,11 +1264,6 @@ table {
   background: #555;
 }
 
-.horizontal-tab .tab-box::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-
 /****************************
  Navigation
  *****************************/
