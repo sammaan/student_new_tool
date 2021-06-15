@@ -152,7 +152,6 @@ section {
 body {
   line-height: 1.6;
   font-family: 'Montserrat';
-  background: #f7f9fa;
 }
 
 ol,
@@ -190,6 +189,7 @@ table {
  ***************************/
 
 .full-body-width {
+  -ms-width: calc(100% - 110px);
   width: calc(100% - 110px);
   margin-left: 110px;
   padding: 0 60px;
@@ -199,6 +199,7 @@ table {
   border-bottom-left-radius: 20px;
   height: 100vh;
   overflow-y: auto;
+  display: block;
 
   .side-bar {
     position: absolute;
@@ -347,6 +348,50 @@ table {
 
 
 /* width */
+::-ms-scrollbar {
+  width: 3px;
+  height: 3px;  
+}
+
+/* Track */
+::-ms-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-ms-scrollbar-thumb {
+  background: $violet;
+}
+
+/* Handle on hover */
+::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* width */
+::-moz-scrollbar {
+  width: 3px;
+  height: 3px;  
+}
+
+/* Track */
+::-moz-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-moz-scrollbar-thumb {
+  background: $violet;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* width */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;  
@@ -372,14 +417,15 @@ table {
  *****************************/
 
 .side-bar {
-  padding: 15px;
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
   background-color: #f7f9fa;
   width: 110px;
   box-sizing: border-box;
   @include transition(.3s ease-in-out);
   transition-property: width;
   z-index: 9;
-
+  
   .logo {
     a {
       margin-bottom: 25px;
@@ -428,7 +474,7 @@ table {
         overflow: hidden;
         text-overflow: ellipsis;
         height: 52px;
-
+        box-sizing: border-box;
         .menu-icon {
           width: 52px;
           height: 52px;
@@ -535,13 +581,14 @@ header {
       margin-right: 30px;
       cursor: pointer;
       transition: 0.3s linear all !important;
+      padding: 4px 10px;
+      box-sizing: border-box;
 
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }
       a{
-        padding: 4px 10px;
-        box-sizing: border-box;
+       
         display: block;
         text-decoration: none;
         width: 48px;
@@ -582,14 +629,13 @@ header {
       font-size: 30px;
       color: $violet;
       transition: 0.3s linear all !important;
-
+      padding: 4px 10px;
+      box-sizing: border-box;
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
-
       }
       a{
-        padding: 4px 10px;
-        box-sizing: border-box;
+       
         display: block;
         text-decoration: none;
         width: 48px;
@@ -608,7 +654,7 @@ header {
 
       a {
         color: inherit;
-        text-decoration: auto;
+        text-decoration: none;
       }
 
       &:hover {
@@ -637,13 +683,13 @@ header {
       // align-items: center;
       transition: 0.3s linear all !important;
       font-size: 30px;
-
+      padding: 4px 10px;
+      box-sizing: border-box;
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }
       a{
-        padding: 4px 10px;
-        box-sizing: border-box;
+      
         display: block;
         text-decoration: none;
         width: 48px;
@@ -894,7 +940,6 @@ Dashboard
           font-size: 14px;
           line-height: 17px;
           color: $text-blue;
-          margin-bottom: 10px;
         }
 
         .message-box {

@@ -959,7 +959,7 @@ progress {
   border: none;
   width: 100px;
   height: 4px;
-  background: #fff;
+  background: #e8e8eb;
 }
 
 progress::-webkit-progress-value {
