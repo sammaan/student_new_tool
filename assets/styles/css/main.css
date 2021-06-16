@@ -1501,13 +1501,15 @@ header .header-right.d-flex .header-icon {
   width: 48px;
   height: 48px;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f8fafb;
   margin-left: 30px;
   cursor: pointer;
   font-size: 30px;
   color: #993d90;
   transition: 0.3s linear all !important;
-  padding: 4px 10px;
   box-sizing: border-box;
 }
 header .header-right.d-flex .header-icon:hover {
@@ -1516,12 +1518,9 @@ header .header-right.d-flex .header-icon:hover {
 header .header-right.d-flex .header-icon a {
   display: block;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
   color: #993d90;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 30px;
+  width: 30px;
 }
 header .header-right.d-flex .header-icon a .fas.fa-headset {
   font-size: 26px;
