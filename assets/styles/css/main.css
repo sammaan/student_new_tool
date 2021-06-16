@@ -1241,14 +1241,14 @@ table {
 .two-column .dashboard-box-container {
   width: 48%;
   border-radius: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 .two-column .dashboard-box-container .top-box {
   justify-content: flex-start;
   background-color: #441b40;
-  height: 100px;
+  height: 65px;
   box-sizing: border-box;
   color: #fff;
   border-radius: 16px;
@@ -1657,7 +1657,10 @@ Dashboard
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.dashboard-top-bpx .course-details-panel .inner-boxes {
+.dashboard-top-bpx .course-details-panel .four-box-outer {
+  padding: 15px;
+}
+.dashboard-top-bpx .course-details-panel .four-box-outer .inner-boxes {
   justify-content: space-between;
   align-items: stretch;
 }

@@ -311,7 +311,7 @@ table {
   .dashboard-box-container {
     width: 48%;
     border-radius: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
 
     .top-box {
@@ -824,9 +824,14 @@ Dashboard
     padding: 50px 25px;
     @include transition(.4s);
 
-    .inner-boxes {
-      justify-content: space-between;
-      align-items: stretch;
+    .four-box-outer{
+        
+      padding: 15px;
+ 
+      .inner-boxes {
+        justify-content: space-between;
+        align-items: stretch;
+      }
     }
 
     .semester-status {
