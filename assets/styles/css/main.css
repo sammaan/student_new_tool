@@ -1132,6 +1132,7 @@ section {
 body {
   line-height: 1.6;
   font-family: "Montserrat";
+  background: #f7f9fa;
 }
 
 ol,
@@ -1174,8 +1175,8 @@ table {
   padding: 0 60px;
   box-sizing: border-box;
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   height: 100vh;
   overflow-y: auto;
   display: block;
@@ -1433,7 +1434,6 @@ table {
 }
 .side-bar:hover {
   width: 370px;
-  border-radius: 0 16px 16px 0;
 }
 .side-bar:hover .logo a .university-name {
   width: auto;
@@ -2293,8 +2293,8 @@ calendar
 .academic-calendar .top-box-gray {
   background-color: #f8fafb;
   padding: 22px;
-  border-radius: 10px 10px;
-  margin-bottom: 20px;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 0px;
   justify-content: space-between;
 }
 .academic-calendar .top-box-gray h2 {
@@ -2345,20 +2345,17 @@ calendar
   justify-content: space-between;
   align-items: flex-start;
 }
-.academic-calendar #fccalendar {
-  width: 75%;
-}
 .academic-calendar .indication .legends {
   width: 100%;
 }
 .academic-calendar #fccalendar {
-  width: calc(100% - 150px);
+  width: 100%;
   box-sizing: border-box;
 }
 .academic-calendar .fc-header-toolbar {
   background-color: #1e364c;
   padding: 25px 20px;
-  border-radius: 16px;
+  border-radius: 0 0 16px 16px;
   color: #fff;
 }
 .academic-calendar #fccalendar td {
@@ -2389,6 +2386,11 @@ calendar
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
+}
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-button-active {
+  background-color: #f8c145 !important;
+  color: #0e0f22 !important;
 }
 .academic-calendar .fc-direction-ltr .fc-button-group > .fc-dayGridMonth-button,
 .academic-calendar .fc-direction-ltr .fc-button-group > .fc-timeGridWeek-button,
