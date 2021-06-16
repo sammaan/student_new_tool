@@ -114,8 +114,8 @@
      -->
 
 
-                    <li class="link-support mobile-only">
-                        <a href="support.html">
+<li class="link-support mobile-only">
+                        <a href="#">
                             <span class="menu-icon"> <span class="icon-Sign-out"><span class="path1"></span><span
                                         class="path2"></span><span class="path3"></span></span> </div>
                             </span>
@@ -134,7 +134,6 @@
                             class="path3"></span></span>
                 </div>
                 <div class="mobile-logo">
-
                     <a href="dashboard.html">
                         <img src="assets/img/logo.jpg" alt="logo">
                     </a>
@@ -154,8 +153,9 @@
                     <div class="header-right d-flex">
                         <div class="header-icon">
                             <a class="tooltip" title="Support" href="support.html">
-                                <span class="icon-Add-user"><span class="path1"></span><span
-                                        class="path2"></span></span>
+                                <i class="fas fa-headset"></i>
+                                <!-- <span class="icon-Add-user"><span class="path1"></span><span
+                                        class="path2"></span></span> -->
                             </a>
                         </div>
 
@@ -183,6 +183,7 @@
             <article id="profile" class="profile-body">
                 <h3>Your Profile</h3>
                 <section class="profile-box">
+                    <a href="#" class="icon-btn" id="ctaEditProfile"><i class="fas fa-edit"></i></a>
                     <div class="d-flex">
                         <div class="username">
                             <img src="assets/img/user.png" alt="user">
@@ -195,7 +196,6 @@
                                         <img src="assets/img/continue-learning-icon.png" alt="student-icon">
                                         <h1>Master of Business Administration July 2020</h1>
                                     </div>
-                                    <a href="#" class="icon-btn" id="ctaEditProfile"><i class="fas fa-edit"></i></a>
                                 </div>
                             </div>
 
@@ -307,7 +307,7 @@
         <article class="pop-up" id="editProfile">
             <div class="modal">
                 <header>
-                    <h3>Update Profile <i class="fas fa-times-circle close-popup"></i></h3>
+                    <h3 class="d-flex">Update Profile <i class="fas fa-times-circle close-popup"></i></h3>
                 </header>
                 <div class="modal-body">
                     <h4>User Information</h4>
@@ -485,11 +485,89 @@
                 </footer>
             </div>
         </article>
-        <!-- <article class="pop-up" id="editProfileEdu"></article> -->
+        <article class="pop-up" id="editProfileEdu">
+            <div class="modal">
+            <header>
+                <h3 class="d-flex">Educational Info <i class="fas fa-times-circle close-popup"></i></h3>
+            </header>
+            <div class="modal-body">
+                <div class="form">
+                    <label>Degree</label>
+                    <input type="text" class="form-control" placeholder="Enter Degree">
+                </div>
+                <div class="form">
+                    <label>University</label>
+                    <input type="text" class="form-control" placeholder="Enter University">
+                </div>
+                <div class="d-flex">
+                    <div class="form-group">
+                        <div class="d-flex">
+                            <div class="form-group">
+                                <div class="form">
+                                    <label>Start Date</label>
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="d-flex">
+                            <div class="form-group">
+                                <div class="form">
+                                    <label>End Date</label>
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                 <div class="d-flex">
+                     <div class="button-space-left">
+                         <input type="button" class="form-control close-btn" value="Close"/> 
+                     </div>
+                     <div class="button-space-right">
+                        <input type="button" class="form-control save-btn" value="Save Changes"/> 
+                    </div>
+                 </div>
+            </footer>
+        </div>
+        </article>
         <article class="pop-up" id="editProfileExp">
             <div class="modal">
                 <header>
-                    <h3>Professional Info <i class="fas fa-times-circle close-popup"></i></h3>
+                    <h3 class="d-flex">Professional Info <i class="fas fa-times-circle close-popup"></i></h3>
                 </header>
                 <div class="modal-body">
                     <div class="form">
@@ -596,15 +674,19 @@
                 $('.pop-up-bg').addClass('active');
                 $('.pop-up-bg .pop-up#editProfile').fadeIn();
             });
-            // $('#ctaEditEdu').click(function(e){
-            //     e.preventDefault;
-            //     $('.pop-up-bg').addClass('active');
-            //     $('.pop-up-bg .pop-up#editProfileEdu').fadeIn();
-            // });
+            $('#ctaEditEdu').click(function(e){
+                e.preventDefault;
+                $('.pop-up-bg').addClass('active');
+                $('.pop-up-bg .pop-up#editProfileEdu').fadeIn();
+            });
             $('#ctaEditExp').click(function (e) {
                 e.preventDefault;
                 $('.pop-up-bg').addClass('active');
                 $('.pop-up-bg .pop-up#editProfileExp').fadeIn();
+            });
+            $('.close-popup').click(function (e) {
+                $('.pop-up-bg').removeClass('active');
+                $('.pop-up-bg .pop-up').fadeOut();
             });
 
         });

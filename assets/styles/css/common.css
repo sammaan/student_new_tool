@@ -124,7 +124,9 @@ b {
   color: #918e98;
 }
 .responsive-table table tbody .fas {
-  margin-right: 3px;
+  left: 10px;
+  position: absolute;
+  top: 17px;
 }
 
 /****************************
@@ -132,10 +134,12 @@ b {
  *****************************/
 .responsive-table th {
   justify-content: center;
+  vertical-align: middle !important;
 }
 
 .responsive-table td,
 .responsive-table th {
+  position: relative;
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
@@ -233,6 +237,7 @@ Modal
 .modal header {
   padding: 0px;
   border-bottom: 1px solid #e7eaef;
+  margin-bottom: 0px;
 }
 .modal header h3 {
   color: #5f5d98;
@@ -242,7 +247,6 @@ Modal
 }
 .modal header h3 .fas {
   color: #000;
-  float: right;
   cursor: pointer;
 }
 .modal .modal-body {
@@ -262,9 +266,14 @@ Modal
   color: #98a4ee;
 }
 .modal .modal-body h5 {
+  margin-right: 20px;
   font-size: 17px;
   color: #70718f;
   font-weight: 600;
+}
+.modal .modal-body .resolve .d-flex {
+  align-items: center;
+  justify-content: flex-end;
 }
 .modal .modal-body .d-flex {
   align-items: end;
@@ -282,7 +291,7 @@ Modal
 .modal .modal-body .d-flex > .form-group .d-flex {
   align-items: flex-end;
 }
-.modal .modal-body .resolve-btn {
+.modal .modal-body .resolve-label {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -294,7 +303,7 @@ Modal
   cursor: pointer;
   transition: 0.3s linear all !important;
 }
-.modal .modal-body .resolve-btn:hover {
+.modal .modal-body .resolve-label:hover {
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .modal footer {
@@ -655,20 +664,20 @@ Datatable Header Footer
   padding: 7px 4px;
   box-sizing: border-box;
   color: #ddd;
+  position: relative;
+}
+.profile-body .profile-box .icon-btn {
+  right: 16px;
+  position: absolute;
+  top: 16px;
 }
 .profile-body .profile-box .d-flex {
   position: relative;
-  justify-content: flex-start;
+  justify-content: flex-end;
   /*profile */
 }
-.profile-body .profile-box .d-flex .icon-btn {
-  font-size: 18px;
-  bottom: 46px;
-  right: 0px;
-  position: absolute;
-}
 .profile-body .profile-box .d-flex .username {
-  width: 22%;
+  width: 20%;
   text-align: center;
 }
 .profile-body .profile-box .d-flex .username img {
@@ -682,8 +691,8 @@ Datatable Header Footer
   margin-top: 7px;
 }
 .profile-body .profile-box .d-flex .profile-text {
-  padding: 0px 58px;
-  width: 67%;
+  padding: 0px 22px;
+  width: 76%;
 }
 .profile-body .profile-box .d-flex .profile-text img {
   width: 36px;
@@ -709,7 +718,7 @@ Datatable Header Footer
 }
 .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text {
   display: inline-flex;
-  width: 47%;
+  width: 39%;
 }
 .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text img {
   width: auto;
@@ -854,10 +863,28 @@ Datatable Header Footer
 Media Query
  *****************************/
 @media (min-device-width: 320px) and (max-device-width: 700px) {
+  .modal header {
+    width: 100%;
+  }
+  .modal header h3 {
+    width: 100%;
+  }
   .modal .modal-body .d-flex .form-group,
 .modal .modal-body .d-flex .form-group-left,
 .modal .modal-body .d-flex .form-group-right {
     width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_filter input {
+    width: 45%;
+  }
+
+  .page-name {
+    /*margin-bottom: 20px;*/
+  }
+
+  .payment-type {
+    margin-top: 8px;
   }
 
   .support ul li:last-child {
@@ -866,6 +893,11 @@ Media Query
     top: 0px;
     right: 11px;
     position: inherit;
+  }
+
+  .profile-box .icon-btn {
+    right: 18px;
+    top: 16px;
   }
 
   .profile-body .ticket-details {

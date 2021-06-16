@@ -268,14 +268,15 @@
   content: "\e92f";
 }
 .icon-Bullet-list .path1:before {
+  color: #993d90;
   content: "\e930";
   
 }
 .icon-Bullet-list .path2:before {
+  color: #993d90;
   content: "\e931";
   margin-left: -1em;
-  
-  opacity: 0.3;
+  /*opacity: 0.3;*/
 }
 .icon-Code:before {
   content: "\e932";

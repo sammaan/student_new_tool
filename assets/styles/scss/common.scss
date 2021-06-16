@@ -166,7 +166,10 @@ b {
             color: $td-text;
 
             .fas {
-                margin-right: 3px;
+                // margin-right: 3px;
+                left: 10px;
+                position: absolute;
+                top: 17px;
             }
         }
     }
@@ -177,10 +180,12 @@ b {
  *****************************/
 .responsive-table th {
     justify-content: center;
+    vertical-align: middle !important;
 }
 
 .responsive-table td,
 .responsive-table th {
+    position: relative;
     font-weight: 500 !important;
     border-bottom: 1px solid $border !important;
     border-top: 1px solid $border !important;
@@ -290,11 +295,10 @@ Modal
 *****************************/
 .modal {
     background-color: $modal;
-
     header {
         padding: 0px;
         border-bottom: 1px solid $border;
-
+        margin-bottom: 0px;
         h3 {
             color: #5f5d98;
             font-size: 17px;
@@ -303,7 +307,6 @@ Modal
 
             .fas {
                 color: #000;
-                float: right;
                 cursor: pointer;
             }
         }
@@ -328,11 +331,17 @@ Modal
         }
 
         h5 {
+            margin-right: 20px;
             font-size: 17px;
             color: #70718f;
             font-weight: 600;
         }
-
+        .resolve {
+            .d-flex {
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
         .d-flex {
             align-items: end;
             justify-content: flex-start;
@@ -360,7 +369,7 @@ Modal
             @extend %form;
         }
 
-        .resolve-btn {
+        .resolve-label {
             font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
@@ -807,22 +816,19 @@ Datatable Header Footer
         padding: 7px 4px;
         box-sizing: border-box;
         color: #ddd;
-
+        position: relative;
+        .icon-btn {
+            right: 16px;
+            position: absolute;
+            top: 16px;
+        }
         .d-flex {
             position: relative;
-            justify-content: flex-start;
+            justify-content: flex-end;
 
             /*profile */
-            .icon-btn {
-                font-size: 18px;
-                bottom: 46px;
-                right: 0px;
-                position: absolute;
-
-            }
-
             .username {
-                width: 22%;
+                width: 20%;
                 text-align: center;
 
                 img {
@@ -839,8 +845,8 @@ Datatable Header Footer
             }
 
             .profile-text {
-                padding: 0px 58px;
-                width: 67%;
+                padding: 0px 22px;
+                width: 76%;
 
                 img {
                     width: 36px;
@@ -870,7 +876,7 @@ Datatable Header Footer
 
                         .profile-name-text {
                             display: inline-flex;
-                            width: 47%;
+                            width: 39%;
 
                             img {
                                 width: auto;
@@ -1062,6 +1068,12 @@ Media Query
  *****************************/
 @media (min-device-width: $breakpoint-smallphone) and (max-device-width: $breakpoint-phone) {
     .modal {
+        header {
+            width:100%;
+            h3 {
+                width: 100%;
+            }
+        }
         .modal-body {
             .d-flex {
 
@@ -1073,7 +1085,17 @@ Media Query
             }
         }
     }
-
+    .dataTables_wrapper {
+        .dataTables_filter input {
+            width: 45%;
+        }
+    }
+    .page-name{
+        /*margin-bottom: 20px;*/
+    }
+    .payment-type {
+        margin-top: 8px;
+    }
     .support {
         ul {
             li:last-child {
@@ -1085,7 +1107,12 @@ Media Query
             }
         }
     }
-
+    .profile-box {
+        .icon-btn {
+                right: 18px;
+                top: 16px;
+            }
+    }
     .profile-body {
         .ticket-details {
             padding: 50px 0px;
