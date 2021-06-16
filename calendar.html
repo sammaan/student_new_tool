@@ -204,17 +204,42 @@
 
 
 </body>
+
+<style>
+    @media (max-width: 767px){
+        .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
+            width: 100%;
+            order: 1;
+        }
+        .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+            width: 50%;
+            text-align: right;
+            margin-top: 10px;
+            order:2;
+        }
+        .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+            width: 50%;
+            text-align: right;
+            order: 2;
+            margin-top: 10px;
+        }
+    }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.min.js"></script>
 <script>
+/* For more info : https://fullcalendar.io/docs */
+
     document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('fccalendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
             // initialView: 'dayGridMonth'
             headerToolbar: {
-                left: 'prev,next',
+                left: 'dayGridMonth,timeGridWeek,timeGridDay',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            }
+                right: 'prev,next',
+            },
+            contentHeight: 400,
+            fixedWeekCount: false
         });
         calendar.render();
     });
