@@ -8,8 +8,6 @@ button space
   border-radius: 4px;
   font-size: 15px;
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-4px) scale(1.02);
   transform: translateY(-4px) scale(1.02);
@@ -17,8 +15,6 @@ button space
 
 .modal footer .d-flex .reset-btn:hover, .modal footer .d-flex .save-btn:hover, .modal footer .d-flex .close-btn:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-3px) scale(1.02);
   transform: translateY(-3px) scale(1.02);
@@ -46,10 +42,8 @@ button space
 }
 
 .icon-btn:hover {
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 /****************************
@@ -384,10 +378,8 @@ Modal
 }
 
 .modal .modal-body .resolve-label:hover {
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .modal footer {
@@ -428,7 +420,7 @@ Modal
   color: #000;
   background-color: #f1f4f7;
   cursor: pointer;
-  border: 1px solid #dee5ea;
+  border: 1px solid #dfe9f3;
 }
 
 /************************
@@ -471,6 +463,7 @@ Datatable Header Footer
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #fbfbfb !important;
   border: 1px solid #d0c7c7 !important;
+  background-color: #5e72e4;
   border-radius: 50%;
   background: #5e72e4 !important;
   padding: 4px 12px !important;
@@ -500,8 +493,6 @@ Datatable Header Footer
 .ticket-body {
   border-radius: 4px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
-  -ms-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
-  -o-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
 
@@ -595,10 +586,8 @@ Datatable Header Footer
 }
 
 .ticket-body .ticket-box .d-flex .start-learning .resolve-btn:hover {
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .ticket-body .ticket-details {
@@ -628,8 +617,6 @@ Datatable Header Footer
   border-radius: 16px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
-  -ms-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
-  -o-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 
@@ -677,10 +664,8 @@ Datatable Header Footer
 }
 
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button:hover {
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .ticket-body .ticket-column .ticket-box-container .ticket-history {
@@ -724,7 +709,7 @@ Datatable Header Footer
   padding: 0px 0px 0px 35px;
   color: #314384;
   margin-left: auto;
-  border-left: 2px dashed #e7eaef;
+  border-left: 2px dashed #ddd;
 }
 
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex {
@@ -736,7 +721,7 @@ Datatable Header Footer
 
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn {
   background-color: #fde6e0;
-  color: #000;
+  color: #f00;
   text-decoration: none;
   border-radius: 18px;
   padding: 2px 12px;
@@ -750,10 +735,8 @@ Datatable Header Footer
 }
 
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn:hover {
-  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
@@ -831,15 +814,13 @@ Datatable Header Footer
 }
 
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .assigned-head {
-  border-top: 1px solid #e7eaef;
+  border-top: 1px solid #ddd;
 }
 
 /************** Profile **************/
 .profile-body {
   border-radius: 4px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
-  -ms-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
-  -o-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
 
@@ -1012,7 +993,7 @@ Datatable Header Footer
   position: relative;
   padding: 12px 20px;
   margin-left: auto;
-  border-bottom: 1px solid #e7eaef;
+  border-bottom: 1px solid #ddd;
 }
 
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex {
@@ -1023,7 +1004,7 @@ Datatable Header Footer
 
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn {
   background-color: #fde6e0;
-  color: #000;
+  color: #f00;
   text-decoration: none;
   border-radius: 18px;
   padding: 2px 12px;
@@ -1074,7 +1055,7 @@ Datatable Header Footer
 }
 
 .profile-body .ticket-column .ticket-box-container .inner-boxes .assigned-head {
-  border-top: 1px solid #e7eaef;
+  border-top: 1px solid #ddd;
 }
 
 .profile-body .ticket-column .ticket-box-container .profile-experience .d-flex {
@@ -1129,6 +1110,123 @@ Datatable Header Footer
   color: #545dac;
 }
 
+/****************************
+Media Query
+ *****************************/
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .modal header {
+    width: 100%;
+  }
+  .modal header h3 {
+    width: 100%;
+  }
+  .modal .modal-body .d-flex .form-group,
+  .modal .modal-body .d-flex .form-group-left,
+  .modal .modal-body .d-flex .form-group-right {
+    width: 100%;
+  }
+  .dataTables_wrapper .dataTables_filter input {
+    width: 45%;
+  }
+  .page-name {
+    /*margin-bottom: 20px;*/
+  }
+  .payment-type {
+    margin-top: 8px;
+  }
+  .support ul li:last-child {
+    padding: 8px 8px;
+    width: 18px;
+    top: 0px;
+    right: 11px;
+    position: inherit;
+  }
+  .profile-box .icon-btn {
+    right: 18px;
+    top: 16px;
+  }
+  .profile-body .ticket-details {
+    padding: 50px 0px;
+  }
+  .profile-body .ticket-column .ticket-box-container .top-box h2 {
+    font-size: 17px;
+  }
+  .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
+    font-size: 12px !important;
+  }
+  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right,
+  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
+    width: 100% !important;
+  }
+  .profile-body .profile-box .d-flex .username {
+    width: 94% !important;
+  }
+  .profile-body .profile-box .d-flex .profile-text {
+    padding: 8px !important;
+    width: 94%;
+  }
+  .profile-body .profile-box .d-flex .profile-text .d-flex .text {
+    width: 100% !important;
+  }
+  .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text {
+    width: 100%;
+  }
+  .profile-body .ticket-column .ticket-box-container {
+    width: 100% !important;
+  }
+  .ticket-body .ticket-details {
+    padding: 50px 0px;
+  }
+  .ticket-body .ticket-box .d-flex .start-learning {
+    padding-top: 19px !important;
+    margin-left: auto;
+  }
+  .ticket-body .ticket-box .d-flex .start-learning h2 {
+    width: 111px;
+    font-size: 15px !important;
+  }
+  .ticket-body .ticket-box .d-flex .start-learning .resolve-btn {
+    font-size: 11px !important;
+  }
+  .ticket-body .ticket-box .d-flex .user-name img {
+    height: 47px;
+  }
+  .ticket-body .ticket-box .d-flex .user-name h1 {
+    line-height: 21px;
+    font-size: 15px !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container {
+    width: 100% !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .top-box {
+    padding: 26px 11px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
+    font-size: 11px !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .top-box h2 {
+    font-size: 16px !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content {
+    height: 169px;
+  }
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .heading {
+    width: 47% !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
+    width: 53% !important;
+  }
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3,
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+    font-size: 13px !important;
+  }
+}
+
 .no-shodow {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -1163,4 +1261,4 @@ progress::-moz-progress-bar {
   transition: all .5s;
   border-radius: 4px;
 }
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=common - Copy.css.map */

@@ -2,10 +2,9 @@
 @use 'common';
 @use 'custom';
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn, .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn, .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn, .support .add-ticket, .support .contact-to-support .message-box .message-btn {
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
   border-radius: 50px;
-  font-size: 11px;
   padding: 2px 10px;
   text-decoration: none;
 }
@@ -165,16 +164,18 @@ table {
  Common 
  ***************************/
 .full-body-width {
+  -ms-width: calc(100% - 110px);
   width: calc(100% - 110px);
   margin-left: 110px;
   padding: 0 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   height: 100vh;
   overflow-y: auto;
+  display: block;
 }
 
 .full-body-width .side-bar {
@@ -227,6 +228,11 @@ table {
   border-bottom: 4px solid #993d90;
 }
 
+.horizontal-tab .tab-box::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
 .horizontal-tab .subject-selection-box {
   display: none;
 }
@@ -248,7 +254,7 @@ table {
 .two-column .dashboard-box-container {
   width: 48%;
   border-radius: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
@@ -257,8 +263,8 @@ table {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: #1d354b;
-  height: 100px;
+  background-color: #441b40;
+  height: 65px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #fff;
@@ -277,6 +283,12 @@ table {
   margin-right: 20px;
 }
 
+.two-column .dashboard-box-container .top-box h2 > span {
+  font-size: 32px;
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
 .two-column .dashboard-box-container .inner-boxes {
   height: 172px;
   overflow-y: scroll;
@@ -284,8 +296,51 @@ table {
 }
 
 /* width */
+::-ms-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-ms-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-ms-scrollbar-thumb {
+  background: #993d90;
+}
+
+/* Handle on hover */
+::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* width */
+::-moz-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-moz-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-moz-scrollbar-thumb {
+  background: #993d90;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* width */
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
 }
 
 /* Track */
@@ -307,15 +362,17 @@ table {
  Navigation
  *****************************/
 .side-bar {
-  padding: 15px;
-  background-color: #f7f9fa;
-  width: 110px;
+  padding: 15px 0 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #f7f9fa;
+  width: 110px;
+  box-sizing: border-box;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   -webkit-transition-property: width;
   transition-property: width;
+  z-index: 9;
 }
 
 .side-bar .logo a {
@@ -323,6 +380,7 @@ table {
   display: block;
   text-decoration: none;
   overflow: hidden;
+  height: 80px;
 }
 
 .side-bar .logo a img {
@@ -343,6 +401,9 @@ table {
   display: none;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .side-bar .menu-bar li a {
@@ -362,6 +423,12 @@ table {
   text-decoration: none;
   padding-left: 15px;
   color: #0e0f22;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .side-bar .menu-bar li a .menu-icon {
@@ -378,6 +445,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 30px;
+  color: #993d90;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
@@ -397,6 +466,7 @@ table {
 
 .side-bar .menu-bar li a:hover .menu-icon {
   background-color: #993d90;
+  color: #fff;
 }
 
 .side-bar .menu-bar li a:hover .menu-icon img {
@@ -406,6 +476,7 @@ table {
 
 .side-bar .menu-bar li.active a .menu-icon {
   background-color: #993d90;
+  color: #fff;
 }
 
 .side-bar .menu-bar li.active a .menu-icon img {
@@ -415,7 +486,6 @@ table {
 
 .side-bar:hover {
   width: 370px;
-  border-radius: 0 16px 16px 0;
 }
 
 .side-bar:hover .logo a .university-name {
@@ -430,7 +500,12 @@ table {
 /****************************
 Header
 ****************************/
-.mobile-logo {
+.mobile-hamburger .icon-Align-left {
+  color: #441b40;
+}
+
+.mobile-logo,
+.mobile-hamburger {
   display: none;
 }
 
@@ -449,27 +524,29 @@ header .header-left.d-flex .fit-to-screen {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #f8fafb;
-  color: #1e374d;
-  font-size: 25px;
+  color: #993d90;
+  font-size: 30px;
   margin-right: 30px;
   cursor: pointer;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
+  padding: 4px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .header-left.d-flex .fit-to-screen:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+header .header-left.d-flex .fit-to-screen a {
+  display: block;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  color: #993d90;
 }
 
 header .header-left.d-flex .search-bar .search-input {
@@ -503,13 +580,29 @@ header .header-right.d-flex .header-icon {
   background-color: #f8fafb;
   margin-left: 30px;
   cursor: pointer;
+  font-size: 30px;
+  color: #993d90;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .header-right.d-flex .header-icon:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+header .header-right.d-flex .header-icon a {
+  display: block;
+  text-decoration: none;
+  color: #993d90;
+  line-height: 30px;
+  width: 30px;
+}
+
+header .header-right.d-flex .header-icon a .fas.fa-headset {
+  font-size: 26px;
 }
 
 header .header-right.d-flex .user-details {
@@ -518,13 +611,18 @@ header .header-right.d-flex .user-details {
   border-radius: 16px;
   padding: 0 10px 0 0;
   cursor: pointer;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
+}
+
+header .header-right.d-flex .user-details a {
+  color: inherit;
+  text-decoration: none;
 }
 
 header .header-right.d-flex .user-details:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 header .header-right.d-flex .user-details img {
@@ -544,22 +642,25 @@ header .header-right.d-flex .logout {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
+  font-size: 30px;
+  padding: 4px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .header-right.d-flex .logout:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+header .header-right.d-flex .logout a {
+  display: block;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  color: #993d90;
 }
 
 /**************************
@@ -572,7 +673,7 @@ Dashboard
 }
 
 .user-details-panel .d-flex .user-name h1 {
-  color: #1d354b;
+  color: #441b40;
   font-size: 28px;
   line-height: 34px;
 }
@@ -611,6 +712,8 @@ Dashboard
       -ms-flex-align: center;
           align-items: center;
   margin-left: 30px;
+  font-size: 35px;
+  color: #fff;
 }
 
 .user-details-panel .d-flex .start-learning p {
@@ -619,6 +722,10 @@ Dashboard
   color: #0e0f22;
   text-align: right;
   margin-top: 10px;
+}
+
+.dashboard-top-bpx .collapse-button {
+  opacity: 0;
 }
 
 .dashboard-top-bpx .your-course {
@@ -677,7 +784,11 @@ Dashboard
   transition: 0.4s;
 }
 
-.dashboard-top-bpx .course-details-panel .inner-boxes {
+.dashboard-top-bpx .course-details-panel .four-box-outer {
+  padding: 15px;
+}
+
+.dashboard-top-bpx .course-details-panel .four-box-outer .inner-boxes {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -687,8 +798,8 @@ Dashboard
 }
 
 .dashboard-top-bpx .course-details-panel .semester-status {
-  -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
-  box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  -webkit-box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
+  box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
   width: 100%;
   padding: 18px;
   border-radius: 16px;
@@ -700,16 +811,23 @@ Dashboard
           justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
 }
 
 .dashboard-top-bpx .course-details-panel .semester-status:hover {
-  -webkit-box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
-  box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
-  position: relative;
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
   z-index: 3;
 }
 
 .dashboard-top-bpx .course-details-panel .semester-status h3 img {
+  vertical-align: middle;
+}
+
+.dashboard-top-bpx .course-details-panel .semester-status h3 > span {
+  font-size: 26px;
+  margin-right: 4px;
   vertical-align: middle;
 }
 
@@ -810,10 +928,9 @@ Dashboard
 }
 
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .contact-persone-post {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 17px;
   color: #0e0f22;
-  margin-bottom: 10px;
 }
 
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box {
@@ -825,18 +942,19 @@ Dashboard
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn {
   background-color: #0e0f22;
   color: #fff;
+  font-size: 14px;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
 }
 
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .dashboard-top-bpx .course-details-panel .notification-item .notification {
-  -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
-  box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  -webkit-box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
+  box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
   width: 100%;
   padding: 18px;
   border-radius: 16px;
@@ -848,13 +966,13 @@ Dashboard
           justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
 }
 
 .dashboard-top-bpx .course-details-panel .notification-item .notification:hover {
-  -webkit-box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
-  box-shadow: 20px 0px 38px rgba(153, 61, 144, 0.57);
-  position: relative;
-  z-index: 3;
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .dashboard-top-bpx .course-details-panel .notification-item .notification h3 {
@@ -873,6 +991,13 @@ Dashboard
   margin-right: 10px;
 }
 
+.dashboard-top-bpx .course-details-panel .notification-item .notification h3 > span {
+  font-size: 25px;
+  color: #993d90;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -889,6 +1014,13 @@ Dashboard
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn {
   background-color: #b1113e;
   color: #fff;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
+}
+
+.dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn:hover {
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee {
@@ -966,13 +1098,13 @@ Dashboard
   font-weight: 600;
   padding: 2px 14px;
   margin-bottom: 10px;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
 }
 
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .due-date {
@@ -1006,46 +1138,63 @@ Dashboard
   margin-bottom: 7px;
 }
 
-.top-box-container, .table-container {
+.top-box-container,
+.table-container {
   border-radius: 16px;
   margin-bottom: 45px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 
-.top-box-container .top-box, .table-container .top-box {
+.top-box-container .top-box,
+.table-container .top-box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1d354b;
+  background-color: #441b40;
   color: #fff;
   border-radius: 16px;
   padding: 18px 35px;
+  height: 86px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.top-box-container .top-box h2, .table-container .top-box h2 {
+.top-box-container .top-box h2,
+.table-container .top-box h2 {
   font-size: 24px;
   line-height: 20px;
   font-weight: 600;
 }
 
-.top-box-container .top-box h2 img, .table-container .top-box h2 img {
+.top-box-container .top-box h2 img,
+.table-container .top-box h2 img {
   vertical-align: middle;
   margin-right: 20px;
 }
 
-.top-box-container .top-box .payment-type p, .table-container .top-box .payment-type p {
+.top-box-container .top-box h2 > span,
+.table-container .top-box h2 > span {
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.top-box-container .top-box .payment-type p,
+.table-container .top-box .payment-type p {
   font-size: 20px;
   line-height: 26px;
 }
 
-.top-box-container .top-box .payment-type p span, .table-container .top-box .payment-type p span {
+.top-box-container .top-box .payment-type p span,
+.table-container .top-box .payment-type p span {
   font-size: 24px;
   display: block;
   font-weight: 600;
 }
 
-.top-box-container .inner-boxes, .table-container .inner-boxes {
+.top-box-container .inner-boxes,
+.table-container .inner-boxes {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1057,7 +1206,8 @@ Dashboard
           box-sizing: border-box;
 }
 
-.top-box-container .inner-boxes .left-box, .table-container .inner-boxes .left-box {
+.top-box-container .inner-boxes .left-box,
+.table-container .inner-boxes .left-box {
   background-color: #f8c145;
   border-radius: 16px;
   padding: 20px;
@@ -1070,7 +1220,8 @@ Dashboard
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 
-.top-box-container .inner-boxes .left-box .select-sem, .table-container .inner-boxes .left-box .select-sem {
+.top-box-container .inner-boxes .left-box .select-sem,
+.table-container .inner-boxes .left-box .select-sem {
   background-color: transparent;
   color: #0e0f22;
   font-size: 20px;
@@ -1086,29 +1237,34 @@ Dashboard
   margin-bottom: 15px;
 }
 
-.top-box-container .inner-boxes .left-box .select-sem:focus, .table-container .inner-boxes .left-box .select-sem:focus {
+.top-box-container .inner-boxes .left-box .select-sem:focus,
+.table-container .inner-boxes .left-box .select-sem:focus {
   outline: none;
 }
 
-.top-box-container .inner-boxes .left-box .select-sem option, .table-container .inner-boxes .left-box .select-sem option {
+.top-box-container .inner-boxes .left-box .select-sem option,
+.table-container .inner-boxes .left-box .select-sem option {
   font-size: 14px;
   padding: 4px;
 }
 
-.top-box-container .inner-boxes .left-box h3, .table-container .inner-boxes .left-box h3 {
+.top-box-container .inner-boxes .left-box h3,
+.table-container .inner-boxes .left-box h3 {
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 20px;
   color: #0e0f22;
 }
 
-.top-box-container .inner-boxes .left-box .progess-bar, .table-container .inner-boxes .left-box .progess-bar {
+.top-box-container .inner-boxes .left-box .progess-bar,
+.table-container .inner-boxes .left-box .progess-bar {
   width: 100%;
   margin-bottom: 15px;
   height: 8px;
 }
 
-.top-box-container .inner-boxes .left-box .semester-points, .table-container .inner-boxes .left-box .semester-points {
+.top-box-container .inner-boxes .left-box .semester-points,
+.table-container .inner-boxes .left-box .semester-points {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1117,13 +1273,15 @@ Dashboard
   text-align: center;
 }
 
-.top-box-container .inner-boxes .left-box .semester-points span, .table-container .inner-boxes .left-box .semester-points span {
+.top-box-container .inner-boxes .left-box .semester-points span,
+.table-container .inner-boxes .left-box .semester-points span {
   display: block;
   font-size: 16px;
   line-height: 22px;
 }
 
-.top-box-container .inner-boxes .right-box, .table-container .inner-boxes .right-box {
+.top-box-container .inner-boxes .right-box,
+.table-container .inner-boxes .right-box {
   background-color: #b1113e;
   border-radius: 16px;
   padding: 20px;
@@ -1141,70 +1299,84 @@ Dashboard
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info, .table-container .inner-boxes .right-box .upcoming-info {
+.top-box-container .inner-boxes .right-box .upcoming-info,
+.table-container .inner-boxes .right-box .upcoming-info {
   width: 45%;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info .info-heading, .table-container .inner-boxes .right-box .upcoming-info .info-heading {
+.top-box-container .inner-boxes .right-box .upcoming-info .info-heading,
+.table-container .inner-boxes .right-box .upcoming-info .info-heading {
   font-size: 20px;
   line-height: 26px;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info .mb-20, .table-container .inner-boxes .right-box .upcoming-info .mb-20 {
+.top-box-container .inner-boxes .right-box .upcoming-info .mb-20,
+.table-container .inner-boxes .right-box .upcoming-info .mb-20 {
   margin-bottom: 20px;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info .mb-10, .table-container .inner-boxes .right-box .upcoming-info .mb-10 {
+.top-box-container .inner-boxes .right-box .upcoming-info .mb-10,
+.table-container .inner-boxes .right-box .upcoming-info .mb-10 {
   margin-bottom: 10px;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info .info-Details, .table-container .inner-boxes .right-box .upcoming-info .info-Details {
+.top-box-container .inner-boxes .right-box .upcoming-info .info-Details,
+.table-container .inner-boxes .right-box .upcoming-info .info-Details {
   font-size: 22px;
   line-height: 36px;
   font-weight: 600;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info .info-discription, .table-container .inner-boxes .right-box .upcoming-info .info-discription {
+.top-box-container .inner-boxes .right-box .upcoming-info .info-discription,
+.table-container .inner-boxes .right-box .upcoming-info .info-discription {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-info .info-discription strong, .table-container .inner-boxes .right-box .upcoming-info .info-discription strong {
+.top-box-container .inner-boxes .right-box .upcoming-info .info-discription strong,
+.table-container .inner-boxes .right-box .upcoming-info .info-discription strong {
   font-weight: 600;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates, .table-container .inner-boxes .right-box .upcoming-dates {
+.top-box-container .inner-boxes .right-box .upcoming-dates,
+.table-container .inner-boxes .right-box .upcoming-dates {
   width: 250px;
   text-align: center;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .info-heading, .table-container .inner-boxes .right-box .upcoming-dates .info-heading {
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-heading,
+.table-container .inner-boxes .right-box .upcoming-dates .info-heading {
   font-size: 20px;
   line-height: 26px;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .mt-20, .table-container .inner-boxes .right-box .upcoming-dates .mt-20 {
+.top-box-container .inner-boxes .right-box .upcoming-dates .mt-20,
+.table-container .inner-boxes .right-box .upcoming-dates .mt-20 {
   margin-top: 20px;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .mb-10, .table-container .inner-boxes .right-box .upcoming-dates .mb-10 {
+.top-box-container .inner-boxes .right-box .upcoming-dates .mb-10,
+.table-container .inner-boxes .right-box .upcoming-dates .mb-10 {
   margin-bottom: 10px;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .info-Details, .table-container .inner-boxes .right-box .upcoming-dates .info-Details {
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-Details,
+.table-container .inner-boxes .right-box .upcoming-dates .info-Details {
   font-size: 22px;
   line-height: 36px;
   font-weight: 600;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .info-discription, .table-container .inner-boxes .right-box .upcoming-dates .info-discription {
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-discription,
+.table-container .inner-boxes .right-box .upcoming-dates .info-discription {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .info-button, .table-container .inner-boxes .right-box .upcoming-dates .info-button {
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-button,
+.table-container .inner-boxes .right-box .upcoming-dates .info-button {
   background-color: #f8c145;
   color: #fff;
   text-decoration: none;
@@ -1215,13 +1387,14 @@ Dashboard
   line-height: 26px;
   font-weight: 600;
   margin-top: 10px;
+  -webkit-transition: 0.3s linear all !important;
+  transition: 0.3s linear all !important;
 }
 
-.top-box-container .inner-boxes .right-box .upcoming-dates .info-button:hover, .table-container .inner-boxes .right-box .upcoming-dates .info-button:hover {
-  background-color: #993d90;
-  color: #fff;
-  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
-  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+.top-box-container .inner-boxes .right-box .upcoming-dates .info-button:hover,
+.table-container .inner-boxes .right-box .upcoming-dates .info-button:hover {
+  -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
 .payments .top-box-container {
@@ -1354,14 +1527,14 @@ Dashboard
 }
 
 .support .contact-to-support .contact-persone-name {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 26px;
   color: #0e0f22;
   margin-bottom: 5px;
 }
 
 .support .contact-to-support .contact-persone-post {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 17px;
   color: #0e0f22;
   margin-bottom: 10px;
@@ -1408,15 +1581,194 @@ Dashboard
   display: flex;
 }
 
+.pop-up-bg .pop-up {
+  z-index: 9999;
+  display: none;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .pop-up-bg .pop-up-container {
   width: 80%;
 }
 
-.pop-up-bg .pop-up-container .pop-up-container header {
-  margin-bottom: 10px;
+.pop-up-bg .pop-up-container .modal header {
+  margin-bottom: 10px !important;
 }
 
 textarea {
   resize: none !important;
+}
+
+/**********************
+calendar
+***********************/
+.academic-calendar .top-box-gray {
+  background-color: #f8fafb;
+  padding: 22px;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.academic-calendar .top-box-gray h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  color: #0e0f22;
+  font-size: 18px;
+}
+
+.academic-calendar .top-box-gray h2 .icon-Time-schedule {
+  vertical-align: middle;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.academic-calendar .indication {
+  width: 40%;
+  background-color: #f8fafb;
+  border-radius: 4px;
+  position: relative;
+}
+
+.academic-calendar .indication ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.academic-calendar .indication ul li {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 5px;
+  list-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.academic-calendar .indication ul li .mark {
+  width: 20px;
+  display: block;
+  height: 6px;
+  border-radius: 50px;
+  margin-bottom: 3px;
+}
+
+.academic-calendar .indication ul li:nth-child(1) .mark {
+  background-color: #b1113e;
+}
+
+.academic-calendar .indication ul li:nth-child(2) .mark {
+  background-color: #993d90;
+}
+
+.academic-calendar .indication ul li:nth-child(3) .mark {
+  background-color: #166302;
+}
+
+.academic-calendar .indication ul li:nth-child(4) .mark {
+  background-color: #fcbb1e;
+}
+
+.academic-calendar .cal-section {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.academic-calendar .indication .legends {
+  width: 100%;
+}
+
+.academic-calendar #fccalendar {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.academic-calendar .fc-header-toolbar {
+  background-color: #441b40;
+  padding: 25px 20px;
+  border-radius: 0 0 16px 16px;
+  color: #fff;
+}
+
+.academic-calendar #fccalendar td {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.academic-calendar .fc-theme-standard th,
+.academic-calendar .fc-col-header td {
+  border: none !important;
+}
+
+.academic-calendar .fc .fc-scrollgrid-section > td {
+  padding: 0 !important;
+}
+
+.academic-calendar #fccalendar td,
+.academic-calendar #fccalendar th {
+  border-top: none;
+}
+
+.academic-calendar .academic-calendar #fccalendar td {
+  padding: 3px 7px !important;
+}
+
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-button {
+  background-color: #f7f9fb;
+  border-radius: 8px !important;
+  margin-left: 10px !important;
+  color: #441b40;
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-button-active {
+  background-color: #f8c145 !important;
+  color: #0e0f22 !important;
+}
+
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-dayGridMonth-button,
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-timeGridWeek-button,
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-timeGridDay-button {
+  width: auto;
+}
+
+.academic-calendar .fc .fc-button-primary {
+  background-color: #f7f9fb;
+  border-radius: 8px !important;
+  margin-left: 10px !important;
+  color: #1d354b;
+  font-size: 18px;
+}
+
+.academic-calendar .fc-scroller-harness-liquid td,
+.academic-calendar .fc-scroller-harness-liquid th {
+  padding: 0 !important;
+}
+
+.academic-calendar .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  position: relative;
+  min-height: 0;
 }
 /*# sourceMappingURL=main.css.map */
