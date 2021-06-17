@@ -935,6 +935,7 @@ Media Query
   }
   .ticket-body .ticket-box .d-flex .start-learning {
     padding-top: 19px !important;
+    margin-left: auto;
   }
   .ticket-body .ticket-box .d-flex .start-learning h2 {
     width: 111px;

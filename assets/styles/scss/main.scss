@@ -1585,9 +1585,11 @@ calendar
     justify-content: space-between;  
 
     h2 {
-      img {
+      display: flex;
+      .icon-Time-schedule {
         vertical-align: middle;
         margin-right: 20px;
+        font-size: 30px;
       }
 
       font-weight: 600;

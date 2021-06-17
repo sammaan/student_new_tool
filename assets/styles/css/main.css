@@ -935,6 +935,7 @@ Media Query
   }
   .ticket-body .ticket-box .d-flex .start-learning {
     padding-top: 19px !important;
+    margin-left: auto;
   }
   .ticket-body .ticket-box .d-flex .start-learning h2 {
     width: 111px;
@@ -2305,13 +2306,15 @@ calendar
   justify-content: space-between;
 }
 .academic-calendar .top-box-gray h2 {
+  display: flex;
   font-weight: 600;
   color: #0e0f22;
   font-size: 18px;
 }
-.academic-calendar .top-box-gray h2 img {
+.academic-calendar .top-box-gray h2 .icon-Time-schedule {
   vertical-align: middle;
   margin-right: 20px;
+  font-size: 30px;
 }
 .academic-calendar .indication {
   width: 40%;

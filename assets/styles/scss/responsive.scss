@@ -363,8 +363,14 @@ $layout-breakpoint-xs: 767px;
         height: auto;
       }
 
-      .payment-type p span {
-        display: inline;
+      .payment-type {
+        width: 100%;
+        p{
+          text-align: right;
+          span {
+            display: inline;
+          }
+        }
       }
     }
   }
@@ -567,6 +573,7 @@ $layout-breakpoint-xs: 767px;
     }
     .add-ticket {
       margin-top: 20px;
+      margin-left: auto;
     }
 
     .contact-to-support {
