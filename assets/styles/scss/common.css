@@ -8,6 +8,8 @@ button space
   border-radius: 4px;
   font-size: 15px;
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-4px) scale(1.02);
   transform: translateY(-4px) scale(1.02);
@@ -15,6 +17,8 @@ button space
 
 .modal footer .d-flex .reset-btn:hover, .modal footer .d-flex .save-btn:hover, .modal footer .d-flex .close-btn:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-3px) scale(1.02);
   transform: translateY(-3px) scale(1.02);
@@ -43,6 +47,8 @@ button space
 
 .icon-btn:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -379,6 +385,8 @@ Modal
 
 .modal .modal-body .resolve-label:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -492,6 +500,8 @@ Datatable Header Footer
 .ticket-body {
   border-radius: 4px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+  -ms-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+  -o-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
 
@@ -586,6 +596,8 @@ Datatable Header Footer
 
 .ticket-body .ticket-box .d-flex .start-learning .resolve-btn:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -616,6 +628,8 @@ Datatable Header Footer
   border-radius: 16px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  -ms-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
+  -o-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
 
@@ -664,6 +678,8 @@ Datatable Header Footer
 
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -735,6 +751,8 @@ Datatable Header Footer
 
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -820,6 +838,8 @@ Datatable Header Footer
 .profile-body {
   border-radius: 4px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+  -ms-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
+  -o-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
 

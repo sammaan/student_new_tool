@@ -62,6 +62,9 @@ $datatable-border:#3d4992;
 //Box Shadow
 @mixin box-shadow($proprty) {
     -webkit-box-shadow: $proprty;
+    -moz-box-shadow: $proprty;
+    -ms-box-shadow: $proprty;
+    -o-box-shadow: $proprty;
     box-shadow: $proprty;
 }
 //Transform
