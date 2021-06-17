@@ -409,7 +409,7 @@ Datatable Header Footer
 .ticket-body .ticket-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #1d354b;
+  background-color: #441b40;
   border-radius: 16px;
   padding: 20px 30px;
   box-sizing: border-box;
@@ -659,7 +659,7 @@ Datatable Header Footer
 .profile-body .profile-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #1d354b;
+  background-color: #441b40;
   border-radius: 16px;
   padding: 7px 4px;
   box-sizing: border-box;

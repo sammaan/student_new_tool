@@ -407,9 +407,11 @@
   }
   .academic-calendar .indication .legends {
     display: flex;
+    margin-top: 10px;
   }
   .academic-calendar .indication .legends li {
-    margin: 10px 5px;
+    width: 35%;
+    margin: 5px;
     padding: 0;
   }
   .academic-calendar .fc-header-toolbar {
@@ -425,7 +427,8 @@
     order: 3;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) h2.fc-toolbar-title {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
     width: 67%;

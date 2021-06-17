@@ -409,7 +409,7 @@ Datatable Header Footer
 .ticket-body .ticket-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #1d354b;
+  background-color: #441b40;
   border-radius: 16px;
   padding: 20px 30px;
   box-sizing: border-box;
@@ -659,7 +659,7 @@ Datatable Header Footer
 .profile-body .profile-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #1d354b;
+  background-color: #441b40;
   border-radius: 16px;
   padding: 7px 4px;
   box-sizing: border-box;
@@ -1248,7 +1248,7 @@ table {
 .two-column .dashboard-box-container .top-box {
   justify-content: flex-start;
   background-color: #441b40;
-  height: 65px;
+  height: 100px;
   box-sizing: border-box;
   color: #fff;
   border-radius: 16px;
@@ -1446,6 +1446,10 @@ table {
 /****************************
 Header
 ****************************/
+.mobile-hamburger .icon-Align-left {
+  color: #441b40;
+}
+
 .mobile-logo,
 .mobile-hamburger {
   display: none;
@@ -2356,7 +2360,7 @@ calendar
   box-sizing: border-box;
 }
 .academic-calendar .fc-header-toolbar {
-  background-color: #1e364c;
+  background-color: #441b40;
   padding: 25px 20px;
   border-radius: 0 0 16px 16px;
   color: #fff;
@@ -2382,7 +2386,7 @@ calendar
   background-color: #f7f9fb;
   border-radius: 8px !important;
   margin-left: 10px !important;
-  color: #1d354b;
+  color: #441b40;
   font-size: 18px;
   height: 45px;
   width: 45px;

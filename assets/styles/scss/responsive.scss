@@ -588,9 +588,11 @@ $layout-breakpoint-xs: 767px;
 
       .legends {
         display: flex;
+        margin-top: 10px;
 
         li {
-          margin: 10px 5px;
+          width: 35%;
+          margin: 5px;
           padding: 0;
         }
       }
@@ -611,7 +613,8 @@ $layout-breakpoint-xs: 767px;
           order: 3;
 
           h2.fc-toolbar-title {
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: 600;
           }
         }
 

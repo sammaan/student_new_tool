@@ -558,6 +558,9 @@ table {
 /****************************
 Header
 ****************************/
+.mobile-hamburger .icon-Align-left{
+  color:#441b40;
+}
 .mobile-logo,
 .mobile-hamburger {
   display: none;
@@ -1654,7 +1657,7 @@ calendar
   }
 
   .fc-header-toolbar {
-    background-color: #1e364c;
+    background-color: #441b40;
     padding: 25px 20px;
     border-radius: 0 0 16px 16px;
     color: #fff;
@@ -1689,7 +1692,7 @@ calendar
     background-color: #f7f9fb;
     border-radius: 8px !important;
     margin-left: 10px !important;
-    color: #1d354b;
+    color: #441b40;
     font-size: 18px;
     height: 45px;
     width: 45px;
