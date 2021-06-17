@@ -10,12 +10,21 @@
 $dark-blue: #441b40;
 $maroon :#b1113e;
 $yellow :#f8c145;
-$green :#45a38f;
 $violet: #993d90;
 $light-voilet :#cfa4cb;
-$light-blue:#f6f9fc; // (table head bg)
-$text-blue: #0e0f22;
 
+$text-color: #0e0f22;
+$white: #fff;
+$bg-main: #f7f9fa;
+$scroll-thumb:#555;
+$border-color: #b82157;
+$header-icon-bg: #f8fafb;
+$suport-box-bg: #fbfbfb;
+$suport-icon-bg:  #bbb8b8;
+$table-heading: #41419e;
+$calender-btn: #f7f9fb;
+
+$status-green: #027e0e;
 
 
 //mixin
@@ -33,7 +42,7 @@ $text-blue: #0e0f22;
 
 %small-btn {
   font-size: 14px;
-  color: #fff;
+  color: $white;
   border-radius: 50px;
   padding: 2px 10px;
   text-decoration: none;
@@ -151,7 +160,7 @@ section {
 body {
   line-height: 1.6;
   font-family: 'Montserrat';
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 ol,
@@ -194,7 +203,7 @@ table {
   margin-left: 110px;
   padding: 0 60px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: $white;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   height: 100vh;
@@ -205,7 +214,7 @@ table {
     position: absolute;
     top: 0;
     left: 0;
-    background: #f7f9fa;
+    background: bg-main;
     height: 100vh;
     overflow-y: auto;
 
@@ -216,17 +225,17 @@ table {
 
     /* Track */
     &::-webkit-scrollbar-track {
-      background: #f7f9fa;
+      background: bg-main;
     }
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-      background: #f7f9fa;
+      background: bg-main;
     }
 
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
-      background: #555;
+      background: $scroll-thumb;
     }
   }
 }
@@ -241,7 +250,7 @@ table {
 //     display: flex;
 //     -webkit-justify-content: center;
 //     justify-content: center;
-//     background: #fff;
+//     background: $white;
 //     border-radius: 8px;
 //     color: #0e0f22;
 //     content: attr(title);
@@ -255,7 +264,7 @@ table {
 // }
 // .tooltip:hover:before{
 //   border: solid;
-//   border-color: #fff transparent;
+//   border-color: $white transparent;
 //   border-width: 0 6px 12px 6px;
 //   content: "";
 //   left: 45%;
@@ -276,7 +285,7 @@ table {
       border-bottom: 4px solid transparent;
       cursor: pointer;
       font-size: 20px;
-      color: $text-blue;
+      color: $text-color;
       margin-right: 20px;
 
       &.active,
@@ -318,7 +327,7 @@ table {
       background-color: $dark-blue;
       height: 65px;
       box-sizing: border-box;
-      color: #fff;
+      color: $white;
       border-radius: 16px;
       padding: 18px 35px;
 
@@ -359,7 +368,7 @@ table {
 
 /* Track */
 ::-ms-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 /* Handle */
@@ -369,7 +378,7 @@ table {
 
 /* Handle on hover */
 ::-ms-scrollbar-thumb:hover {
-  background: #555;
+  background: $scroll-thumb;
 }
 
 
@@ -381,7 +390,7 @@ table {
 
 /* Track */
 ::-moz-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 /* Handle */
@@ -391,7 +400,7 @@ table {
 
 /* Handle on hover */
 ::-moz-scrollbar-thumb:hover {
-  background: #555;
+  background: $scroll-thumb;
 }
 
 
@@ -403,7 +412,7 @@ table {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 /* Handle */
@@ -413,8 +422,43 @@ table {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: $scroll-thumb;
 }
+
+
+// style for progess bar
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 4px;
+  background: rgb(232, 232, 235);
+}
+
+
+progress::-webkit-progress-value {
+  background-color: $violet;
+  border-radius: 4px;
+}
+
+
+
+progress::-webkit-progress-bar {
+  background: rgb(232, 232, 235);
+  border-radius: 4px;
+  transition: all .5s;
+
+}
+
+progress::-moz-progress-bar {
+  background-color: $violet  !important;
+  transition: all .5s;
+  border-radius: 4px;
+}
+
 
 /****************************
  Navigation
@@ -423,7 +467,7 @@ table {
 .side-bar {
   padding: 15px 0 15px 15px;
   box-sizing: border-box;
-  background-color: #f7f9fa;
+  background-color: bg-main;
   width: 110px;
   box-sizing: border-box;
   @include transition(.3s ease-in-out);
@@ -449,7 +493,7 @@ table {
         margin-left: 20px;
         font-size: 24px;
         line-height: 30px;
-        color: $text-blue;
+        color: $text-color;
         width: 0px;
         transition-property: width;
         overflow: hidden;
@@ -473,7 +517,7 @@ table {
         margin-bottom: 20px;
         text-decoration: none;
         padding-left: 15px;
-        color: $text-blue;
+        color: $text-color;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -482,7 +526,7 @@ table {
         .menu-icon {
           width: 52px;
           height: 52px;
-          background-color: #fff;
+          background-color: $white;
           border-radius: 16px;
           display: flex;
           justify-content: center;
@@ -506,7 +550,7 @@ table {
         &:hover {
           .menu-icon {
             background-color: $violet;
-            color: #fff;
+            color: $white;
 
             img {
               filter: brightness(10);
@@ -519,7 +563,7 @@ table {
         a {
           .menu-icon {
             background-color: $violet;
-            color: #fff;
+            color: $white;
 
             img {
               filter: brightness(10);
@@ -558,7 +602,7 @@ table {
 Header
 ****************************/
 .mobile-hamburger .icon-Align-left{
-  color:#441b40;
+  color:$dark-blue;
 }
 .mobile-logo,
 .mobile-hamburger {
@@ -581,7 +625,7 @@ header {
       // display: flex;
       // justify-content: center;
       // align-items: center;
-      background-color: #f8fafb;
+      background-color: $header-icon-bg;
       color: $violet;
       font-size: 30px;
       margin-right: 30px;
@@ -610,9 +654,9 @@ header {
         border-radius: 16px;
         border: none;
         padding-left: 10px;
-        background-color: #f4f4f6;
+        background-color: $header-icon-bg;
         font-size: 16px;
-        color: #4a4c5d;
+        color: $text-color;
 
         &:focus {
           outline: none;
@@ -629,7 +673,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f8fafb;
+      background-color: $header-icon-bg;
       margin-left: 30px;
       cursor: pointer;
       font-size: 30px;
@@ -654,7 +698,7 @@ header {
     }
 
     .user-details {
-      background-color: #f8fafb;
+      background-color: $header-icon-bg;
       margin-left: 30px;
       border-radius: 16px;
       padding: 0 10px 0 0;
@@ -740,7 +784,7 @@ Dashboard
       h2 {
         font-size: 22px;
         line-height: 28px;
-        color: #0e0f22;
+        color: $text-color;
         width: 100px;
       }
 
@@ -754,13 +798,13 @@ Dashboard
         align-items: center;
         margin-left: 30px;
         font-size: 35px;
-        color: #fff;
+        color: $white;
       }
 
       p {
         width: 100%;
         font-size: 14px;
-        color: $text-blue;
+        color: $text-color;
         text-align: right;
         margin-top: 10px;
       }
@@ -775,7 +819,7 @@ Dashboard
 
   .your-course {
     font-size: 22px;
-    color: $text-blue;
+    color: $text-color;
   }
 
   .course-details {
@@ -785,11 +829,11 @@ Dashboard
     border-radius: 16px;
     padding: 20px 30px;
     box-sizing: border-box;
-    color: #fff;
+    color: $white;
 
     .bor {
-      border-left: 1px solid #b82157;
-      border-right: 1px solid #b82157;
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
       width: 300px;
       padding: 0 20px 0 30px;
     }
@@ -873,7 +917,7 @@ Dashboard
         border-radius: 16px;
         padding: 15px;
         box-sizing: border-box;
-        color: $text-blue;
+        color: $text-color;
         text-transform: uppercase;
         width: 55%;
         @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
@@ -881,7 +925,7 @@ Dashboard
         h3 {
           margin-bottom: 10px;
           font-size: 20px;
-          color: $text-blue;
+          color: $text-color;
         }
 
         .progess-bar {
@@ -904,11 +948,11 @@ Dashboard
       }
 
       .contact-to-support {
-        background-color: #fbfbfb;
+        background-color:$suport-box-bg;
         border-radius: 16px;
         padding: 10px;
         box-sizing: border-box;
-        color: $text-blue;
+        color: $text-color;
         width: 43%;
         align-items: stretch;
         @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
@@ -918,7 +962,7 @@ Dashboard
           margin-bottom: 15px;
 
           .profile {
-            background-color: #bbb8b8;
+            background-color:$suport-icon-bg;
             height: 45px;
             width: 45px;
             border-radius: 50px;
@@ -928,7 +972,7 @@ Dashboard
             flex-wrap: wrap;
 
             span {
-              color: $text-blue;
+              color: $text-color;
               font-size: 26px;
 
             }
@@ -936,7 +980,7 @@ Dashboard
 
           .status {
             span {
-              color: #027e0e;
+              color: $status-green;
               font-size: 12px;
             }
           }
@@ -945,7 +989,7 @@ Dashboard
         .contact-persone-name {
           font-size: 20px;
           line-height: 26px;
-          color: $text-blue;
+          color: $text-color;
           margin-bottom: 5px;
 
         }
@@ -953,15 +997,15 @@ Dashboard
         .contact-persone-post {
           font-size: 14px;
           line-height: 17px;
-          color: $text-blue;
+          color: $text-color;
         }
 
         .message-box {
           justify-content: flex-end;
 
           .message-btn {
-            background-color: $text-blue;
-            color: #fff;
+            background-color: $text-color;
+            color: $white;
             font-size: 14px;
             @extend %small-btn;
             transition: 0.3s linear all !important;
@@ -996,7 +1040,7 @@ Dashboard
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 5px;
-          color: $text-blue;
+          color: $text-color;
 
           strong {
             font-weight: 600;
@@ -1021,13 +1065,13 @@ Dashboard
           .date {
             font-size: 14px;
             line-height: 20px;
-            color: $text-blue;
+            color: $text-color;
             margin-right: 20px;
           }
 
           .complete-btn {
             background-color: $maroon;
-            color: #fff;
+            color: $white;
             @extend %small-btn;
             transition: 0.3s linear all !important;
 
@@ -1045,7 +1089,7 @@ Dashboard
         border-radius: 16px;
         padding: 15px;
         box-sizing: border-box;
-        color: $text-blue;
+        color: $text-color;
         text-transform: uppercase;
         width: 58%;
 
@@ -1054,7 +1098,7 @@ Dashboard
         h3 {
           margin-bottom: 20px;
           font-size: 20px;
-          color: $text-blue;
+          color: $text-color;
         }
 
         .progess-bar {
@@ -1081,9 +1125,9 @@ Dashboard
         border-radius: 16px;
         padding: 10px;
         box-sizing: border-box;
-        color: $text-blue;
+        color: $text-color;
         width: 40%;
-        color: #fff;
+        color: $white;
         align-items: stretch;
         @include box-shadow(0 33px 38px rgba(222, 222, 222, .6));
 
@@ -1137,7 +1181,7 @@ Dashboard
   h3 {
     font-size: 15px;
     font-weight: 600;
-    color: #41419e;
+    color:$table-heading;
     margin-top: 8px;
     margin-bottom: 7px;
   }
@@ -1146,7 +1190,7 @@ Dashboard
     position: relative;
     font-size: 15px;
     font-weight: 600;
-    color: #41419e;
+    color:$table-heading;
     margin-top: 8px;
     margin-bottom: 7px;
   }
@@ -1163,7 +1207,7 @@ Dashboard
   .top-box {
     justify-content: space-between;
     background-color: $dark-blue;
-    color: #fff;
+    color: $white;
     border-radius: 16px;
     padding: 18px 35px;
     height: 86px;
@@ -1212,14 +1256,14 @@ Dashboard
       border-radius: 16px;
       padding: 20px;
       box-sizing: border-box;
-      color: $text-blue;
+      color: $text-color;
       text-transform: uppercase;
       width: 35%;
       @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
 
       .select-sem {
         background-color: transparent;
-        color: $text-blue;
+        color: $text-color;
         font-size: 20px;
         border: none;
         font-weight: normal;
@@ -1246,7 +1290,7 @@ Dashboard
         font-size: 20px;
         line-height: 26px;
         margin-bottom: 20px;
-        color: $text-blue;
+        color: $text-color;
       }
 
       .progess-bar {
@@ -1273,7 +1317,7 @@ Dashboard
       background-color: $maroon;
       border-radius: 16px;
       padding: 20px;
-      color: #fff;
+      color: $white;
       box-sizing: border-box;
       width: 62%;
       justify-content: space-between;
@@ -1345,7 +1389,7 @@ Dashboard
 
         .info-button {
           background-color: $yellow;
-          color: #fff;
+          color: $white;
           text-decoration: none;
           border-radius: 18px;
           display: inline-block;
@@ -1414,7 +1458,7 @@ Dashboard
 
     &:hover {
       background-color: $violet;
-      color: #fff;
+      color: $white;
       @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
     }
   }
@@ -1424,7 +1468,7 @@ Dashboard
     border-radius: 16px;
     padding: 15px;
     box-sizing: border-box;
-    color: $text-blue;
+    color: $text-color;
     text-transform: uppercase;
     width: 55%;
     max-width: 380px;
@@ -1433,7 +1477,7 @@ Dashboard
     h3 {
       margin-bottom: 10px;
       font-size: 20px;
-      color: $text-blue;
+      color: $text-color;
     }
 
     .progess-bar {
@@ -1457,11 +1501,11 @@ Dashboard
   }
 
   .contact-to-support {
-    background-color: #fbfbfb;
+    background-color:$suport-box-bg;
     border-radius: 16px;
     padding: 10px;
     box-sizing: border-box;
-    color: $text-blue;
+    color: $text-color;
     width: 43%;
     max-width: 210px;
     align-items: stretch;
@@ -1472,7 +1516,7 @@ Dashboard
       margin-bottom: 15px;
 
       .profile {
-        background-color: #bbb8b8;
+        background-color:$suport-icon-bg;
         height: 45px;
         width: 45px;
         border-radius: 50px;
@@ -1482,7 +1526,7 @@ Dashboard
         flex-wrap: wrap;
 
         span {
-          color: $text-blue;
+          color: $text-color;
           font-size: 26px;
 
         }
@@ -1490,7 +1534,7 @@ Dashboard
 
       .status {
         span {
-          color: #027e0e;
+          color: $status-green;
           font-size: 12px;
         }
       }
@@ -1499,7 +1543,7 @@ Dashboard
     .contact-persone-name {
       font-size: 25px;
       line-height: 26px;
-      color: $text-blue;
+      color: $text-color;
       margin-bottom: 5px;
 
     }
@@ -1507,7 +1551,7 @@ Dashboard
     .contact-persone-post {
       font-size: 14px;
       line-height: 17px;
-      color: $text-blue;
+      color: $text-color;
       margin-bottom: 10px;
     }
 
@@ -1515,14 +1559,14 @@ Dashboard
       justify-content: flex-end;
 
       .message-btn {
-        background-color: $text-blue;
-        color: #fff;
+        background-color: $text-color;
+        color: $white;
         @extend %small-btn;
         cursor: pointer;
 
         &:hover {
           background-color: $violet;
-          color: #fff;
+          color: $white;
           @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
         }
       }
@@ -1577,7 +1621,7 @@ calendar
 ***********************/
 .academic-calendar {
   .top-box-gray {
-    background-color: #f8fafb;
+    background-color: $header-icon-bg;
     padding: 22px;
     border-radius: 16px 16px 0 0;
     margin-bottom: 0px;
@@ -1592,14 +1636,14 @@ calendar
       }
 
       font-weight: 600;
-      color: $text-blue;
+      color: $text-color;
       font-size: 18px;
     }
   }
 
   .indication {
     width: 40%;
-    background-color: #f8fafb;
+    background-color: $header-icon-bg;
     border-radius: 4px;
     // padding: 15px 10px 10px;
     // margin-bottom: 20px;
@@ -1625,19 +1669,19 @@ calendar
         }
 
         &:nth-child(1) .mark {
-          background-color: #b1113e;
+          background-color: $maroon;
         }
 
         &:nth-child(2) .mark {
-          background-color: #993d90;
+          background-color: $violet;
         }
 
         &:nth-child(3) .mark {
-          background-color: #166302;
+          background-color: $status-green;
         }
 
         &:nth-child(4) .mark {
-          background-color: #fcbb1e;
+          background-color: $yellow;
         }
       }
     }
@@ -1658,14 +1702,14 @@ calendar
   }
 
   .fc-header-toolbar {
-    background-color: #441b40;
+    background-color: $dark-blue;
     padding: 25px 20px;
     border-radius: 0 0 16px 16px;
-    color: #fff;
+    color: $white;
   }
 
   #fccalendar td {
-    border-bottom: 1px solid #ddd !important;
+    border-bottom: 1px solid $scroll-thumb !important;
   }
 
   .fc-theme-standard th,
@@ -1690,10 +1734,10 @@ calendar
 
   //.fc-toolbar-chunk{}
   .fc-direction-ltr .fc-button-group>.fc-button {
-    background-color: #f7f9fb;
+    background-color: $calender-btn;
     border-radius: 8px !important;
     margin-left: 10px !important;
-    color: #441b40;
+    color: $dark-blue;
     font-size: 18px;
     height: 45px;
     width: 45px;
@@ -1704,7 +1748,7 @@ calendar
   }
   .fc-direction-ltr .fc-button-group>.fc-button-active{
     background-color: $yellow !important;
-    color: $text-blue !important;
+    color: $text-color !important;
   }
   .fc-direction-ltr .fc-button-group>.fc-dayGridMonth-button,
   .fc-direction-ltr .fc-button-group>.fc-timeGridWeek-button,
@@ -1713,10 +1757,10 @@ calendar
   }
 
   .fc .fc-button-primary {
-    background-color: #f7f9fb;
+    background-color: $calender-btn;
     border-radius: 8px !important;
     margin-left: 10px !important;
-    color: #1d354b;
+    color: $text-color;
     font-size: 18px;
   }
 

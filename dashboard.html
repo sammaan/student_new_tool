@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="logo-small.png" type="image/gif" sizes="25x25">
 
-    <link href="assets/styles/css/font-face.css" type="text/css"  rel="stylesheet">
-    <link href="assets/styles/css/icomoon.css" type="text/css"  rel="stylesheet">
-    <link href="assets/styles/css/main.css" type="text/css"  rel="stylesheet">
-    <link href="assets/styles/css/responsive.css" type="text/css"  rel="stylesheet">
+    <link href="assets/styles/css/font-face.css" type="text/css" rel="stylesheet">
+    <link href="assets/styles/css/icomoon.css" type="text/css" rel="stylesheet">
+    <link href="assets/styles/css/main.css" type="text/css" rel="stylesheet">
+    <link href="assets/styles/css/responsive.css" type="text/css" rel="stylesheet">
 
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -110,7 +110,7 @@
                         </a>
                     </li> -->
 
-<li class="link-support mobile-only">
+                    <li class="link-support mobile-only">
                         <a href="#">
                             <span class="menu-icon"> <span class="icon-Sign-out"><span class="path1"></span><span
                                         class="path2"></span><span class="path3"></span></span> </div>
@@ -139,7 +139,7 @@
                 <div class="d-flex">
                     <div class="header-left d-flex">
                         <div class="fit-to-screen">
-                            <a class="tooltip" title="Full Screen" href="support.html">
+                            <a class="tooltip" onclick="go_full_screen()" title="Full Screen" href="javascript:void(0)">
                                 <span class="icon-Expand-arrows"><span class="path1"></span><span
                                         class="path2"></span></span>
                             </a>
@@ -298,7 +298,8 @@
                     <div class="dashboard-box-container dash-support open">
                         <div class="top-box d-flex">
                             <div class="page-name">
-                                <h2> <i class="fas fa-headset" style="font-size: 24px; margin-right: 10px;"></i> Support</h2>
+                                <h2> <i class="fas fa-headset" style="font-size: 24px; margin-right: 10px;"></i> Support
+                                </h2>
                             </div>
                             <div class="collapse-button">
                                 <span class="icon-Angle-down"></span>
@@ -352,29 +353,29 @@
                             </div>
                         </div>
                         <div class="four-box-outer">
-                        <div class="inner-boxes">
-                            <div class="notification-item d-flex">
-                                <div class="notification">
-                                    <h3><span class="icon-Folder-error"><span class="path1"></span><span
-                                                class="path2"></span></span> <strong>Assignment 11</strong>
-                                        due date is approaching! </h3>
-                                    <div class="d-flex date-info">
-                                        <span class="date">23- Jan- 2021</span>
-                                        <a href="" class="complete-btn">Complete Now</a>
+                            <div class="inner-boxes">
+                                <div class="notification-item d-flex">
+                                    <div class="notification">
+                                        <h3><span class="icon-Folder-error"><span class="path1"></span><span
+                                                    class="path2"></span></span> <strong>Assignment 11</strong>
+                                            due date is approaching! </h3>
+                                        <div class="d-flex date-info">
+                                            <span class="date">23- Jan- 2021</span>
+                                            <a href="" class="complete-btn">Complete Now</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="notification">
-                                    <h3><span class="icon-221"></span> <strong>Project 3</strong> due
-                                        date is approaching! </h3>
-                                    <div class="d-flex date-info">
-                                        <span class="date">23- Jan- 2021</span>
-                                        <a href="" class="complete-btn">Complete Now</a>
+                                    <div class="notification">
+                                        <h3><span class="icon-221"></span> <strong>Project 3</strong> due
+                                            date is approaching! </h3>
+                                        <div class="d-flex date-info">
+                                            <span class="date">23- Jan- 2021</span>
+                                            <a href="" class="complete-btn">Complete Now</a>
+                                        </div>
                                     </div>
+
                                 </div>
 
                             </div>
-
-                        </div>
                         </div>
                     </div>
                     <!-- Fee & Payment -->
@@ -389,31 +390,31 @@
                             </div>
                         </div>
                         <div class="four-box-outer">
-                        <div class="inner-boxes d-flex">
-                            <div class="course-fee">
-                                <h3>Course Fee</h3>
-                                <progress id="file" class="progess-bar" value="80" max="100"> </progress>
-                                <div class="semester-points d-flex">
-                                    <p>
-                                        <i class="fas fa-rupee-sign"></i> 68000
-                                        <span>Total Due</span>
-                                    </p>
-                                    <p>
-                                        <i class="fas fa-rupee-sign"></i> 23000
-                                        <span>Paid</span>
-                                    </p>
+                            <div class="inner-boxes d-flex">
+                                <div class="course-fee">
+                                    <h3>Course Fee</h3>
+                                    <progress id="file" class="progess-bar" value="80" max="100"> </progress>
+                                    <div class="semester-points d-flex">
+                                        <p>
+                                            <i class="fas fa-rupee-sign"></i> 68000
+                                            <span>Total Due</span>
+                                        </p>
+                                        <p>
+                                            <i class="fas fa-rupee-sign"></i> 23000
+                                            <span>Paid</span>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="due-payment">
-                                <h3>Payment due</h3>
-                                <div class="amount-section d-flex">
-                                    <p class="payment-amount"><i class="fas fa-rupee-sign"></i>28,100</p>
-                                    <a class="pay-btn" href="#">Pay now</a>
-                                    <p class="due-date">Pay by: 23- Jan- 2021</p>
+                                <div class="due-payment">
+                                    <h3>Payment due</h3>
+                                    <div class="amount-section d-flex">
+                                        <p class="payment-amount"><i class="fas fa-rupee-sign"></i>28,100</p>
+                                        <a class="pay-btn" href="#">Pay now</a>
+                                        <p class="due-date">Pay by: 23- Jan- 2021</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </article>

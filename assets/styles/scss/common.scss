@@ -1110,37 +1110,3 @@ Datatable Header Footer
 .no-shodow {
     box-shadow: none !important;
 }
-
-// style for progess bar
-progress {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    border: none;
-    width: 100px;
-    height: 4px;
-    background: rgb(232, 232, 235);
-}
-
-
-progress::-webkit-progress-value {
-    background-color: $violet;
-    border-radius: 4px;
-}
-
-
-
-progress::-webkit-progress-bar {
-    background: rgb(232, 232, 235);
-    border-radius: 4px;
-    transition: all .5s;
-
-}
-
-progress::-moz-progress-bar {
-    background-color: $violet  !important;
-    transition: all .5s;
-    border-radius: 4px;
-  }
- 
