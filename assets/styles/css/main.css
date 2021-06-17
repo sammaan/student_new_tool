@@ -1782,8 +1782,8 @@ Dashboard
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
 }
 .dashboard-top-bpx .course-details-panel .notification-item .notification {
-  -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
-  box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  -webkit-box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
+  box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
   width: 100%;
   padding: 18px;
   border-radius: 16px;
