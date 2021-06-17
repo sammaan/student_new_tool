@@ -409,7 +409,7 @@ Datatable Header Footer
 .ticket-body .ticket-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #1d354b;
+  background-color: #441b40;
   border-radius: 16px;
   padding: 20px 30px;
   box-sizing: border-box;
@@ -659,7 +659,7 @@ Datatable Header Footer
 .profile-body .profile-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #1d354b;
+  background-color: #441b40;
   border-radius: 16px;
   padding: 7px 4px;
   box-sizing: border-box;
@@ -670,6 +670,7 @@ Datatable Header Footer
   right: 16px;
   position: absolute;
   top: 16px;
+  z-index: 8;
 }
 .profile-body .profile-box .d-flex {
   position: relative;
@@ -935,6 +936,7 @@ Media Query
   }
   .ticket-body .ticket-box .d-flex .start-learning {
     padding-top: 19px !important;
+    margin-left: auto;
   }
   .ticket-body .ticket-box .d-flex .start-learning h2 {
     width: 111px;
@@ -991,7 +993,7 @@ progress {
   border: none;
   width: 100px;
   height: 4px;
-  background: transparent;
+  background: #e8e8eb;
 }
 
 progress::-webkit-progress-value {
@@ -999,18 +1001,15 @@ progress::-webkit-progress-value {
   border-radius: 4px;
 }
 
-progress::-moz-progress-value {
-  background-color: #993d90;
+progress::-webkit-progress-bar {
+  background: #e8e8eb;
   border-radius: 4px;
+  transition: all 0.5s;
 }
 
 progress::-moz-progress-bar {
-  background: #e8e8eb;
-  border-radius: 4px;
-}
-
-progress::-webkit-progress-bar {
-  background: #e8e8eb;
+  background-color: #993d90 !important;
+  transition: all 0.5s;
   border-radius: 4px;
 }
 

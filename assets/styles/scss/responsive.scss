@@ -28,7 +28,7 @@ $layout-breakpoint-xs: 767px;
   .two-column {
     .dashboard-box-container {
       .top-box {
-        height: 85px;
+        height: 65px;
       }
     }
   }
@@ -363,8 +363,14 @@ $layout-breakpoint-xs: 767px;
         height: auto;
       }
 
-      .payment-type p span {
-        display: inline;
+      .payment-type {
+        width: 100%;
+        p{
+          text-align: right;
+          span {
+            display: inline;
+          }
+        }
       }
     }
   }
@@ -567,6 +573,7 @@ $layout-breakpoint-xs: 767px;
     }
     .add-ticket {
       margin-top: 20px;
+      margin-left: auto;
     }
 
     .contact-to-support {
@@ -588,9 +595,11 @@ $layout-breakpoint-xs: 767px;
 
       .legends {
         display: flex;
+        margin-top: 10px;
 
         li {
-          margin: 10px 5px;
+          width: 35%;
+          margin: 5px;
           padding: 0;
         }
       }
@@ -611,7 +620,8 @@ $layout-breakpoint-xs: 767px;
           order: 3;
 
           h2.fc-toolbar-title {
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: 600;
           }
         }
 

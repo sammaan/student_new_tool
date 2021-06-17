@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo-small.png" type="image/gif" sizes="25x25">
     <link href="assets/styles/css/font-face.css" rel="stylesheet">
     <link href="assets/styles/css/icomoon.css" rel="stylesheet">
     <link href="assets/styles/css/main.css" rel="stylesheet">
@@ -20,7 +21,7 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38b47acdc1.js" crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
+    <title>Calendar</title>
 </head>
 
 <body>
@@ -102,8 +103,7 @@
                         <a href="support.html">
 
 
-                            <span class="menu-icon"><span class="icon-Add-user"><span class="path1"></span><span
-                                        class="path2"></span></span></span>
+                            <span class="menu-icon"><i class="fas fa-headset"></i></span>
                             <span class="menu-text">Support</span>
                         </a>
                     </li>
@@ -156,8 +156,8 @@
                     <div class="header-right d-flex">
                         <div class="header-icon">
                             <a class="tooltip" title="Support" href="support.html">
-                                <span class="icon-Add-user"><span class="path1"></span><span
-                                        class="path2"></span></span>
+                                <i class="fas fa-headset"></i>
+                                <!-- <i class="fas fa-headset"></i> -->
                             </a>
                         </div>
 
@@ -184,10 +184,14 @@
             </header>
             <article id="calendar" class="academic-calendar">
                 <div class="top-box-gray d-flex">
-                    <h2><img src="assets/img/calendar-icon.png" alt="icon"> Academic Calendar </h2>
+                    <h2>
+                        <!-- <img src="assets/img/calendar-icon.png" alt="icon"> -->
+                        <span class="icon-Time-schedule"><span class="path1"></span><span
+                                        class="path2"></span></span>
+                        Academic Calendar </h2>
                     <div class="indication">
                         <ul class="legends d-flex">
-                            <li><span class="mark"></span> Examinations</li>
+                            <li><span class="mark"></span>Examinations</li>
                             <li><span class="mark"></span>Assignments</li>
                             <li><span class="mark"></span>Project</li>
                             <li><span class="mark"></span>Virtual Lab</li>
@@ -204,17 +208,42 @@
 
 
 </body>
+
+<style>
+    @media (max-width: 767px){
+        .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
+            width: 100%;
+            order: 1;
+        }
+        .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+            width: 50%;
+            text-align: right;
+            margin-top: 10px;
+            order:2;
+        }
+        .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+            width: 50%;
+            text-align: right;
+            order: 2;
+            margin-top: 10px;
+        }
+    }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.min.js"></script>
 <script>
+/* For more info : https://fullcalendar.io/docs */
+
     document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('fccalendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
             // initialView: 'dayGridMonth'
             headerToolbar: {
-                left: 'prev,next',
+                left: 'dayGridMonth,timeGridWeek,timeGridDay',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            }
+                right: 'prev,next',
+            },
+            contentHeight: 400,
+            fixedWeekCount: false
         });
         calendar.render();
     });

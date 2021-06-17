@@ -13,7 +13,7 @@
   }
 
   .two-column .dashboard-box-container .top-box {
-    height: 85px;
+    height: 65px;
   }
 
   .dashboard-top-bpx .course-details .course-name {
@@ -234,6 +234,14 @@
 .support .top-box-container .top-box {
     height: auto;
   }
+  .payments .top-box-container .payment-type,
+.support .top-box-container .payment-type {
+    width: 100%;
+  }
+  .payments .top-box-container .payment-type p,
+.support .top-box-container .payment-type p {
+    text-align: right;
+  }
   .payments .top-box-container .payment-type p span,
 .support .top-box-container .payment-type p span {
     display: inline;
@@ -391,6 +399,7 @@
   }
   .support .add-ticket {
     margin-top: 20px;
+    margin-left: auto;
   }
   .support .contact-to-support {
     width: 100%;
@@ -407,9 +416,11 @@
   }
   .academic-calendar .indication .legends {
     display: flex;
+    margin-top: 10px;
   }
   .academic-calendar .indication .legends li {
-    margin: 10px 5px;
+    width: 35%;
+    margin: 5px;
     padding: 0;
   }
   .academic-calendar .fc-header-toolbar {
@@ -425,7 +436,8 @@
     order: 3;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) h2.fc-toolbar-title {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
     width: 67%;

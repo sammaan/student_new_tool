@@ -5,7 +5,7 @@
 //@use 'responsive';
 
 
-// varibles
+// variables
 
 $dark-blue: #441b40;
 $maroon :#b1113e;
@@ -190,15 +190,17 @@ table {
  ***************************/
 
 .full-body-width {
+  -ms-width: calc(100% - 110px);
   width: calc(100% - 110px);
   margin-left: 110px;
   padding: 0 60px;
   box-sizing: border-box;
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   height: 100vh;
   overflow-y: auto;
+  display: block;
 
   .side-bar {
     position: absolute;
@@ -309,13 +311,13 @@ table {
   .dashboard-box-container {
     width: 48%;
     border-radius: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     @include box-shadow(0 33px 38px rgba(222, 222, 222, .3));
 
     .top-box {
       justify-content: flex-start;
       background-color: $dark-blue;
-      height: 100px;
+      height: 65px;
       box-sizing: border-box;
       color: #fff;
       border-radius: 16px;
@@ -351,6 +353,50 @@ table {
 
 
 /* width */
+::-ms-scrollbar {
+  width: 3px;
+  height: 3px;  
+}
+
+/* Track */
+::-ms-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-ms-scrollbar-thumb {
+  background: $violet;
+}
+
+/* Handle on hover */
+::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* width */
+::-moz-scrollbar {
+  width: 3px;
+  height: 3px;  
+}
+
+/* Track */
+::-moz-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-moz-scrollbar-thumb {
+  background: $violet;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* width */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;  
@@ -376,14 +422,15 @@ table {
  *****************************/
 
 .side-bar {
-  padding: 15px;
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
   background-color: #f7f9fa;
   width: 110px;
   box-sizing: border-box;
   @include transition(.3s ease-in-out);
   transition-property: width;
   z-index: 9;
-
+  
   .logo {
     a {
       margin-bottom: 25px;
@@ -432,7 +479,7 @@ table {
         overflow: hidden;
         text-overflow: ellipsis;
         height: 52px;
-
+        box-sizing: border-box;
         .menu-icon {
           width: 52px;
           height: 52px;
@@ -486,7 +533,6 @@ table {
 
   &:hover {
     width: 370px;
-    border-radius: 0 16px 16px 0;
 
     .logo {
       a {
@@ -512,6 +558,9 @@ table {
 /****************************
 Header
 ****************************/
+.mobile-hamburger .icon-Align-left{
+  color:#441b40;
+}
 .mobile-logo,
 .mobile-hamburger {
   display: none;
@@ -539,13 +588,14 @@ header {
       margin-right: 30px;
       cursor: pointer;
       transition: 0.3s linear all !important;
+      padding: 4px 10px;
+      box-sizing: border-box;
 
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }
       a{
-        padding: 4px 10px;
-        box-sizing: border-box;
+       
         display: block;
         text-decoration: none;
         width: 48px;
@@ -577,31 +627,26 @@ header {
       width: 48px;
       height: 48px;
       border-radius: 16px;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: #f8fafb;
       margin-left: 30px;
       cursor: pointer;
       font-size: 30px;
       color: $violet;
       transition: 0.3s linear all !important;
-
+      box-sizing: border-box;
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
-
       }
       a{
-        padding: 4px 10px;
-        box-sizing: border-box;
+       
         display: block;
         text-decoration: none;
-        width: 48px;
-        height: 48px;
         color: $violet;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        line-height: 30px;
+        width: 30px;
 
         .fas.fa-headset{
           font-size: 26px;
@@ -619,7 +664,7 @@ header {
 
       a {
         color: inherit;
-        text-decoration: auto;
+        text-decoration: none;
       }
 
       &:hover {
@@ -648,13 +693,13 @@ header {
       // align-items: center;
       transition: 0.3s linear all !important;
       font-size: 30px;
-
+      padding: 4px 10px;
+      box-sizing: border-box;
       &:hover {
         box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
       }
       a{
-        padding: 4px 10px;
-        box-sizing: border-box;
+      
         display: block;
         text-decoration: none;
         width: 48px;
@@ -782,9 +827,14 @@ Dashboard
     padding: 50px 25px;
     @include transition(.4s);
 
-    .inner-boxes {
-      justify-content: space-between;
-      align-items: stretch;
+    .four-box-outer{
+        
+      padding: 15px;
+ 
+      .inner-boxes {
+        justify-content: space-between;
+        align-items: stretch;
+      }
     }
 
     .semester-status {
@@ -905,7 +955,6 @@ Dashboard
           font-size: 14px;
           line-height: 17px;
           color: $text-blue;
-          margin-bottom: 10px;
         }
 
         .message-box {
@@ -928,7 +977,7 @@ Dashboard
 
     .notification-item {
       .notification {
-        @include box-shadow(5px 0px 10px rgba(153, 61, 144, .57));
+        @include box-shadow(5px 0px 10px rgba(161, 159, 161, 0.57));
         width: 100%;
         padding: 18px;
         border-radius: 16px;
@@ -1531,14 +1580,16 @@ calendar
   .top-box-gray {
     background-color: #f8fafb;
     padding: 22px;
-    border-radius: 10px 10px;
-    margin-bottom: 20px;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 0px;
     justify-content: space-between;  
 
     h2 {
-      img {
+      display: flex;
+      .icon-Time-schedule {
         vertical-align: middle;
         margin-right: 20px;
+        font-size: 30px;
       }
 
       font-weight: 600;
@@ -1598,24 +1649,19 @@ calendar
     align-items: flex-start;
   }
 
-  #fccalendar {
-    width: 75%;
-  }
-
-
   .indication .legends {
     width: 100%;
   }
 
   #fccalendar {
-    width: calc(100% - 150px);
+    width: 100%;
     box-sizing: border-box;
   }
 
   .fc-header-toolbar {
-    background-color: #1e364c;
+    background-color: #441b40;
     padding: 25px 20px;
-    border-radius: 16px;
+    border-radius: 0 0 16px 16px;
     color: #fff;
   }
 
@@ -1648,15 +1694,19 @@ calendar
     background-color: #f7f9fb;
     border-radius: 8px !important;
     margin-left: 10px !important;
-    color: #1d354b;
+    color: #441b40;
     font-size: 18px;
     height: 45px;
     width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
   }
-
+  .fc-direction-ltr .fc-button-group>.fc-button-active{
+    background-color: $yellow !important;
+    color: $text-blue !important;
+  }
   .fc-direction-ltr .fc-button-group>.fc-dayGridMonth-button,
   .fc-direction-ltr .fc-button-group>.fc-timeGridWeek-button,
   .fc-direction-ltr .fc-button-group>.fc-timeGridDay-button {

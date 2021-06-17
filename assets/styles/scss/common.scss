@@ -514,7 +514,7 @@ Datatable Header Footer
     .ticket-box {
         justify-content: space-between;
         align-items: flex-start;
-        background-color: #1d354b;
+        background-color: #441b40;
         border-radius: 16px;
         padding: 20px 30px;
         box-sizing: border-box;
@@ -815,7 +815,7 @@ Datatable Header Footer
     .profile-box {
         justify-content: space-between;
         align-items: flex-start;
-        background-color: #1d354b;
+        background-color: #441b40;
         border-radius: 16px;
         padding: 7px 4px;
         box-sizing: border-box;
@@ -825,6 +825,7 @@ Datatable Header Footer
             right: 16px;
             position: absolute;
             top: 16px;
+            z-index: 8;
         }
         .d-flex {
             position: relative;
@@ -1192,6 +1193,7 @@ Media Query
             .d-flex {
                 .start-learning {
                     padding-top: 19px !important;
+                    margin-left: auto;
 
                     h2 {
                         width: 111px;
@@ -1283,7 +1285,7 @@ progress {
     border: none;
     width: 100px;
     height: 4px;
-    background: transparent;
+    background: rgb(232, 232, 235);
 }
 
 
@@ -1292,17 +1294,18 @@ progress::-webkit-progress-value {
     border-radius: 4px;
 }
 
-progress::-moz-progress-value {
-    background-color: $violet;
-    border-radius: 4px;
-}
 
-progress::-moz-progress-bar {
-    background: rgb(232, 232, 235);
-    border-radius: 4px;
-}
 
 progress::-webkit-progress-bar {
     background: rgb(232, 232, 235);
     border-radius: 4px;
+    transition: all .5s;
+
 }
+
+progress::-moz-progress-bar {
+    background-color: $violet  !important;
+    transition: all .5s;
+    border-radius: 4px;
+  }
+ 
