@@ -171,6 +171,9 @@ b {
                 position: absolute;
                 top: 17px;
             }
+            .fa-rupee-sign {
+                position: initial;
+            }
         }
     }
 }
@@ -182,10 +185,11 @@ b {
     justify-content: center;
     vertical-align: middle !important;
 }
-
+.responsive-table td {
+    position: relative;
+}
 .responsive-table td,
 .responsive-table th {
-    position: relative;
     font-weight: 500 !important;
     border-bottom: 1px solid $border !important;
     border-top: 1px solid $border !important;
