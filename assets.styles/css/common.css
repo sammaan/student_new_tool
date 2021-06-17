@@ -3,7 +3,7 @@
 /****************************
 button space
  *****************************/
-.modal footer .d-flex .close-btn, .modal footer .d-flex .save-btn, .modal footer .d-flex .reset-btn {
+.modal footer .d-flex .reset-btn, .modal footer .d-flex .save-btn, .modal footer .d-flex .close-btn {
   padding: 13px 21px;
   border: none;
   border-radius: 4px;
@@ -11,22 +11,18 @@ button space
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-4px) scale(1.02);
-  -moz-transform: translateY(-4px) scale(1.02);
-  -ms-transform: translateY(-4px) scale(1.02);
-  -o-transform: translateY(-4px) scale(1.02);
   transform: translateY(-4px) scale(1.02);
 }
-.modal footer .d-flex .close-btn:hover, .modal footer .d-flex .save-btn:hover, .modal footer .d-flex .reset-btn:hover {
+
+.modal footer .d-flex .reset-btn:hover, .modal footer .d-flex .save-btn:hover, .modal footer .d-flex .close-btn:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-3px) scale(1.02);
-  -moz-transform: translateY(-3px) scale(1.02);
-  -ms-transform: translateY(-3px) scale(1.02);
-  -o-transform: translateY(-3px) scale(1.02);
   transform: translateY(-3px) scale(1.02);
 }
 
 .icon-btn {
+  display: -ms-inline-grid;
   display: inline-grid;
   background-color: #f8c145;
   color: #000;
@@ -37,32 +33,34 @@ button space
   line-height: 26px;
   font-weight: 600;
   text-align: center;
-  transition: 0.3s linear all !important;
 }
-.icon-btn > span {
-  font-size: 22px;
-  vertical-align: middle;
-}
+
 .icon-btn:hover {
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+  background-color: #993d90;
+  color: #fff;
+  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
 }
 
 /****************************
  form Space label and Form Control
  *****************************/
-.modal footer .d-flex .form, .modal .modal-body .form {
+.modal .modal-body .form, .modal footer .d-flex .form {
   padding: 1px 0px;
   margin: 10px 5px;
 }
-.modal footer .d-flex .form label, .modal .modal-body .form label {
+
+.modal .modal-body .form label, .modal footer .d-flex .form label {
   font-weight: 500;
   font-size: 15px;
   color: #0b0984;
 }
-.modal footer .d-flex .form .form-control, .modal .modal-body .form .form-control {
+
+.modal .modal-body .form .form-control, .modal footer .d-flex .form .form-control {
   font-size: 15px;
   font-weight: 500;
   margin-top: 6px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #6487b1;
   padding: 13px 11px;
@@ -71,17 +69,41 @@ button space
   width: 100%;
   border: 2px solid #dee5ea;
 }
-.modal footer .d-flex .form ::placeholder, .modal .modal-body .form ::placeholder {
+
+.modal .modal-body .form ::-webkit-input-placeholder, .modal footer .d-flex .form ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #6487b1;
   opacity: 1;
   /* Firefox */
 }
-.modal footer .d-flex .form :-ms-input-placeholder, .modal .modal-body .form :-ms-input-placeholder {
+
+.modal .modal-body .form :-ms-input-placeholder, .modal footer .d-flex .form :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form ::-ms-input-placeholder, .modal footer .d-flex .form ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form ::placeholder, .modal footer .d-flex .form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6487b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.modal .modal-body .form :-ms-input-placeholder, .modal footer .d-flex .form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #6487b1;
 }
-.modal footer .d-flex .form ::-ms-input-placeholder, .modal .modal-body .form ::-ms-input-placeholder {
+
+.modal .modal-body .form ::-ms-input-placeholder, .modal footer .d-flex .form ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #6487b1;
 }
@@ -109,9 +131,11 @@ b {
   width: 100%;
   overflow-x: auto;
 }
+
 .responsive-table table {
   text-align: left;
 }
+
 .responsive-table table thead {
   font-weight: 500;
   font-size: 13px;
@@ -119,27 +143,26 @@ b {
   color: #bab6c6;
   text-transform: uppercase;
 }
+
 .responsive-table table tbody {
   font-size: 13px;
   color: #918e98;
 }
+
 .responsive-table table tbody .fas {
-  left: 10px;
-  position: absolute;
-  top: 17px;
+  margin-right: 3px;
 }
 
 /****************************
  Table th td css
  *****************************/
-.responsive-table th {
+th {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  vertical-align: middle !important;
 }
 
-.responsive-table td,
-.responsive-table th {
-  position: relative;
+td, th {
   font-weight: 500 !important;
   border-bottom: 1px solid #e7eaef !important;
   border-top: 1px solid #e7eaef !important;
@@ -147,7 +170,7 @@ b {
 }
 
 /****************************
- font awesome color
+ font awsome color
  *****************************/
 .fa-book:before {
   color: #b143d6;
@@ -160,6 +183,7 @@ b {
 .fa-circle {
   font-size: 8px;
 }
+
 .fa-circle:before {
   color: #f11a1a;
 }
@@ -170,9 +194,11 @@ b {
 .assignment tr > *:nth-child(1) {
   width: 48%;
 }
+
 .assignment tr > *:nth-child(2) {
   width: 20%;
 }
+
 .assignment tr > *:nth-child(3),
 .assignment tr > *:nth-child(4) {
   width: 16%;
@@ -191,10 +217,13 @@ b {
 .support a {
   text-decoration: none;
 }
+
 .support ul {
+  -webkit-padding-start: 0px;
   padding-inline-start: 0px;
   position: relative;
 }
+
 .support ul li {
   font-size: 11px;
   display: inline;
@@ -204,6 +233,7 @@ b {
   width: 16px;
   text-align: center;
 }
+
 .support ul li:last-child {
   padding: 7px 7px;
   width: 18px;
@@ -211,10 +241,12 @@ b {
   right: 14px;
   position: absolute;
 }
+
 .support .user1 {
   background-color: #df3ff8;
   color: #000;
 }
+
 .support .user2 {
   border: 1px solid #fff;
   background-color: #014d40;
@@ -234,24 +266,30 @@ Modal
 .modal {
   background-color: #fff;
 }
+
 .modal header {
+  margin-bottom: 0px;
   padding: 0px;
   border-bottom: 1px solid #e7eaef;
-  margin-bottom: 0px;
 }
+
 .modal header h3 {
   color: #5f5d98;
   font-size: 17px;
   font-weight: 600;
   padding: 14px 20px;
 }
+
 .modal header h3 .fas {
   color: #000;
+  float: right;
   cursor: pointer;
 }
+
 .modal .modal-body {
   padding: 20px 20px;
 }
+
 .modal .modal-body h4 {
   text-transform: uppercase;
   font-size: 15px;
@@ -259,39 +297,48 @@ Modal
   font-weight: 500;
   margin: 9px 0px 19px;
 }
+
 .modal .modal-body p {
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: 600;
   color: #98a4ee;
 }
+
 .modal .modal-body h5 {
-  margin-right: 20px;
   font-size: 17px;
   color: #70718f;
   font-weight: 600;
 }
-.modal .modal-body .resolve .d-flex {
-  align-items: center;
-  justify-content: flex-end;
-}
+
 .modal .modal-body .d-flex {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
+
 .modal .modal-body .d-flex > .form-group-left {
   width: 40%;
 }
+
 .modal .modal-body .d-flex > .form-group-right {
   width: 60%;
 }
+
 .modal .modal-body .d-flex > .form-group {
   width: 50%;
 }
+
 .modal .modal-body .d-flex > .form-group .d-flex {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
-.modal .modal-body .resolve-label {
+
+.modal .modal-body .resolve-btn {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -301,36 +348,49 @@ Modal
   color: #44bf89;
   background-color: #afeed3;
   cursor: pointer;
-  transition: 0.3s linear all !important;
 }
-.modal .modal-body .resolve-label:hover {
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+
+.modal .modal-body .resolve-btn:hover {
+  background-color: #993d90;
+  color: #fff;
+  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
 }
+
 .modal footer {
   padding: 20px 12px;
 }
+
 .modal footer .d-flex {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
+
 .modal footer .d-flex > .button-space-left {
   margin: 0px 12px;
 }
+
 .modal footer .d-flex > .button-space-right {
   margin: 0px 12px;
 }
+
 .modal footer .d-flex .form {
   width: 100%;
 }
+
 .modal footer .d-flex .reset-btn {
   color: #fff;
   background-color: #f4365c;
   cursor: pointer;
 }
+
 .modal footer .d-flex .save-btn {
   color: #fff;
   background-color: #5e72e3;
   cursor: pointer;
 }
+
 .modal footer .d-flex .close-btn {
   color: #000;
   background-color: #f1f4f7;
@@ -355,26 +415,21 @@ Modal
 /**************
 Date Input
 ***************/
-input[type=date i],
-input[type=file i] {
+input[type=date i], input[type=file i] {
   padding: 11px !important;
 }
 
 /**************
 Datatable Header Footer
 ***************/
-.dataTables_wrapper .dataTables_length,
-.dataTables_wrapper .dataTables_filter,
-.dataTables_wrapper .dataTables_info,
-.dataTables_wrapper .dataTables_processing,
-.dataTables_wrapper .dataTables_paginate {
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
   color: #413173 !important;
   font-size: 13px;
   margin-bottom: 12px;
   font-weight: 500;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.current,
-.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #fbfbfb !important;
   border: 1px solid #d0c7c7 !important;
   background-color: #5e72e4;
@@ -382,13 +437,16 @@ Datatable Header Footer
   background: #5e72e4 !important;
   padding: 4px 12px !important;
 }
+
 .dataTables_wrapper .dataTables_length select {
   color: #3d4992;
   border: 1px solid #3d4992;
 }
+
 .dataTables_wrapper .dataTables_length {
   float: right !important;
 }
+
 .dataTables_wrapper .dataTables_filter {
   margin-right: 36px;
 }
@@ -406,23 +464,34 @@ Datatable Header Footer
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
+
 .ticket-body .ticket-box {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #441b40;
+  background-color: #1d354b;
   border-radius: 16px;
   padding: 20px 30px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff;
 }
+
 .ticket-body .ticket-box .d-flex {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   /*profile */
   /*Ticket */
 }
+
 .ticket-body .ticket-box .d-flex .username {
   text-align: center;
 }
+
 .ticket-body .ticket-box .d-flex .username h1 {
   font-size: 24px;
   line-height: 34px;
@@ -430,14 +499,13 @@ Datatable Header Footer
   margin-left: 12px;
   margin-top: 7px;
 }
+
 .ticket-body .ticket-box .d-flex .user-name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
-.ticket-body .ticket-box .d-flex .user-name > span {
-  font-size: 25px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
+
 .ticket-body .ticket-box .d-flex .user-name h1 {
   font-size: 24px;
   line-height: 34px;
@@ -445,6 +513,7 @@ Datatable Header Footer
   margin-left: 12px;
   margin-top: 7px;
 }
+
 .ticket-body .ticket-box .d-flex .user-name h1 span {
   font-size: 15px;
   line-height: 12px;
@@ -452,15 +521,20 @@ Datatable Header Footer
   color: #ddd;
   text-transform: uppercase;
 }
+
 .ticket-body .ticket-box .d-flex .start-learning {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
+
 .ticket-body .ticket-box .d-flex .start-learning h2 {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
   width: 135px;
 }
+
 .ticket-body .ticket-box .d-flex .start-learning .resolve-btn {
   font-size: 20px;
   font-weight: 600;
@@ -470,49 +544,65 @@ Datatable Header Footer
   color: #fff;
   background-color: #64c0ab;
   cursor: pointer;
-  transition: 0.3s linear all !important;
 }
+
 .ticket-body .ticket-box .d-flex .start-learning .resolve-btn:hover {
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+  background-color: #993d90;
+  color: #fff;
+  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
 }
+
 .ticket-body .ticket-details {
   padding: 50px 25px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
 .ticket-body .ticket-details .d-flex .box-head {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
+
 .ticket-body .ticket-column {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
+
 .ticket-body .ticket-column .ticket-box-container {
   width: 48%;
   border-radius: 16px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
-  box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
+
 .ticket-body .ticket-column .ticket-box-container .top-box {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #f4f4f6;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #000;
   border-radius: 16px 16px 0px 0px;
-  padding: 0px 35px;
-  height: 85px;
+  padding: 26px 35px;
 }
+
 .ticket-body .ticket-column .ticket-box-container .top-box h2 {
   font-size: 20px;
   text-transform: uppercase;
 }
+
 .ticket-body .ticket-column .ticket-box-container .top-box .fas {
   font-size: 20px;
   color: #fff;
 }
+
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
   background-color: #f8c145;
   color: #000;
@@ -523,29 +613,35 @@ Datatable Header Footer
   line-height: 26px;
   font-weight: 600;
   margin-top: 10px;
-  transition: 0.3s linear all !important;
 }
-.ticket-body .ticket-column .ticket-box-container .top-box .info-button > span {
-  font-size: 16px;
-  vertical-align: middle;
-  margin-right: 4px;
-}
+
 .ticket-body .ticket-column .ticket-box-container .top-box .info-button:hover {
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+  color: #fff;
+  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history {
   height: 172px;
   overflow-y: scroll;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-box {
   padding-left: 15px;
   position: relative;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-box::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   content: "";
   position: absolute;
@@ -559,6 +655,7 @@ Datatable Header Footer
   background: #b0efd4;
   z-index: 999;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content {
   height: 138px;
   position: relative;
@@ -567,10 +664,14 @@ Datatable Header Footer
   margin-left: auto;
   border-left: 2px dashed #ddd;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex {
   padding: 0px 0px 12px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn {
   background-color: #fde6e0;
   color: #f00;
@@ -582,65 +683,83 @@ Datatable Header Footer
   font-weight: 600;
   margin-top: 10px;
   text-transform: uppercase;
-  transition: 0.3s linear all !important;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn:hover {
-  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2) !important;
+  background-color: #993d90;
+  color: #fff;
+  -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
+  box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
   font-size: 14px;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content h3 {
   font-size: 17px;
   font-weight: 600;
 }
+
 .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content h5 {
   font-size: 14px;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   padding: 20px;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details {
   width: 100%;
   padding: 2px;
   margin-bottom: 8px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   overflow: hidden;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .heading {
   width: 40%;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
   width: 60%;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2 {
   font-size: 19px;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 {
   color: #314384;
   font-weight: 600;
 }
-.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 > span {
-  font-size: 22px;
-  vertical-align: middle;
-  margin-right: 9px;
-}
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
   font-size: 17px;
   color: #314384;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5 {
   font-weight: 500;
   font-size: 17px;
   color: #3e3e77;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .fas {
   margin-right: 7px;
   color: #5e72e3;
 }
+
 .ticket-body .ticket-column .ticket-box-container .inner-boxes .assigned-head {
   border-top: 1px solid #ddd;
 }
@@ -651,39 +770,52 @@ Datatable Header Footer
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.6);
 }
+
 .profile-body h3 {
   font-size: 19px;
   color: #1d354b;
   font-weight: 500;
 }
+
 .profile-body .profile-box {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #441b40;
+  background-color: #1d354b;
   border-radius: 16px;
   padding: 7px 4px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #ddd;
-  position: relative;
 }
-.profile-body .profile-box .icon-btn {
-  right: 16px;
-  position: absolute;
-  top: 16px;
-  z-index: 8;
-}
+
 .profile-body .profile-box .d-flex {
   position: relative;
-  justify-content: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   /*profile */
 }
+
+.profile-body .profile-box .d-flex .icon-btn {
+  font-size: 18px;
+  bottom: 46px;
+  right: 0px;
+  position: absolute;
+}
+
 .profile-body .profile-box .d-flex .username {
-  width: 20%;
+  width: 22%;
   text-align: center;
 }
+
 .profile-body .profile-box .d-flex .username img {
   width: 112px;
 }
+
 .profile-body .profile-box .d-flex .username h1 {
   font-size: 24px;
   line-height: 34px;
@@ -691,58 +823,88 @@ Datatable Header Footer
   margin-left: 12px;
   margin-top: 7px;
 }
+
 .profile-body .profile-box .d-flex .profile-text {
-  padding: 0px 22px;
-  width: 76%;
+  padding: 0px 58px;
+  width: 67%;
 }
+
 .profile-body .profile-box .d-flex .profile-text img {
   width: 36px;
   margin-right: 10px;
 }
+
 .profile-body .profile-box .d-flex .profile-text .d-flex {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .profile-body .profile-box .d-flex .profile-text .d-flex .text {
   width: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 20px;
 }
+
 .profile-body .profile-box .d-flex .profile-text .d-flex .text h2 {
   padding-top: 7px;
   font-size: 14px;
 }
+
 .profile-body .profile-box .d-flex .profile-text .profile-name {
   padding: 40px 0px;
 }
+
 .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 39%;
+  width: 47%;
 }
+
 .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text img {
   width: auto;
 }
+
 .profile-body .ticket-details {
   padding: 50px 25px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
 .profile-body .ticket-details .d-flex .box-head {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
+
 .profile-body .ticket-column {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 20px;
 }
+
 .profile-body .ticket-column .ticket-box-container {
   width: 48%;
   border-radius: 16px;
   margin-bottom: 20px;
 }
+
 .profile-body .ticket-column .ticket-box-container .top-box {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #f4f4f6;
   -webkit-box-sizing: border-box;
@@ -751,13 +913,16 @@ Datatable Header Footer
   border-radius: 16px 16px 0px 0px;
   padding: 26px 35px;
 }
+
 .profile-body .ticket-column .ticket-box-container .top-box h2 {
   font-size: 20px;
 }
+
 .profile-body .ticket-column .ticket-box-container .top-box .fas {
   font-size: 20px;
   color: #000;
 }
+
 .profile-body .ticket-column .ticket-box-container .top-box .info-button {
   background-color: #f8c145;
   color: #000;
@@ -769,15 +934,20 @@ Datatable Header Footer
   font-weight: 600;
   margin-top: 10px;
 }
+
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content {
   position: relative;
   padding: 12px 20px;
   margin-left: auto;
   border-bottom: 1px solid #ddd;
 }
+
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn {
   background-color: #fde6e0;
   color: #f00;
@@ -790,78 +960,239 @@ Datatable Header Footer
   margin-top: 10px;
   text-transform: uppercase;
 }
+
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
   font-size: 14px;
 }
+
 .profile-body .ticket-column .ticket-box-container .inner-boxes {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   padding: 20px;
 }
+
 .profile-body .ticket-column .ticket-box-container .inner-boxes .fas {
   font-size: 17px;
   margin-right: 7px;
 }
+
 .profile-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details {
   width: 100%;
   padding: 2px;
   margin-bottom: 8px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   overflow: hidden;
 }
+
 .profile-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .heading {
   width: 40%;
 }
+
 .profile-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
   width: 60%;
 }
+
 .profile-body .ticket-column .ticket-box-container .inner-boxes .assigned-head {
   border-top: 1px solid #ddd;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-experience .d-flex {
   padding: 12px 0px 0px;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-experience .fas {
   color: #ef756a;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
   font-size: 17px;
   color: #000;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-experience p {
   font-size: 15px;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-experience p span {
   font-size: 12px;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .d-flex {
   position: relative;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
   width: 80%;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left h5 {
   font-size: 13px;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right {
   width: 17%;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .d-flex p {
   margin-bottom: 11px;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .d-flex h5 {
   font-size: 11px;
   margin-bottom: 8px;
 }
+
 .profile-body .ticket-column .ticket-box-container .profile-education .fas {
   margin-left: -23px;
   position: absolute;
   color: #545dac;
 }
 
+/****************************
+Media Query
+ *****************************/
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .modal .modal-body .d-flex .form-group,
+.modal .modal-body .d-flex .form-group-left,
+.modal .modal-body .d-flex .form-group-right {
+    width: 100%;
+  }
+
+  .support ul li:last-child {
+    padding: 8px 8px;
+    width: 18px;
+    top: 0px;
+    right: 11px;
+    position: inherit;
+  }
+
+  .profile-body .ticket-details {
+    padding: 50px 0px;
+  }
+
+  .profile-body .ticket-column .ticket-box-container .top-box h2 {
+    font-size: 17px;
+  }
+
+  .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
+    font-size: 12px !important;
+  }
+
+  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right, .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
+    width: 100% !important;
+  }
+
+  .profile-body .profile-box .d-flex .username {
+    width: 94% !important;
+  }
+
+  .profile-body .profile-box .d-flex .profile-text {
+    padding: 8px !important;
+    width: 94%;
+  }
+
+  .profile-body .profile-box .d-flex .profile-text .d-flex .text {
+    width: 100% !important;
+  }
+
+  .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text {
+    width: 100%;
+  }
+
+  .profile-body .ticket-column .ticket-box-container {
+    width: 100% !important;
+  }
+
+  .ticket-body .ticket-details {
+    padding: 50px 0px;
+  }
+
+  .ticket-body .ticket-box .d-flex .start-learning {
+    padding-top: 19px !important;
+  }
+
+  .ticket-body .ticket-box .d-flex .start-learning h2 {
+    width: 111px;
+    font-size: 15px !important;
+  }
+
+  .ticket-body .ticket-box .d-flex .start-learning .resolve-btn {
+    font-size: 11px !important;
+  }
+
+  .ticket-body .ticket-box .d-flex .user-name img {
+    height: 47px;
+  }
+
+  .ticket-body .ticket-box .d-flex .user-name h1 {
+    line-height: 21px;
+    font-size: 15px !important;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container {
+    width: 100% !important;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .top-box {
+    padding: 26px 11px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
+    font-size: 11px !important;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .top-box h2 {
+    font-size: 16px !important;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content {
+    height: 169px;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .heading {
+    width: 47% !important;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
+    width: 53% !important;
+  }
+
+  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5, .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+    font-size: 13px !important;
+  }
+}
 .no-shodow {
+  -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 4px;
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #45a38f;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=common.css.map */
 
 /*# sourceMappingURL=common.css.map */
