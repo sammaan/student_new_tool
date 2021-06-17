@@ -1,4 +1,6 @@
 
+/* Variable Declarations */
+
 /* Stylesheet for Common Elements */
 $th-text: #bab6c6;
 $td-text: #918e98;
@@ -59,6 +61,8 @@ $paginate-border:#d0c7c7;
 $paginate-hover:#5e72e4;
 $datatable-input:#3d4992;
 $datatable-border:#3d4992;
+
+/* Mixins */
 
 //Box Shadow
 @mixin box-shadow($proprty) {
