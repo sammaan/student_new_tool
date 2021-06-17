@@ -6,30 +6,7 @@ $border: #e7eaef;
 $book-color: #b143d6;
 $check-color: #47d4a4;
 $circle-color: #f11a1a;
-$ticket-box: #441b40;
-$ticket-username: #ddd;
-$resolve-btn: #64c0ab;
-$top-box: #f4f4f6;
-$info-button: #f8c145;
-$ticket-before-text: #1aaf6f;
-$ticket-color: #b0efd4;
-$ticket-history: #314384;
-$assigned-btn: #fde6e0;
-$profile: #ddd;
-$profile-box: #441b40;
-$top-box: #f4f4f6;
-$profile-fas: #ef756a;
-$education-fas: #545dac;
-//Ticket Box
-$ticket-box-h4: #314384;
-$ticket-box-h5:#3e3e77;
-$ticket-box-fas:#5e72e3;
-// Modal
 $modal:#fff;
-$modal-heading :#5f5d98;
-$modal-h4: #2d587d;
-$modal-p: #98a4ee;
-$modal-h5: #70718f;
 // (Form Colors)
 $label-color: #0b0984;
 $form-border: #dee5ea;
@@ -44,34 +21,17 @@ $close-btn-color: #000;
 $input-disabled: #e8ecef;
 $violet: #993d90;
 
-$black: #000;
-$white: #fff;
-$icon-button: #f8c145;
-$bold:#9a98a7;
-$user1: #df3ff8;
-$user2: #014d40;
-
-//Datatable Pagination
-$paginate-info:#413173;
-$paginate-text-hover: #fbfbfb;
-$paginate-border:#d0c7c7;
-$paginate-hover:#5e72e4;
-$datatable-input:#3d4992;
-$datatable-border:#3d4992;
-
 //Box Shadow
 @mixin box-shadow($proprty) {
     -webkit-box-shadow: $proprty;
     box-shadow: $proprty;
 }
-//Transform
-@mixin transform($property) {
-    -webkit-transform: $property;
-    -moz-transform: $property;
-    -ms-transform: $property;
-    -o-transform: $property;
-    transform: $property;
-}
+
+// Media Queries
+$breakpoint-tablet: 768px;
+$breakpoint-smallphone:320px;
+$breakpoint-phone:700px;
+
 /****************************
 button space
  *****************************/
@@ -80,20 +40,30 @@ button space
     border: none;
     border-radius: 4px;
     font-size: 15px;
-    @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
-    @include transform(translateY(-4px) scale(1.02));
+    -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-4px) scale(1.02);
+    -moz-transform: translateY(-4px) scale(1.02);
+    -ms-transform: translateY(-4px) scale(1.02);
+    -o-transform: translateY(-4px) scale(1.02);
+    transform: translateY(-4px) scale(1.02);
 
     &:hover {
-        @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
-        @include transform(translateY(-3px) scale(1.02));
+        -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translateY(-3px) scale(1.02);
+        -moz-transform: translateY(-3px) scale(1.02);
+        -ms-transform: translateY(-3px) scale(1.02);
+        -o-transform: translateY(-3px) scale(1.02);
+        transform: translateY(-3px) scale(1.02);
     }
 }
 
 ///Icon btn
 .icon-btn {
     display: inline-grid;
-    background-color: $icon-button;
-    color: $black;
+    background-color: #f8c145;
+    color: #000;
     text-decoration: none;
     border-radius: 13px;
     padding: 12px 12px;
@@ -109,7 +79,7 @@ button space
     }
 
     &:hover {
-        @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
+        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
     }
 }
 
@@ -169,7 +139,7 @@ button space
  *****************************/
 b {
     font-weight: 600;
-    color: $bold;
+    color: #9a98a7;
 }
 
 /****************************
@@ -306,14 +276,14 @@ b {
     }
 
     .user1 {
-        background-color: $user1;
-        color: $black;
+        background-color: #df3ff8;
+        color: #000;
     }
 
     .user2 {
-        border: 1px solid $white;
-        background-color: $user2;
-        color: $white;
+        border: 1px solid #fff;
+        background-color: #014d40;
+        color: #fff;
     }
 }
 
@@ -334,13 +304,13 @@ Modal
         border-bottom: 1px solid $border;
         margin-bottom: 0px;
         h3 {
-            color: $modal-heading;
+            color: #5f5d98;
             font-size: 17px;
             font-weight: 600;
             padding: 14px 20px;
 
             .fas {
-                color: $black;
+                color: #000;
                 cursor: pointer;
             }
         }
@@ -352,7 +322,7 @@ Modal
         h4 {
             text-transform: uppercase;
             font-size: 15px;
-            color: $modal-h4;
+            color: #2d587d;
             font-weight: 500;
             margin: 9px 0px 19px;
         }
@@ -361,13 +331,13 @@ Modal
             margin-bottom: 5px;
             font-size: 16px;
             font-weight: 600;
-            color: $modal-p;
+            color: #98a4ee;
         }
 
         h5 {
             margin-right: 20px;
             font-size: 17px;
-            color: $modal-h5;
+            color: #70718f;
             font-weight: 600;
         }
         .resolve {
@@ -416,7 +386,7 @@ Modal
             transition: 0.3s linear all !important;
 
             &:hover {
-                @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
+                box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
             }
         }
     }
@@ -459,7 +429,7 @@ Modal
                 color: $close-btn-color;
                 background-color: $close-button;
                 cursor: pointer;
-                border: 1px solid $form-border;
+                border: 1px solid #dfe9f3;
             }
         }
     }
@@ -497,7 +467,7 @@ Datatable Header Footer
     .dataTables_info,
     .dataTables_processing,
     .dataTables_paginate {
-        color: $paginate-info !important;
+        color: #413173 !important;
         font-size: 13px;
         margin-bottom: 12px;
         font-weight: 500;
@@ -505,16 +475,17 @@ Datatable Header Footer
 
     .dataTables_paginate .paginate_button.current,
     .dataTables_paginate .paginate_button.current:hover {
-        color: $paginate-text-hover !important;
-        border: 1px solid $paginate-border !important;
+        color: #fbfbfb !important;
+        border: 1px solid #d0c7c7 !important;
+        background-color: #5e72e4;
         border-radius: 50%;
-        background: $paginate-hover !important;
+        background: #5e72e4 !important;
         padding: 4px 12px !important;
     }
 
     .dataTables_length select {
-        color: $datatable-input;
-        border: 1px solid $datatable-border;
+        color: #3d4992;
+        border: 1px solid #3d4992;
     }
 
     .dataTables_length {
@@ -543,11 +514,11 @@ Datatable Header Footer
     .ticket-box {
         justify-content: space-between;
         align-items: flex-start;
-        background-color: $ticket-box;
+        background-color: #441b40;
         border-radius: 16px;
         padding: 20px 30px;
         box-sizing: border-box;
-        color: $white;
+        color: #fff;
 
         .d-flex {
             justify-content: space-between;
@@ -586,7 +557,7 @@ Datatable Header Footer
                         font-size: 15px;
                         line-height: 12px;
                         display: block;
-                        color: $ticket-username;
+                        color: #ddd;
                         text-transform: uppercase;
                     }
                 }
@@ -608,13 +579,13 @@ Datatable Header Footer
                     padding: 9px 17px;
                     border-radius: 54px;
                     border: none;
-                    color: $white;
-                    background-color: $resolve-btn;
+                    color: #fff;
+                    background-color: #64c0ab;
                     cursor: pointer;
                     transition: 0.3s linear all !important;
 
                     &:hover {
-                        @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
+                        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
                     }
                 }
             }
@@ -647,10 +618,10 @@ Datatable Header Footer
 
             .top-box {
                 justify-content: space-between;
-                background-color: $top-box;
+                background-color: #f4f4f6;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-                color: $black;
+                color: #000;
                 border-radius: 16px 16px 0px 0px;
                 padding: 0px 35px;
                 height: 85px;
@@ -663,12 +634,12 @@ Datatable Header Footer
 
                 .fas {
                     font-size: 20px;
-                    color: $white;
+                    color: #fff;
                 }
 
                 .info-button {
-                    background-color: $info-button;
-                    color: $black;
+                    background-color: #f8c145;
+                    color: #000;
                     text-decoration: none;
                     border-radius: 18px;
                     padding: 7px 12px;
@@ -686,7 +657,7 @@ Datatable Header Footer
                     transition: 0.3s linear all !important;
 
                     &:hover {
-                        @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
+                        box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
                     }
                 }
 
@@ -714,8 +685,8 @@ Datatable Header Footer
                         width: 34px;
                         height: 34px;
                         font-size: 17px;
-                        color: $ticket-before-text;
-                        background: $ticket-color;
+                        color: #1aaf6f;
+                        background: #b0efd4;
                         z-index: 999;
                     }
                 }
@@ -724,9 +695,9 @@ Datatable Header Footer
                     height: 138px;
                     position: relative;
                     padding: 0px 0px 0px 35px;
-                    color: $ticket-history;
+                    color: #314384;
                     margin-left: auto;
-                    border-left: 2px dashed $border;
+                    border-left: 2px dashed #ddd;
                     
 
                     .d-flex {
@@ -734,8 +705,8 @@ Datatable Header Footer
                         justify-content: space-between;
 
                         .assigned-btn {
-                            background-color: $assigned-btn;
-                            color: $black;
+                            background-color: #fde6e0;
+                            color: #f00;
                             text-decoration: none;
                             border-radius: 18px;
                             padding: 2px 12px;
@@ -747,7 +718,7 @@ Datatable Header Footer
                             transition: 0.3s linear all !important;
 
                             &:hover {
-                                @include box-shadow(0 14px 24px rgba(0, 0, 0, 0.2));
+                                box-shadow: 0 14px 24px rgba(0, 0, 0, .20) !important;
                             }
                         }
 
@@ -807,23 +778,23 @@ Datatable Header Footer
 
                     h4 {
                         font-size: 17px;
-                        color: $ticket-box-h4;
+                        color: #314384;
                     }
 
                     h5 {
                         font-weight: 500;
                         font-size: 17px;
-                        color: $ticket-box-h5;
+                        color: #3e3e77;
                     }
 
                     .fas {
                         margin-right: 7px;
-                        color: $ticket-box-fas;
+                        color: #5e72e3;
                     }
                 }
 
                 .assigned-head {
-                    border-top: 1px solid $border;
+                    border-top: 1px solid #ddd;
                 }
             }
         }
@@ -844,11 +815,11 @@ Datatable Header Footer
     .profile-box {
         justify-content: space-between;
         align-items: flex-start;
-        background-color: $profile-box;
+        background-color: #441b40;
         border-radius: 16px;
         padding: 7px 4px;
         box-sizing: border-box;
-        color: $profile;
+        color: #ddd;
         position: relative;
         .icon-btn {
             right: 16px;
@@ -946,10 +917,10 @@ Datatable Header Footer
 
             .top-box {
                 justify-content: space-between;
-                background-color: $top-box;
+                background-color: #f4f4f6;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-                color: $black;
+                color: #000;
                 border-radius: 16px 16px 0px 0px;
                 padding: 26px 35px;
 
@@ -959,12 +930,12 @@ Datatable Header Footer
 
                 .fas {
                     font-size: 20px;
-                    color: $black;
+                    color: #000;
                 }
 
                 .info-button {
-                    background-color: $info-button;
-                    color: $black;
+                    background-color: #f8c145;
+                    color: #000;
                     text-decoration: none;
                     border-radius: 18px;
                     padding: 7px 12px;
@@ -980,14 +951,14 @@ Datatable Header Footer
                     position: relative;
                     padding: 12px 20px;
                     margin-left: auto;
-                    border-bottom: 1px solid $border;
+                    border-bottom: 1px solid #ddd;
 
                     .d-flex {
                         justify-content: space-between;
 
                         .assigned-btn {
-                            background-color: $assigned-btn;
-                            color: $black;
+                            background-color: #fde6e0;
+                            color: #f00;
                             text-decoration: none;
                             border-radius: 18px;
                             padding: 2px 12px;
@@ -1033,7 +1004,7 @@ Datatable Header Footer
                 }
 
                 .assigned-head {
-                    border-top: 1px solid $border;
+                    border-top: 1px solid #ddd;
                 }
             }
 
@@ -1043,12 +1014,12 @@ Datatable Header Footer
                 }
 
                 .fas {
-                    color: $profile-fas;
+                    color: #ef756a;
                 }
 
                 h5 {
                     font-size: 17px;
-                    color: $black;
+                    color: #000;
                 }
 
                 p {
@@ -1089,13 +1060,215 @@ Datatable Header Footer
                 .fas {
                     margin-left: -23px;
                     position: absolute;
-                    color: $education-fas;
+                    color: #545dac;
                 }
 
             }
         }
     }
 }
+
+/****************************
+Media Query
+ *****************************/
+@media (min-device-width: $breakpoint-smallphone) and (max-device-width: $breakpoint-phone) {
+    .modal {
+        header {
+            width:100%;
+            h3 {
+                width: 100%;
+            }
+        }
+        .modal-body {
+            .d-flex {
+
+                .form-group,
+                .form-group-left,
+                .form-group-right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .dataTables_wrapper {
+        .dataTables_filter input {
+            width: 45%;
+        }
+    }
+    .page-name{
+        /*margin-bottom: 20px;*/
+    }
+    .payment-type {
+        margin-top: 8px;
+    }
+    .support {
+        ul {
+            li:last-child {
+                padding: 8px 8px;
+                width: 18px;
+                top: 0px;
+                right: 11px;
+                position: inherit;
+            }
+        }
+    }
+    .profile-box {
+        .icon-btn {
+                right: 18px;
+                top: 16px;
+            }
+    }
+    .profile-body {
+        .ticket-details {
+            padding: 50px 0px;
+        }
+
+        .ticket-column {
+            .ticket-box-container {
+                .top-box {
+                    h2 {
+                        font-size: 17px;
+                    }
+                }
+
+                .profile-experience {
+                    h5 {
+                        font-size: 12px !important;
+                    }
+                }
+
+                .profile-education {
+                    .d-flex {
+
+                        .right,
+                        .left {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .profile-box {
+            .d-flex {
+                .username {
+                    width: 94% !important;
+                }
+
+                .profile-text {
+                    padding: 8px !important;
+                    width: 94%;
+
+                    .d-flex {
+                        .text {
+                            width: 100% !important;
+                        }
+                    }
+
+                    .profile-name {
+                        .d-flex {
+                            .profile-name-text {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ticket-column {
+            .ticket-box-container {
+                width: 100% !important;
+            }
+        }
+    }
+
+    ////Ticket//////
+    .ticket-body {
+        .ticket-details {
+            padding: 50px 0px;
+        }
+
+        .ticket-box {
+            .d-flex {
+                .start-learning {
+                    padding-top: 19px !important;
+                    margin-left: auto;
+
+                    h2 {
+                        width: 111px;
+                        font-size: 15px !important;
+                    }
+
+                    .resolve-btn {
+                        font-size: 11px !important;
+                    }
+                }
+
+                .user-name {
+                    img {
+                        height: 47px;
+                    }
+
+                    h1 {
+                        line-height: 21px;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+
+        .ticket-column {
+            .ticket-box-container {
+                width: 100% !important;
+
+                .top-box {
+                    padding: 26px 11px;
+                    justify-content: space-between;
+
+                    .info-button {
+                        font-size: 11px !important;
+                    }
+
+                    h2 {
+                        font-size: 16px !important;
+                    }
+                }
+
+                .ticket-history {
+                    .ticket-history-content {
+                        height: 169px;
+                    }
+                }
+
+                .inner-boxes {
+                    .ticket-box-details {
+                        .heading {
+                            width: 47% !important;
+                        }
+
+                        .content {
+                            width: 53% !important;
+                        }
+
+                        h3,
+                        h2,
+                        h5,
+                        h4 {
+                            font-size: 13px !important;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+}
+
+@media (min-width: $breakpoint-tablet) {}
 
 // shadow
 

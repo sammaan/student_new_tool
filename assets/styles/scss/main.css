@@ -164,16 +164,18 @@ table {
  Common 
  ***************************/
 .full-body-width {
+  -ms-width: calc(100% - 110px);
   width: calc(100% - 110px);
   margin-left: 110px;
   padding: 0 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   height: 100vh;
   overflow-y: auto;
+  display: block;
 }
 
 .full-body-width .side-bar {
@@ -252,7 +254,7 @@ table {
 .two-column .dashboard-box-container {
   width: 48%;
   border-radius: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   -webkit-box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
   box-shadow: 0 33px 38px rgba(222, 222, 222, 0.3);
 }
@@ -262,7 +264,7 @@ table {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: #441b40;
-  height: 100px;
+  height: 65px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #fff;
@@ -294,6 +296,48 @@ table {
 }
 
 /* width */
+::-ms-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-ms-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-ms-scrollbar-thumb {
+  background: #993d90;
+}
+
+/* Handle on hover */
+::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* width */
+::-moz-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-moz-scrollbar-track {
+  background: #f7f9fa;
+}
+
+/* Handle */
+::-moz-scrollbar-thumb {
+  background: #993d90;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* width */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
@@ -318,11 +362,12 @@ table {
  Navigation
  *****************************/
 .side-bar {
-  padding: 15px;
-  background-color: #f7f9fa;
-  width: 110px;
+  padding: 15px 0 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #f7f9fa;
+  width: 110px;
+  box-sizing: border-box;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   -webkit-transition-property: width;
@@ -382,6 +427,8 @@ table {
   overflow: hidden;
   text-overflow: ellipsis;
   height: 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .side-bar .menu-bar li a .menu-icon {
@@ -439,7 +486,6 @@ table {
 
 .side-bar:hover {
   width: 370px;
-  border-radius: 0 16px 16px 0;
 }
 
 .side-bar:hover .logo a .university-name {
@@ -454,6 +500,10 @@ table {
 /****************************
 Header
 ****************************/
+.mobile-hamburger .icon-Align-left {
+  color: #441b40;
+}
+
 .mobile-logo,
 .mobile-hamburger {
   display: none;
@@ -481,6 +531,9 @@ header .header-left.d-flex .fit-to-screen {
   cursor: pointer;
   -webkit-transition: 0.3s linear all !important;
   transition: 0.3s linear all !important;
+  padding: 4px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .header-left.d-flex .fit-to-screen:hover {
@@ -489,9 +542,6 @@ header .header-left.d-flex .fit-to-screen:hover {
 }
 
 header .header-left.d-flex .fit-to-screen a {
-  padding: 4px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: block;
   text-decoration: none;
   width: 48px;
@@ -518,6 +568,15 @@ header .header-right.d-flex .header-icon {
   width: 48px;
   height: 48px;
   border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f8fafb;
   margin-left: 30px;
   cursor: pointer;
@@ -525,6 +584,8 @@ header .header-right.d-flex .header-icon {
   color: #993d90;
   -webkit-transition: 0.3s linear all !important;
   transition: 0.3s linear all !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .header-right.d-flex .header-icon:hover {
@@ -533,23 +594,11 @@ header .header-right.d-flex .header-icon:hover {
 }
 
 header .header-right.d-flex .header-icon a {
-  padding: 4px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: block;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
   color: #993d90;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  line-height: 30px;
+  width: 30px;
 }
 
 header .header-right.d-flex .header-icon a .fas.fa-headset {
@@ -568,8 +617,7 @@ header .header-right.d-flex .user-details {
 
 header .header-right.d-flex .user-details a {
   color: inherit;
-  -webkit-text-decoration: auto;
-          text-decoration: auto;
+  text-decoration: none;
 }
 
 header .header-right.d-flex .user-details:hover {
@@ -597,6 +645,9 @@ header .header-right.d-flex .logout {
   -webkit-transition: 0.3s linear all !important;
   transition: 0.3s linear all !important;
   font-size: 30px;
+  padding: 4px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .header-right.d-flex .logout:hover {
@@ -605,9 +656,6 @@ header .header-right.d-flex .logout:hover {
 }
 
 header .header-right.d-flex .logout a {
-  padding: 4px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: block;
   text-decoration: none;
   width: 48px;
@@ -736,7 +784,11 @@ Dashboard
   transition: 0.4s;
 }
 
-.dashboard-top-bpx .course-details-panel .inner-boxes {
+.dashboard-top-bpx .course-details-panel .four-box-outer {
+  padding: 15px;
+}
+
+.dashboard-top-bpx .course-details-panel .four-box-outer .inner-boxes {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -879,7 +931,6 @@ Dashboard
   font-size: 14px;
   line-height: 17px;
   color: #0e0f22;
-  margin-bottom: 10px;
 }
 
 .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box {
@@ -902,8 +953,8 @@ Dashboard
 }
 
 .dashboard-top-bpx .course-details-panel .notification-item .notification {
-  -webkit-box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
-  box-shadow: 5px 0px 10px rgba(153, 61, 144, 0.57);
+  -webkit-box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
+  box-shadow: 5px 0px 10px rgba(161, 159, 161, 0.57);
   width: 100%;
   padding: 18px;
   border-radius: 16px;
@@ -1555,22 +1606,26 @@ calendar
 .academic-calendar .top-box-gray {
   background-color: #f8fafb;
   padding: 22px;
-  border-radius: 10px 10px;
-  margin-bottom: 20px;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .academic-calendar .top-box-gray h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 600;
   color: #0e0f22;
   font-size: 18px;
 }
 
-.academic-calendar .top-box-gray h2 img {
+.academic-calendar .top-box-gray h2 .icon-Time-schedule {
   vertical-align: middle;
   margin-right: 20px;
+  font-size: 30px;
 }
 
 .academic-calendar .indication {
@@ -1629,24 +1684,20 @@ calendar
           align-items: flex-start;
 }
 
-.academic-calendar #fccalendar {
-  width: 75%;
-}
-
 .academic-calendar .indication .legends {
   width: 100%;
 }
 
 .academic-calendar #fccalendar {
-  width: calc(100% - 150px);
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .academic-calendar .fc-header-toolbar {
-  background-color: #1e364c;
+  background-color: #441b40;
   padding: 25px 20px;
-  border-radius: 16px;
+  border-radius: 0 0 16px 16px;
   color: #fff;
 }
 
@@ -1676,7 +1727,7 @@ calendar
   background-color: #f7f9fb;
   border-radius: 8px !important;
   margin-left: 10px !important;
-  color: #1d354b;
+  color: #441b40;
   font-size: 18px;
   height: 45px;
   width: 45px;
@@ -1689,6 +1740,12 @@ calendar
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: capitalize;
+}
+
+.academic-calendar .fc-direction-ltr .fc-button-group > .fc-button-active {
+  background-color: #f8c145 !important;
+  color: #0e0f22 !important;
 }
 
 .academic-calendar .fc-direction-ltr .fc-button-group > .fc-dayGridMonth-button,
