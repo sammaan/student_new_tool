@@ -120,7 +120,7 @@ section {
 body {
   line-height: 1.6;
   font-family: 'Montserrat';
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 ol,
@@ -182,7 +182,7 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  background: #f7f9fa;
+  background: bg-main;
   height: 100vh;
   overflow-y: auto;
   /* width */
@@ -196,11 +196,11 @@ table {
 }
 
 .full-body-width .side-bar::-webkit-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 .full-body-width .side-bar::-webkit-scrollbar-thumb {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 .full-body-width .side-bar::-webkit-scrollbar-thumb:hover {
@@ -211,7 +211,7 @@ table {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-bottom: 1px solid #cfa4cb;
+  border-bottom: 1px solid #993d90;
   margin-bottom: 30px;
 }
 
@@ -303,7 +303,7 @@ table {
 
 /* Track */
 ::-ms-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 /* Handle */
@@ -324,7 +324,7 @@ table {
 
 /* Track */
 ::-moz-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 /* Handle */
@@ -345,7 +345,7 @@ table {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f7f9fa;
+  background: bg-main;
 }
 
 /* Handle */
@@ -358,6 +358,36 @@ table {
   background: #555;
 }
 
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 4px;
+  background: #e8e8eb;
+}
+
+progress::-webkit-progress-value {
+  background-color: #993d90;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-bar {
+  background: #e8e8eb;
+  border-radius: 4px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+progress::-moz-progress-bar {
+  background-color: #993d90 !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 4px;
+}
+
 /****************************
  Navigation
  *****************************/
@@ -365,7 +395,7 @@ table {
   padding: 15px 0 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #f7f9fa;
+  background-color: bg-main;
   width: 110px;
   box-sizing: border-box;
   -webkit-transition: 0.3s ease-in-out;
@@ -557,7 +587,7 @@ header .header-left.d-flex .search-bar .search-input {
   padding-left: 10px;
   background-color: #f7f9fa;
   font-size: 16px;
-  color: #4a4c5d;
+  color: #0e0f22;
 }
 
 header .header-left.d-flex .search-bar .search-input:focus {
@@ -1668,11 +1698,11 @@ calendar
 }
 
 .academic-calendar .indication ul li:nth-child(3) .mark {
-  background-color: #166302;
+  background-color: #027e0e;
 }
 
 .academic-calendar .indication ul li:nth-child(4) .mark {
-  background-color: #fcbb1e;
+  background-color: #f8c145;
 }
 
 .academic-calendar .cal-section {
@@ -1702,7 +1732,7 @@ calendar
 }
 
 .academic-calendar #fccalendar td {
-  border-bottom: 1px solid #ddd !important;
+  border-bottom: 1px solid #555 !important;
 }
 
 .academic-calendar .fc-theme-standard th,
@@ -1758,7 +1788,7 @@ calendar
   background-color: #f7f9fb;
   border-radius: 8px !important;
   margin-left: 10px !important;
-  color: #1d354b;
+  color: #0e0f22;
   font-size: 18px;
 }
 
