@@ -96,6 +96,43 @@
   .academic-calendar .fc-direction-ltr .fc-button-group > .fc-button {
     font-size: 14px;
   }
+  .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
+    font-size: 13px;
+  }
+  .profile-body .ticket-column .ticket-box-container .profile-experience .fas {
+    margin-left: -23px;
+    position: absolute;
+  }
+  .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
+    font-size: 12px;
+  }
+  .profile-body .ticket-column .ticket-box-container .top-box {
+    padding: 26px 16px;
+  }
+  .profile-body .profile-box .d-flex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .profile-body .profile-box .d-flex .username h1 {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .profile-body .profile-box .d-flex .profile-text {
+    width: 72%;
+  }
+  .profile-body .profile-box .d-flex .profile-text .d-flex .text h2 {
+    font-size: 11px;
+  }
+  .profile-body .profile-box .d-flex .profile-text img {
+    height: 33px;
+  }
+  .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text {
+    width: 67%;
+  }
+  .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text img {
+    height: 46px;
+  }
 }
 
 @media (min-width: 767px) {

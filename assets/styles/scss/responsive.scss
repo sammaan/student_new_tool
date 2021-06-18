@@ -177,6 +177,61 @@ $layout-breakpoint-xs: 767px;
   .academic-calendar .fc-direction-ltr .fc-button-group>.fc-button {
     font-size: 14px;
   }
+  .profile-body {
+    .ticket-column {
+      .ticket-box-container {
+        .profile-experience {
+           h5 {
+             font-size: 13px;
+           }
+           .fas {
+            margin-left: -23px;
+            position: absolute;
+           }
+        }
+        .ticket-history {
+          .ticket-history-content {
+            .d-flex p {
+              font-size: 12px;
+            }
+          }
+        }
+        .top-box {
+          padding: 26px 16px;
+        }
+      }
+    }
+    .profile-box {
+      .d-flex {
+        justify-content: flex-start;
+        .username h1 {
+          font-size: 19px;
+          line-height: 20px;
+        }
+        .profile-text {
+          width: 72%;
+          .d-flex {
+            .text h2 {
+              font-size: 11px;
+            }
+          }
+          img {
+            height: 33px;
+          }
+          .profile-name {
+            .d-flex {
+              .profile-name-text {
+                width: 67%;
+                img {
+                height: 46px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $layout-breakpoint-xs) {
