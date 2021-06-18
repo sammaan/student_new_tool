@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* Stylesheet for Common Elements */
+/* Variable Declarations */
+/* Variables For Tables */
+/* Mixins */
 /****************************
 button space
  *****************************/
@@ -904,34 +907,6 @@ Datatable Header Footer
   box-shadow: none !important;
 }
 
-progress {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  border: none;
-  width: 100px;
-  height: 4px;
-  background: #e8e8eb;
-}
-
-progress::-webkit-progress-value {
-  background-color: #993d90;
-  border-radius: 4px;
-}
-
-progress::-webkit-progress-bar {
-  background: #e8e8eb;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-
-progress::-moz-progress-bar {
-  background-color: #993d90 !important;
-  transition: all 0.5s;
-  border-radius: 4px;
-}
-
 /* Stylesheet for Custom Elements */
 /* Main Stylesheet */
 .support .contact-to-support .message-box .message-btn, .support .add-ticket, .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment .pay-btn, .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn, .dashboard-top-bpx .course-details-panel .dash-support .contact-to-support .message-box .message-btn {
@@ -1258,6 +1233,34 @@ table {
   background: #555;
 }
 
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: none;
+  width: 100px;
+  height: 4px;
+  background: #e8e8eb;
+}
+
+progress::-webkit-progress-value {
+  background-color: #993d90;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-bar {
+  background: #e8e8eb;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+progress::-moz-progress-bar {
+  background-color: #993d90 !important;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
 /****************************
  Navigation
  *****************************/
@@ -1414,7 +1417,7 @@ header .header-left.d-flex .search-bar .search-input {
   padding-left: 10px;
   background-color: #f7f9fa;
   font-size: 16px;
-  color: #4a4c5d;
+  color: #0e0f22;
 }
 header .header-left.d-flex .search-bar .search-input:focus {
   outline: none;
@@ -2266,10 +2269,10 @@ calendar
   background-color: #993d90;
 }
 .academic-calendar .indication ul li:nth-child(3) .mark {
-  background-color: #166302;
+  background-color: #027e0e;
 }
 .academic-calendar .indication ul li:nth-child(4) .mark {
-  background-color: #fcbb1e;
+  background-color: #f8c145;
 }
 .academic-calendar .cal-section {
   justify-content: space-between;
@@ -2289,7 +2292,7 @@ calendar
   color: #fff;
 }
 .academic-calendar #fccalendar td {
-  border-bottom: 1px solid #ddd !important;
+  border-bottom: 1px solid #555 !important;
 }
 .academic-calendar .fc-theme-standard th,
 .academic-calendar .fc-col-header td {
@@ -2331,7 +2334,7 @@ calendar
   background-color: #f7f9fb;
   border-radius: 8px !important;
   margin-left: 10px !important;
-  color: #1d354b;
+  color: #0e0f22;
   font-size: 18px;
 }
 .academic-calendar .fc-scroller-harness-liquid td,

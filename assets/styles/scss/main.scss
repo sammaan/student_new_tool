@@ -160,7 +160,7 @@ section {
 body {
   line-height: 1.6;
   font-family: 'Montserrat';
-  background: bg-main;
+  background: $bg-main;
 }
 
 ol,
@@ -214,7 +214,7 @@ table {
     position: absolute;
     top: 0;
     left: 0;
-    background: bg-main;
+    background: $bg-main;
     height: 100vh;
     overflow-y: auto;
 
@@ -225,12 +225,12 @@ table {
 
     /* Track */
     &::-webkit-scrollbar-track {
-      background: bg-main;
+      background: $bg-main;
     }
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-      background: bg-main;
+      background: $bg-main;
     }
 
     /* Handle on hover */
@@ -368,7 +368,7 @@ table {
 
 /* Track */
 ::-ms-scrollbar-track {
-  background: bg-main;
+  background: $bg-main;
 }
 
 /* Handle */
@@ -390,7 +390,7 @@ table {
 
 /* Track */
 ::-moz-scrollbar-track {
-  background: bg-main;
+  background: $bg-main;
 }
 
 /* Handle */
@@ -412,7 +412,7 @@ table {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: bg-main;
+  background: $bg-main;
 }
 
 /* Handle */
@@ -467,7 +467,7 @@ progress::-moz-progress-bar {
 .side-bar {
   padding: 15px 0 15px 15px;
   box-sizing: border-box;
-  background-color: bg-main;
+  background-color: $bg-main;
   width: 110px;
   box-sizing: border-box;
   @include transition(.3s ease-in-out);

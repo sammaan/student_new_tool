@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* Stylesheet for Common Elements */
+/* Variable Declarations */
+/* Variables For Tables */
+/* Mixins */
 /****************************
 button space
  *****************************/
@@ -902,34 +905,6 @@ Datatable Header Footer
 
 .no-shodow {
   box-shadow: none !important;
-}
-
-progress {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  border: none;
-  width: 100px;
-  height: 4px;
-  background: #e8e8eb;
-}
-
-progress::-webkit-progress-value {
-  background-color: #993d90;
-  border-radius: 4px;
-}
-
-progress::-webkit-progress-bar {
-  background: #e8e8eb;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-
-progress::-moz-progress-bar {
-  background-color: #993d90 !important;
-  transition: all 0.5s;
-  border-radius: 4px;
 }
 
 /*# sourceMappingURL=common.css.map */
