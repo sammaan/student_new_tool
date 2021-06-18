@@ -115,8 +115,8 @@ b {
 .responsive-table table thead {
   font-weight: 500;
   font-size: 13px;
-  background-color: #f5f9fc;
-  color: #bab6c6;
+  background-color: #f7f9fa;
+  color: #918e98;
   text-transform: uppercase;
 }
 .responsive-table table tbody {
@@ -503,7 +503,7 @@ Datatable Header Footer
 }
 .ticket-body .ticket-column .ticket-box-container .top-box {
   justify-content: space-between;
-  background-color: #f4f4f6;
+  background-color: #f7f9fa;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #000;
@@ -750,7 +750,7 @@ Datatable Header Footer
 }
 .profile-body .ticket-column .ticket-box-container .top-box {
   justify-content: space-between;
-  background-color: #f4f4f6;
+  background-color: #f7f9fa;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #000;

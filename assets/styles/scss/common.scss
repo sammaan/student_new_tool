@@ -1,18 +1,30 @@
+/* Stylesheet for Common Elements */
 
 /* Variable Declarations */
 
-/* Stylesheet for Common Elements */
-$th-text: #bab6c6;
+// $base-color: ;
+// $primary-color: #993d90 ;
+// $primary-dark-color: #441b40;
+// $secondary-color: #b1113e;
+// $tertiary-color: #f8c145;
+// $cta-success-color: #5e72e3;
+// $cta-close-color:;
+// $gray-text-color: #918e98;
+
+/* Variables For Tables */
+
+$th-text: #918e98;
 $td-text: #918e98;
-$background: #f5f9fc;
+$background: #f7f9fa;
 $border: #e7eaef;
 $book-color: #b143d6;
 $check-color: #47d4a4;
 $circle-color: #f11a1a;
+
 $ticket-box: #441b40;
 $ticket-username: #ddd;
 $resolve-btn: #64c0ab;
-$top-box: #f4f4f6;
+$top-box: #f7f9fa;
 $info-button: #f8c145;
 $ticket-before-text: #1aaf6f;
 $ticket-color: #b0efd4;
@@ -20,7 +32,7 @@ $ticket-history: #314384;
 $assigned-btn: #fde6e0;
 $profile: #ddd;
 $profile-box: #441b40;
-$top-box: #f4f4f6;
+$top-box: #f7f9fa;
 $profile-fas: #ef756a;
 $education-fas: #545dac;
 //Ticket Box

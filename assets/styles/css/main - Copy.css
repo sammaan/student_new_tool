@@ -94,8 +94,8 @@ b {
 .responsive-table table thead {
   font-weight: 500;
   font-size: 13px;
-  background-color: #f5f9fc;
-  color: #bab6c6;
+  background-color: #f7f9fa;
+  color: #918e98;
   text-transform: uppercase;
 }
 .responsive-table table tbody {
@@ -796,7 +796,7 @@ header .header-left.d-flex .search-bar .search-input {
   border-radius: 16px;
   border: none;
   padding-left: 10px;
-  background-color: #f4f4f6;
+  background-color: #f7f9fa;
   font-size: 16px;
   color: #4a4c5d;
 }
@@ -810,12 +810,12 @@ header .header-right.d-flex .header-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   margin-left: 30px;
   cursor: pointer;
 }
 header .header-right.d-flex .user-details {
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   margin-left: 30px;
   border-radius: 16px;
   padding: 0 10px 0 0;

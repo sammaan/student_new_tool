@@ -125,8 +125,8 @@ b {
 .responsive-table table thead {
   font-weight: 500;
   font-size: 13px;
-  background-color: #f5f9fc;
-  color: #bab6c6;
+  background-color: #f7f9fa;
+  color: #918e98;
   text-transform: uppercase;
 }
 .responsive-table table tbody {
@@ -526,7 +526,7 @@ Datatable Header Footer
 }
 .ticket-body .ticket-column .ticket-box-container .top-box {
   justify-content: space-between;
-  background-color: #f4f4f6;
+  background-color: #f7f9fa;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #000;
@@ -784,7 +784,7 @@ Datatable Header Footer
 }
 .profile-body .ticket-column .ticket-box-container .top-box {
   justify-content: space-between;
-  background-color: #f4f4f6;
+  background-color: #f7f9fa;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #000;
@@ -1387,7 +1387,7 @@ header .header-left.d-flex .fit-to-screen {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   color: #993d90;
   font-size: 30px;
   margin-right: 30px;
@@ -1412,7 +1412,7 @@ header .header-left.d-flex .search-bar .search-input {
   border-radius: 16px;
   border: none;
   padding-left: 10px;
-  background-color: #f4f4f6;
+  background-color: #f7f9fa;
   font-size: 16px;
   color: #4a4c5d;
 }
@@ -1426,7 +1426,7 @@ header .header-right.d-flex .header-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   margin-left: 30px;
   cursor: pointer;
   font-size: 30px;
@@ -1448,7 +1448,7 @@ header .header-right.d-flex .header-icon a .fas.fa-headset {
   font-size: 26px;
 }
 header .header-right.d-flex .user-details {
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   margin-left: 30px;
   border-radius: 16px;
   padding: 0 10px 0 0;
@@ -2219,7 +2219,7 @@ textarea {
 calendar
 ***********************/
 .academic-calendar .top-box-gray {
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   padding: 22px;
   border-radius: 16px 16px 0 0;
   margin-bottom: 0px;
@@ -2238,7 +2238,7 @@ calendar
 }
 .academic-calendar .indication {
   width: 40%;
-  background-color: #f8fafb;
+  background-color: #f7f9fa;
   border-radius: 4px;
   position: relative;
 }

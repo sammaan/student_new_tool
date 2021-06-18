@@ -104,7 +104,7 @@ calendar
 ***********************/
 .academic-calendar {
   .top-box-gray{
-    background-color: #f8fafb;
+    background-color: #f7f9fa;
     padding: 22px;
     border-radius: 10px 10px 0 0;
     h2{
@@ -119,7 +119,7 @@ calendar
   }
   .indication {
     width: 110px;
-    background-color: #f8fafb;
+    background-color: #f7f9fa;
     border-radius: 4px;
     padding: 15px 10px 10px;
     margin-bottom: 20px;
