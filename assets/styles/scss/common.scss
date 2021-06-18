@@ -23,17 +23,15 @@ $circle-color: #f11a1a;
 
 $ticket-box: #441b40;
 $ticket-username: #ddd;
-$resolve-input: #64c0ab;
+$resolve-btn: #64c0ab;
 $top-box: #f7f9fa;
 $info-button: #f8c145;
 $ticket-before-text: #1aaf6f;
 $ticket-color: #b0efd4;
 $ticket-history: #314384;
-$assigned-input: #fde6e0;
-$assigned-input-text:#dc1313;
+$assigned-btn: #fde6e0;
 $profile: #ddd;
 $profile-box: #441b40;
-$top-box: #f7f9fa;
 $profile-fas: #ef756a;
 $education-fas: #545dac;
 //Ticket Box
@@ -623,14 +621,14 @@ Datatable Header Footer
                     width: 135px;
                 }
 
-                .resolve-input {
+                .resolve-btn {
                     font-size: 20px;
                     font-weight: 600;
                     padding: 9px 17px;
                     border-radius: 54px;
                     border: none;
                     color: $white;
-                    background-color: $resolve-input;
+                    background-color: $resolve-btn;
                     cursor: pointer;
                     transition: 0.3s linear all !important;
 
@@ -754,8 +752,8 @@ Datatable Header Footer
                         padding: 0px 0px 12px;
                         justify-content: space-between;
 
-                        .assigned-input {
-                            background-color: $assigned-input;
+                        .assigned-btn {
+                            background-color: $assigned-btn;
                             color: $black;
                             text-decoration: none;
                             border-radius: 18px;
