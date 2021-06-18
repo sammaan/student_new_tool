@@ -177,6 +177,61 @@ $layout-breakpoint-xs: 767px;
   .academic-calendar .fc-direction-ltr .fc-button-group>.fc-button {
     font-size: 14px;
   }
+  .profile-body {
+    .ticket-column {
+      .ticket-box-container {
+        .profile-experience {
+           h5 {
+             font-size: 13px;
+           }
+           .fas {
+            margin-left: -23px;
+            position: absolute;
+           }
+        }
+        .ticket-history {
+          .ticket-history-content {
+            .d-flex p {
+              font-size: 12px;
+            }
+          }
+        }
+        .top-box {
+          padding: 26px 16px;
+        }
+      }
+    }
+    .profile-box {
+      .d-flex {
+        justify-content: flex-start;
+        .username h1 {
+          font-size: 19px;
+          line-height: 20px;
+        }
+        .profile-text {
+          width: 72%;
+          .d-flex {
+            .text h2 {
+              font-size: 11px;
+            }
+          }
+          img {
+            height: 33px;
+          }
+          .profile-name {
+            .d-flex {
+              .profile-name-text {
+                width: 67%;
+                img {
+                height: 46px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $layout-breakpoint-xs) {
@@ -834,204 +889,205 @@ $layout-breakpoint-xs: 767px;
 
 
     }
-  }
-
-
-
-
-  .modal {
-    header {
-      width: 100%;
-
-      h3 {
+    .modal {
+      header {
         width: 100%;
-      }
-    }
-
-    .modal-body {
-      .d-flex {
-
-        .form-group,
-        .form-group-left,
-        .form-group-right {
+  
+        h3 {
           width: 100%;
         }
       }
-    }
-  }
-
-  .dataTables_wrapper {
-    .dataTables_filter input {
-      width: 45%;
-    }
-  }
-
-
-  .payment-type {
-    margin-top: 8px;
-  }
-
-  .support {
-    ul {
-      li:last-child {
-        padding: 8px 8px;
-        width: 18px;
-        top: 0px;
-        right: 11px;
-        position: inherit;
-      }
-    }
-  }
-
-  .profile-box {
-    .icon-btn {
-      right: 18px;
-      top: 16px;
-    }
-  }
-
-  .profile-body {
-    .ticket-details {
-      padding: 50px 0px;
-    }
-
-    .ticket-column {
-      .ticket-box-container {
-        .top-box {
-          h2 {
-            font-size: 17px;
-          }
-        }
-
-        .profile-experience {
-          h5 {
-            font-size: 12px !important;
-          }
-        }
-
-        .profile-education {
-          .d-flex {
-
-            .right,
-            .left {
-              width: 100% !important;
-            }
+  
+      .modal-body {
+        .d-flex {
+  
+          .form-group,
+          .form-group-left,
+          .form-group-right {
+            width: 100%;
           }
         }
       }
     }
-
+  
+    .dataTables_wrapper {
+      .dataTables_filter input {
+        width: 45%;
+      }
+    }
+  
+  
+    .payment-type {
+      margin-top: 8px;
+    }
+  
+    .support {
+      ul {
+        li:last-child {
+          padding: 8px 8px;
+          width: 18px;
+          top: 0px;
+          right: 11px;
+          position: inherit;
+        }
+      }
+    }
+  
     .profile-box {
-      .d-flex {
-        .username {
-          width: 94% !important;
-        }
-
-        .profile-text {
-          padding: 8px !important;
-          width: 94%;
-
-          .d-flex {
-            .text {
-              width: 100% !important;
+      .icon-btn {
+        right: 18px;
+        top: 16px;
+      }
+    }
+  
+    .profile-body {
+      .ticket-details {
+        padding: 50px 0px;
+      }
+  
+      .ticket-column {
+        .ticket-box-container {
+          .top-box {
+            h2 {
+              font-size: 17px;
             }
           }
-
-          .profile-name {
+  
+          .profile-experience {
+            h5 {
+              font-size: 12px !important;
+            }
+          }
+  
+          .profile-education {
             .d-flex {
-              .profile-name-text {
-                width: 100%;
+  
+              .right,
+              .left {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+  
+      .profile-box {
+        .d-flex {
+          .username {
+            width: 94% !important;
+          }
+  
+          .profile-text {
+            padding: 8px !important;
+            width: 94%;
+  
+            .d-flex {
+              .text {
+                width: 100% !important;
+              }
+            }
+  
+            .profile-name {
+              .d-flex {
+                .profile-name-text {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .ticket-column {
+        .ticket-box-container {
+          width: 100% !important;
+        }
+      }
+    }
+  
+    ////Ticket//////
+    .ticket-body {
+      .ticket-details {
+        padding: 50px 0px;
+      }
+  
+      .ticket-box {
+        .d-flex {
+          .start-learning {
+            padding-top: 19px !important;
+            margin-left: auto;
+  
+            h2 {
+              width: 111px;
+              font-size: 15px !important;
+            }
+  
+            .resolve-btn {
+              font-size: 11px !important;
+            }
+          }
+  
+          .user-name {
+            img {
+              height: 47px;
+            }
+  
+            h1 {
+              line-height: 21px;
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+  
+      .ticket-column {
+        .ticket-box-container {
+          width: 100% !important;
+  
+          .top-box {
+            padding: 26px 11px;
+            justify-content: space-between;
+  
+            .info-button {
+              font-size: 11px !important;
+            }
+  
+            h2 {
+              font-size: 16px !important;
+            }
+          }
+  
+          .ticket-history {
+            .ticket-history-content {
+              height: 169px;
+            }
+          }
+  
+          .inner-boxes {
+            .ticket-box-details {
+              .heading {
+                width: 47% !important;
+              }
+  
+              .content {
+                width: 53% !important;
+              }
+  
+              h3,
+              h2,
+              h5,
+              h4 {
+                font-size: 13px !important;
               }
             }
           }
         }
       }
     }
-
-    .ticket-column {
-      .ticket-box-container {
-        width: 100% !important;
-      }
-    }
+  }
   }
 
-  ////Ticket//////
-  .ticket-body {
-    .ticket-details {
-      padding: 50px 0px;
-    }
 
-    .ticket-box {
-      .d-flex {
-        .start-learning {
-          padding-top: 19px !important;
-          margin-left: auto;
 
-          h2 {
-            width: 111px;
-            font-size: 15px !important;
-          }
 
-          .resolve-btn {
-            font-size: 11px !important;
-          }
-        }
-
-        .user-name {
-          img {
-            height: 47px;
-          }
-
-          h1 {
-            line-height: 21px;
-            font-size: 15px !important;
-          }
-        }
-      }
-    }
-
-    .ticket-column {
-      .ticket-box-container {
-        width: 100% !important;
-
-        .top-box {
-          padding: 26px 11px;
-          justify-content: space-between;
-
-          .info-button {
-            font-size: 11px !important;
-          }
-
-          h2 {
-            font-size: 16px !important;
-          }
-        }
-
-        .ticket-history {
-          .ticket-history-content {
-            height: 169px;
-          }
-        }
-
-        .inner-boxes {
-          .ticket-box-details {
-            .heading {
-              width: 47% !important;
-            }
-
-            .content {
-              width: 53% !important;
-            }
-
-            h3,
-            h2,
-            h5,
-            h4 {
-              font-size: 13px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+  
