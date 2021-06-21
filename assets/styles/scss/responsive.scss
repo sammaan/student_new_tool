@@ -108,13 +108,14 @@ $layout-breakpoint-xs: 767px;
   .profile-body {
     .ticket-column {
       .ticket-box-container {
+        width: 100%;
         .profile-experience {
           h5 {
             font-size: 13px;
           }
 
           .fas {
-            margin-left: -23px;
+            margin-left: -24px;
             position: absolute;
           }
         }
@@ -183,59 +184,12 @@ $layout-breakpoint-xs: 767px;
     }
     .ticket-column {
       .ticket-box-container {
-        .top-box {
-          height: 55px;
-          padding: 0px 12px;
-          h2 {
-            font-size: 15px;
-          }
-          .info-button {
-            padding: 7px 4px;
-            font-size: 11px;
-          }
-          .icon-btn {
-            padding: 7px 4px;
-            font-size: 11px;
-          }
-        }
-        .inner-boxes {
-          padding: 6px;
-          .ticket-box-details {
-            h3 {
-            font-size: 12px;
-            }
-            h2 {
-              font-size: 14px;
-            }
-            h5 {
-              font-size: 14px;
-            }
-            .heading {
-              width: 46%;
-            }
-            .content {
-              width: 53%;
-            }
-          }
-        }
-        .ticket-history {
-          .ticket-history-content {
-            h3 {
-              font-size: 16px;
-            }
-            h5 {
-              font-size: 13px;
-            }
-            .d-flex {
-              p {
-              font-size: 13px;
-              width: 95px;
-             }
-            }
-          }
-        }
+        width: 100%;
       }
     }
+  }
+  .side-bar {
+    z-index: 9999;
   }
 }
 
