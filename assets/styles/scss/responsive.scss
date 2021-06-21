@@ -105,6 +105,138 @@ $layout-breakpoint-xs: 767px;
       }
     }
   }
+  .profile-body {
+    .ticket-column {
+      .ticket-box-container {
+        .profile-experience {
+          h5 {
+            font-size: 13px;
+          }
+
+          .fas {
+            margin-left: -23px;
+            position: absolute;
+          }
+        }
+
+        .ticket-history {
+          .ticket-history-content {
+            .d-flex p {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .top-box {
+          padding: 26px 16px;
+        }
+      }
+    }
+
+    .profile-box {
+      .d-flex {
+        justify-content: flex-start;
+
+        .username h1 {
+          font-size: 19px;
+          line-height: 20px;
+        }
+
+        .profile-text {
+          width: 72%;
+
+          .d-flex {
+            .text h2 {
+              font-size: 11px;
+            }
+          }
+
+          img {
+            height: 33px;
+          }
+
+          .profile-name {
+            .d-flex {
+              .profile-name-text {
+                width: 67%;
+
+                img {
+                  height: 46px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ticket-body {
+    .ticket-box {
+      .d-flex {
+        .user-name h1 {
+          font-size: 16px;
+        }
+        .start-learning h2 {
+          font-size: 16px;
+        }
+      }
+    }
+    .ticket-column {
+      .ticket-box-container {
+        .top-box {
+          height: 55px;
+          padding: 0px 12px;
+          h2 {
+            font-size: 15px;
+          }
+          .info-button {
+            padding: 7px 4px;
+            font-size: 11px;
+          }
+          .icon-btn {
+            padding: 7px 4px;
+            font-size: 11px;
+          }
+        }
+        .inner-boxes {
+          padding: 6px;
+          .ticket-box-details {
+            h3 {
+            font-size: 12px;
+            }
+            h2 {
+              font-size: 14px;
+            }
+            h5 {
+              font-size: 14px;
+            }
+            .heading {
+              width: 46%;
+            }
+            .content {
+              width: 53%;
+            }
+          }
+        }
+        .ticket-history {
+          .ticket-history-content {
+            h3 {
+              font-size: 16px;
+            }
+            h5 {
+              font-size: 13px;
+            }
+            .d-flex {
+              p {
+              font-size: 13px;
+              width: 95px;
+             }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $layout-breakpoint-small) {

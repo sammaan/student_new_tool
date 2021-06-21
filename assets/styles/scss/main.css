@@ -120,7 +120,7 @@ section {
 body {
   line-height: 1.6;
   font-family: 'Montserrat';
-  background: bg-main;
+  background: #f7f9fa;
 }
 
 ol,
@@ -182,7 +182,7 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  background: bg-main;
+  background: #f7f9fa;
   height: 100vh;
   overflow-y: auto;
   /* width */
@@ -196,11 +196,11 @@ table {
 }
 
 .full-body-width .side-bar::-webkit-scrollbar-track {
-  background: bg-main;
+  background: #f7f9fa;
 }
 
 .full-body-width .side-bar::-webkit-scrollbar-thumb {
-  background: bg-main;
+  background: #f7f9fa;
 }
 
 .full-body-width .side-bar::-webkit-scrollbar-thumb:hover {
@@ -303,7 +303,7 @@ table {
 
 /* Track */
 ::-ms-scrollbar-track {
-  background: bg-main;
+  background: #f7f9fa;
 }
 
 /* Handle */
@@ -324,7 +324,7 @@ table {
 
 /* Track */
 ::-moz-scrollbar-track {
-  background: bg-main;
+  background: #f7f9fa;
 }
 
 /* Handle */
@@ -345,7 +345,7 @@ table {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: bg-main;
+  background: #f7f9fa;
 }
 
 /* Handle */
@@ -395,7 +395,7 @@ progress::-moz-progress-bar {
   padding: 15px 0 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: bg-main;
+  background-color: #f7f9fa;
   width: 110px;
   box-sizing: border-box;
   -webkit-transition: 0.3s ease-in-out;
