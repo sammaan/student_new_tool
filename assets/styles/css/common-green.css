@@ -169,7 +169,7 @@ b {
  font awesome color
  *****************************/
 .fa-book:before {
-  color: #b143d6;
+  color: #1e364c;
 }
 
 .fa-check:before {
@@ -231,7 +231,7 @@ b {
   position: absolute;
 }
 .support .user1 {
-  background-color: #df3ff8;
+  background-color: #3b8a76;
   color: #000;
 }
 .support .user2 {
@@ -434,7 +434,7 @@ Datatable Header Footer
 .ticket-body .ticket-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #441b40;
+  background-color: #3b8a76;
   border-radius: 16px;
   padding: 20px 30px;
   box-sizing: border-box;
@@ -702,7 +702,8 @@ Datatable Header Footer
 .profile-body .profile-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #441b40;
+  background-color: #1e364c;
+  background: #1e364c;
   border-radius: 16px;
   padding: 7px 4px;
   box-sizing: border-box;
@@ -907,4 +908,4 @@ Datatable Header Footer
   box-shadow: none !important;
 }
 
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=common-green.css.map */

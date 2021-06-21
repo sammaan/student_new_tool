@@ -3,25 +3,23 @@
 /* Variable Declarations */
 
 // $base-color: ;
-$primary-color: #993d90 ;
-$primary-dark-color: #441b40;
-$secondary-color: #b1113e;
+$primary-light-color: #d1f5f0 ;
+$primary-color: #3b8a76;
+$secondary-color: #5c7dee;
+$secondary-dark-color: #1e364c;
 $tertiary-color: #f8c145;
 // $cta-success-color: #5e72e3;
 // $cta-close-color:;
-// $gray-text-color: #918e98;
+ $gray-text-color: #918e98;
 
 /* Variables For Tables */
 
-$th-text: #918e98;
-$td-text: #918e98;
-$background: #f7f9fa;
+$bg-main: #f7f9fa;
 $border: #e7eaef;
-$book-color: #b143d6;
 $check-color: #47d4a4;
 $circle-color: #f11a1a;
 
-$ticket-box: #441b40;
+$ticket-box: #3b8a76;
 $ticket-username: #ddd;
 $resolve-input: #64c0ab;
 $top-box: #f7f9fa;
@@ -32,7 +30,7 @@ $ticket-history: #314384;
 $assigned-input: #fde6e0;
 $assigned-color: red;
 $profile: #ddd;
-$profile-box: #441b40;
+// $secondary-dark-color: #3b8a76;
 $profile-fas: #ef756a;
 $education-fas: #5e72e3;
 //Ticket Box
@@ -55,15 +53,13 @@ $close-button: #f1f4f7;
 $resolve-button: #afeed3;
 $resolve-color:#44bf89;
 $button-color: #fff;
-$close-btn-color: #000;
-$input-disabled: #e8ecef;
-$violet: #993d90;
-
 $black: #000;
+$input-disabled: #e8ecef;
+$primary-light-color: #d1f5f0;
+
 $white: #fff;
 $icon-button: #f8c145;
 $bold:#9a98a7;
-$user1: #df3ff8;
 $user2: #014d40;
 
 //Datatable Pagination
@@ -206,14 +202,14 @@ b {
         thead {
             font-weight: 500;
             font-size: 13px;
-            background-color: $background;
-            color: $th-text;
+            background-color: $bg-main;
+            color: $gray-text-color;
             text-transform: uppercase;
         }
 
         tbody {
             font-size: 13px;
-            color: $td-text;
+            color: $gray-text-color;
 
             .fas {
                 // margin-right: 3px;
@@ -251,7 +247,7 @@ b {
  *****************************/
 .fa-book {
     &:before {
-        color: $book-color;
+        color: $secondary-dark-color;
     }
 }
 
@@ -326,7 +322,7 @@ b {
     }
 
     .user1 {
-        background-color: $user1;
+        background-color: $primary-color;
         color: $black;
     }
 
@@ -476,7 +472,7 @@ Modal
 
             .close-btn {
                 @extend %btn;
-                color: $close-btn-color;
+                color: $black;
                 background-color: $close-button;
                 cursor: pointer;
                 border: 1px solid $form-border;
@@ -864,7 +860,8 @@ Datatable Header Footer
     .profile-box {
         justify-content: space-between;
         align-items: flex-start;
-        background-color: $profile-box;
+        background-color: $secondary-dark-color;
+        background: $secondary-dark-color;
         border-radius: 16px;
         padding: 7px 4px;
         box-sizing: border-box;

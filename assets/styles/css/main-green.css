@@ -169,7 +169,7 @@ b {
  font awesome color
  *****************************/
 .fa-book:before {
-  color: #b143d6;
+  color: #1e364c;
 }
 
 .fa-check:before {
@@ -231,7 +231,7 @@ b {
   position: absolute;
 }
 .support .user1 {
-  background-color: #df3ff8;
+  background-color: #3b8a76;
   color: #000;
 }
 .support .user2 {
@@ -434,7 +434,7 @@ Datatable Header Footer
 .ticket-body .ticket-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #441b40;
+  background-color: #3b8a76;
   border-radius: 16px;
   padding: 20px 30px;
   box-sizing: border-box;
@@ -702,7 +702,8 @@ Datatable Header Footer
 .profile-body .profile-box {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #441b40;
+  background-color: #1e364c;
+  background: #1e364c;
   border-radius: 16px;
   padding: 7px 4px;
   box-sizing: border-box;
@@ -1104,7 +1105,7 @@ table {
 
 .horizontal-tab .tab-box {
   justify-content: flex-start;
-  border-bottom: 1px solid #993d90;
+  border-bottom: 1px solid #3b8a76;
   margin-bottom: 30px;
 }
 .horizontal-tab .tab-box .tab-list {
@@ -1116,7 +1117,7 @@ table {
   margin-right: 20px;
 }
 .horizontal-tab .tab-box .tab-list.active, .horizontal-tab .tab-box .tab-list:hover {
-  border-bottom: 4px solid #993d90;
+  border-bottom: 4px solid #3b8a76;
 }
 .horizontal-tab .tab-box::-webkit-scrollbar {
   height: 0;
@@ -1143,7 +1144,7 @@ table {
 }
 .two-column .dashboard-box-container .top-box {
   justify-content: flex-start;
-  background-color: #441b40;
+  background-color: #1e364c;
   height: 65px;
   box-sizing: border-box;
   color: #fff;
@@ -1183,7 +1184,7 @@ table {
 
 /* Handle */
 ::-ms-scrollbar-thumb {
-  background: #993d90;
+  background: #3b8a76;
 }
 
 /* Handle on hover */
@@ -1204,7 +1205,7 @@ table {
 
 /* Handle */
 ::-moz-scrollbar-thumb {
-  background: #993d90;
+  background: #3b8a76;
 }
 
 /* Handle on hover */
@@ -1225,7 +1226,7 @@ table {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #993d90;
+  background: #3b8a76;
 }
 
 /* Handle on hover */
@@ -1245,7 +1246,7 @@ progress {
 }
 
 progress::-webkit-progress-value {
-  background-color: #993d90;
+  background-color: #3b8a76;
   border-radius: 4px;
 }
 
@@ -1256,7 +1257,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-moz-progress-bar {
-  background-color: #993d90 !important;
+  background-color: #3b8a76 !important;
   transition: all 0.5s;
   border-radius: 4px;
 }
@@ -1327,7 +1328,7 @@ progress::-moz-progress-bar {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: #993d90;
+  color: #3b8a76;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
@@ -1343,14 +1344,14 @@ progress::-moz-progress-bar {
   transition: 0.6s ease-in-out;
 }
 .side-bar .menu-bar li a:hover .menu-icon {
-  background-color: #993d90;
+  background-color: #3b8a76;
   color: #fff;
 }
 .side-bar .menu-bar li a:hover .menu-icon img {
   filter: brightness(10);
 }
 .side-bar .menu-bar li.active a .menu-icon {
-  background-color: #993d90;
+  background-color: #3b8a76;
   color: #fff;
 }
 .side-bar .menu-bar li.active a .menu-icon img {
@@ -1371,7 +1372,7 @@ progress::-moz-progress-bar {
 Header
 ****************************/
 .mobile-hamburger .icon-Align-left {
-  color: #441b40;
+  color: #3b8a76;
 }
 
 .mobile-logo,
@@ -1391,7 +1392,7 @@ header .header-left.d-flex .fit-to-screen {
   height: 48px;
   border-radius: 16px;
   background-color: #f7f9fa;
-  color: #993d90;
+  color: #3b8a76;
   font-size: 30px;
   margin-right: 30px;
   cursor: pointer;
@@ -1407,7 +1408,7 @@ header .header-left.d-flex .fit-to-screen a {
   text-decoration: none;
   width: 48px;
   height: 48px;
-  color: #993d90;
+  color: #3b8a76;
 }
 header .header-left.d-flex .search-bar .search-input {
   width: 195px;
@@ -1433,7 +1434,7 @@ header .header-right.d-flex .header-icon {
   margin-left: 30px;
   cursor: pointer;
   font-size: 30px;
-  color: #993d90;
+  color: #3b8a76;
   transition: 0.3s linear all !important;
   box-sizing: border-box;
 }
@@ -1443,7 +1444,7 @@ header .header-right.d-flex .header-icon:hover {
 header .header-right.d-flex .header-icon a {
   display: block;
   text-decoration: none;
-  color: #993d90;
+  color: #3b8a76;
   line-height: 30px;
   width: 30px;
 }
@@ -1492,7 +1493,7 @@ header .header-right.d-flex .logout a {
   text-decoration: none;
   width: 48px;
   height: 48px;
-  color: #993d90;
+  color: #3b8a76;
 }
 
 /**************************
@@ -1502,7 +1503,7 @@ Dashboard
   justify-content: space-between;
 }
 .user-details-panel .d-flex .user-name h1 {
-  color: #441b40;
+  color: #3b8a76;
   font-size: 28px;
   line-height: 34px;
 }
@@ -1524,7 +1525,7 @@ Dashboard
   width: 70px;
   height: 70px;
   border-radius: 16px;
-  background-color: #993d90;
+  background-color: #3b8a76;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1550,15 +1551,15 @@ Dashboard
 .dashboard-top-bpx .course-details {
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #b1113e;
+  background-color: #5c7dee;
   border-radius: 16px;
   padding: 20px 30px;
   box-sizing: border-box;
   color: #fff;
 }
 .dashboard-top-bpx .course-details .bor {
-  border-left: 1px solid #b82157;
-  border-right: 1px solid #b82157;
+  border-left: 1px solid #f8c145;
+  border-right: 1px solid #f8c145;
   width: 300px;
   padding: 0 20px 0 30px;
 }
@@ -1616,6 +1617,10 @@ Dashboard
   font-size: 26px;
   margin-right: 4px;
   vertical-align: middle;
+  color: #3b8a76;
+}
+.dashboard-top-bpx .course-details-panel .semester-status h3 > span span:before {
+  color: #3b8a76;
 }
 .dashboard-top-bpx .course-details-panel .dash-support .tickets {
   background-color: #f8c145;
@@ -1735,7 +1740,7 @@ Dashboard
 }
 .dashboard-top-bpx .course-details-panel .notification-item .notification h3 > span {
   font-size: 25px;
-  color: #993d90;
+  color: #3b8a76;
   margin-right: 4px;
   vertical-align: middle;
 }
@@ -1749,7 +1754,7 @@ Dashboard
   margin-right: 20px;
 }
 .dashboard-top-bpx .course-details-panel .notification-item .notification .date-info .complete-btn {
-  background-color: #b1113e;
+  background-color: #5c7dee;
   color: #fff;
   transition: 0.3s linear all !important;
 }
@@ -1788,7 +1793,7 @@ Dashboard
   line-height: 22px;
 }
 .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment {
-  background-color: #b1113e;
+  background-color: #5c7dee;
   border-radius: 16px;
   padding: 10px;
   box-sizing: border-box;
@@ -1861,7 +1866,7 @@ Dashboard
 .top-box-container .top-box,
 .table-container .top-box {
   justify-content: space-between;
-  background-color: #441b40;
+  background-color: #1e364c;
   color: #fff;
   border-radius: 16px;
   padding: 18px 35px;
@@ -1968,7 +1973,7 @@ Dashboard
 }
 .top-box-container .inner-boxes .right-box,
 .table-container .inner-boxes .right-box {
-  background-color: #b1113e;
+  background-color: #5c7dee;
   border-radius: 16px;
   padding: 20px;
   color: #fff;
@@ -2088,7 +2093,7 @@ Dashboard
   cursor: pointer;
 }
 .support .add-ticket:hover {
-  background-color: #993d90;
+  background-color: #3b8a76;
   color: #fff;
   -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
   box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
@@ -2181,7 +2186,7 @@ Dashboard
   cursor: pointer;
 }
 .support .contact-to-support .message-box .message-btn:hover {
-  background-color: #993d90;
+  background-color: #3b8a76;
   color: #fff;
   -webkit-box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
   box-shadow: 5px 0px 10px rgba(136, 129, 129, 0.6);
@@ -2263,10 +2268,10 @@ calendar
   margin-bottom: 3px;
 }
 .academic-calendar .indication ul li:nth-child(1) .mark {
-  background-color: #b1113e;
+  background-color: #5c7dee;
 }
 .academic-calendar .indication ul li:nth-child(2) .mark {
-  background-color: #993d90;
+  background-color: #3b8a76;
 }
 .academic-calendar .indication ul li:nth-child(3) .mark {
   background-color: #027e0e;
@@ -2286,7 +2291,7 @@ calendar
   box-sizing: border-box;
 }
 .academic-calendar .fc-header-toolbar {
-  background-color: #441b40;
+  background-color: #1e364c;
   padding: 25px 20px;
   border-radius: 0 0 16px 16px;
   color: #fff;
@@ -2312,7 +2317,7 @@ calendar
   background-color: #f7f9fb;
   border-radius: 8px !important;
   margin-left: 10px !important;
-  color: #441b40;
+  color: #3b8a76;
   font-size: 18px;
   height: 45px;
   width: 45px;
@@ -2346,4 +2351,4 @@ calendar
   min-height: 0;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main-green.css.map */

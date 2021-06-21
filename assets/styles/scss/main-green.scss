@@ -1,23 +1,31 @@
 /* Main Stylesheet */
 
-@use 'common';
+// @use 'common.scss';
+@use 'common-green.scss';
 @use 'custom';
 //@use 'responsive';
 
 
+$primary-light-color: #d1f5f0 ;
+$primary-color: #3b8a76;
+$primary-dark-color: #3b8a76;
+$secondary-color: #5c7dee;
+$secondary-dark-color: #1e364c;
+$tertiary-color: #f8c145;
+$bg-main: #f7f9fa;
 
 // variables
-$primary-color :#993d90;
-$primary-dark-color: #441b40;
-$tertiary-color :#f8c145;
-$secondary-color :#b1113e;
+// $primary-light-color :#993d90;
+// $primary-dark-color: #441b40;
+// $tertiary-color :#f8c145;
+// $secondary-color :#b1113e;
+// $secondary-dark-color: #1e364c;
 
 
 $text-color: #0e0f22;
 $white: #fff;
-$bg-main: #f7f9fa;
 $scroll-thumb:#555;
-$border-color: #b82157;
+$border-color: #f8c145;
 $header-icon-bg: #f7f9fa;
 $suport-box-bg: #fbfbfb;
 $suport-icon-bg:  #bbb8b8;
@@ -278,7 +286,7 @@ table {
 .horizontal-tab {
   .tab-box {
     justify-content: flex-start;
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-dark-color;
     margin-bottom: 30px;
 
     .tab-list {
@@ -291,7 +299,7 @@ table {
 
       &.active,
       &:hover {
-        border-bottom: 4px solid $primary-color;
+        border-bottom: 4px solid $primary-dark-color;
       }
     }
     &::-webkit-scrollbar{
@@ -325,7 +333,7 @@ table {
 
     .top-box {
       justify-content: flex-start;
-      background-color: $primary-dark-color;
+      background-color: $secondary-dark-color;
       height: 65px;
       box-sizing: border-box;
       color: $white;
@@ -374,7 +382,7 @@ table {
 
 /* Handle */
 ::-ms-scrollbar-thumb {
-  background: $primary-color;
+  background: $primary-dark-color;
 }
 
 /* Handle on hover */
@@ -396,7 +404,7 @@ table {
 
 /* Handle */
 ::-moz-scrollbar-thumb {
-  background: $primary-color;
+  background: $primary-dark-color;
 }
 
 /* Handle on hover */
@@ -418,7 +426,7 @@ table {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $primary-color;
+  background: $primary-dark-color;
 }
 
 /* Handle on hover */
@@ -441,7 +449,7 @@ progress {
 
 
 progress::-webkit-progress-value {
-  background-color: $primary-color;
+  background-color: $primary-dark-color;
   border-radius: 4px;
 }
 
@@ -455,7 +463,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-moz-progress-bar {
-  background-color: $primary-color  !important;
+  background-color: $primary-dark-color  !important;
   transition: all .5s;
   border-radius: 4px;
 }
@@ -627,7 +635,7 @@ header {
       // justify-content: center;
       // align-items: center;
       background-color: $header-icon-bg;
-      color: $primary-color;
+      color: $primary-dark-color;
       font-size: 30px;
       margin-right: 30px;
       cursor: pointer;
@@ -644,7 +652,7 @@ header {
         text-decoration: none;
         width: 48px;
         height: 48px;
-        color: $primary-color;
+        color: $primary-dark-color;
       }
     }
 
@@ -678,7 +686,7 @@ header {
       margin-left: 30px;
       cursor: pointer;
       font-size: 30px;
-      color: $primary-color;
+      color: $primary-dark-color;
       transition: 0.3s linear all !important;
       box-sizing: border-box;
       &:hover {
@@ -688,7 +696,7 @@ header {
        
         display: block;
         text-decoration: none;
-        color: $primary-color;
+        color: $primary-dark-color;
         line-height: 30px;
         width: 30px;
 
@@ -732,7 +740,7 @@ header {
       height: 48px;
       border-radius: 16px;
       // display: flex;
-      // color: $primary-color;
+      // color: $primary-dark-color;
       // justify-content: center;
       // align-items: center;
       transition: 0.3s linear all !important;
@@ -748,7 +756,7 @@ header {
         text-decoration: none;
         width: 48px;
         height: 48px;
-        color: $primary-color;
+        color: $primary-dark-color;
       }
     }
   }
@@ -793,7 +801,7 @@ Dashboard
         width: 70px;
         height: 70px;
         border-radius: 16px;
-        background-color: $primary-color;
+        background-color: $primary-dark-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -908,6 +916,11 @@ Dashboard
           font-size: 26px;
           margin-right: 4px;
           vertical-align: middle;
+          color: $primary-color;
+          span:before {
+            color: $primary-color;
+
+          }
         }
       }
     }
@@ -963,7 +976,7 @@ Dashboard
           margin-bottom: 15px;
 
           .profile {
-            background-color: $suport-icon-bg;
+            background-color:$suport-icon-bg;
             height: 45px;
             width: 45px;
             border-radius: 50px;
@@ -1054,7 +1067,7 @@ Dashboard
 
           >span {
             font-size: 25px;
-            color: $primary-color;
+            color: $primary-dark-color;
             margin-right: 4px;
             vertical-align: middle;
           }
@@ -1207,7 +1220,7 @@ Dashboard
 
   .top-box {
     justify-content: space-between;
-    background-color: $primary-dark-color;
+    background-color: $secondary-dark-color;
     color: $white;
     border-radius: 16px;
     padding: 18px 35px;
@@ -1458,7 +1471,7 @@ Dashboard
     cursor: pointer;
 
     &:hover {
-      background-color: $primary-color;
+      background-color: $primary-dark-color;
       color: $white;
       @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
     }
@@ -1566,7 +1579,7 @@ Dashboard
         cursor: pointer;
 
         &:hover {
-          background-color: $primary-color;
+          background-color: $primary-dark-color;
           color: $white;
           @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
         }
@@ -1674,7 +1687,7 @@ calendar
         }
 
         &:nth-child(2) .mark {
-          background-color: $primary-color;
+          background-color: $primary-dark-color;
         }
 
         &:nth-child(3) .mark {
@@ -1703,7 +1716,7 @@ calendar
   }
 
   .fc-header-toolbar {
-    background-color: $primary-dark-color;
+    background-color: $secondary-dark-color;
     padding: 25px 20px;
     border-radius: 0 0 16px 16px;
     color: $white;
