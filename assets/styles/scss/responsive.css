@@ -54,11 +54,14 @@
     font-size: 12px;
     line-height: 16px;
   }
+  .profile-body .ticket-column .ticket-box-container {
+    width: 100%;
+  }
   .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
     font-size: 13px;
   }
   .profile-body .ticket-column .ticket-box-container .profile-experience .fas {
-    margin-left: -23px;
+    margin-left: -24px;
     position: absolute;
   }
   .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
@@ -97,48 +100,11 @@
   .ticket-body .ticket-box .d-flex .start-learning h2 {
     font-size: 16px;
   }
-  .ticket-body .ticket-column .ticket-box-container .top-box {
-    height: 55px;
-    padding: 0px 12px;
+  .ticket-body .ticket-column .ticket-box-container {
+    width: 100%;
   }
-  .ticket-body .ticket-column .ticket-box-container .top-box h2 {
-    font-size: 15px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
-    padding: 7px 4px;
-    font-size: 11px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .top-box .icon-btn {
-    padding: 7px 4px;
-    font-size: 11px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes {
-    padding: 6px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3 {
-    font-size: 12px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2 {
-    font-size: 14px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5 {
-    font-size: 14px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .heading {
-    width: 46%;
-  }
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details .content {
-    width: 53%;
-  }
-  .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content h3 {
-    font-size: 16px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content h5 {
-    font-size: 13px;
-  }
-  .ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex p {
-    font-size: 13px;
-    width: 95px;
+  .side-bar {
+    z-index: 9999;
   }
 }
 
