@@ -2,6 +2,7 @@
   .full-body-width {
     padding: 0 20px;
   }
+
   .top-box-container .inner-boxes .left-box {
     width: 100%;
     margin-bottom: 20px;
@@ -10,9 +11,11 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
   .two-column .dashboard-box-container .top-box {
     height: 65px;
   }
+
   .dashboard-top-bpx .course-details .course-name {
     width: 33%;
     min-width: auto;
@@ -22,9 +25,7 @@
     font-size: 16px;
   }
   .dashboard-top-bpx .course-details-panel .dash-fee-payment .course-fee .semester-points {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .dashboard-top-bpx .course-details-panel .dash-fee-payment .due-payment h3 {
     font-size: 16px;
@@ -54,6 +55,7 @@
     font-size: 12px;
     line-height: 16px;
   }
+
   .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
     font-size: 13px;
   }
@@ -68,9 +70,7 @@
     padding: 26px 16px;
   }
   .profile-body .profile-box .d-flex {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .profile-body .profile-box .d-flex .username h1 {
     font-size: 19px;
@@ -91,6 +91,7 @@
   .profile-body .profile-box .d-flex .profile-text .profile-name .d-flex .profile-name-text img {
     height: 46px;
   }
+
   .ticket-body .ticket-box .d-flex .user-name h1 {
     font-size: 16px;
   }
@@ -141,11 +142,11 @@
     width: 95px;
   }
 }
-
 @media (max-width: 991px) {
   .two-column .dashboard-box-container {
     width: 100%;
   }
+
   header .header-left.d-flex .search-bar .search-input {
     width: 152px;
   }
@@ -164,6 +165,7 @@
   header .header-right.d-flex .logout {
     margin-left: 0px;
   }
+
   .user-details-panel .d-flex .user-name {
     width: 60%;
   }
@@ -176,12 +178,15 @@
   .user-details-panel .d-flex .start-learning {
     width: 40%;
   }
+
   .fc h2.fc-toolbar-title {
     font-size: 16px;
   }
+
   .academic-calendar .fc-direction-ltr .fc-button-group > .fc-button {
     font-size: 14px;
   }
+
   .profile-body .ticket-column .ticket-box-container .profile-experience h5 {
     font-size: 13px;
   }
@@ -196,9 +201,7 @@
     padding: 26px 16px;
   }
   .profile-body .profile-box .d-flex {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .profile-body .profile-box .d-flex .username h1 {
     font-size: 19px;
@@ -220,13 +223,11 @@
     height: 46px;
   }
 }
-
 @media (min-width: 767px) {
   .mobile-only {
     display: none;
   }
 }
-
 @media (max-width: 767px) {
   .full-body-width {
     width: calc(100% - 0px);
@@ -234,13 +235,10 @@
     padding: 0 10px;
     border-radius: 0;
   }
+
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin-bottom: 20px;
   }
   header .mobile-hamburger {
@@ -270,6 +268,7 @@
   header .header-right.d-flex .logout {
     display: none;
   }
+
   .side-bar {
     padding: 0;
     width: 0;
@@ -277,8 +276,7 @@
     padding-top: 10px;
   }
   .side-bar .menu-bar li a {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .side-bar .menu-bar li a .menu-text {
     width: auto;
@@ -293,11 +291,12 @@
     display: inline-block;
     font-size: 22px;
   }
+
   .side-bar.open-menu {
     width: 100%;
-    -webkit-transition: width 1s;
     transition: width 1s;
   }
+
   .top-box-container .top-box h2 {
     font-size: 24px;
     line-height: 30px;
@@ -352,36 +351,36 @@
   .top-box-container .inner-boxes .right-box .upcoming-dates .info-button {
     font-size: 18px;
   }
+
   .payments .top-box-container .top-box,
-  .support .top-box-container .top-box {
+.support .top-box-container .top-box {
     height: auto;
   }
   .payments .top-box-container .payment-type,
-  .support .top-box-container .payment-type {
+.support .top-box-container .payment-type {
     width: 100%;
   }
   .payments .top-box-container .payment-type p,
-  .support .top-box-container .payment-type p {
+.support .top-box-container .payment-type p {
     text-align: right;
   }
   .payments .top-box-container .payment-type p span,
-  .support .top-box-container .payment-type p span {
+.support .top-box-container .payment-type p span {
     display: inline;
   }
+
   .horizontal-tab .tab-box {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     border-bottom: 1px solid #cfa4cb;
     margin-bottom: 30px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     overflow: scroll;
   }
   .horizontal-tab .tab-box .tab-list {
     white-space: nowrap;
     font-size: 16px;
   }
+
   .user-details-panel .d-flex .user-name {
     width: 80%;
     margin-bottom: 20px;
@@ -396,9 +395,7 @@
   }
   .user-details-panel .d-flex .start-learning {
     width: 20%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .user-details-panel .d-flex .start-learning h2 {
     display: none;
@@ -415,48 +412,42 @@
   .user-details-panel .d-flex .start-learning .continue-learning-box img {
     width: 25px;
   }
+
   .dashboard-top-bpx .your-course {
     display: none;
   }
   .dashboard-top-bpx .course-details .course-name,
-  .dashboard-top-bpx .course-details .course-details-icon {
+.dashboard-top-bpx .course-details .course-details-icon {
     width: 100%;
     min-width: auto;
     border: none;
     padding: 0;
     margin-bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .dashboard-top-bpx .course-details .course-name .course-details-icon,
-  .dashboard-top-bpx .course-details .course-details-icon .course-details-icon {
+.dashboard-top-bpx .course-details .course-details-icon .course-details-icon {
     width: 60px;
     padding-top: 20px;
   }
   .dashboard-top-bpx .course-details .course-name .course-details-name,
-  .dashboard-top-bpx .course-details .course-name .couese-student-name,
-  .dashboard-top-bpx .course-details .course-details-icon .course-details-name,
-  .dashboard-top-bpx .course-details .course-details-icon .couese-student-name {
+.dashboard-top-bpx .course-details .course-name .couese-student-name,
+.dashboard-top-bpx .course-details .course-details-icon .course-details-name,
+.dashboard-top-bpx .course-details .course-details-icon .couese-student-name {
     width: calc(100% - 60px);
     padding: 10px 0;
   }
   .dashboard-top-bpx .course-details .course-name .course-details-name h2,
-  .dashboard-top-bpx .course-details .course-name .couese-student-name h2,
-  .dashboard-top-bpx .course-details .course-details-icon .course-details-name h2,
-  .dashboard-top-bpx .course-details .course-details-icon .couese-student-name h2 {
+.dashboard-top-bpx .course-details .course-name .couese-student-name h2,
+.dashboard-top-bpx .course-details .course-details-icon .course-details-name h2,
+.dashboard-top-bpx .course-details .course-details-icon .couese-student-name h2 {
     font-size: 15px;
   }
   .dashboard-top-bpx .course-details .course-name .course-details-name h2,
-  .dashboard-top-bpx .course-details .course-details-icon .course-details-name h2 {
+.dashboard-top-bpx .course-details .course-details-icon .course-details-name h2 {
     font-size: 18px;
   }
   .dashboard-top-bpx .course-details .bor {
@@ -481,12 +472,11 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
   .two-column .dashboard-box-container .top-box {
     background-color: #441b40;
     height: 70px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding: 0 20px;
   }
   .two-column .dashboard-box-container .top-box h2 {
@@ -500,42 +490,31 @@
     width: 30px;
     height: 30px;
     background-color: #f8c145;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     font-size: 24px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     opacity: 1;
   }
   .two-column .dashboard-box-container .inner-boxes {
     height: 100%;
     height: 0;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    -webkit-transition-property: height;
+    transition: all 0.3s ease-in-out;
     transition-property: height;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0;
   }
   .two-column .dashboard-box-container.open .collapse-button {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: all .7s ease-in-out;
-    transition: all .7s ease-in-out;
+    transform: rotate(180deg);
+    transition: all 0.7s ease-in-out;
   }
   .two-column .dashboard-box-container.open .inner-boxes {
     height: 100%;
     padding: 20px;
   }
+
   .support .tickets {
     width: 100%;
     margin-bottom: 10px;
@@ -548,18 +527,16 @@
     width: 100%;
     max-width: 100%;
   }
+
   .academic-calendar #fccalendar {
     width: calc(100% - 0px);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .academic-calendar .indication {
     margin-top: 20px;
     width: 100%;
   }
   .academic-calendar .indication .legends {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
   }
@@ -569,8 +546,7 @@
     padding: 0;
   }
   .academic-calendar .fc-header-toolbar {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
     width: 33%;
@@ -579,9 +555,7 @@
     width: 100%;
     text-align: right;
     margin-top: 20px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) h2.fc-toolbar-title {
     font-size: 22px;
@@ -590,12 +564,9 @@
   .academic-calendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
     width: 67%;
     text-align: right;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 }
-
 @media screen and (max-width: 767px) and (max-width: 767px) {
   .modal header {
     width: 100%;
@@ -604,19 +575,23 @@
     width: 100%;
   }
   .modal .modal-body .d-flex .form-group,
-  .modal .modal-body .d-flex .form-group-left,
-  .modal .modal-body .d-flex .form-group-right {
+.modal .modal-body .d-flex .form-group-left,
+.modal .modal-body .d-flex .form-group-right {
     width: 100%;
   }
+
   .dataTables_wrapper .dataTables_filter input {
     width: 45%;
   }
+
   .page-name {
     /*margin-bottom: 20px;*/
   }
+
   .payment-type {
     margin-top: 8px;
   }
+
   .support ul li:last-child {
     padding: 8px 8px;
     width: 18px;
@@ -624,10 +599,12 @@
     right: 11px;
     position: inherit;
   }
+
   .profile-box .icon-btn {
     right: 18px;
     top: 16px;
   }
+
   .profile-body .ticket-details {
     padding: 50px 0px;
   }
@@ -638,7 +615,7 @@
     font-size: 12px !important;
   }
   .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right,
-  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
+.profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
     width: 100% !important;
   }
   .profile-body .profile-box .d-flex .username {
@@ -657,6 +634,7 @@
   .profile-body .ticket-column .ticket-box-container {
     width: 100% !important;
   }
+
   .ticket-body .ticket-details {
     padding: 50px 0px;
   }
@@ -683,9 +661,7 @@
   }
   .ticket-body .ticket-column .ticket-box-container .top-box {
     padding: 26px 11px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
     font-size: 11px !important;
@@ -703,11 +679,12 @@
     width: 53% !important;
   }
   .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3,
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
     font-size: 13px !important;
   }
+
   .modal header {
     width: 100%;
   }
@@ -715,16 +692,19 @@
     width: 100%;
   }
   .modal .modal-body .d-flex .form-group,
-  .modal .modal-body .d-flex .form-group-left,
-  .modal .modal-body .d-flex .form-group-right {
+.modal .modal-body .d-flex .form-group-left,
+.modal .modal-body .d-flex .form-group-right {
     width: 100%;
   }
+
   .dataTables_wrapper .dataTables_filter input {
     width: 45%;
   }
+
   .payment-type {
     margin-top: 8px;
   }
+
   .support ul li:last-child {
     padding: 8px 8px;
     width: 18px;
@@ -732,10 +712,12 @@
     right: 11px;
     position: inherit;
   }
+
   .profile-box .icon-btn {
     right: 18px;
     top: 16px;
   }
+
   .profile-body .ticket-details {
     padding: 50px 0px;
   }
@@ -746,7 +728,7 @@
     font-size: 12px !important;
   }
   .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .right,
-  .profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
+.profile-body .ticket-column .ticket-box-container .profile-education .d-flex .left {
     width: 100% !important;
   }
   .profile-body .profile-box .d-flex .username {
@@ -765,6 +747,7 @@
   .profile-body .ticket-column .ticket-box-container {
     width: 100% !important;
   }
+
   .ticket-body .ticket-details {
     padding: 50px 0px;
   }
@@ -791,9 +774,7 @@
   }
   .ticket-body .ticket-column .ticket-box-container .top-box {
     padding: 26px 11px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .ticket-body .ticket-column .ticket-box-container .top-box .info-button {
     font-size: 11px !important;
@@ -811,10 +792,11 @@
     width: 53% !important;
   }
   .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h3,
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
-  .ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h2,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h5,
+.ticket-body .ticket-column .ticket-box-container .inner-boxes .ticket-box-details h4 {
     font-size: 13px !important;
   }
 }
+
 /*# sourceMappingURL=responsive.css.map */

@@ -486,7 +486,7 @@ Datatable Header Footer
   line-height: 28px;
   width: 135px;
 }
-.ticket-body .ticket-box .d-flex .start-learning .resolve-btn {
+.ticket-body .ticket-box .d-flex .start-learning .resolve-input {
   font-size: 20px;
   font-weight: 600;
   padding: 9px 17px;
@@ -497,7 +497,7 @@ Datatable Header Footer
   cursor: pointer;
   transition: 0.3s linear all !important;
 }
-.ticket-body .ticket-box .d-flex .start-learning .resolve-btn:hover {
+.ticket-body .ticket-box .d-flex .start-learning .resolve-input:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
@@ -607,9 +607,9 @@ Datatable Header Footer
   padding: 0px 0px 12px;
   justify-content: space-between;
 }
-.ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn {
+.ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-input {
   background-color: #fde6e0;
-  color: #000;
+  color: red;
   text-decoration: none;
   border-radius: 18px;
   padding: 2px 12px;
@@ -620,7 +620,7 @@ Datatable Header Footer
   text-transform: uppercase;
   transition: 0.3s linear all !important;
 }
-.ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn:hover {
+.ticket-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-input:hover {
   -webkit-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
@@ -721,7 +721,7 @@ Datatable Header Footer
   /*profile */
 }
 .profile-body .profile-box .d-flex .username {
-  width: 20%;
+  width: 19%;
   text-align: center;
 }
 .profile-body .profile-box .d-flex .username img {
@@ -821,7 +821,7 @@ Datatable Header Footer
 .profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex {
   justify-content: space-between;
 }
-.profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-btn {
+.profile-body .ticket-column .ticket-box-container .ticket-history .ticket-history-content .d-flex .assigned-input {
   background-color: #fde6e0;
   color: #000;
   text-decoration: none;
