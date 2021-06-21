@@ -1,7 +1,10 @@
-$active: #f8c145;
+// variables
+
+$primary-dark-color: #441b40;
+$tertiary-color: #f8c145;
 $border-color: #b82157;
-$dark-blue: #441b40;
 $light-voilet :#cfa4cb;
+
 
 $layout-breakpoint-medium: 1199px;
 $layout-breakpoint-small: 991px;
@@ -587,7 +590,7 @@ $layout-breakpoint-xs: 767px;
   .two-column {
     .dashboard-box-container {
       .top-box {
-        background-color: $dark-blue;
+        background-color: $primary-dark-color;
         height: 70px;
         justify-content: space-between;
         padding: 0 20px;
@@ -604,7 +607,7 @@ $layout-breakpoint-xs: 767px;
         .collapse-button {
           width: 30px;
           height: 30px;
-          background-color: $active;
+          background-color: $tertiary-color;
           display: flex;
           justify-content: center;
           align-items: center;

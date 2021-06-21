@@ -5,13 +5,13 @@
 //@use 'responsive';
 
 
-// variables
 
-$dark-blue: #441b40;
-$maroon :#b1113e;
-$yellow :#f8c145;
-$violet: #993d90;
-$light-voilet :#cfa4cb;
+// variables
+$primary-color :#993d90;
+$primary-dark-color: #441b40;
+$tertiary-color :#f8c145;
+$secondary-color :#b1113e;
+
 
 $text-color: #0e0f22;
 $white: #fff;
@@ -23,6 +23,7 @@ $suport-box-bg: #fbfbfb;
 $suport-icon-bg:  #bbb8b8;
 $table-heading: #41419e;
 $calender-btn: #f7f9fb;
+$calender-border: #dddddd;
 
 $status-green: #027e0e;
 
@@ -277,7 +278,7 @@ table {
 .horizontal-tab {
   .tab-box {
     justify-content: flex-start;
-    border-bottom: 1px solid $violet;
+    border-bottom: 1px solid $primary-color;
     margin-bottom: 30px;
 
     .tab-list {
@@ -290,7 +291,7 @@ table {
 
       &.active,
       &:hover {
-        border-bottom: 4px solid $violet;
+        border-bottom: 4px solid $primary-color;
       }
     }
     &::-webkit-scrollbar{
@@ -324,7 +325,7 @@ table {
 
     .top-box {
       justify-content: flex-start;
-      background-color: $dark-blue;
+      background-color: $primary-dark-color;
       height: 65px;
       box-sizing: border-box;
       color: $white;
@@ -373,7 +374,7 @@ table {
 
 /* Handle */
 ::-ms-scrollbar-thumb {
-  background: $violet;
+  background: $primary-color;
 }
 
 /* Handle on hover */
@@ -395,7 +396,7 @@ table {
 
 /* Handle */
 ::-moz-scrollbar-thumb {
-  background: $violet;
+  background: $primary-color;
 }
 
 /* Handle on hover */
@@ -417,7 +418,7 @@ table {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $violet;
+  background: $primary-color;
 }
 
 /* Handle on hover */
@@ -440,7 +441,7 @@ progress {
 
 
 progress::-webkit-progress-value {
-  background-color: $violet;
+  background-color: $primary-color;
   border-radius: 4px;
 }
 
@@ -454,7 +455,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-moz-progress-bar {
-  background-color: $violet  !important;
+  background-color: $primary-color  !important;
   transition: all .5s;
   border-radius: 4px;
 }
@@ -532,7 +533,7 @@ progress::-moz-progress-bar {
           justify-content: center;
           align-items: center;
           font-size: 30px;
-          color: $violet;
+          color: $primary-color;
           @include transition(.6s ease-in-out);
         }
 
@@ -549,7 +550,7 @@ progress::-moz-progress-bar {
 
         &:hover {
           .menu-icon {
-            background-color: $violet;
+            background-color: $primary-color;
             color: $white;
 
             img {
@@ -562,7 +563,7 @@ progress::-moz-progress-bar {
       &.active {
         a {
           .menu-icon {
-            background-color: $violet;
+            background-color: $primary-color;
             color: $white;
 
             img {
@@ -602,7 +603,7 @@ progress::-moz-progress-bar {
 Header
 ****************************/
 .mobile-hamburger .icon-Align-left{
-  color:$dark-blue;
+  color:$primary-dark-color;
 }
 .mobile-logo,
 .mobile-hamburger {
@@ -626,7 +627,7 @@ header {
       // justify-content: center;
       // align-items: center;
       background-color: $header-icon-bg;
-      color: $violet;
+      color: $primary-color;
       font-size: 30px;
       margin-right: 30px;
       cursor: pointer;
@@ -643,7 +644,7 @@ header {
         text-decoration: none;
         width: 48px;
         height: 48px;
-        color: $violet;
+        color: $primary-color;
       }
     }
 
@@ -677,7 +678,7 @@ header {
       margin-left: 30px;
       cursor: pointer;
       font-size: 30px;
-      color: $violet;
+      color: $primary-color;
       transition: 0.3s linear all !important;
       box-sizing: border-box;
       &:hover {
@@ -687,7 +688,7 @@ header {
        
         display: block;
         text-decoration: none;
-        color: $violet;
+        color: $primary-color;
         line-height: 30px;
         width: 30px;
 
@@ -731,7 +732,7 @@ header {
       height: 48px;
       border-radius: 16px;
       // display: flex;
-      // color: $violet;
+      // color: $primary-color;
       // justify-content: center;
       // align-items: center;
       transition: 0.3s linear all !important;
@@ -747,7 +748,7 @@ header {
         text-decoration: none;
         width: 48px;
         height: 48px;
-        color: $violet;
+        color: $primary-color;
       }
     }
   }
@@ -766,7 +767,7 @@ Dashboard
 
     .user-name {
       h1 {
-        color: $dark-blue;
+        color: $primary-dark-color;
         font-size: 28px;
         line-height: 34px;
 
@@ -792,7 +793,7 @@ Dashboard
         width: 70px;
         height: 70px;
         border-radius: 16px;
-        background-color: $violet;
+        background-color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -825,7 +826,7 @@ Dashboard
   .course-details {
     justify-content: space-between;
     align-items: flex-start;
-    background-color: $maroon;
+    background-color: $secondary-color;
     border-radius: 16px;
     padding: 20px 30px;
     box-sizing: border-box;
@@ -913,7 +914,7 @@ Dashboard
 
     .dash-support {
       .tickets {
-        background-color: $yellow;
+        background-color: $tertiary-color;
         border-radius: 16px;
         padding: 15px;
         box-sizing: border-box;
@@ -1053,7 +1054,7 @@ Dashboard
 
           >span {
             font-size: 25px;
-            color: $violet;
+            color: $primary-color;
             margin-right: 4px;
             vertical-align: middle;
           }
@@ -1070,7 +1071,7 @@ Dashboard
           }
 
           .complete-btn {
-            background-color: $maroon;
+            background-color: $secondary-color;
             color: $white;
             @extend %small-btn;
             transition: 0.3s linear all !important;
@@ -1085,7 +1086,7 @@ Dashboard
 
     .dash-fee-payment {
       .course-fee {
-        background-color: $yellow;
+        background-color: $tertiary-color;
         border-radius: 16px;
         padding: 15px;
         box-sizing: border-box;
@@ -1121,7 +1122,7 @@ Dashboard
       }
 
       .due-payment {
-        background-color: $maroon;
+        background-color: $secondary-color;
         border-radius: 16px;
         padding: 10px;
         box-sizing: border-box;
@@ -1140,7 +1141,7 @@ Dashboard
         .payment-amount {
           font-size: 28px;
           line-height: 34px;
-          color: $yellow;
+          color: $tertiary-color;
           font-weight: 600;
           margin-bottom: 5px;
 
@@ -1148,7 +1149,7 @@ Dashboard
 
         .pay-btn {
           @extend %small-btn;
-          background-color: $yellow;
+          background-color: $tertiary-color;
           font-size: 14px;
           font-weight: 600;
           padding: 2px 14px;
@@ -1206,7 +1207,7 @@ Dashboard
 
   .top-box {
     justify-content: space-between;
-    background-color: $dark-blue;
+    background-color: $primary-dark-color;
     color: $white;
     border-radius: 16px;
     padding: 18px 35px;
@@ -1252,7 +1253,7 @@ Dashboard
     box-sizing: border-box;
 
     .left-box {
-      background-color: $yellow;
+      background-color: $tertiary-color;
       border-radius: 16px;
       padding: 20px;
       box-sizing: border-box;
@@ -1314,7 +1315,7 @@ Dashboard
     }
 
     .right-box {
-      background-color: $maroon;
+      background-color: $secondary-color;
       border-radius: 16px;
       padding: 20px;
       color: $white;
@@ -1388,7 +1389,7 @@ Dashboard
 
 
         .info-button {
-          background-color: $yellow;
+          background-color: $tertiary-color;
           color: $white;
           text-decoration: none;
           border-radius: 18px;
@@ -1436,7 +1437,7 @@ Dashboard
             margin-top: 20px;
             font-size: 36px;
             font-weight: 600;
-            color: $yellow;
+            color: $tertiary-color;
           }
 
         }
@@ -1450,21 +1451,21 @@ Dashboard
 .support {
   .add-ticket {
     @extend %small-btn;
-    background-color: $yellow;
+    background-color: $tertiary-color;
     font-size: 20px;
     font-weight: 600;
     padding: 3px 20px;
     cursor: pointer;
 
     &:hover {
-      background-color: $violet;
+      background-color: $primary-color;
       color: $white;
       @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
     }
   }
 
   .tickets {
-    background-color: $yellow;
+    background-color: $tertiary-color;
     border-radius: 16px;
     padding: 15px;
     box-sizing: border-box;
@@ -1565,7 +1566,7 @@ Dashboard
         cursor: pointer;
 
         &:hover {
-          background-color: $violet;
+          background-color: $primary-color;
           color: $white;
           @include box-shadow(5px 0px 10px rgba(136, 129, 129, .6));
         }
@@ -1669,11 +1670,11 @@ calendar
         }
 
         &:nth-child(1) .mark {
-          background-color: $maroon;
+          background-color: $secondary-color;
         }
 
         &:nth-child(2) .mark {
-          background-color: $violet;
+          background-color: $primary-color;
         }
 
         &:nth-child(3) .mark {
@@ -1681,7 +1682,7 @@ calendar
         }
 
         &:nth-child(4) .mark {
-          background-color: $yellow;
+          background-color: $tertiary-color;
         }
       }
     }
@@ -1702,14 +1703,15 @@ calendar
   }
 
   .fc-header-toolbar {
-    background-color: $dark-blue;
+    background-color: $primary-dark-color;
     padding: 25px 20px;
     border-radius: 0 0 16px 16px;
     color: $white;
   }
 
   #fccalendar td {
-    border-bottom: 1px solid $scroll-thumb !important;
+    border-bottom: 1px solid $calender-border !important;
+
   }
 
   .fc-theme-standard th,
@@ -1737,7 +1739,7 @@ calendar
     background-color: $calender-btn;
     border-radius: 8px !important;
     margin-left: 10px !important;
-    color: $dark-blue;
+    color: $primary-dark-color;
     font-size: 18px;
     height: 45px;
     width: 45px;
@@ -1747,7 +1749,7 @@ calendar
     text-transform: capitalize;
   }
   .fc-direction-ltr .fc-button-group>.fc-button-active{
-    background-color: $yellow !important;
+    background-color: $tertiary-color !important;
     color: $text-color !important;
   }
   .fc-direction-ltr .fc-button-group>.fc-dayGridMonth-button,
