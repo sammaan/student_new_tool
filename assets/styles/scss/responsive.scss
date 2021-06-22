@@ -1,9 +1,20 @@
+// @use 'common.scss';
+@use 'common-green.scss';
+
 // variables
 
-$primary-dark-color: #441b40;
-$tertiary-color: #f8c145;
+// $primary-dark-color: #441b40;
+// $primary-light-color :#cfa4cb;
+
 $border-color: #b82157;
-$light-voilet :#cfa4cb;
+$tertiary-color: #f8c145;
+$primary-color: #3b8a76;
+$primary-dark-color: #3b8a76;
+$primary-light: #d1f5f0 ;
+
+// $secondary-color: #5c7dee;
+// $secondary-dark-color: #1e364c;
+// $bg-main: #f7f9fa;
 
 
 $layout-breakpoint-medium: 1199px;
@@ -541,7 +552,7 @@ $layout-breakpoint-xs: 767px;
   .horizontal-tab {
     .tab-box {
       justify-content: flex-start;
-      border-bottom: 1px solid $light-voilet;
+      border-bottom: 1px solid $primary-light;
       margin-bottom: 30px;
       flex-wrap: nowrap;
       overflow: scroll;

@@ -1,10 +1,18 @@
 /* Main Stylesheet */
 
-@use 'common';
+@use 'common.scss';
 @use 'custom';
 //@use 'responsive';
 
 
+
+// $primary-light-color: #d1f5f0 ;
+// $primary-color: #3b8a76;
+// $primary-dark-color: #3b8a76;
+// $secondary-color: #5c7dee;
+// $secondary-dark-color: #1e364c;
+// $tertiary-color: #f8c145;
+// $bg-main: #f7f9fa;
 
 // variables
 $primary-color :#993d90;
